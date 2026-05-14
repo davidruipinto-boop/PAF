@@ -1,0 +1,8 @@
+Validação:
+- node --check app.js: OK
+- node --check question-bank.js: OK
+- Banco carregado em Node/VM: OK
+- Total de perguntas: 642
+- Sociocultural core: 33 perguntas
+- HTML atualizado com perguntas sobre avaliação/site Andar de Mota
+- Ficha HTML Bootstrap sem JavaScript personalizado

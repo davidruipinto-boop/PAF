@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salão de Exames PAF</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-text">
+      <p class="eyebrow">Máquina de Estudos PAF</p>
+      <h1>Salão de Exames PAF</h1>
+      <p class="subtitle">Modo escuro, perguntas focadas na matriz, correção mais humana e treino adaptado para telemóvel.</p>
+    </div>
+    <div class="timer-card" id="timerCard" aria-live="polite">
+      <span>Tempo restante</span>
+      <strong id="timer">--:--:--</strong>
+      <small id="timerProgress">0/0 respondidas</small>
+    </div>
+  </header>
+
+  <main>
+    <nav class="quick-nav" aria-label="Navegação principal">
+      <a href="index.html" class="active">Exames teóricos</a>
+      <a href="pratica.html">Prática C / Java / HTML / SQL</a>
+      <a href="fichas/HTML_BOOTSTRAP_BASE/index.html">Ficha HTML Bootstrap</a>
+    </nav>
+
+    <section id="setup" class="panel setup-panel">
+      <div class="setup-grid">
+        <div>
+          <h2>1. Escolhe o exame</h2>
+          <div class="exam-options">
+            <label class="exam-choice"><input type="radio" name="area" value="socio" checked><span>Sociocultural exato + Inglês</span></label>
+            <label class="exam-choice"><input type="radio" name="area" value="mfc"><span>Matemática + Física/Química</span></label>
+            <label class="exam-choice"><input type="radio" name="area" value="info"><span>Informática teórica</span></label>
+          </div>
+        </div>
+        <div>
+          <h2>2. Tempo, dificuldade e tamanho</h2>
+          <div class="form-row">
+            <label for="duration">Duração</label>
+            <select id="duration">
+              <option value="60">1h</option>
+              <option value="90" selected>1h30</option>
+              <option value="120">2h</option>
+              <option value="180">3h</option>
+              <option value="240">4h</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="customDuration">Ou escreve minutos</label>
+            <input id="customDuration" type="number" min="15" max="360" placeholder="Ex: 90">
+          </div>
+          <div class="form-row">
+            <label for="difficultyMode">Modo</label>
+            <select id="difficultyMode">
+              <option value="normal">Normal</option>
+              <option value="serio" selected>PAF sério</option>
+              <option value="vinte">20/20 - difícil</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="questionCountMode">N.º de perguntas</label>
+            <select id="questionCountMode">
+              <option value="auto" selected>Automático realista</option>
+              <option value="20">20 perguntas</option>
+              <option value="30">30 perguntas</option>
+              <option value="40">40 perguntas</option>
+              <option value="50">50 perguntas</option>
+              <option value="60">60 perguntas</option>
+              <option value="80">80 perguntas só para treino longo</option>
+              <option value="100">100 perguntas treino extremo</option>
+            </select>
+          </div>
+          <label class="checkline"><input type="checkbox" id="includeTraps" checked> Incluir rasteiras e checkboxes com só uma resposta correta</label>
+          <label class="checkline"><input type="checkbox" id="showAnswersAllowed" checked> Mostrar botão “Ver resposta” durante o exame</label>
+        </div>
+      </div>
+      <div class="stats" id="bankStats"></div>
+      <div class="actions">
+        <button id="startBtn" class="primary">Começar exame</button>
+        <button id="historyBtn" class="secondary">Ver histórico</button>
+        <a class="secondary link-button" href="pratica.html">Ir para prática</a>
+      </div>
+      
+    </section>
+
+    <section id="exam" class="panel hidden">
+      <div class="exam-header">
+        <div>
+          <p class="eyebrow" id="examLabel">Exame</p>
+          <h2 id="examTitle"></h2>
+          <p id="examMeta"></p>
+        </div>
+        <div class="progress-wrap">
+          <span id="progressText">0/0 respondidas</span>
+          <div class="progress-bar"><div id="progressFill"></div></div>
+        </div>
+      </div>
+      <form id="questionsForm" class="questions"></form>
+      <div class="floating-actions">
+        <button id="finishBtn" type="button" class="primary danger">Terminar e corrigir</button>
+        <button id="exitBtn" type="button" class="secondary danger-soft">Sair do exame</button>
+        <button id="backToTopBtn" type="button" class="secondary">Ir para cima</button>
+      </div>
+    </section>
+
+    <section id="results" class="panel hidden"></section>
+    <section id="history" class="panel hidden"></section>
+  </main>
+
+  <template id="questionTemplate">
+    <article class="question-card">
+      <div class="q-head">
+        <div><span class="module"></span><h3></h3></div>
+        <span class="badge"></span>
+      </div>
+      <div class="prompt"></div>
+      <div class="question-extra"></div>
+      <div class="answer-zone"></div>
+    </article>
+  </template>
+
+  <script src="question-bank.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

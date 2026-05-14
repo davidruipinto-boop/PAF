@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Prática PAF - C / Java / HTML / SQL</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="topbar"><div><p class="eyebrow">Máquina de Estudos PAF</p><h1>Prática C / Java / HTML / SQL</h1><p class="subtitle">Exercícios inspirados nas avaliações e na matriz. Usa esta página para treinar antes da parte prática.</p></div></header>
+<main>
+<nav class="quick-nav"><a href="index.html">Exames teóricos</a><a href="pratica.html" class="active">Prática</a><a href="fichas/HTML_BOOTSTRAP_BASE/index.html">Ficha HTML Bootstrap</a></nav>
+<section class="panel">
+<h2>Como treinar</h2>
+<div class="notice"><strong>Regra de ouro:</strong> primeiro faz sozinho. Só depois abre a solução. Na PAF, pensa sempre em Entrada → Processamento → Saída.</div>
+<div class="practice-grid">
+<div class="practice-card"><h3>C/C++</h3><p>Foco: algoritmia, funções, vetores, estruturas e ficheiros/CSV.</p><div class="file-list"><a href="pratica/c/alunos_notas.c">alunos_notas.c</a><a href="pratica/c/letras_inverso.c">letras_inverso.c</a><a href="pratica/c/pedido_compra_iva.c">pedido_compra_iva.c</a><a href="pratica/c/registo_alunos_csv.c">registo_alunos_csv.c</a><a href="pratica/c/utentes_centro_saude.c">utentes_centro_saude.c</a></div></div>
+<div class="practice-card"><h3>Java</h3><p>Foco: POO, classes, objetos, métodos e aplicações gráficas Swing/WindowBuilder.</p><div class="file-list"><a href="pratica/java/Iluminacao.java">Iluminacao.java</a><a href="pratica/java/AppIluminacao.java">AppIluminacao.java</a><a href="pratica/java/Conta.java">Conta.java</a><a href="pratica/java/AppGestConta.java">AppGestConta.java</a><a href="pratica/java/JogoDoGalo.java">JogoDoGalo.java</a></div></div>
+<div class="practice-card"><h3>HTML / SQL / MySQL</h3><p>Foco: avaliação de criação de páginas web, site de 3 páginas, multimédia, tabela, galeria, Bootstrap, formulários e base de dados.</p><div class="file-list"><a href="fichas/HTML_BOOTSTRAP_BASE/index.html">Ficha Bootstrap baseada no teu site</a><a href="pratica/html_site_goncalo_original/index.html">Site original Andar de Mota</a><a href="pratica/html_sql/revisao_mysql.sql">revisao_mysql.sql</a><a href="pratica/html_sql/php_mysql_mini_crud/index.php">Mini CRUD PHP/MySQL</a></div></div>
+</div>
+</section>
+<section class="panel" style="margin-top:18px"><h2>Enunciados práticos para simular</h2>
+<details open><summary>C - Simulação 1: alunos e notas</summary><p>Cria um programa que leia número, nome, nota 1 e nota 2 de vários alunos até número 0. Mostra média e estado: Aprovado se média ≥ 10, Reprovado se média &lt; 7, em Prova Final nos restantes casos.</p><p><strong>Treina:</strong> structs, arrays, ciclo while, funções e média.</p></details>
+<details><summary>C - Simulação 2: pedido de compra com IVA</summary><p>Lê produtos de um pedido até código 0. Cada produto tem código, nome, preço unitário e quantidade. Mostra subtotal e total com IVA de 23%.</p><p><strong>Treina:</strong> estruturas, acumuladores, funções e formatação.</p></details>
+<details><summary>C - Simulação 3: ficheiro CSV</summary><p>Regista alunos num ficheiro CSV com matrícula, nome, código de curso e saldo. Depois lê o ficheiro e mostra maior saldo, menor saldo e média.</p><p><strong>Treina:</strong> FILE, fopen, fprintf, fscanf, fclose e structs.</p></details>
+<details><summary>Java - Simulação 1: sistema de iluminação</summary><p>Cria a classe Iluminacao com turnOn(), turnOff() e mostraEstado(). A aplicação AppIluminacao deve ter janela com 6 divisões e botões para ligar/desligar.</p><p><strong>Treina:</strong> classe, objetos, arrays, Swing e ActionListener.</p></details>
+<details><summary>Java - Simulação 2: gestão de conta bancária</summary><p>Cria Conta com inserir(), depositar(), levantar(), verificarSaldo() e mostrar(). A janela deve criar conta e permitir movimentos.</p><p><strong>Treina:</strong> POO, validação, try/catch, separação classe lógica / classe janela.</p></details>
+<details><summary>HTML - Simulação: site da avaliação “Andar de Mota”</summary><p>Cria um site com pelo menos três páginas: Início, Galeria e Tabela. Deve ter menu de navegação, galeria de imagens com legendas, uma tabela, um vídeo, um áudio e texto claro. Usa Bootstrap para estilos e não uses JavaScript personalizado.</p><p><strong>Consulta:</strong> abre a ficha Bootstrap baseada no teu site e compara com o site original enviado.</p></details>
+<details><summary>SQL/PHP - Simulação: formulário com MySQL</summary><p>Cria base de dados, tabela, formulário HTML/PHP para inserir dados e página para listar registos. Usa validação simples e prepared statements.</p></details>
+</section>
+<section class="panel" style="margin-top:18px"><h2>Fichas de ajuda para consulta</h2><div class="file-list"><a href="fichas/RESUMO_C_CONSULTA.c">RESUMO_C_CONSULTA.c</a><a href="fichas/RevisaoJavaPAF.java">RevisaoJavaPAF.java</a><a href="fichas/HTML_BOOTSTRAP_BASE/index.html">HTML_BOOTSTRAP_BASE baseado no site Andar de Mota</a><a href="fichas/SQL_MYSQL_AJUDA.sql">SQL_MYSQL_AJUDA.sql</a></div></section>
+</main>
+</body></html>
