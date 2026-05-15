@@ -1,4 +1,4 @@
-/* Banco de perguntas PAF  - alinhado com a matriz, revisões e site final. Opções baralhadas em cada exame; títulos não revelam resposta; rubricas humanas. */
+/* Banco de perguntas PAF - alinhado com a matriz, revisões e avaliações. Opções baralhadas em cada exame; modo escrito usa perguntas próprias; rubricas humanas. */
 window.PAF_QUESTION_BANK = [
   {
     "id": "V4Q0001",
@@ -92,7 +92,8 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "metafora"
     ],
-    "core": true
+    "core": true,
+    "writtenPrompt": "Na afirmação “Santarém é um livro de pedra...”, que figura de estilo está presente?\nResponde por extenso, com as ideias principais."
   },
   {
     "id": "V4Q0003",
@@ -143,7 +144,7 @@ window.PAF_QUESTION_BANK = [
     "module": "A Literatura do Nosso Tempo",
     "topic": "Tempo e espaço",
     "type": "short",
-    "prompt": "Identifica o tempo e o espaço da obra/viagem De Almeida Garrett em Viagens na Minha Terra.",
+    "prompt": "Identifica o tempo e o espaço da obra/viagem referida nos apontamentos.",
     "difficulty": 3,
     "estimate": 70,
     "weight": 1,
@@ -1008,7 +1009,8 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "espanha"
     ],
-    "core": true
+    "core": true,
+    "writtenPrompt": "Qual o país que aderiu com Portugal à CEE/UE?\nResponde por extenso, com as ideias principais."
   },
   {
     "id": "V4Q0020",
@@ -1415,27 +1417,47 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "preservativo"
     ],
-    "core": true
+    "core": true,
+    "writtenPrompt": "Qual é o método contracetivo que protege de doenças sexualmente transmissíveis?\nResponde por extenso, com as ideias principais."
   },
   {
     "id": "V4Q0029",
     "area": "socio",
     "module": "Promoção da Saúde",
     "topic": "Planeamento familiar",
-    "type": "short",
-    "prompt": "Indica uma opção que não é objetivo do Planeamento Familiar.",
+    "type": "mc",
+    "prompt": "Qual das seguintes opções NÃO é objetivo do Planeamento Familiar?",
     "difficulty": 3,
     "estimate": 70,
     "weight": 1,
     "correctAnswer": "Aumentar a incidência das infeções de transmissão sexual e as suas consequências.",
-    "explanation": "Pergunta retirada das revisões de Sociocultural. Responde com as palavras-chave principais.",
+    "explanation": "A pergunta está pela negativa: não é objetivo aumentar as infeções; o objetivo seria prevenir/diminuir.",
     "keywords": [
       "aumentar",
-      "incidencia",
-      "infecoes",
-      "transmissao sexual"
+      "incidência",
+      "infeções",
+      "transmissão sexual",
+      "consequências"
     ],
-    "core": true
+    "core": true,
+    "options": [
+      {
+        "text": "Aumentar a incidência das infeções de transmissão sexual e as suas consequências.",
+        "correct": true
+      },
+      {
+        "text": "Prevenir infeções sexualmente transmissíveis e as suas consequências.",
+        "correct": false
+      },
+      {
+        "text": "Ajudar as pessoas a decidir se e quando querem ter filhos.",
+        "correct": false
+      },
+      {
+        "text": "Informar sobre métodos contracetivos e saúde sexual.",
+        "correct": false
+      }
+    ]
   },
   {
     "id": "V4Q0030",
@@ -1758,7 +1780,7 @@ window.PAF_QUESTION_BANK = [
     "estimate": 90,
     "weight": 1.2,
     "correctAnswer": "O planeamento familiar deve prevenir infeções e apoiar decisões responsáveis.",
-    "explanation": "A pergunta é pela negativa: aumentar ITS não é objetivo.",
+    "explanation": "A pergunta dos apontamentos é pela negativa: aumentar ITS não é objetivo.",
     "options": [
       {
         "text": "Prevenir gravidezes não planeadas e ITS faz parte do planeamento familiar",
@@ -2292,7 +2314,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [0,2] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [0,2] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">0</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">2</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">10</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [0,2] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [0,2] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">0</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">2</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">10</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [0,2] s, com v a passar de 0 para 10 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0055",
@@ -2342,7 +2365,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [1,3] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [1,3] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">1</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">3</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">10</text></g>\n      <polyline points=\"54.0,28.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [1,3] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [1,3] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">1</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">3</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">10</text></g>\n      <polyline points=\"54.0,28.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [1,3] s, com v a passar de 10 para 10 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0057",
@@ -2392,7 +2416,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [3,5] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [3,5] s</text>\n      <line x1=\"54\" y1=\"125.0\" x2=\"496\" y2=\"125.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"117.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"125.0\" x2=\"54.0\" y2=\"131.0\"/><text x=\"54.0\" y=\"147.0\" text-anchor=\"middle\">3</text><line x1=\"496.0\" y1=\"125.0\" x2=\"496.0\" y2=\"131.0\"/><text x=\"496.0\" y=\"147.0\" text-anchor=\"middle\">5</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"125.0\" x2=\"54\" y2=\"125.0\"/><text x=\"44\" y=\"129.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">10</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [3,5] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [3,5] s</text>\n      <line x1=\"54\" y1=\"125.0\" x2=\"496\" y2=\"125.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"117.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"125.0\" x2=\"54.0\" y2=\"131.0\"/><text x=\"54.0\" y=\"147.0\" text-anchor=\"middle\">3</text><line x1=\"496.0\" y1=\"125.0\" x2=\"496.0\" y2=\"131.0\"/><text x=\"496.0\" y=\"147.0\" text-anchor=\"middle\">5</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"125.0\" x2=\"54\" y2=\"125.0\"/><text x=\"44\" y=\"129.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">10</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [3,5] s, com v a passar de 10 para -10 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0059",
@@ -2442,7 +2467,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [5,7] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [5,7] s</text>\n      <line x1=\"54\" y1=\"28.0\" x2=\"496\" y2=\"28.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"20.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"28.0\" x2=\"54.0\" y2=\"34.0\"/><text x=\"54.0\" y=\"50.0\" text-anchor=\"middle\">5</text><line x1=\"496.0\" y1=\"28.0\" x2=\"496.0\" y2=\"34.0\"/><text x=\"496.0\" y=\"50.0\" text-anchor=\"middle\">7</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">0</text></g>\n      <polyline points=\"54.0,222.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [5,7] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [5,7] s</text>\n      <line x1=\"54\" y1=\"28.0\" x2=\"496\" y2=\"28.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"20.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"28.0\" x2=\"54.0\" y2=\"34.0\"/><text x=\"54.0\" y=\"50.0\" text-anchor=\"middle\">5</text><line x1=\"496.0\" y1=\"28.0\" x2=\"496.0\" y2=\"34.0\"/><text x=\"496.0\" y=\"50.0\" text-anchor=\"middle\">7</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">0</text></g>\n      <polyline points=\"54.0,222.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [5,7] s, com v a passar de -10 para -10 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0061",
@@ -2492,7 +2518,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [7,9] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [7,9] s</text>\n      <line x1=\"54\" y1=\"28.0\" x2=\"496\" y2=\"28.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"20.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"28.0\" x2=\"54.0\" y2=\"34.0\"/><text x=\"54.0\" y=\"50.0\" text-anchor=\"middle\">7</text><line x1=\"496.0\" y1=\"28.0\" x2=\"496.0\" y2=\"34.0\"/><text x=\"496.0\" y=\"50.0\" text-anchor=\"middle\">9</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">0</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [7,9] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [7,9] s</text>\n      <line x1=\"54\" y1=\"28.0\" x2=\"496\" y2=\"28.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"20.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"28.0\" x2=\"54.0\" y2=\"34.0\"/><text x=\"54.0\" y=\"50.0\" text-anchor=\"middle\">7</text><line x1=\"496.0\" y1=\"28.0\" x2=\"496.0\" y2=\"34.0\"/><text x=\"496.0\" y=\"50.0\" text-anchor=\"middle\">9</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">0</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [7,9] s, com v a passar de -10 para 0 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0063",
@@ -2542,7 +2569,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [2,4] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [2,4] s</text>\n      <line x1=\"54\" y1=\"125.0\" x2=\"496\" y2=\"125.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"117.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"125.0\" x2=\"54.0\" y2=\"131.0\"/><text x=\"54.0\" y=\"147.0\" text-anchor=\"middle\">2</text><line x1=\"496.0\" y1=\"125.0\" x2=\"496.0\" y2=\"131.0\"/><text x=\"496.0\" y=\"147.0\" text-anchor=\"middle\">4</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-5</text><line x1=\"48\" y1=\"125.0\" x2=\"54\" y2=\"125.0\"/><text x=\"44\" y=\"129.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">5</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [2,4] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [2,4] s</text>\n      <line x1=\"54\" y1=\"125.0\" x2=\"496\" y2=\"125.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"117.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"125.0\" x2=\"54.0\" y2=\"131.0\"/><text x=\"54.0\" y=\"147.0\" text-anchor=\"middle\">2</text><line x1=\"496.0\" y1=\"125.0\" x2=\"496.0\" y2=\"131.0\"/><text x=\"496.0\" y=\"147.0\" text-anchor=\"middle\">4</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-5</text><line x1=\"48\" y1=\"125.0\" x2=\"54\" y2=\"125.0\"/><text x=\"44\" y=\"129.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">5</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [2,4] s, com v a passar de 5 para -5 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0065",
@@ -2592,7 +2620,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [6,8] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [6,8] s</text>\n      <line x1=\"54\" y1=\"92.66666666666666\" x2=\"496\" y2=\"92.66666666666666\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"84.66666666666666\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"92.66666666666666\" x2=\"54.0\" y2=\"98.66666666666666\"/><text x=\"54.0\" y=\"114.66666666666666\" text-anchor=\"middle\">6</text><line x1=\"496.0\" y1=\"92.66666666666666\" x2=\"496.0\" y2=\"98.66666666666666\"/><text x=\"496.0\" y=\"114.66666666666666\" text-anchor=\"middle\">8</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-6</text><line x1=\"48\" y1=\"92.7\" x2=\"54\" y2=\"92.7\"/><text x=\"44\" y=\"96.7\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">3</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [6,8] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [6,8] s</text>\n      <line x1=\"54\" y1=\"92.66666666666666\" x2=\"496\" y2=\"92.66666666666666\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"84.66666666666666\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"92.66666666666666\" x2=\"54.0\" y2=\"98.66666666666666\"/><text x=\"54.0\" y=\"114.66666666666666\" text-anchor=\"middle\">6</text><line x1=\"496.0\" y1=\"92.66666666666666\" x2=\"496.0\" y2=\"98.66666666666666\"/><text x=\"496.0\" y=\"114.66666666666666\" text-anchor=\"middle\">8</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-6</text><line x1=\"48\" y1=\"92.7\" x2=\"54\" y2=\"92.7\"/><text x=\"44\" y=\"96.7\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">3</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [6,8] s, com v a passar de -6 para 3 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0067",
@@ -2642,7 +2671,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [0,1] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [0,1] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">0</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">1</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">5</text></g>\n      <polyline points=\"54.0,28.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [0,1] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [0,1] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">0</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">1</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">5</text></g>\n      <polyline points=\"54.0,28.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [0,1] s, com v a passar de 5 para 5 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0069",
@@ -2692,7 +2722,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [4,6] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [4,6] s</text>\n      <line x1=\"54\" y1=\"28.0\" x2=\"496\" y2=\"28.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"20.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"28.0\" x2=\"54.0\" y2=\"34.0\"/><text x=\"54.0\" y=\"50.0\" text-anchor=\"middle\">4</text><line x1=\"496.0\" y1=\"28.0\" x2=\"496.0\" y2=\"34.0\"/><text x=\"496.0\" y=\"50.0\" text-anchor=\"middle\">6</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">0</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [4,6] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [4,6] s</text>\n      <line x1=\"54\" y1=\"28.0\" x2=\"496\" y2=\"28.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"20.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"28.0\" x2=\"54.0\" y2=\"34.0\"/><text x=\"54.0\" y=\"50.0\" text-anchor=\"middle\">4</text><line x1=\"496.0\" y1=\"28.0\" x2=\"496.0\" y2=\"34.0\"/><text x=\"496.0\" y=\"50.0\" text-anchor=\"middle\">6</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-10</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">0</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [4,6] s, com v a passar de 0 para -10 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0071",
@@ -2742,7 +2773,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [8,9] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [8,9] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">8</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">9</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">8</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [8,9] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [8,9] s</text>\n      <line x1=\"54\" y1=\"222.0\" x2=\"496\" y2=\"222.0\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"214.0\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"222.0\" x2=\"54.0\" y2=\"228.0\"/><text x=\"54.0\" y=\"244.0\" text-anchor=\"middle\">8</text><line x1=\"496.0\" y1=\"222.0\" x2=\"496.0\" y2=\"228.0\"/><text x=\"496.0\" y=\"244.0\" text-anchor=\"middle\">9</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">8</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [8,9] s, com v a passar de 8 para 0 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0073",
@@ -2792,7 +2824,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [0,4] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [0,4] s</text>\n      <line x1=\"54\" y1=\"173.5\" x2=\"496\" y2=\"173.5\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"165.5\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"173.5\" x2=\"54.0\" y2=\"179.5\"/><text x=\"54.0\" y=\"195.5\" text-anchor=\"middle\">0</text><line x1=\"496.0\" y1=\"173.5\" x2=\"496.0\" y2=\"179.5\"/><text x=\"496.0\" y=\"195.5\" text-anchor=\"middle\">4</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-2</text><line x1=\"48\" y1=\"173.5\" x2=\"54\" y2=\"173.5\"/><text x=\"44\" y=\"177.5\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">6</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [0,4] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [0,4] s</text>\n      <line x1=\"54\" y1=\"173.5\" x2=\"496\" y2=\"173.5\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"165.5\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"173.5\" x2=\"54.0\" y2=\"179.5\"/><text x=\"54.0\" y=\"195.5\" text-anchor=\"middle\">0</text><line x1=\"496.0\" y1=\"173.5\" x2=\"496.0\" y2=\"179.5\"/><text x=\"496.0\" y=\"195.5\" text-anchor=\"middle\">4</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-2</text><line x1=\"48\" y1=\"173.5\" x2=\"54\" y2=\"173.5\"/><text x=\"44\" y=\"177.5\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">6</text></g>\n      <polyline points=\"54.0,222.0 496.0,28.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"222.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"28.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [0,4] s, com v a passar de -2 para 6 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0075",
@@ -2842,7 +2875,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [2,6] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [2,6] s</text>\n      <line x1=\"54\" y1=\"173.5\" x2=\"496\" y2=\"173.5\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"165.5\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"173.5\" x2=\"54.0\" y2=\"179.5\"/><text x=\"54.0\" y=\"195.5\" text-anchor=\"middle\">2</text><line x1=\"496.0\" y1=\"173.5\" x2=\"496.0\" y2=\"179.5\"/><text x=\"496.0\" y=\"195.5\" text-anchor=\"middle\">6</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-2</text><line x1=\"48\" y1=\"173.5\" x2=\"54\" y2=\"173.5\"/><text x=\"44\" y=\"177.5\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">6</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>"
+    "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 260\" role=\"img\" aria-label=\"v=f(t), intervalo [2,6] s\">\n      <rect x=\"0\" y=\"0\" width=\"520\" height=\"260\" rx=\"14\" fill=\"#fff\"/>\n      <text x=\"260.0\" y=\"18\" text-anchor=\"middle\" class=\"svg-title\">v=f(t), intervalo [2,6] s</text>\n      <line x1=\"54\" y1=\"173.5\" x2=\"496\" y2=\"173.5\" class=\"axis\"/>\n      <line x1=\"54\" y1=\"28\" x2=\"54\" y2=\"222\" class=\"axis\"/>\n      <text x=\"496\" y=\"165.5\" text-anchor=\"end\">t(s)</text>\n      <text x=\"58\" y=\"40\">v(m/s)</text>\n      <g class=\"ticks\"><line x1=\"54.0\" y1=\"173.5\" x2=\"54.0\" y2=\"179.5\"/><text x=\"54.0\" y=\"195.5\" text-anchor=\"middle\">2</text><line x1=\"496.0\" y1=\"173.5\" x2=\"496.0\" y2=\"179.5\"/><text x=\"496.0\" y=\"195.5\" text-anchor=\"middle\">6</text><line x1=\"48\" y1=\"222.0\" x2=\"54\" y2=\"222.0\"/><text x=\"44\" y=\"226.0\" text-anchor=\"end\">-2</text><line x1=\"48\" y1=\"173.5\" x2=\"54\" y2=\"173.5\"/><text x=\"44\" y=\"177.5\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"28.0\" x2=\"54\" y2=\"28.0\"/><text x=\"44\" y=\"32.0\" text-anchor=\"end\">6</text></g>\n      <polyline points=\"54.0,28.0 496.0,222.0\" fill=\"none\" class=\"graph-line\"/>\n      <circle cx=\"54.0\" cy=\"28.0\" r=\"4\" class=\"point\"/><circle cx=\"496.0\" cy=\"222.0\" r=\"4\" class=\"point\"/>\n    </svg></div>",
+    "writtenPrompt": "No intervalo [2,6] s, com v a passar de 6 para -2 m/s, o movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0077",
@@ -3176,7 +3210,8 @@ window.PAF_QUESTION_BANK = [
         "text": "distância entre dois pontos equivalentes consecutivos",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "O que significa amplitude numa onda?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0093",
@@ -3207,7 +3242,8 @@ window.PAF_QUESTION_BANK = [
         "text": "velocidade de propagação",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "O que significa período numa onda?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0094",
@@ -3238,7 +3274,8 @@ window.PAF_QUESTION_BANK = [
         "text": "altura máxima da onda",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "O que significa frequência numa onda?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0095",
@@ -3269,7 +3306,8 @@ window.PAF_QUESTION_BANK = [
         "text": "altura da crista",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "O que significa comprimento de onda numa onda?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0096",
@@ -3300,7 +3338,8 @@ window.PAF_QUESTION_BANK = [
         "text": "só se propaga em metais.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Uma onda sonora...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0097",
@@ -3331,7 +3370,8 @@ window.PAF_QUESTION_BANK = [
         "text": "but",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Na nomenclatura de hidrocarbonetos, qual é o prefixo usado para 1 carbono(s)?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0098",
@@ -3362,7 +3402,8 @@ window.PAF_QUESTION_BANK = [
         "text": "but",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Na nomenclatura de hidrocarbonetos, qual é o prefixo usado para 2 carbono(s)?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0099",
@@ -3393,7 +3434,8 @@ window.PAF_QUESTION_BANK = [
         "text": "but",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Na nomenclatura de hidrocarbonetos, qual é o prefixo usado para 3 carbono(s)?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0100",
@@ -3424,7 +3466,8 @@ window.PAF_QUESTION_BANK = [
         "text": "prop",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Na nomenclatura de hidrocarbonetos, qual é o prefixo usado para 4 carbono(s)?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0101",
@@ -3455,7 +3498,8 @@ window.PAF_QUESTION_BANK = [
         "text": "prop",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Na nomenclatura de hidrocarbonetos, qual é o prefixo usado para 5 carbono(s)?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0102",
@@ -3486,7 +3530,8 @@ window.PAF_QUESTION_BANK = [
         "text": "prop",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Na nomenclatura de hidrocarbonetos, qual é o prefixo usado para 6 carbono(s)?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0103",
@@ -3517,7 +3562,8 @@ window.PAF_QUESTION_BANK = [
         "text": "número de átomos de hidrogénio apenas",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "O sufixo -ano indica...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0104",
@@ -3548,7 +3594,8 @@ window.PAF_QUESTION_BANK = [
         "text": "número de átomos de hidrogénio apenas",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "O sufixo -eno indica...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0105",
@@ -3579,7 +3626,8 @@ window.PAF_QUESTION_BANK = [
         "text": "número de átomos de hidrogénio apenas",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "O sufixo -ino indica...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0106",
@@ -3610,7 +3658,8 @@ window.PAF_QUESTION_BANK = [
         "text": "butano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de CH4?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0107",
@@ -3641,7 +3690,8 @@ window.PAF_QUESTION_BANK = [
         "text": "butano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de C2H6?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0108",
@@ -3672,7 +3722,8 @@ window.PAF_QUESTION_BANK = [
         "text": "butano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de C3H8?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0109",
@@ -3703,7 +3754,8 @@ window.PAF_QUESTION_BANK = [
         "text": "propano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de C4H10?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0110",
@@ -3734,7 +3786,8 @@ window.PAF_QUESTION_BANK = [
         "text": "propano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de C2H4?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0111",
@@ -3765,7 +3818,8 @@ window.PAF_QUESTION_BANK = [
         "text": "propano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de C2H2?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0112",
@@ -3796,7 +3850,8 @@ window.PAF_QUESTION_BANK = [
         "text": "propano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de C5H12?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0113",
@@ -3827,7 +3882,8 @@ window.PAF_QUESTION_BANK = [
         "text": "propano",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Qual é o nome correto de C6H14?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0114",
@@ -4182,7 +4238,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m+n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: 2^3 × 2^4\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0134",
@@ -4213,7 +4270,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m+n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: 5^6 / 5^2\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0135",
@@ -4244,7 +4302,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m+n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: (3^2)^4\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0136",
@@ -4275,7 +4334,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m+n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: 10^-3\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0137",
@@ -4306,7 +4366,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m+n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: 7^0\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0138",
@@ -4337,7 +4398,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m×n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: a^m × a^n\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0139",
@@ -4368,7 +4430,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m×n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: a^m / a^n\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0140",
@@ -4399,7 +4462,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m+n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica: (a^m)^n\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0141",
@@ -4430,7 +4494,8 @@ window.PAF_QUESTION_BANK = [
         "text": "0,45 × 10^4",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Escreve 4500 em notação científica.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0142",
@@ -4461,7 +4526,8 @@ window.PAF_QUESTION_BANK = [
         "text": "0,45 × 10^4",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Escreve 0,0032 em notação científica.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0143",
@@ -4492,7 +4558,8 @@ window.PAF_QUESTION_BANK = [
         "text": "0,45 × 10^4",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Escreve 7200000 em notação científica.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0144",
@@ -4523,7 +4590,8 @@ window.PAF_QUESTION_BANK = [
         "text": "0,45 × 10^4",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Escreve 0,00056 em notação científica.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0145",
@@ -5008,7 +5076,8 @@ window.PAF_QUESTION_BANK = [
         "text": "é a placa onde os componentes se ligam",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de CPU/processador, no módulo Arquitetura interna do computador."
   },
   {
     "id": "V4Q0170",
@@ -5039,7 +5108,8 @@ window.PAF_QUESTION_BANK = [
         "text": "dispositivo de armazenamento definitivo",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de RAM, no módulo Arquitetura interna do computador."
   },
   {
     "id": "V4Q0171",
@@ -5070,7 +5140,8 @@ window.PAF_QUESTION_BANK = [
         "text": "memória cache do processador",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de ROM, no módulo Arquitetura interna do computador."
   },
   {
     "id": "V4Q0172",
@@ -5101,7 +5172,8 @@ window.PAF_QUESTION_BANK = [
         "text": "disco usado para guardar ficheiros",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Motherboard, no módulo Arquitetura interna do computador."
   },
   {
     "id": "V4Q0173",
@@ -5132,7 +5204,8 @@ window.PAF_QUESTION_BANK = [
         "text": "porta de ligação à Internet",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de ULA/ALU, no módulo Arquitetura interna do computador."
   },
   {
     "id": "V4Q0174",
@@ -5163,7 +5236,8 @@ window.PAF_QUESTION_BANK = [
         "text": "placa principal do computador",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Cache, no módulo Arquitetura interna do computador."
   },
   {
     "id": "V4Q0175",
@@ -5195,7 +5269,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "trap": true
+    "trap": true,
+    "writtenPrompt": "Explica por extenso o conceito de Hardware e software, no módulo Arquitetura interna do computador."
   },
   {
     "id": "V4Q0176",
@@ -5226,7 +5301,8 @@ window.PAF_QUESTION_BANK = [
         "text": "notas de rodapé",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Processamento de texto, no módulo Processador de texto."
   },
   {
     "id": "V4Q0177",
@@ -5257,7 +5333,8 @@ window.PAF_QUESTION_BANK = [
         "text": "notas de rodapé",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Processamento de texto, no módulo Processador de texto."
   },
   {
     "id": "V4Q0178",
@@ -5288,7 +5365,8 @@ window.PAF_QUESTION_BANK = [
         "text": "notas de rodapé",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Processamento de texto, no módulo Processador de texto."
   },
   {
     "id": "V4Q0179",
@@ -5319,7 +5397,8 @@ window.PAF_QUESTION_BANK = [
         "text": "notas de rodapé",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Processamento de texto, no módulo Processador de texto."
   },
   {
     "id": "V4Q0180",
@@ -5350,7 +5429,8 @@ window.PAF_QUESTION_BANK = [
         "text": "notas de rodapé",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Processamento de texto, no módulo Processador de texto."
   },
   {
     "id": "V4Q0181",
@@ -5381,7 +5461,8 @@ window.PAF_QUESTION_BANK = [
         "text": "contar células com uma condição",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Fórmulas e funções, no módulo Folha de cálculo."
   },
   {
     "id": "V4Q0182",
@@ -5412,7 +5493,8 @@ window.PAF_QUESTION_BANK = [
         "text": "ordenar a tabela por notas",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Fórmulas e funções, no módulo Folha de cálculo."
   },
   {
     "id": "V4Q0183",
@@ -5443,7 +5525,8 @@ window.PAF_QUESTION_BANK = [
         "text": "contar células vazias",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Fórmulas e funções, no módulo Folha de cálculo."
   },
   {
     "id": "V4Q0184",
@@ -5474,7 +5557,8 @@ window.PAF_QUESTION_BANK = [
         "text": "aplicar formatação condicional",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Fórmulas e funções, no módulo Folha de cálculo."
   },
   {
     "id": "V4Q0185",
@@ -5505,7 +5589,8 @@ window.PAF_QUESTION_BANK = [
         "text": "criar uma tabela dinâmica",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Fórmulas e funções, no módulo Folha de cálculo."
   },
   {
     "id": "V4Q0186",
@@ -5536,7 +5621,8 @@ window.PAF_QUESTION_BANK = [
         "text": "transformar uma tabela numa imagem.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Filtros, no módulo Folha de cálculo."
   },
   {
     "id": "V4Q0187",
@@ -5567,7 +5653,8 @@ window.PAF_QUESTION_BANK = [
         "text": "criar uma fórmula de soma.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Formatação condicional, no módulo Folha de cálculo."
   },
   {
     "id": "V4Q0188",
@@ -5617,7 +5704,8 @@ window.PAF_QUESTION_BANK = [
         "text": "declara a variável idade sem receber dados",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Interpretação de código C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0190",
@@ -5648,7 +5736,8 @@ window.PAF_QUESTION_BANK = [
         "text": "declara o protótipo de uma função",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Interpretação de código C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0191",
@@ -5679,7 +5768,8 @@ window.PAF_QUESTION_BANK = [
         "text": "cria uma estrutura com dois campos",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Interpretação de código C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0192",
@@ -5710,7 +5800,8 @@ window.PAF_QUESTION_BANK = [
         "text": "repete instruções 18 vezes",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Interpretação de código C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0193",
@@ -5741,7 +5832,8 @@ window.PAF_QUESTION_BANK = [
         "text": "chama a função idade()",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Interpretação de código C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0194",
@@ -5772,7 +5864,8 @@ window.PAF_QUESTION_BANK = [
         "text": "-1 a 8",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Vetores, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0195",
@@ -5803,7 +5896,8 @@ window.PAF_QUESTION_BANK = [
         "text": "strlen(str1) = strlen(str2)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Strings, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0196",
@@ -5835,7 +5929,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "trap": true
+    "trap": true,
+    "writtenPrompt": "Explica por extenso o conceito de Ficheiros CSV, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0197",
@@ -5866,7 +5961,8 @@ window.PAF_QUESTION_BANK = [
         "text": "ação que um objeto executa",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Classe, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0198",
@@ -5897,7 +5993,8 @@ window.PAF_QUESTION_BANK = [
         "text": "método especial de inicialização",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Objeto, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0199",
@@ -5928,7 +6025,8 @@ window.PAF_QUESTION_BANK = [
         "text": "janela principal da aplicação",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Característica em POO, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0200",
@@ -5959,7 +6057,8 @@ window.PAF_QUESTION_BANK = [
         "text": "palavra usada para herança",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Método, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0201",
@@ -5990,7 +6089,8 @@ window.PAF_QUESTION_BANK = [
         "text": "ciclo que percorre arrays",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Construtor, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0202",
@@ -6021,7 +6121,8 @@ window.PAF_QUESTION_BANK = [
         "text": "desenhar uma janela no Eclipse",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Encapsulamento, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0203",
@@ -6052,7 +6153,8 @@ window.PAF_QUESTION_BANK = [
         "text": "tratar exceções com catch",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Herança, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0204",
@@ -6083,7 +6185,8 @@ window.PAF_QUESTION_BANK = [
         "text": "legenda fixa no ecrã",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de JFrame, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0205",
@@ -6114,7 +6217,8 @@ window.PAF_QUESTION_BANK = [
         "text": "área de texto com várias linhas",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de JButton, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0206",
@@ -6145,7 +6249,8 @@ window.PAF_QUESTION_BANK = [
         "text": "painel com scroll",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de JLabel, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0207",
@@ -6176,7 +6281,8 @@ window.PAF_QUESTION_BANK = [
         "text": "classe abstrata",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de JTextField, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0208",
@@ -6207,7 +6313,8 @@ window.PAF_QUESTION_BANK = [
         "text": "menu da aplicação",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de JTextArea, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0209",
@@ -6238,7 +6345,8 @@ window.PAF_QUESTION_BANK = [
         "text": "atributo privado do objeto",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Evento de botão Swing, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0210",
@@ -6269,7 +6377,8 @@ window.PAF_QUESTION_BANK = [
         "text": "declarar atributos privados.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de try/catch, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0211",
@@ -6300,7 +6409,8 @@ window.PAF_QUESTION_BANK = [
         "text": "servidor que traduz nomes em IP",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de LAN, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0212",
@@ -6331,7 +6441,8 @@ window.PAF_QUESTION_BANK = [
         "text": "equipamento que liga dispositivos numa LAN",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de WAN, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0213",
@@ -6362,7 +6473,8 @@ window.PAF_QUESTION_BANK = [
         "text": "servidor que atribui IPs",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de WLAN, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0214",
@@ -6393,7 +6505,8 @@ window.PAF_QUESTION_BANK = [
         "text": "protege tráfego com regras",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Switch, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0215",
@@ -6424,7 +6537,8 @@ window.PAF_QUESTION_BANK = [
         "text": "atribui nomes aos domínios",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Router, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0216",
@@ -6455,7 +6569,8 @@ window.PAF_QUESTION_BANK = [
         "text": "guarda ficheiros dos utilizadores",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Access Point, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0217",
@@ -6486,7 +6601,8 @@ window.PAF_QUESTION_BANK = [
         "text": "liga dispositivos por Wi-Fi",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Firewall, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0218",
@@ -6517,7 +6633,8 @@ window.PAF_QUESTION_BANK = [
         "text": "liga redes diferentes",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Servidor DHCP, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0219",
@@ -6548,7 +6665,8 @@ window.PAF_QUESTION_BANK = [
         "text": "liga vários PCs a um switch",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Servidor DNS, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0220",
@@ -6579,7 +6697,8 @@ window.PAF_QUESTION_BANK = [
         "text": "só é possível usar Wi-Fi.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Cliente/servidor, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0221",
@@ -6610,7 +6729,8 @@ window.PAF_QUESTION_BANK = [
         "text": "abre uma ligação externa",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de DOCTYPE, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0222",
@@ -6641,7 +6761,8 @@ window.PAF_QUESTION_BANK = [
         "text": "hiperligação",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Título principal em HTML, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0223",
@@ -6672,7 +6793,8 @@ window.PAF_QUESTION_BANK = [
         "text": "linha de tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de p, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0224",
@@ -6703,7 +6825,8 @@ window.PAF_QUESTION_BANK = [
         "text": "tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de img, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0225",
@@ -6734,7 +6857,8 @@ window.PAF_QUESTION_BANK = [
         "text": "linha de tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de a, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0226",
@@ -6765,7 +6889,8 @@ window.PAF_QUESTION_BANK = [
         "text": "lista ordenada",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de table, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0227",
@@ -6796,7 +6921,8 @@ window.PAF_QUESTION_BANK = [
         "text": "cabeçalho da página",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de form, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0228",
@@ -6827,7 +6953,8 @@ window.PAF_QUESTION_BANK = [
         "text": "folha de estilos",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de input, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0229",
@@ -6858,7 +6985,8 @@ window.PAF_QUESTION_BANK = [
         "text": "imagem com texto alternativo",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de label, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0230",
@@ -6889,7 +7017,8 @@ window.PAF_QUESTION_BANK = [
         "text": "célula de tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de iframe, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0231",
@@ -6920,7 +7049,8 @@ window.PAF_QUESTION_BANK = [
         "text": "<destaque>",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de classe CSS, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0232",
@@ -6951,7 +7081,8 @@ window.PAF_QUESTION_BANK = [
         "text": "<principal>",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de id CSS, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0233",
@@ -6982,7 +7113,8 @@ window.PAF_QUESTION_BANK = [
         "text": "<classe>",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de seletor de elemento, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0234",
@@ -7013,7 +7145,8 @@ window.PAF_QUESTION_BANK = [
         "text": "font-size",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de propriedade de cor, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0235",
@@ -7044,7 +7177,8 @@ window.PAF_QUESTION_BANK = [
         "text": "border-radius",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de margem exterior, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0236",
@@ -7075,7 +7209,8 @@ window.PAF_QUESTION_BANK = [
         "text": "text-align",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de espaçamento interior, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0237",
@@ -7106,7 +7241,8 @@ window.PAF_QUESTION_BANK = [
         "text": "para criar a estrutura de uma tabela MySQL.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de GET e POST, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0238",
@@ -7168,7 +7304,8 @@ window.PAF_QUESTION_BANK = [
         "text": "apagar registos filtrados",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de INSERT INTO utilizadores (nome,email) VALUES (\"Ana\",\"a@x.pt\");, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0240",
@@ -7199,7 +7336,8 @@ window.PAF_QUESTION_BANK = [
         "text": "apagar uma base de dados inteira",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de UPDATE utilizadores SET email=\"novo@x.pt\" WHERE id=1;, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0241",
@@ -7230,7 +7368,8 @@ window.PAF_QUESTION_BANK = [
         "text": "alterar nome de coluna",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de DELETE FROM utilizadores WHERE id=1;, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0242",
@@ -7261,7 +7400,8 @@ window.PAF_QUESTION_BANK = [
         "text": "guardar a palavra-passe em texto simples.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de PRIMARY KEY, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0243",
@@ -7292,7 +7432,8 @@ window.PAF_QUESTION_BANK = [
         "text": "formatar o resultado em HTML",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de FOREIGN KEY, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0244",
@@ -7324,7 +7465,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "trap": true
+    "trap": true,
+    "writtenPrompt": "Explica por extenso o conceito de SQL Injection, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0245",
@@ -7437,7 +7579,8 @@ window.PAF_QUESTION_BANK = [
         "text": "não é possível relacionar aceleração e velocidade",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é -10 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0250",
@@ -7468,7 +7611,8 @@ window.PAF_QUESTION_BANK = [
         "text": "não é possível relacionar aceleração e velocidade",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é -8 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0251",
@@ -7499,7 +7643,8 @@ window.PAF_QUESTION_BANK = [
         "text": "não é possível relacionar aceleração e velocidade",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é -5 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0252",
@@ -7530,7 +7675,8 @@ window.PAF_QUESTION_BANK = [
         "text": "não é possível relacionar aceleração e velocidade",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é -2 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0253",
@@ -7561,7 +7707,8 @@ window.PAF_QUESTION_BANK = [
         "text": "não é possível relacionar aceleração e velocidade",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é 0 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0254",
@@ -7592,7 +7739,8 @@ window.PAF_QUESTION_BANK = [
         "text": "movimento uniforme / aceleração zero",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é 3 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0255",
@@ -7623,7 +7771,8 @@ window.PAF_QUESTION_BANK = [
         "text": "movimento uniforme / aceleração zero",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é 5 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0256",
@@ -7654,7 +7803,8 @@ window.PAF_QUESTION_BANK = [
         "text": "movimento uniforme / aceleração zero",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é 8 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0257",
@@ -7685,7 +7835,8 @@ window.PAF_QUESTION_BANK = [
         "text": "movimento uniforme / aceleração zero",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Num intervalo em que a aceleração é 10 m/s², o movimento é melhor descrito como...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0258",
@@ -7886,7 +8037,8 @@ window.PAF_QUESTION_BANK = [
         "text": "struct",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Ciclos, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0269",
@@ -7917,7 +8069,8 @@ window.PAF_QUESTION_BANK = [
         "text": "return 0",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Ciclos, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0270",
@@ -7948,7 +8101,8 @@ window.PAF_QUESTION_BANK = [
         "text": "mostrar texto no ecrã",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Estruturas, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0271",
@@ -7979,7 +8133,8 @@ window.PAF_QUESTION_BANK = [
         "text": "é herdado sempre por todas as subclasses.",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Modificadores, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0272",
@@ -8010,7 +8165,8 @@ window.PAF_QUESTION_BANK = [
         "text": "mostrar uma janela de mensagem",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Modificadores, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0273",
@@ -8041,7 +8197,8 @@ window.PAF_QUESTION_BANK = [
         "text": "compilar ficheiros C",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Bootstrap, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0274",
@@ -8072,7 +8229,8 @@ window.PAF_QUESTION_BANK = [
         "text": "o comando SELECT inteiro",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Base de dados, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "area": "socio",
@@ -8103,7 +8261,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0275"
+    "id": "V4Q0275",
+    "writtenPrompt": "A palavra literatura vem de que termo latino e que significa?\nResponde por extenso, com as ideias principais."
   },
   {
     "area": "socio",
@@ -8134,14 +8293,15 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0276"
+    "id": "V4Q0276",
+    "writtenPrompt": "Quando se diz “Santarém é um livro de pedra”, não se usa “como”. Por isso, a figura é...\nResponde por extenso, com as ideias principais."
   },
   {
     "area": "socio",
     "module": "A Literatura do Nosso Tempo",
     "topic": "Maria - variação",
     "type": "mc",
-    "prompt": "Maria é apresentada como...",
+    "prompt": "Maria é apresentada nos apontamentos como...",
     "difficulty": 2,
     "estimate": 55,
     "weight": 1,
@@ -8165,7 +8325,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0277"
+    "id": "V4Q0277",
+    "writtenPrompt": "Maria é apresentada nos apontamentos como...\nResponde por extenso, com as ideias principais."
   },
   {
     "area": "socio",
@@ -8196,7 +8357,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0278"
+    "id": "V4Q0278",
+    "writtenPrompt": "PALOP relaciona-se com...\nResponde por extenso, com as ideias principais."
   },
   {
     "area": "socio",
@@ -8227,7 +8389,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0279"
+    "id": "V4Q0279",
+    "writtenPrompt": "Qual conjunto apresenta apenas órgãos de soberania portuguesa?\nResponde por extenso, com as ideias principais."
   },
   {
     "area": "socio",
@@ -8258,7 +8421,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0280"
+    "id": "V4Q0280",
+    "writtenPrompt": "Se existe possibilidade de acontecer uma situação perigosa com gravidade, estamos a falar de...\nResponde por extenso, com as ideias principais."
   },
   {
     "area": "socio",
@@ -10185,7 +10349,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0381"
+    "id": "V4Q0381",
+    "writtenPrompt": "Simplifica 2^3 × 2^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10216,7 +10381,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0382"
+    "id": "V4Q0382",
+    "writtenPrompt": "Simplifica 2^3 / 2^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10247,7 +10413,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0383"
+    "id": "V4Q0383",
+    "writtenPrompt": "Simplifica 3^2 × 3^4.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10278,7 +10445,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0384"
+    "id": "V4Q0384",
+    "writtenPrompt": "Simplifica 3^2 / 3^4.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10309,7 +10477,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0385"
+    "id": "V4Q0385",
+    "writtenPrompt": "Simplifica 5^1 × 5^3.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10340,7 +10509,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0386"
+    "id": "V4Q0386",
+    "writtenPrompt": "Simplifica 5^1 / 5^3.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10371,7 +10541,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0387"
+    "id": "V4Q0387",
+    "writtenPrompt": "Simplifica 7^4 × 7^2.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10402,7 +10573,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0388"
+    "id": "V4Q0388",
+    "writtenPrompt": "Simplifica 7^4 / 7^2.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10433,7 +10605,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0389"
+    "id": "V4Q0389",
+    "writtenPrompt": "Simplifica 10^-2 × 10^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10464,7 +10637,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0390"
+    "id": "V4Q0390",
+    "writtenPrompt": "Simplifica 10^-2 / 10^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10495,7 +10669,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0391"
+    "id": "V4Q0391",
+    "writtenPrompt": "Simplifica 4^6 × 4^2.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10526,7 +10701,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0392"
+    "id": "V4Q0392",
+    "writtenPrompt": "Simplifica 4^6 / 4^2.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10557,7 +10733,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0393"
+    "id": "V4Q0393",
+    "writtenPrompt": "Simplifica 6^5 × 6^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10588,7 +10765,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0394"
+    "id": "V4Q0394",
+    "writtenPrompt": "Simplifica 6^5 / 6^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10619,7 +10797,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0395"
+    "id": "V4Q0395",
+    "writtenPrompt": "Simplifica 9^3 × 9^1.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10650,7 +10829,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0396"
+    "id": "V4Q0396",
+    "writtenPrompt": "Simplifica 9^3 / 9^1.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10681,7 +10861,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0397"
+    "id": "V4Q0397",
+    "writtenPrompt": "Compara 4×10^3 com 3×10^4.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10712,7 +10893,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0398"
+    "id": "V4Q0398",
+    "writtenPrompt": "Compara 7.4×10^8 com 7.4×10^8.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10743,7 +10925,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0399"
+    "id": "V4Q0399",
+    "writtenPrompt": "Compara 5×10^-6 com 3×10^-6.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10774,7 +10957,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0400"
+    "id": "V4Q0400",
+    "writtenPrompt": "Compara 3.9×10^7 com 3.91×10^7.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10805,7 +10989,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0401"
+    "id": "V4Q0401",
+    "writtenPrompt": "Compara 9.8×10^-3 com 1.2×10^-2.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10836,7 +11021,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0402"
+    "id": "V4Q0402",
+    "writtenPrompt": "Compara 6.1×10^5 com 8.9×10^4.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -10867,7 +11053,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0403"
+    "id": "V4Q0403",
+    "writtenPrompt": "Compara 2.2×10^-4 com 8.0×10^-5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -11354,7 +11541,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0432"
+    "id": "V4Q0432",
+    "writtenPrompt": "Qual é o nome mais adequado para C7H16?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -11385,7 +11573,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0433"
+    "id": "V4Q0433",
+    "writtenPrompt": "Qual é o nome mais adequado para C8H18?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -11416,7 +11605,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0434"
+    "id": "V4Q0434",
+    "writtenPrompt": "Qual é o nome mais adequado para C3H6?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -11447,7 +11637,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0435"
+    "id": "V4Q0435",
+    "writtenPrompt": "Qual é o nome mais adequado para C4H8?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -11478,7 +11669,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0436"
+    "id": "V4Q0436",
+    "writtenPrompt": "Qual é o nome mais adequado para C3H4?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "mfc",
@@ -11509,7 +11701,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0437"
+    "id": "V4Q0437",
+    "writtenPrompt": "Qual é o nome mais adequado para C4H6?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "area": "info",
@@ -11540,7 +11733,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0438"
+    "id": "V4Q0438",
+    "writtenPrompt": "Explica por extenso o conceito de Memória, no módulo Arquitetura interna do computador."
   },
   {
     "area": "info",
@@ -11571,7 +11765,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0439"
+    "id": "V4Q0439",
+    "writtenPrompt": "Explica por extenso o conceito de Processador, no módulo Arquitetura interna do computador."
   },
   {
     "area": "info",
@@ -11602,7 +11797,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0440"
+    "id": "V4Q0440",
+    "writtenPrompt": "Explica por extenso o conceito de Tabelas, no módulo Processador de texto."
   },
   {
     "area": "info",
@@ -11633,7 +11829,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0441"
+    "id": "V4Q0441",
+    "writtenPrompt": "Explica por extenso o conceito de Numeração de páginas, no módulo Processador de texto."
   },
   {
     "area": "info",
@@ -11664,7 +11861,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0442"
+    "id": "V4Q0442",
+    "writtenPrompt": "Explica por extenso o conceito de Intervalo, no módulo Folha de cálculo."
   },
   {
     "area": "info",
@@ -11695,7 +11893,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0443"
+    "id": "V4Q0443",
+    "writtenPrompt": "Explica por extenso o conceito de CONTAR.SE, no módulo Folha de cálculo."
   },
   {
     "area": "info",
@@ -11726,7 +11925,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0444"
+    "id": "V4Q0444",
+    "writtenPrompt": "Explica por extenso o conceito de scanf, no módulo Programação em C/C++."
   },
   {
     "area": "info",
@@ -11757,7 +11957,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0445"
+    "id": "V4Q0445",
+    "writtenPrompt": "Explica por extenso o conceito de Função principal em C, no módulo Programação em C/C++."
   },
   {
     "area": "info",
@@ -11788,7 +11989,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0446"
+    "id": "V4Q0446",
+    "writtenPrompt": "Explica por extenso o conceito de Função principal em Java, no módulo Programação em JAVA."
   },
   {
     "area": "info",
@@ -11819,7 +12021,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0447"
+    "id": "V4Q0447",
+    "writtenPrompt": "Explica por extenso o conceito de WindowBuilder, no módulo Programação em JAVA."
   },
   {
     "area": "info",
@@ -11850,7 +12053,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0448"
+    "id": "V4Q0448",
+    "writtenPrompt": "Explica por extenso o conceito de Topologia estrela, no módulo Conexões de rede / Rede local."
   },
   {
     "area": "info",
@@ -11881,7 +12085,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0449"
+    "id": "V4Q0449",
+    "writtenPrompt": "Explica por extenso o conceito de Meio físico, no módulo Conexões de rede / Rede local."
   },
   {
     "area": "info",
@@ -11912,7 +12117,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0450"
+    "id": "V4Q0450",
+    "writtenPrompt": "Explica por extenso o conceito de Link, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "area": "info",
@@ -11943,7 +12149,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0451"
+    "id": "V4Q0451",
+    "writtenPrompt": "Explica por extenso o conceito de Imagem, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "area": "info",
@@ -11974,7 +12181,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0452"
+    "id": "V4Q0452",
+    "writtenPrompt": "Explica por extenso o conceito de Filtro em SQL, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "area": "info",
@@ -12005,7 +12213,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0453"
+    "id": "V4Q0453",
+    "writtenPrompt": "Explica por extenso o conceito de Chave primária, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "area": "info",
@@ -12036,7 +12245,8 @@ window.PAF_QUESTION_BANK = [
         "correct": false
       }
     ],
-    "id": "V4Q0454"
+    "id": "V4Q0454",
+    "writtenPrompt": "Explica por extenso o conceito de Funções C, no módulo Programação em C/C++."
   },
   {
     "area": "info",
@@ -12067,7 +12277,8 @@ window.PAF_QUESTION_BANK = [
         "correct": true
       }
     ],
-    "id": "V4Q0455"
+    "id": "V4Q0455",
+    "writtenPrompt": "Explica por extenso o conceito de POO, no módulo Programação em JAVA."
   },
   {
     "area": "info",
@@ -12098,7 +12309,8 @@ window.PAF_QUESTION_BANK = [
         "correct": true
       }
     ],
-    "id": "V4Q0456"
+    "id": "V4Q0456",
+    "writtenPrompt": "Explica por extenso o conceito de HTML básico, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "area": "info",
@@ -12129,7 +12341,8 @@ window.PAF_QUESTION_BANK = [
         "correct": true
       }
     ],
-    "id": "V4Q0457"
+    "id": "V4Q0457",
+    "writtenPrompt": "Explica por extenso o conceito de CRUD SQL, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "area": "info",
@@ -12160,7 +12373,8 @@ window.PAF_QUESTION_BANK = [
         "correct": true
       }
     ],
-    "id": "V4Q0458"
+    "id": "V4Q0458",
+    "writtenPrompt": "Explica por extenso o conceito de Equipamentos de rede, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0459",
@@ -12191,7 +12405,8 @@ window.PAF_QUESTION_BANK = [
         "text": "atribui nomes aos domínios",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Router, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0460",
@@ -12222,7 +12437,8 @@ window.PAF_QUESTION_BANK = [
         "text": "protege tráfego com regras",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Switch, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0461",
@@ -12253,7 +12469,8 @@ window.PAF_QUESTION_BANK = [
         "text": "liga redes diferentes",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Serviço de nomes em rede, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0462",
@@ -12284,7 +12501,8 @@ window.PAF_QUESTION_BANK = [
         "text": "cria páginas HTML",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de DHCP, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0463",
@@ -12315,7 +12533,8 @@ window.PAF_QUESTION_BANK = [
         "text": "liga dispositivos por Wi-Fi",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Proteção de rede, no módulo Conexões de rede / Rede local."
   },
   {
     "id": "V4Q0464",
@@ -12346,7 +12565,8 @@ window.PAF_QUESTION_BANK = [
         "text": "apagar registos",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de SQL comandos, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0465",
@@ -12377,7 +12597,8 @@ window.PAF_QUESTION_BANK = [
         "text": "apagar registos filtrados",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de SQL comandos, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0466",
@@ -12408,7 +12629,8 @@ window.PAF_QUESTION_BANK = [
         "text": "apagar uma base de dados inteira",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de SQL comandos, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0467",
@@ -12439,7 +12661,8 @@ window.PAF_QUESTION_BANK = [
         "text": "alterar nome de coluna",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de SQL comandos, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0468",
@@ -12470,7 +12693,8 @@ window.PAF_QUESTION_BANK = [
         "text": "apagar uma coluna",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de SQL comandos, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0469",
@@ -12501,7 +12725,8 @@ window.PAF_QUESTION_BANK = [
         "text": "inserir uma nova linha",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de SQL comandos, no módulo Scripts CGI e folhas de estilo."
   },
   {
     "id": "V4Q0470",
@@ -12532,7 +12757,8 @@ window.PAF_QUESTION_BANK = [
         "text": "cabeçalho de tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de HTML tags extra, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0471",
@@ -12563,7 +12789,8 @@ window.PAF_QUESTION_BANK = [
         "text": "corpo de tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de HTML tags extra, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0472",
@@ -12594,7 +12821,8 @@ window.PAF_QUESTION_BANK = [
         "text": "célula de tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de HTML tags extra, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0473",
@@ -12625,7 +12853,8 @@ window.PAF_QUESTION_BANK = [
         "text": "formulário",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de HTML tags extra, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0474",
@@ -12656,7 +12885,8 @@ window.PAF_QUESTION_BANK = [
         "text": "lista não ordenada",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de HTML tags extra, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0475",
@@ -12687,7 +12917,8 @@ window.PAF_QUESTION_BANK = [
         "text": "tabela",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de HTML tags extra, no módulo Criação de páginas Web em hipertexto."
   },
   {
     "id": "V4Q0476",
@@ -12718,7 +12949,8 @@ window.PAF_QUESTION_BANK = [
         "text": "janela principal",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Swing extra, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0477",
@@ -12749,7 +12981,8 @@ window.PAF_QUESTION_BANK = [
         "text": "evento de clique",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Swing extra, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0478",
@@ -12780,7 +13013,8 @@ window.PAF_QUESTION_BANK = [
         "text": "classe filha de JFrame",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Swing extra, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0479",
@@ -12811,7 +13045,8 @@ window.PAF_QUESTION_BANK = [
         "text": "tratamento de exceções",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Swing extra, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0480",
@@ -12842,7 +13077,8 @@ window.PAF_QUESTION_BANK = [
         "text": "evento de teclado",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Swing extra, no módulo Programação em JAVA."
   },
   {
     "id": "V4Q0481",
@@ -12873,7 +13109,8 @@ window.PAF_QUESTION_BANK = [
         "text": "comparar duas strings",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Ficheiros e estruturas C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0482",
@@ -12904,7 +13141,8 @@ window.PAF_QUESTION_BANK = [
         "text": "criar um ciclo for",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Ficheiros e estruturas C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0483",
@@ -12935,7 +13173,8 @@ window.PAF_QUESTION_BANK = [
         "text": "comparar palavras",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Ficheiros e estruturas C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0484",
@@ -12966,7 +13205,8 @@ window.PAF_QUESTION_BANK = [
         "text": "declarar uma constante",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Ficheiros e estruturas C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0485",
@@ -12997,7 +13237,8 @@ window.PAF_QUESTION_BANK = [
         "text": "mostrar uma mensagem no ecrã",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Explica por extenso o conceito de Ficheiros e estruturas C, no módulo Programação em C/C++."
   },
   {
     "id": "V4Q0486",
@@ -13028,7 +13269,8 @@ window.PAF_QUESTION_BANK = [
         "text": "11^1",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica 11^2 × 11^3.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0487",
@@ -13059,7 +13301,8 @@ window.PAF_QUESTION_BANK = [
         "text": "3^7",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica 3^-2 × 3^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0488",
@@ -13090,7 +13333,8 @@ window.PAF_QUESTION_BANK = [
         "text": "8^-5",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica 8^4 × 8^-1.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0489",
@@ -13121,7 +13365,8 @@ window.PAF_QUESTION_BANK = [
         "text": "a^(m+n)",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica 12^0 × 12^5.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0490",
@@ -13152,7 +13397,8 @@ window.PAF_QUESTION_BANK = [
         "text": "2^1",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica 2^-3 × 2^-2.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0491",
@@ -13183,7 +13429,8 @@ window.PAF_QUESTION_BANK = [
         "text": "5^-11",
         "correct": false
       }
-    ]
+    ],
+    "writtenPrompt": "Simplifica 5^7 × 5^-4.\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V4Q0492",
@@ -13459,7 +13706,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,104.2 L144.0,104.2 L228.0,195.8 L354.0,195.8 L396.0,122.5\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"94.2\" text-anchor=\"middle\">(0,5)</text><circle cx=\"144.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"94.2\" text-anchor=\"middle\">(2,5)</text><circle cx=\"228.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"185.8\" text-anchor=\"middle\">(4,-5)</text><circle cx=\"354.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"185.8\" text-anchor=\"middle\">(7,-5)</text><circle cx=\"396.0\" cy=\"122.5\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"112.5\" text-anchor=\"middle\">(8,3)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [0,2] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0504",
@@ -13509,7 +13757,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,104.2 L144.0,104.2 L228.0,195.8 L354.0,195.8 L396.0,122.5\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"94.2\" text-anchor=\"middle\">(0,5)</text><circle cx=\"144.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"94.2\" text-anchor=\"middle\">(2,5)</text><circle cx=\"228.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"185.8\" text-anchor=\"middle\">(4,-5)</text><circle cx=\"354.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"185.8\" text-anchor=\"middle\">(7,-5)</text><circle cx=\"396.0\" cy=\"122.5\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"112.5\" text-anchor=\"middle\">(8,3)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [2,4] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0506",
@@ -13559,7 +13808,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,104.2 L144.0,104.2 L228.0,195.8 L354.0,195.8 L396.0,122.5\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"94.2\" text-anchor=\"middle\">(0,5)</text><circle cx=\"144.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"94.2\" text-anchor=\"middle\">(2,5)</text><circle cx=\"228.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"185.8\" text-anchor=\"middle\">(4,-5)</text><circle cx=\"354.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"185.8\" text-anchor=\"middle\">(7,-5)</text><circle cx=\"396.0\" cy=\"122.5\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"112.5\" text-anchor=\"middle\">(8,3)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [4,7] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0508",
@@ -13609,7 +13859,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,104.2 L144.0,104.2 L228.0,195.8 L354.0,195.8 L396.0,122.5\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"94.2\" text-anchor=\"middle\">(0,5)</text><circle cx=\"144.0\" cy=\"104.2\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"94.2\" text-anchor=\"middle\">(2,5)</text><circle cx=\"228.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"185.8\" text-anchor=\"middle\">(4,-5)</text><circle cx=\"354.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"185.8\" text-anchor=\"middle\">(7,-5)</text><circle cx=\"396.0\" cy=\"122.5\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"112.5\" text-anchor=\"middle\">(8,3)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [7,8] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0510",
@@ -13659,7 +13910,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,241.7 L144.0,241.7 L228.0,58.3 L312.0,58.3 L438.0,223.3\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"231.7\" text-anchor=\"middle\">(0,-10)</text><circle cx=\"144.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"231.7\" text-anchor=\"middle\">(2,-10)</text><circle cx=\"228.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"48.3\" text-anchor=\"middle\">(4,10)</text><circle cx=\"312.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"312.0\" y=\"48.3\" text-anchor=\"middle\">(6,10)</text><circle cx=\"438.0\" cy=\"223.3\" r=\"4\" class=\"point\"/><text x=\"438.0\" y=\"213.3\" text-anchor=\"middle\">(9,-8)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [0,2] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0512",
@@ -13709,7 +13961,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,241.7 L144.0,241.7 L228.0,58.3 L312.0,58.3 L438.0,223.3\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"231.7\" text-anchor=\"middle\">(0,-10)</text><circle cx=\"144.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"231.7\" text-anchor=\"middle\">(2,-10)</text><circle cx=\"228.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"48.3\" text-anchor=\"middle\">(4,10)</text><circle cx=\"312.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"312.0\" y=\"48.3\" text-anchor=\"middle\">(6,10)</text><circle cx=\"438.0\" cy=\"223.3\" r=\"4\" class=\"point\"/><text x=\"438.0\" y=\"213.3\" text-anchor=\"middle\">(9,-8)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [2,4] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0514",
@@ -13759,7 +14012,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,241.7 L144.0,241.7 L228.0,58.3 L312.0,58.3 L438.0,223.3\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"231.7\" text-anchor=\"middle\">(0,-10)</text><circle cx=\"144.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"231.7\" text-anchor=\"middle\">(2,-10)</text><circle cx=\"228.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"48.3\" text-anchor=\"middle\">(4,10)</text><circle cx=\"312.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"312.0\" y=\"48.3\" text-anchor=\"middle\">(6,10)</text><circle cx=\"438.0\" cy=\"223.3\" r=\"4\" class=\"point\"/><text x=\"438.0\" y=\"213.3\" text-anchor=\"middle\">(9,-8)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [4,6] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0516",
@@ -13809,7 +14063,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,241.7 L144.0,241.7 L228.0,58.3 L312.0,58.3 L438.0,223.3\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"231.7\" text-anchor=\"middle\">(0,-10)</text><circle cx=\"144.0\" cy=\"241.7\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"231.7\" text-anchor=\"middle\">(2,-10)</text><circle cx=\"228.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"228.0\" y=\"48.3\" text-anchor=\"middle\">(4,10)</text><circle cx=\"312.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"312.0\" y=\"48.3\" text-anchor=\"middle\">(6,10)</text><circle cx=\"438.0\" cy=\"223.3\" r=\"4\" class=\"point\"/><text x=\"438.0\" y=\"213.3\" text-anchor=\"middle\">(9,-8)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [6,9] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0518",
@@ -13859,7 +14114,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,150.0 L186.0,95.0 L270.0,95.0 L396.0,205.0 L480.0,205.0\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"140.0\" text-anchor=\"middle\">(0,0)</text><circle cx=\"186.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"186.0\" y=\"85.0\" text-anchor=\"middle\">(3,6)</text><circle cx=\"270.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"85.0\" text-anchor=\"middle\">(5,6)</text><circle cx=\"396.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"195.0\" text-anchor=\"middle\">(8,-6)</text><circle cx=\"480.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"195.0\" text-anchor=\"middle\">(10,-6)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [0,3] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0520",
@@ -13909,7 +14165,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,150.0 L186.0,95.0 L270.0,95.0 L396.0,205.0 L480.0,205.0\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"140.0\" text-anchor=\"middle\">(0,0)</text><circle cx=\"186.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"186.0\" y=\"85.0\" text-anchor=\"middle\">(3,6)</text><circle cx=\"270.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"85.0\" text-anchor=\"middle\">(5,6)</text><circle cx=\"396.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"195.0\" text-anchor=\"middle\">(8,-6)</text><circle cx=\"480.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"195.0\" text-anchor=\"middle\">(10,-6)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [3,5] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0522",
@@ -13959,7 +14216,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,150.0 L186.0,95.0 L270.0,95.0 L396.0,205.0 L480.0,205.0\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"140.0\" text-anchor=\"middle\">(0,0)</text><circle cx=\"186.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"186.0\" y=\"85.0\" text-anchor=\"middle\">(3,6)</text><circle cx=\"270.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"85.0\" text-anchor=\"middle\">(5,6)</text><circle cx=\"396.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"195.0\" text-anchor=\"middle\">(8,-6)</text><circle cx=\"480.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"195.0\" text-anchor=\"middle\">(10,-6)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [5,8] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0524",
@@ -14009,7 +14267,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,150.0 L186.0,95.0 L270.0,95.0 L396.0,205.0 L480.0,205.0\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"140.0\" text-anchor=\"middle\">(0,0)</text><circle cx=\"186.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"186.0\" y=\"85.0\" text-anchor=\"middle\">(3,6)</text><circle cx=\"270.0\" cy=\"95.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"85.0\" text-anchor=\"middle\">(5,6)</text><circle cx=\"396.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"396.0\" y=\"195.0\" text-anchor=\"middle\">(8,-6)</text><circle cx=\"480.0\" cy=\"205.0\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"195.0\" text-anchor=\"middle\">(10,-6)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [8,10] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0526",
@@ -14059,7 +14318,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,76.7 L144.0,150.0 L270.0,150.0 L354.0,58.3 L480.0,195.8\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"76.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"66.7\" text-anchor=\"middle\">(0,8)</text><circle cx=\"144.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"140.0\" text-anchor=\"middle\">(2,0)</text><circle cx=\"270.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"140.0\" text-anchor=\"middle\">(5,0)</text><circle cx=\"354.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"48.3\" text-anchor=\"middle\">(7,10)</text><circle cx=\"480.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"185.8\" text-anchor=\"middle\">(10,-5)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [0,2] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0528",
@@ -14109,7 +14369,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,76.7 L144.0,150.0 L270.0,150.0 L354.0,58.3 L480.0,195.8\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"76.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"66.7\" text-anchor=\"middle\">(0,8)</text><circle cx=\"144.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"140.0\" text-anchor=\"middle\">(2,0)</text><circle cx=\"270.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"140.0\" text-anchor=\"middle\">(5,0)</text><circle cx=\"354.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"48.3\" text-anchor=\"middle\">(7,10)</text><circle cx=\"480.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"185.8\" text-anchor=\"middle\">(10,-5)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [2,5] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0530",
@@ -14159,7 +14420,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,76.7 L144.0,150.0 L270.0,150.0 L354.0,58.3 L480.0,195.8\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"76.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"66.7\" text-anchor=\"middle\">(0,8)</text><circle cx=\"144.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"140.0\" text-anchor=\"middle\">(2,0)</text><circle cx=\"270.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"140.0\" text-anchor=\"middle\">(5,0)</text><circle cx=\"354.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"48.3\" text-anchor=\"middle\">(7,10)</text><circle cx=\"480.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"185.8\" text-anchor=\"middle\">(10,-5)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [5,7] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0532",
@@ -14209,7 +14471,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "<div class=\"visual-card\"><svg viewBox=\"0 0 520 320\" role=\"img\"><text x=\"260\" y=\"22\" text-anchor=\"middle\" class=\"svg-title\">Gráfico v=f(t)</text><line x1=\"60.0\" y1=\"40\" x2=\"60.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"60.0\" y=\"284\" text-anchor=\"middle\">0</text><line x1=\"144.0\" y1=\"40\" x2=\"144.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"144.0\" y=\"284\" text-anchor=\"middle\">2</text><line x1=\"228.0\" y1=\"40\" x2=\"228.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"228.0\" y=\"284\" text-anchor=\"middle\">4</text><line x1=\"312.0\" y1=\"40\" x2=\"312.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"312.0\" y=\"284\" text-anchor=\"middle\">6</text><line x1=\"396.0\" y1=\"40\" x2=\"396.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"396.0\" y=\"284\" text-anchor=\"middle\">8</text><line x1=\"480.0\" y1=\"40\" x2=\"480.0\" y2=\"260\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"480.0\" y=\"284\" text-anchor=\"middle\">10</text><line x1=\"60\" y1=\"260.0\" x2=\"480\" y2=\"260.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"264.0\" text-anchor=\"end\">-12</text><line x1=\"60\" y1=\"223.3\" x2=\"480\" y2=\"223.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"227.3\" text-anchor=\"end\">-8</text><line x1=\"60\" y1=\"186.7\" x2=\"480\" y2=\"186.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"190.7\" text-anchor=\"end\">-4</text><line x1=\"60\" y1=\"150.0\" x2=\"480\" y2=\"150.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"154.0\" text-anchor=\"end\">0</text><line x1=\"60\" y1=\"113.3\" x2=\"480\" y2=\"113.3\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"117.3\" text-anchor=\"end\">4</text><line x1=\"60\" y1=\"76.7\" x2=\"480\" y2=\"76.7\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"80.7\" text-anchor=\"end\">8</text><line x1=\"60\" y1=\"40.0\" x2=\"480\" y2=\"40.0\" stroke=\"#334155\" stroke-width=\"1\" opacity=\"0.45\"/><text x=\"42\" y=\"44.0\" text-anchor=\"end\">12</text><line x1=\"60\" y1=\"260\" x2=\"490\" y2=\"260\" class=\"axis\"/><line x1=\"60\" y1=\"260\" x2=\"60\" y2=\"32\" class=\"axis\"/><text x=\"492\" y=\"282\">t(s)</text><text x=\"18\" y=\"45\">v(m/s)</text><path d=\"M60.0,76.7 L144.0,150.0 L270.0,150.0 L354.0,58.3 L480.0,195.8\" class=\"graph-line\" fill=\"none\"/><circle cx=\"60.0\" cy=\"76.7\" r=\"4\" class=\"point\"/><text x=\"60.0\" y=\"66.7\" text-anchor=\"middle\">(0,8)</text><circle cx=\"144.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"144.0\" y=\"140.0\" text-anchor=\"middle\">(2,0)</text><circle cx=\"270.0\" cy=\"150.0\" r=\"4\" class=\"point\"/><text x=\"270.0\" y=\"140.0\" text-anchor=\"middle\">(5,0)</text><circle cx=\"354.0\" cy=\"58.3\" r=\"4\" class=\"point\"/><text x=\"354.0\" y=\"48.3\" text-anchor=\"middle\">(7,10)</text><circle cx=\"480.0\" cy=\"195.8\" r=\"4\" class=\"point\"/><text x=\"480.0\" y=\"185.8\" text-anchor=\"middle\">(10,-5)</text></svg></div>",
-    "explanation": "Sinal do declive do gráfico v=f(t)."
+    "explanation": "Sinal do declive do gráfico v=f(t).",
+    "writtenPrompt": "No intervalo [7,10] s do gráfico, o tipo de movimento é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0534",
@@ -14475,7 +14738,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Casos favoráveis divididos pelos casos possíveis."
+    "explanation": "Casos favoráveis divididos pelos casos possíveis.",
+    "writtenPrompt": "Em um dado equilibrado, para o acontecimento “sair número par”, os casos favoráveis/casos possíveis são...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0548",
@@ -14525,7 +14789,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Casos favoráveis divididos pelos casos possíveis."
+    "explanation": "Casos favoráveis divididos pelos casos possíveis.",
+    "writtenPrompt": "Em dois dados de cores diferentes, para o acontecimento “sair soma 7”, os casos favoráveis/casos possíveis são...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0550",
@@ -14575,7 +14840,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Casos favoráveis divididos pelos casos possíveis."
+    "explanation": "Casos favoráveis divididos pelos casos possíveis.",
+    "writtenPrompt": "Em um saco com 5 bolas azuis, 3 vermelhas e 2 verdes, para o acontecimento “tirar uma bola vermelha”, os casos favoráveis/casos possíveis são...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0552",
@@ -14819,7 +15085,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "O sinal de a define a concavidade."
+    "explanation": "O sinal de a define a concavidade.",
+    "writtenPrompt": "Na função f(x)=1x² + (-5)x + (6), como é a concavidade?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0564",
@@ -14887,7 +15154,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "O sinal de a define a concavidade."
+    "explanation": "O sinal de a define a concavidade.",
+    "writtenPrompt": "Na função f(x)=1x² + (-4)x + (4), como é a concavidade?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0567",
@@ -14955,7 +15223,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "O sinal de a define a concavidade."
+    "explanation": "O sinal de a define a concavidade.",
+    "writtenPrompt": "Na função f(x)=2x² + (3)x + (-2), como é a concavidade?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0570",
@@ -15023,7 +15292,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "O sinal de a define a concavidade."
+    "explanation": "O sinal de a define a concavidade.",
+    "writtenPrompt": "Na função f(x)=-1x² + (4)x + (5), como é a concavidade?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0573",
@@ -15073,7 +15343,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação."
+    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação.",
+    "writtenPrompt": "Qual é o nome do hidrocarboneto CH4?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0575",
@@ -15105,7 +15376,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação."
+    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação.",
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C2H6?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0576",
@@ -15137,7 +15409,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação."
+    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação.",
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C3H8?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0577",
@@ -15169,7 +15442,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação."
+    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação.",
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C4H10?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0578",
@@ -15201,7 +15475,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação."
+    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação.",
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C5H12?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0579",
@@ -15233,7 +15508,8 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação."
+    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação.",
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C2H4?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
     "id": "V5Q0580",
@@ -15265,10 +15541,11 @@ window.PAF_QUESTION_BANK = [
       }
     ],
     "visual": "",
-    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação."
+    "explanation": "Usa o prefixo pelo número de carbonos e o sufixo pela ligação.",
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C2H2?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "SOC0033",
+    "id": "QBSOC0033",
     "area": "socio",
     "module": "Culturas, Etnias e Diversidades",
     "topic": "Cultura",
@@ -15331,7 +15608,7 @@ window.PAF_QUESTION_BANK = [
     "humanGrading": true
   },
   {
-    "id": "HTML001",
+    "id": "QBHTML001",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Site com três páginas",
@@ -15363,10 +15640,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "três páginas"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Site com três páginas, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML002",
+    "id": "QBHTML002",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Navegação do site",
@@ -15398,10 +15676,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "barra/menu de navegação"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Navegação do site, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML003",
+    "id": "QBHTML003",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "CSS externo",
@@ -15433,10 +15712,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<link rel=\"stylesheet\" href=\"estilo.css\">"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de CSS externo, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML004",
+    "id": "QBHTML004",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Galeria",
@@ -15468,10 +15748,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<figure> com <img> e <figcaption>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Galeria, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML005",
+    "id": "QBHTML005",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Vídeo local",
@@ -15503,10 +15784,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<video controls><source src=\"media/mota_video.mp4\"></video>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Vídeo local, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML006",
+    "id": "QBHTML006",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Áudio local",
@@ -15538,10 +15820,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<audio controls> com <source>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Áudio local, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML007",
+    "id": "QBHTML007",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Tabela HTML",
@@ -15573,10 +15856,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<th>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Tabela HTML, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML008",
+    "id": "QBHTML008",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Estrutura de tabela",
@@ -15608,10 +15892,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<tr>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Estrutura de tabela, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML009",
+    "id": "QBHTML009",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Célula de tabela",
@@ -15643,10 +15928,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<td>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Célula de tabela, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML010",
+    "id": "QBHTML010",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Responsividade",
@@ -15678,10 +15964,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "ajudar a página a adaptar-se ao ecrã, especialmente no telemóvel"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Responsividade, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML011",
+    "id": "QBHTML011",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "alt da imagem",
@@ -15713,10 +16000,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "descrever a imagem quando ela não carrega ou para acessibilidade"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de alt da imagem, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML012",
+    "id": "QBHTML012",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Semântica HTML",
@@ -15748,10 +16036,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "cabeçalho/título inicial da página"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Semântica HTML, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML013",
+    "id": "QBHTML013",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Menu nav",
@@ -15783,10 +16072,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "agrupar links de navegação do site"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Menu nav, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML014",
+    "id": "QBHTML014",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Listas",
@@ -15818,10 +16108,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "<ul> e <li>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Listas, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML015",
+    "id": "QBHTML015",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "CSS classes",
@@ -15853,10 +16144,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "todos os elementos com class=\"caixa\""
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de CSS classes, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML016",
+    "id": "QBHTML016",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "CSS id vs class",
@@ -15888,10 +16180,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "#"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de CSS id vs class, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML017",
+    "id": "QBHTML017",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Galeria responsiva",
@@ -15923,10 +16216,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "criar uma grelha responsiva de imagens"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Galeria responsiva, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML018",
+    "id": "QBHTML018",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "object-fit",
@@ -15958,10 +16252,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "preencher o espaço da imagem sem deformar, podendo cortar parte da imagem"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de object-fit, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML019",
+    "id": "QBHTML019",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "border-collapse",
@@ -15993,10 +16288,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "juntar as bordas da tabela e das células"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de border-collapse, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML020",
+    "id": "QBHTML020",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "iframe vs video",
@@ -16028,10 +16324,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "usar <video controls> com <source>"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de iframe vs video, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML021",
+    "id": "QBHTML021",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Requisitos da avaliação HTML",
@@ -16078,10 +16375,11 @@ window.PAF_QUESTION_BANK = [
       "pelo menos uma galeria de imagens",
       "barra ou botões de navegação"
     ],
-    "trap": true
+    "trap": true,
+    "writtenPrompt": "Explica por extenso o conceito de Requisitos da avaliação HTML, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML022",
+    "id": "QBHTML022",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Multimédia no site",
@@ -16118,10 +16416,11 @@ window.PAF_QUESTION_BANK = [
       "pelo menos um vídeo",
       "pelo menos um áudio"
     ],
-    "trap": true
+    "trap": true,
+    "writtenPrompt": "Explica por extenso o conceito de Multimédia no site, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "HTML023",
+    "id": "QBHTML023",
     "area": "info",
     "module": "Criação de páginas Web em hipertexto",
     "topic": "Boas práticas do site",
@@ -16168,10 +16467,11 @@ window.PAF_QUESTION_BANK = [
       "usar CSS externo",
       "organizar ficheiros em pastas como imagens e media"
     ],
-    "trap": true
+    "trap": true,
+    "writtenPrompt": "Explica por extenso o conceito de Boas práticas do site, no módulo Criação de páginas Web em hipertexto."
   },
   {
-    "id": "SQL001",
+    "id": "QBSQL001",
     "area": "info",
     "module": "Scripts CGI e folhas de estilo",
     "topic": "Projeto web dinâmico",
@@ -16203,10 +16503,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "imagem da página Web em .jpg e BD MySQL em .sql"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Projeto web dinâmico, no módulo Scripts CGI e folhas de estilo."
   },
   {
-    "id": "SQL002",
+    "id": "QBSQL002",
     "area": "info",
     "module": "Scripts CGI e folhas de estilo",
     "topic": "POST formulário",
@@ -16238,10 +16539,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "POST"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de POST formulário, no módulo Scripts CGI e folhas de estilo."
   },
   {
-    "id": "SQL003",
+    "id": "QBSQL003",
     "area": "info",
     "module": "Scripts CGI e folhas de estilo",
     "topic": "Dados por URL",
@@ -16273,10 +16575,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "GET"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Dados por URL, no módulo Scripts CGI e folhas de estilo."
   },
   {
-    "id": "SQL004",
+    "id": "QBSQL004",
     "area": "info",
     "module": "Scripts CGI e folhas de estilo",
     "topic": "INSERT",
@@ -16308,10 +16611,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "INSERT INTO"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de INSERT, no módulo Scripts CGI e folhas de estilo."
   },
   {
-    "id": "SQL005",
+    "id": "QBSQL005",
     "area": "info",
     "module": "Scripts CGI e folhas de estilo",
     "topic": "Prepared statements",
@@ -16343,10 +16647,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "validar dados e usar consultas preparadas"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Prepared statements, no módulo Scripts CGI e folhas de estilo."
   },
   {
-    "id": "MFC001",
+    "id": "QBMFC001",
     "area": "mfc",
     "module": "Movimentos e Forças",
     "topic": "Aceleração por gráfico",
@@ -16366,7 +16671,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC002",
+    "id": "QBMFC002",
     "area": "mfc",
     "module": "Movimentos e Forças",
     "topic": "Aceleração negativa",
@@ -16386,7 +16691,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC003",
+    "id": "QBMFC003",
     "area": "mfc",
     "module": "Movimentos e Forças",
     "topic": "Aceleração nula",
@@ -16406,7 +16711,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC004",
+    "id": "QBMFC004",
     "area": "mfc",
     "module": "Movimentos e Forças",
     "topic": "Tipo de movimento",
@@ -16438,10 +16743,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "velocidade constante e aceleração nula"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Num gráfico v=f(t), se a reta é horizontal, o movimento tem...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC005",
+    "id": "QBMFC005",
     "area": "mfc",
     "module": "Movimentos e Forças",
     "topic": "Gráfico a=f(t)",
@@ -16473,10 +16779,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "uma linha horizontal acima de zero"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Se no gráfico v=f(t) a velocidade aumenta sempre com declive constante, o gráfico a=f(t) correspondente é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC006",
+    "id": "QBMFC006",
     "area": "mfc",
     "module": "Movimentos Ondulatórios",
     "topic": "Frequência",
@@ -16496,7 +16803,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC007",
+    "id": "QBMFC007",
     "area": "mfc",
     "module": "Movimentos Ondulatórios",
     "topic": "Período",
@@ -16516,7 +16823,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC008",
+    "id": "QBMFC008",
     "area": "mfc",
     "module": "Movimentos Ondulatórios",
     "topic": "Velocidade da onda",
@@ -16536,7 +16843,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC009",
+    "id": "QBMFC009",
     "area": "mfc",
     "module": "Movimentos Ondulatórios",
     "topic": "Grandezas de onda",
@@ -16568,10 +16875,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "ao afastamento máximo em relação à posição de equilíbrio"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "A amplitude de uma onda corresponde...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC010",
+    "id": "QBMFC010",
     "area": "mfc",
     "module": "Movimentos Ondulatórios",
     "topic": "Comprimento de onda",
@@ -16603,10 +16911,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "a distância entre dois pontos equivalentes consecutivos da onda"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "O comprimento de onda é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC011",
+    "id": "QBMFC011",
     "area": "mfc",
     "module": "Organização, Análise da Informação e Probabilidades",
     "topic": "Média com tabela",
@@ -16626,7 +16935,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC012",
+    "id": "QBMFC012",
     "area": "mfc",
     "module": "Organização, Análise da Informação e Probabilidades",
     "topic": "Mediana par",
@@ -16646,7 +16955,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC013",
+    "id": "QBMFC013",
     "area": "mfc",
     "module": "Organização, Análise da Informação e Probabilidades",
     "topic": "Moda",
@@ -16678,10 +16987,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "6"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Nos dados 2, 3, 3, 4, 6, 6, 6, 8, a moda é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC014",
+    "id": "QBMFC014",
     "area": "mfc",
     "module": "Organização, Análise da Informação e Probabilidades",
     "topic": "Probabilidade",
@@ -16701,7 +17011,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC015",
+    "id": "QBMFC015",
     "area": "mfc",
     "module": "Organização, Análise da Informação e Probabilidades",
     "topic": "Probabilidade percentagem",
@@ -16721,7 +17031,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC016",
+    "id": "QBMFC016",
     "area": "mfc",
     "module": "Operações Numéricas e Estimação",
     "topic": "Potência produto",
@@ -16753,10 +17063,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "3^6"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Simplifica: 3^4 × 3^2\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC017",
+    "id": "QBMFC017",
     "area": "mfc",
     "module": "Operações Numéricas e Estimação",
     "topic": "Potência quociente",
@@ -16788,10 +17099,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "7^5"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Simplifica: 7^9 / 7^4\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC018",
+    "id": "QBMFC018",
     "area": "mfc",
     "module": "Operações Numéricas e Estimação",
     "topic": "Expoente negativo",
@@ -16823,10 +17135,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "1/8"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Simplifica: 2^-3\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC019",
+    "id": "QBMFC019",
     "area": "mfc",
     "module": "Operações Numéricas e Estimação",
     "topic": "Notação científica",
@@ -16858,10 +17171,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "4,5 × 10^-4"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Qual é a escrita correta de 0,00045 em notação científica?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC020",
+    "id": "QBMFC020",
     "area": "mfc",
     "module": "Operações Numéricas e Estimação",
     "topic": "Comparação científica",
@@ -16893,10 +17207,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "7,9 × 10^8"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Qual é maior?\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC021",
+    "id": "QBMFC021",
     "area": "mfc",
     "module": "Funções, Limites e Cálculo Diferencial",
     "topic": "Função valor",
@@ -16916,7 +17231,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC022",
+    "id": "QBMFC022",
     "area": "mfc",
     "module": "Funções, Limites e Cálculo Diferencial",
     "topic": "Zero de função linear",
@@ -16936,7 +17251,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC023",
+    "id": "QBMFC023",
     "area": "mfc",
     "module": "Funções, Limites e Cálculo Diferencial",
     "topic": "Concavidade",
@@ -16968,10 +17283,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "voltada para cima, porque a>0"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Na função f(x)=2x²-3x+1, a parábola tem concavidade...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC024",
+    "id": "QBMFC024",
     "area": "mfc",
     "module": "Funções, Limites e Cálculo Diferencial",
     "topic": "Discriminante",
@@ -16991,7 +17307,7 @@ window.PAF_QUESTION_BANK = [
     ]
   },
   {
-    "id": "MFC025",
+    "id": "QBMFC025",
     "area": "mfc",
     "module": "Funções, Limites e Cálculo Diferencial",
     "topic": "Inequação 2º grau",
@@ -17023,10 +17339,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "]-2, 2["
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "A inequação x²-4 < 0 tem solução...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC026",
+    "id": "QBMFC026",
     "area": "mfc",
     "module": "Hidrocarbonetos",
     "topic": "Hidrocarboneto",
@@ -17058,10 +17375,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "carbono e hidrogénio"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Um hidrocarboneto é formado apenas por...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC027",
+    "id": "QBMFC027",
     "area": "mfc",
     "module": "Hidrocarbonetos",
     "topic": "Nomenclatura",
@@ -17093,10 +17411,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "propano"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "C3H8 chama-se...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "MFC028",
+    "id": "QBMFC028",
     "area": "mfc",
     "module": "Hidrocarbonetos",
     "topic": "Ligação dupla",
@@ -17128,10 +17447,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "-eno"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "O sufixo usado para hidrocarbonetos com ligação dupla é...\nExplica por extenso o raciocínio e a resposta final."
   },
   {
-    "id": "INFO001",
+    "id": "QBINFO001",
     "area": "info",
     "module": "Processador de texto",
     "topic": "Nota de rodapé",
@@ -17163,10 +17483,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "explicar ou referenciar informação no fundo da página"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Nota de rodapé, no módulo Processador de texto."
   },
   {
-    "id": "INFO002",
+    "id": "QBINFO002",
     "area": "info",
     "module": "Processador de texto",
     "topic": "Cabeçalho",
@@ -17198,10 +17519,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "no topo das páginas"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Cabeçalho, no módulo Processador de texto."
   },
   {
-    "id": "INFO003",
+    "id": "QBINFO003",
     "area": "info",
     "module": "Folha de cálculo",
     "topic": "Fórmula",
@@ -17233,10 +17555,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "="
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Fórmula, no módulo Folha de cálculo."
   },
   {
-    "id": "INFO004",
+    "id": "QBINFO004",
     "area": "info",
     "module": "Folha de cálculo",
     "topic": "MÉDIA",
@@ -17268,10 +17591,11 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "calcular a média dos valores de A1 até A5"
     ],
-    "trap": false
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de MÉDIA, no módulo Folha de cálculo."
   },
   {
-    "id": "INFO005",
+    "id": "QBINFO005",
     "area": "info",
     "module": "Folha de cálculo",
     "topic": "Filtro",
@@ -17303,6 +17627,21546 @@ window.PAF_QUESTION_BANK = [
     "keywords": [
       "mostrar apenas dados que cumprem certos critérios"
     ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Filtro, no módulo Folha de cálculo."
+  },
+  {
+    "id": "ENGDRILL_VOC_01",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “wake up”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "acordar",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "acordar",
+        "correct": true
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      },
+      {
+        "text": "ir para a escola",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "acordar"
+    ],
     "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_02",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “get up”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "levantar-se",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "levantar-se",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      },
+      {
+        "text": "ir para a escola",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "levantar-se"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_03",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “have breakfast”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "tomar o pequeno-almoço",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "ir para a escola",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "tomar o pequeno-almoço"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_04",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “go to school”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "ir para a escola",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "ir para a escola",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ir para a escola"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_05",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “study”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "estudar",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "estudar",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "estudar"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_06",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “work”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "trabalhar",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "trabalhar",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "trabalhar"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_07",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “have lunch”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "almoçar",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "almoçar",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "almoçar"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_08",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “go home”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "ir para casa",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "ir para casa",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ir para casa"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_09",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “have dinner”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "jantar",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "jantar",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "jantar"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGDRILL_VOC_10",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine vocabulary",
+    "type": "mc",
+    "prompt": "Em Inglês, o que significa “go to bed”?",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "ir para a cama",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "ir para a cama",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ir para a cama"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_01",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: She ____ to school every day.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "goes",
+    "explanation": "Na 3.ª pessoa do singular usa-se -s/-es.",
+    "options": [
+      {
+        "text": "goes",
+        "correct": true
+      },
+      {
+        "text": "go",
+        "correct": false
+      },
+      {
+        "text": "going",
+        "correct": false
+      },
+      {
+        "text": "went",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "goes"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_02",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: They ____ football on Saturdays.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "play",
+    "explanation": "Com they usa-se o verbo base.",
+    "options": [
+      {
+        "text": "play",
+        "correct": true
+      },
+      {
+        "text": "plays",
+        "correct": false
+      },
+      {
+        "text": "playing",
+        "correct": false
+      },
+      {
+        "text": "played",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "play"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_03",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: He ____ breakfast at 8 o’clock.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "has",
+    "explanation": "Com he, have muda para has.",
+    "options": [
+      {
+        "text": "has",
+        "correct": true
+      },
+      {
+        "text": "have",
+        "correct": false
+      },
+      {
+        "text": "having",
+        "correct": false
+      },
+      {
+        "text": "had",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "has"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_04",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: I ____ English in the evening.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "study",
+    "explanation": "Com I usa-se o verbo base.",
+    "options": [
+      {
+        "text": "study",
+        "correct": true
+      },
+      {
+        "text": "studies",
+        "correct": false
+      },
+      {
+        "text": "studying",
+        "correct": false
+      },
+      {
+        "text": "studied",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "study"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_05",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: My sister ____ TV after dinner.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "watches",
+    "explanation": "Watch ganha -es na 3.ª pessoa.",
+    "options": [
+      {
+        "text": "watches",
+        "correct": true
+      },
+      {
+        "text": "watch",
+        "correct": false
+      },
+      {
+        "text": "watching",
+        "correct": false
+      },
+      {
+        "text": "watched",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "watches"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_06",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: We ____ to school by bus.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "go",
+    "explanation": "Com we usa-se o verbo base.",
+    "options": [
+      {
+        "text": "go",
+        "correct": true
+      },
+      {
+        "text": "goes",
+        "correct": false
+      },
+      {
+        "text": "going",
+        "correct": false
+      },
+      {
+        "text": "went",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "go"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_07",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: Tom ____ computers at work.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "repairs",
+    "explanation": "Tom = he, por isso repairs.",
+    "options": [
+      {
+        "text": "repairs",
+        "correct": true
+      },
+      {
+        "text": "repair",
+        "correct": false
+      },
+      {
+        "text": "repairing",
+        "correct": false
+      },
+      {
+        "text": "repaired",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "repairs"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_FORM_08",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present",
+    "type": "mc",
+    "prompt": "Completa no Simple Present: Students ____ homework after class.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "do",
+    "explanation": "Plural usa do.",
+    "options": [
+      {
+        "text": "do",
+        "correct": true
+      },
+      {
+        "text": "does",
+        "correct": false
+      },
+      {
+        "text": "doing",
+        "correct": false
+      },
+      {
+        "text": "did",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "do"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_NEG_01",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present negative",
+    "type": "mc",
+    "prompt": "Escolhe a forma negativa correta: “She works on Sunday.”",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "She does not work on Sunday.",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "She does not work on Sunday.",
+        "correct": true
+      },
+      {
+        "text": "She do not work on Sunday.",
+        "correct": false
+      },
+      {
+        "text": "She not works on Sunday.",
+        "correct": false
+      },
+      {
+        "text": "She does not works on Sunday.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "She does not work on Sunday."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_NEG_02",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present negative",
+    "type": "mc",
+    "prompt": "Escolhe a forma negativa correta: “They study at night.”",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "They do not study at night.",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "They do not study at night.",
+        "correct": true
+      },
+      {
+        "text": "They does not study at night.",
+        "correct": false
+      },
+      {
+        "text": "They not study at night.",
+        "correct": false
+      },
+      {
+        "text": "They do not studies at night.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "They do not study at night."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_NEG_03",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present negative",
+    "type": "mc",
+    "prompt": "Escolhe a forma negativa correta: “He plays tennis.”",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "He does not play tennis.",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "He does not play tennis.",
+        "correct": true
+      },
+      {
+        "text": "He do not play tennis.",
+        "correct": false
+      },
+      {
+        "text": "He does not plays tennis.",
+        "correct": false
+      },
+      {
+        "text": "He not plays tennis.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "He does not play tennis."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_NEG_04",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present negative",
+    "type": "mc",
+    "prompt": "Escolhe a forma negativa correta: “I like coffee.”",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "I do not like coffee.",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "I do not like coffee.",
+        "correct": true
+      },
+      {
+        "text": "I does not like coffee.",
+        "correct": false
+      },
+      {
+        "text": "I not like coffee.",
+        "correct": false
+      },
+      {
+        "text": "I do not likes coffee.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "I do not like coffee."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_Q_01",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present questions",
+    "type": "mc",
+    "prompt": "Constrói a pergunta correta no Simple Present: she / work / in an office",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "Does she work in an office?",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "Does she work in an office?",
+        "correct": true
+      },
+      {
+        "text": "Do she work in an office?",
+        "correct": false
+      },
+      {
+        "text": "Does she works in an office?",
+        "correct": false
+      },
+      {
+        "text": "She does work in an office?",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Does she work in an office?"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_Q_02",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present questions",
+    "type": "mc",
+    "prompt": "Constrói a pergunta correta no Simple Present: they / study / English",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "Do they study English?",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "Do they study English?",
+        "correct": true
+      },
+      {
+        "text": "Does they study English?",
+        "correct": false
+      },
+      {
+        "text": "Do they studies English?",
+        "correct": false
+      },
+      {
+        "text": "They do study English?",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Do they study English?"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_Q_03",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present questions",
+    "type": "mc",
+    "prompt": "Constrói a pergunta correta no Simple Present: he / go / to school",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "Does he go to school?",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "Does he go to school?",
+        "correct": true
+      },
+      {
+        "text": "Do he go to school?",
+        "correct": false
+      },
+      {
+        "text": "Does he goes to school?",
+        "correct": false
+      },
+      {
+        "text": "He does go to school?",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Does he go to school?"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGSP_Q_04",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple present questions",
+    "type": "mc",
+    "prompt": "Constrói a pergunta correta no Simple Present: you / play / games",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "Do you play games?",
+    "explanation": "Conteúdo de Inglês - Daily routine.",
+    "options": [
+      {
+        "text": "Do you play games?",
+        "correct": true
+      },
+      {
+        "text": "Does you play games?",
+        "correct": false
+      },
+      {
+        "text": "Do you plays games?",
+        "correct": false
+      },
+      {
+        "text": "You do play games?",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Do you play games?"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_01",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Completa a frase: If you heat water, it _____.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "boils",
+    "explanation": "Zero conditional: verdade geral.",
+    "options": [
+      {
+        "text": "boils",
+        "correct": true
+      },
+      {
+        "text": "will boil",
+        "correct": false
+      },
+      {
+        "text": "would boil",
+        "correct": false
+      },
+      {
+        "text": "boiled",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "boils"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_02",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Completa a frase: If it rains tomorrow, I _____ home.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "will stay",
+    "explanation": "First conditional: situação real/provável no futuro.",
+    "options": [
+      {
+        "text": "will stay",
+        "correct": true
+      },
+      {
+        "text": "stay",
+        "correct": false
+      },
+      {
+        "text": "would stay",
+        "correct": false
+      },
+      {
+        "text": "stayed",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "will stay"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_03",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Completa a frase: If I had more time, I _____ more.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "would study",
+    "explanation": "Second conditional: hipótese imaginária.",
+    "options": [
+      {
+        "text": "would study",
+        "correct": true
+      },
+      {
+        "text": "will study",
+        "correct": false
+      },
+      {
+        "text": "study",
+        "correct": false
+      },
+      {
+        "text": "studied",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "would study"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_04",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Completa a frase: If people eat too much sugar, they _____ health problems.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "can have",
+    "explanation": "Zero conditional/verdade geral.",
+    "options": [
+      {
+        "text": "can have",
+        "correct": true
+      },
+      {
+        "text": "would had",
+        "correct": false
+      },
+      {
+        "text": "will has",
+        "correct": false
+      },
+      {
+        "text": "having",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "can have"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_05",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Completa a frase: If she studies, she _____ the exam.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "will pass",
+    "explanation": "First conditional.",
+    "options": [
+      {
+        "text": "will pass",
+        "correct": true
+      },
+      {
+        "text": "would pass",
+        "correct": false
+      },
+      {
+        "text": "passes always",
+        "correct": false
+      },
+      {
+        "text": "passed",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "will pass"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_06",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Completa a frase: If I were rich, I _____ around Europe.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "would travel",
+    "explanation": "Second conditional usa would + verbo.",
+    "options": [
+      {
+        "text": "would travel",
+        "correct": true
+      },
+      {
+        "text": "will travel",
+        "correct": false
+      },
+      {
+        "text": "travel",
+        "correct": false
+      },
+      {
+        "text": "travelled",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "would travel"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_MULTI_01",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses estrutura",
+    "type": "multi",
+    "prompt": "Assinala as estruturas corretas das if-clauses.",
+    "difficulty": 4,
+    "estimate": 155,
+    "weight": 1.2,
+    "correctAnswer": "Zero conditional: If + present simple, present simple; First conditional: If + present simple, will + verb; Second conditional: If + past simple, would + verb",
+    "explanation": "Conteúdo de Inglês - If-clauses.",
+    "options": [
+      {
+        "text": "Zero conditional: If + present simple, present simple",
+        "correct": true
+      },
+      {
+        "text": "First conditional: If + present simple, will + verb",
+        "correct": true
+      },
+      {
+        "text": "Second conditional: If + past simple, would + verb",
+        "correct": true
+      },
+      {
+        "text": "First conditional: If + will, will",
+        "correct": false
+      },
+      {
+        "text": "Second conditional: If + present simple, would + verb",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Zero conditional: If + present simple, present simple",
+      "First conditional: If + present simple, will + verb",
+      "Second conditional: If + past simple, would + verb"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGIF_LONG_01",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses explicação",
+    "type": "long",
+    "prompt": "Explica a diferença entre zero conditional, first conditional e second conditional.",
+    "difficulty": 4,
+    "estimate": 260,
+    "weight": 1.5,
+    "correctAnswer": "Zero conditional usa-se para verdades gerais; first conditional para situações reais/prováveis no futuro; second conditional para hipóteses imaginárias ou pouco prováveis.",
+    "explanation": "Conteúdo de Inglês - If-clauses.",
+    "keywords": [
+      "zero conditional",
+      "verdades gerais",
+      "first conditional",
+      "futuro",
+      "second conditional",
+      "hipóteses"
+    ],
+    "rubric": [
+      {
+        "label": "zero conditional",
+        "terms": [
+          "zero conditional"
+        ]
+      },
+      {
+        "label": "verdades gerais",
+        "terms": [
+          "verdades gerais"
+        ]
+      },
+      {
+        "label": "first conditional",
+        "terms": [
+          "first conditional"
+        ]
+      },
+      {
+        "label": "futuro",
+        "terms": [
+          "futuro"
+        ]
+      },
+      {
+        "label": "second conditional",
+        "terms": [
+          "second conditional"
+        ]
+      },
+      {
+        "label": "hipóteses",
+        "terms": [
+          "hipóteses"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "ENGADJ_01",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: Portugal is ____ than Spain.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "smaller",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "smaller",
+        "correct": true
+      },
+      {
+        "text": "smallest",
+        "correct": false
+      },
+      {
+        "text": "more small",
+        "correct": false
+      },
+      {
+        "text": "the smaller",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "smaller"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_02",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: This exercise is ____ than the last one.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "more difficult",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "more difficult",
+        "correct": true
+      },
+      {
+        "text": "difficulter",
+        "correct": false
+      },
+      {
+        "text": "the most difficult",
+        "correct": false
+      },
+      {
+        "text": "difficultest",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "more difficult"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_03",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: She is the ____ student in the class.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "best",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "best",
+        "correct": true
+      },
+      {
+        "text": "better",
+        "correct": false
+      },
+      {
+        "text": "goodest",
+        "correct": false
+      },
+      {
+        "text": "more good",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "best"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_04",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: London is ____ than Lisbon.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "more expensive",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "more expensive",
+        "correct": true
+      },
+      {
+        "text": "expensiver",
+        "correct": false
+      },
+      {
+        "text": "the most expensive",
+        "correct": false
+      },
+      {
+        "text": "expensive than",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "more expensive"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_05",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: Mount Everest is the ____ mountain.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "highest",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "highest",
+        "correct": true
+      },
+      {
+        "text": "higher",
+        "correct": false
+      },
+      {
+        "text": "more high",
+        "correct": false
+      },
+      {
+        "text": "high",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "highest"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_06",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: This is the ____ solution.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "worst",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "worst",
+        "correct": true
+      },
+      {
+        "text": "badder",
+        "correct": false
+      },
+      {
+        "text": "worse",
+        "correct": false
+      },
+      {
+        "text": "more bad",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "worst"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_07",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: My phone is ____ than yours.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "newer",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "newer",
+        "correct": true
+      },
+      {
+        "text": "newest",
+        "correct": false
+      },
+      {
+        "text": "more new",
+        "correct": false
+      },
+      {
+        "text": "the newer",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "newer"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_08",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative and superlative",
+    "type": "mc",
+    "prompt": "Escolhe o grau correto do adjetivo: This city is the ____ in the country.",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "largest",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "largest",
+        "correct": true
+      },
+      {
+        "text": "larger",
+        "correct": false
+      },
+      {
+        "text": "more large",
+        "correct": false
+      },
+      {
+        "text": "large than",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "largest"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGADJ_MULTI_01",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Graus dos adjetivos",
+    "type": "multi",
+    "prompt": "Assinala todas as correspondências corretas.",
+    "difficulty": 3,
+    "estimate": 140,
+    "weight": 1.2,
+    "correctAnswer": "good → better → the best; bad → worse → the worst; interesting → more interesting → the most interesting",
+    "explanation": "Conteúdo de Inglês - Graus dos adjetivos.",
+    "options": [
+      {
+        "text": "good → better → the best",
+        "correct": true
+      },
+      {
+        "text": "bad → worse → the worst",
+        "correct": true
+      },
+      {
+        "text": "interesting → more interesting → the most interesting",
+        "correct": true
+      },
+      {
+        "text": "good → gooder → the goodest",
+        "correct": false
+      },
+      {
+        "text": "bad → badder → the baddest",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "good → better → the best",
+      "bad → worse → the worst",
+      "interesting → more interesting → the most interesting"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_01",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “employer” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "empregador",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "empregador",
+        "correct": true
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      },
+      {
+        "text": "entrevista",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "empregador"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_02",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “employee” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "empregado/trabalhador",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "empregado/trabalhador",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      },
+      {
+        "text": "entrevista",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "empregado/trabalhador"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_03",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “salary” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "salário",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "salário",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "entrevista",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "salário"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_04",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “interview” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "entrevista",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "entrevista",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "entrevista"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_05",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “application” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "candidatura",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "candidatura",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "candidatura"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_06",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “skills” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "competências",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "competências",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "competências"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_07",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “experience” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "experiência",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "experiência",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "experiência"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGJOB_08",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de emprego, “career” significa...",
+    "difficulty": 1,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "carreira",
+    "explanation": "Conteúdo de Inglês - Profissões.",
+    "options": [
+      {
+        "text": "carreira",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "carreira"
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGPASS_01",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta: They repair computers.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "Computers are repaired.",
+    "explanation": "Simple present passive: am/is/are + past participle.",
+    "options": [
+      {
+        "text": "Computers are repaired.",
+        "correct": true
+      },
+      {
+        "text": "Computers repair.",
+        "correct": false
+      },
+      {
+        "text": "Computers repaired are.",
+        "correct": false
+      },
+      {
+        "text": "Computers is repaired.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Computers are repaired."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGPASS_02",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta: They repaired the computer.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "The computer was repaired.",
+    "explanation": "Simple past passive: was/were + past participle.",
+    "options": [
+      {
+        "text": "The computer was repaired.",
+        "correct": true
+      },
+      {
+        "text": "The computer is repaired yesterday.",
+        "correct": false
+      },
+      {
+        "text": "The computer repaired.",
+        "correct": false
+      },
+      {
+        "text": "The computer were repaired.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "The computer was repaired."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGPASS_03",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta: They have repaired the computer.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "The computer has been repaired.",
+    "explanation": "Present perfect passive: has/have been + past participle.",
+    "options": [
+      {
+        "text": "The computer has been repaired.",
+        "correct": true
+      },
+      {
+        "text": "The computer have been repaired.",
+        "correct": false
+      },
+      {
+        "text": "The computer was been repaired.",
+        "correct": false
+      },
+      {
+        "text": "The computer has repaired.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "The computer has been repaired."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGPASS_04",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta: They will repair the computer.",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "The computer will be repaired.",
+    "explanation": "Future passive: will be + past participle.",
+    "options": [
+      {
+        "text": "The computer will be repaired.",
+        "correct": true
+      },
+      {
+        "text": "The computer will repaired.",
+        "correct": false
+      },
+      {
+        "text": "The computer will be repair.",
+        "correct": false
+      },
+      {
+        "text": "The computer is will repaired.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "The computer will be repaired."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGPASS_LONG_01",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice explicação",
+    "type": "long",
+    "prompt": "Explica quando se usa a passive voice e indica a estrutura geral.",
+    "difficulty": 4,
+    "estimate": 260,
+    "weight": 1.5,
+    "correctAnswer": "A passive voice usa-se quando queremos destacar a ação ou o objeto da ação. A estrutura geral é verbo to be + particípio passado.",
+    "explanation": "Conteúdo de Inglês - Passive voice.",
+    "keywords": [
+      "destacar ação",
+      "objeto da ação",
+      "to be",
+      "particípio passado",
+      "passive voice"
+    ],
+    "rubric": [
+      {
+        "label": "destacar ação",
+        "terms": [
+          "destacar ação"
+        ]
+      },
+      {
+        "label": "objeto da ação",
+        "terms": [
+          "objeto da ação"
+        ]
+      },
+      {
+        "label": "to be",
+        "terms": [
+          "to be"
+        ]
+      },
+      {
+        "label": "particípio passado",
+        "terms": [
+          "particípio passado"
+        ]
+      },
+      {
+        "label": "passive voice",
+        "terms": [
+          "passive voice"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "ENGWO_01",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena corretamente a frase: every day / English / I / study / at school",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "I study English at school every day.",
+    "explanation": "Conteúdo de Inglês - Word order.",
+    "options": [
+      {
+        "text": "I study English at school every day.",
+        "correct": true
+      },
+      {
+        "text": "I English study at school every day.",
+        "correct": false
+      },
+      {
+        "text": "Every day study I English at school.",
+        "correct": false
+      },
+      {
+        "text": "At school English I study every day.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "I study English at school every day."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGWO_02",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena corretamente a frase: tomorrow / will / they / work / in Lisbon",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "They will work in Lisbon tomorrow.",
+    "explanation": "Conteúdo de Inglês - Word order.",
+    "options": [
+      {
+        "text": "They will work in Lisbon tomorrow.",
+        "correct": true
+      },
+      {
+        "text": "They work will in Lisbon tomorrow.",
+        "correct": false
+      },
+      {
+        "text": "Tomorrow will they work in Lisbon.",
+        "correct": false
+      },
+      {
+        "text": "In Lisbon they tomorrow will work.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "They will work in Lisbon tomorrow."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGWO_03",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena corretamente a frase: usually / she / breakfast / has / at 8",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "She usually has breakfast at 8.",
+    "explanation": "Conteúdo de Inglês - Word order.",
+    "options": [
+      {
+        "text": "She usually has breakfast at 8.",
+        "correct": true
+      },
+      {
+        "text": "She has usually breakfast at 8.",
+        "correct": false
+      },
+      {
+        "text": "Usually has she breakfast at 8.",
+        "correct": false
+      },
+      {
+        "text": "She breakfast usually has at 8.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "She usually has breakfast at 8."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGWO_04",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena corretamente a frase: on Monday / a job interview / I / have",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "I have a job interview on Monday.",
+    "explanation": "Conteúdo de Inglês - Word order.",
+    "options": [
+      {
+        "text": "I have a job interview on Monday.",
+        "correct": true
+      },
+      {
+        "text": "I a job interview have on Monday.",
+        "correct": false
+      },
+      {
+        "text": "On Monday have I a job interview.",
+        "correct": false
+      },
+      {
+        "text": "I have on Monday a job interview.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "I have a job interview on Monday."
+    ],
+    "trap": false
+  },
+  {
+    "id": "ENGWO_LONG_01",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order explicação",
+    "type": "long",
+    "prompt": "Indica a ordem normal de uma frase afirmativa em Inglês.",
+    "difficulty": 3,
+    "estimate": 235,
+    "weight": 1.5,
+    "correctAnswer": "A ordem normal é Subject + Verb + Object + Place + Time, por exemplo: I study English at school every day.",
+    "explanation": "Conteúdo de Inglês - Word order.",
+    "keywords": [
+      "subject",
+      "verb",
+      "object",
+      "place",
+      "time"
+    ],
+    "rubric": [
+      {
+        "label": "subject",
+        "terms": [
+          "subject"
+        ]
+      },
+      {
+        "label": "verb",
+        "terms": [
+          "verb"
+        ]
+      },
+      {
+        "label": "object",
+        "terms": [
+          "object"
+        ]
+      },
+      {
+        "label": "place",
+        "terms": [
+          "place"
+        ]
+      },
+      {
+        "label": "time",
+        "terms": [
+          "time"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "INFOARCH_01",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de CPU?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "executar instruções e processar dados",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "executar instruções e processar dados",
+        "correct": true
+      },
+      {
+        "text": "armazenar dados permanentemente",
+        "correct": false
+      },
+      {
+        "text": "mostrar imagem no ecrã",
+        "correct": false
+      },
+      {
+        "text": "fornecer energia ao computador",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "executar instruções e processar dados"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_02",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de RAM?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "guardar dados temporários enquanto o computador está ligado",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "guardar dados temporários enquanto o computador está ligado",
+        "correct": true
+      },
+      {
+        "text": "guardar dados permanentemente",
+        "correct": false
+      },
+      {
+        "text": "traduzir domínios em IP",
+        "correct": false
+      },
+      {
+        "text": "controlar impressoras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar dados temporários enquanto o computador está ligado"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_03",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de ROM?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "guardar instruções permanentes essenciais",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "guardar instruções permanentes essenciais",
+        "correct": true
+      },
+      {
+        "text": "armazenar ficheiros do utilizador",
+        "correct": false
+      },
+      {
+        "text": "aumentar a velocidade da internet",
+        "correct": false
+      },
+      {
+        "text": "imprimir documentos",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar instruções permanentes essenciais"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_04",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de SSD/HDD?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "guardar ficheiros e programas de forma permanente",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "guardar ficheiros e programas de forma permanente",
+        "correct": true
+      },
+      {
+        "text": "executar cálculos lógicos",
+        "correct": false
+      },
+      {
+        "text": "mostrar páginas web",
+        "correct": false
+      },
+      {
+        "text": "atribuir IPs",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar ficheiros e programas de forma permanente"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_05",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de Motherboard?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "ligar e permitir comunicação entre componentes",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "ligar e permitir comunicação entre componentes",
+        "correct": true
+      },
+      {
+        "text": "filtrar tráfego da rede",
+        "correct": false
+      },
+      {
+        "text": "formatar texto em colunas",
+        "correct": false
+      },
+      {
+        "text": "criar tabelas dinâmicas",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligar e permitir comunicação entre componentes"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_06",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de Fonte de alimentação?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "fornecer energia elétrica aos componentes",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "fornecer energia elétrica aos componentes",
+        "correct": true
+      },
+      {
+        "text": "guardar o sistema operativo",
+        "correct": false
+      },
+      {
+        "text": "executar instruções",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes de domínio",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "fornecer energia elétrica aos componentes"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_07",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de Cache?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "guardar temporariamente dados usados com frequência para acelerar o processador",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "guardar temporariamente dados usados com frequência para acelerar o processador",
+        "correct": true
+      },
+      {
+        "text": "guardar ficheiros de forma permanente",
+        "correct": false
+      },
+      {
+        "text": "aumentar a resolução do monitor",
+        "correct": false
+      },
+      {
+        "text": "fazer backups automáticos",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar temporariamente dados usados com frequência para acelerar o processador"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_08",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de ULA/ALU?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "realizar operações aritméticas e lógicas",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "realizar operações aritméticas e lógicas",
+        "correct": true
+      },
+      {
+        "text": "guardar imagens",
+        "correct": false
+      },
+      {
+        "text": "criar redes Wi-Fi",
+        "correct": false
+      },
+      {
+        "text": "enviar emails",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "realizar operações aritméticas e lógicas"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_09",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de Unidade de controlo?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "coordenar a execução das instruções no processador",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "coordenar a execução das instruções no processador",
+        "correct": true
+      },
+      {
+        "text": "guardar dados no disco",
+        "correct": false
+      },
+      {
+        "text": "ligar computadores por cabo",
+        "correct": false
+      },
+      {
+        "text": "aplicar formatação condicional",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "coordenar a execução das instruções no processador"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_10",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Componentes internos",
+    "type": "mc",
+    "prompt": "Na arquitetura de computadores, qual é a função de Registos?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "guardar dados muito rápidos dentro do processador",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "guardar dados muito rápidos dentro do processador",
+        "correct": true
+      },
+      {
+        "text": "substituir a memória externa",
+        "correct": false
+      },
+      {
+        "text": "fornecer energia",
+        "correct": false
+      },
+      {
+        "text": "fazer navegação web",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar dados muito rápidos dentro do processador"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Componentes internos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_LONG_01",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "CPU e memória",
+    "type": "long",
+    "prompt": "Explica a diferença entre RAM, ROM e armazenamento SSD/HDD.",
+    "difficulty": 4,
+    "estimate": 260,
+    "weight": 1.5,
+    "correctAnswer": "RAM é memória temporária e volátil; ROM guarda instruções permanentes; SSD/HDD guarda ficheiros e programas de forma permanente.",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "keywords": [
+      "RAM",
+      "temporária",
+      "volátil",
+      "ROM",
+      "permanente",
+      "SSD",
+      "HDD",
+      "armazenamento"
+    ],
+    "rubric": [
+      {
+        "label": "RAM",
+        "terms": [
+          "RAM"
+        ]
+      },
+      {
+        "label": "temporária",
+        "terms": [
+          "temporária"
+        ]
+      },
+      {
+        "label": "volátil",
+        "terms": [
+          "volátil"
+        ]
+      },
+      {
+        "label": "ROM",
+        "terms": [
+          "ROM"
+        ]
+      },
+      {
+        "label": "permanente",
+        "terms": [
+          "permanente"
+        ]
+      },
+      {
+        "label": "SSD",
+        "terms": [
+          "SSD"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "INFOARCH_MULTI_01",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos",
+    "type": "multi",
+    "prompt": "Assinala os periféricos de entrada.",
+    "difficulty": 2,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "teclado; rato; scanner",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "teclado",
+        "correct": true
+      },
+      {
+        "text": "rato",
+        "correct": true
+      },
+      {
+        "text": "scanner",
+        "correct": true
+      },
+      {
+        "text": "monitor",
+        "correct": false
+      },
+      {
+        "text": "impressora",
+        "correct": false
+      },
+      {
+        "text": "colunas",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "teclado",
+      "rato",
+      "scanner"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Periféricos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOARCH_MULTI_02",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos",
+    "type": "multi",
+    "prompt": "Assinala os periféricos de saída.",
+    "difficulty": 2,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "monitor; impressora; colunas",
+    "explanation": "Conteúdo de Arquitetura interna do computador.",
+    "options": [
+      {
+        "text": "monitor",
+        "correct": true
+      },
+      {
+        "text": "impressora",
+        "correct": true
+      },
+      {
+        "text": "colunas",
+        "correct": true
+      },
+      {
+        "text": "teclado",
+        "correct": false
+      },
+      {
+        "text": "rato",
+        "correct": false
+      },
+      {
+        "text": "scanner",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "monitor",
+      "impressora",
+      "colunas"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Periféricos, no módulo Arquitetura interna do computador."
+  },
+  {
+    "id": "INFOWORD_01",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Cabeçalho serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "zona no topo da página repetida em várias páginas",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "zona no topo da página repetida em várias páginas",
+        "correct": true
+      },
+      {
+        "text": "nota no fundo da página",
+        "correct": false
+      },
+      {
+        "text": "texto dividido em colunas",
+        "correct": false
+      },
+      {
+        "text": "tipo de letra do documento",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zona no topo da página repetida em várias páginas"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_02",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Rodapé serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "zona no fundo da página repetida em várias páginas",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "zona no fundo da página repetida em várias páginas",
+        "correct": true
+      },
+      {
+        "text": "título principal do documento",
+        "correct": false
+      },
+      {
+        "text": "tabela de dados",
+        "correct": false
+      },
+      {
+        "text": "imagem inserida no texto",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zona no fundo da página repetida em várias páginas"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_03",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Nota de rodapé serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "nota explicativa colocada no fundo da página",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "nota explicativa colocada no fundo da página",
+        "correct": true
+      },
+      {
+        "text": "texto em negrito",
+        "correct": false
+      },
+      {
+        "text": "margem da página",
+        "correct": false
+      },
+      {
+        "text": "cabeçalho repetido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "nota explicativa colocada no fundo da página"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_04",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Texto em colunas serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "organizar o texto em duas ou mais colunas",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "organizar o texto em duas ou mais colunas",
+        "correct": true
+      },
+      {
+        "text": "criar uma fórmula",
+        "correct": false
+      },
+      {
+        "text": "filtrar dados",
+        "correct": false
+      },
+      {
+        "text": "abrir uma base de dados",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "organizar o texto em duas ou mais colunas"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_05",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Margens serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "espaços entre o texto e as extremidades da página",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "espaços entre o texto e as extremidades da página",
+        "correct": true
+      },
+      {
+        "text": "comentários do documento",
+        "correct": false
+      },
+      {
+        "text": "células de uma tabela",
+        "correct": false
+      },
+      {
+        "text": "endereços de rede",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "espaços entre o texto e as extremidades da página"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_06",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Orientação paisagem serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "página mais larga na horizontal",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "página mais larga na horizontal",
+        "correct": true
+      },
+      {
+        "text": "página mais alta na vertical",
+        "correct": false
+      },
+      {
+        "text": "texto em colunas",
+        "correct": false
+      },
+      {
+        "text": "rodapé automático",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "página mais larga na horizontal"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_07",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Numeração de páginas serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "inserir números sequenciais nas páginas",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "inserir números sequenciais nas páginas",
+        "correct": true
+      },
+      {
+        "text": "ordenar alfabeticamente palavras",
+        "correct": false
+      },
+      {
+        "text": "criar gráfico dinâmico",
+        "correct": false
+      },
+      {
+        "text": "ligar redes diferentes",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "inserir números sequenciais nas páginas"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_08",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Processamento e edição",
+    "type": "mc",
+    "prompt": "Num processador de texto, Tabela no processador de texto serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "organizar informação em linhas e colunas",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "organizar informação em linhas e colunas",
+        "correct": true
+      },
+      {
+        "text": "guardar IPs automaticamente",
+        "correct": false
+      },
+      {
+        "text": "compilar código Java",
+        "correct": false
+      },
+      {
+        "text": "definir uma chave primária",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "organizar informação em linhas e colunas"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Processamento e edição, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOWORD_LONG_01",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Documento bem formatado",
+    "type": "long",
+    "prompt": "Indica quatro operações importantes num processador de texto para preparar um documento final.",
+    "difficulty": 3,
+    "estimate": 235,
+    "weight": 1.5,
+    "correctAnswer": "Operações importantes: formatação do texto, texto em colunas, tabelas, cabeçalhos/rodapés, notas de rodapé, numeração de páginas, margens e orientação.",
+    "explanation": "Conteúdo de Processador de texto.",
+    "keywords": [
+      "formatação",
+      "colunas",
+      "tabelas",
+      "cabeçalhos",
+      "rodapés",
+      "notas de rodapé",
+      "numeração",
+      "margens"
+    ],
+    "rubric": [
+      {
+        "label": "formatação",
+        "terms": [
+          "formatação"
+        ]
+      },
+      {
+        "label": "colunas",
+        "terms": [
+          "colunas"
+        ]
+      },
+      {
+        "label": "tabelas",
+        "terms": [
+          "tabelas"
+        ]
+      },
+      {
+        "label": "cabeçalhos",
+        "terms": [
+          "cabeçalhos"
+        ]
+      },
+      {
+        "label": "rodapés",
+        "terms": [
+          "rodapés"
+        ]
+      },
+      {
+        "label": "notas de rodapé",
+        "terms": [
+          "notas de rodapé"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "INFOWORD_MULTI_01",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Formatação",
+    "type": "multi",
+    "prompt": "Assinala opções relacionadas com formatação de texto.",
+    "difficulty": 2,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "negrito; itálico; sublinhado; tamanho da letra",
+    "explanation": "Conteúdo de Processador de texto.",
+    "options": [
+      {
+        "text": "negrito",
+        "correct": true
+      },
+      {
+        "text": "itálico",
+        "correct": true
+      },
+      {
+        "text": "sublinhado",
+        "correct": true
+      },
+      {
+        "text": "tamanho da letra",
+        "correct": true
+      },
+      {
+        "text": "DHCP",
+        "correct": false
+      },
+      {
+        "text": "SELECT",
+        "correct": false
+      },
+      {
+        "text": "JFrame",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "negrito",
+      "itálico",
+      "sublinhado",
+      "tamanho da letra"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Formatação, no módulo Processador de texto."
+  },
+  {
+    "id": "INFOSHEET_01",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, Célula serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "interseção entre uma linha e uma coluna",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "interseção entre uma linha e uma coluna",
+        "correct": true
+      },
+      {
+        "text": "conjunto de slides",
+        "correct": false
+      },
+      {
+        "text": "equipamento de rede",
+        "correct": false
+      },
+      {
+        "text": "ficheiro executável",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "interseção entre uma linha e uma coluna"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_02",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, Intervalo A1:A10 serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "conjunto de células entre A1 e A10",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "conjunto de células entre A1 e A10",
+        "correct": true
+      },
+      {
+        "text": "apenas uma célula",
+        "correct": false
+      },
+      {
+        "text": "uma coluna inteira sem limite",
+        "correct": false
+      },
+      {
+        "text": "uma folha de texto",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto de células entre A1 e A10"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_03",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, =SOMA(A1:A10) serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "somar os valores do intervalo",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "somar os valores do intervalo",
+        "correct": true
+      },
+      {
+        "text": "calcular a média",
+        "correct": false
+      },
+      {
+        "text": "procurar o maior valor",
+        "correct": false
+      },
+      {
+        "text": "contar texto apenas",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "somar os valores do intervalo"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_04",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, =MÉDIA(A1:A10) serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "calcular a média dos valores",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "calcular a média dos valores",
+        "correct": true
+      },
+      {
+        "text": "somar apenas pares",
+        "correct": false
+      },
+      {
+        "text": "criar gráfico",
+        "correct": false
+      },
+      {
+        "text": "filtrar linhas",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "calcular a média dos valores"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_05",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, =MÁXIMO(A1:A10) serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "obter o maior valor do intervalo",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "obter o maior valor do intervalo",
+        "correct": true
+      },
+      {
+        "text": "obter o menor valor",
+        "correct": false
+      },
+      {
+        "text": "formatar a tabela",
+        "correct": false
+      },
+      {
+        "text": "apagar duplicados",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "obter o maior valor do intervalo"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_06",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, =MÍNIMO(A1:A10) serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "obter o menor valor do intervalo",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "obter o menor valor do intervalo",
+        "correct": true
+      },
+      {
+        "text": "obter a média",
+        "correct": false
+      },
+      {
+        "text": "criar tabela dinâmica",
+        "correct": false
+      },
+      {
+        "text": "inserir imagem",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "obter o menor valor do intervalo"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_07",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, =SE(A1>=10;\"Aprovado\";\"Reprovado\") serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "mostrar um resultado dependente de uma condição",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "mostrar um resultado dependente de uma condição",
+        "correct": true
+      },
+      {
+        "text": "somar automaticamente todas as linhas",
+        "correct": false
+      },
+      {
+        "text": "traduzir texto",
+        "correct": false
+      },
+      {
+        "text": "criar um servidor",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "mostrar um resultado dependente de uma condição"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_08",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, Filtro serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "mostrar apenas dados que cumprem certos critérios",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "mostrar apenas dados que cumprem certos critérios",
+        "correct": true
+      },
+      {
+        "text": "apagar definitivamente os restantes dados",
+        "correct": false
+      },
+      {
+        "text": "criar um sistema operativo",
+        "correct": false
+      },
+      {
+        "text": "formatar cabeçalhos",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "mostrar apenas dados que cumprem certos critérios"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_09",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, Formatação condicional serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "formatar células automaticamente conforme uma condição",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "formatar células automaticamente conforme uma condição",
+        "correct": true
+      },
+      {
+        "text": "juntar redes diferentes",
+        "correct": false
+      },
+      {
+        "text": "criar uma classe Java",
+        "correct": false
+      },
+      {
+        "text": "fechar um ficheiro C",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "formatar células automaticamente conforme uma condição"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_10",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, Tabela dinâmica serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "resumir e analisar muitos dados por categorias",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "resumir e analisar muitos dados por categorias",
+        "correct": true
+      },
+      {
+        "text": "escrever texto corrido",
+        "correct": false
+      },
+      {
+        "text": "dar IP a um computador",
+        "correct": false
+      },
+      {
+        "text": "criar um parágrafo HTML",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "resumir e analisar muitos dados por categorias"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_11",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Operação e programação",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, Gráfico dinâmico serve para...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "representar visualmente dados resumidos de uma tabela dinâmica",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "representar visualmente dados resumidos de uma tabela dinâmica",
+        "correct": true
+      },
+      {
+        "text": "compilar código",
+        "correct": false
+      },
+      {
+        "text": "formatar rodapé",
+        "correct": false
+      },
+      {
+        "text": "criar uma chave primária",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "representar visualmente dados resumidos de uma tabela dinâmica"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Operação e programação, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFOSHEET_LONG_01",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Funções e análise",
+    "type": "long",
+    "prompt": "Explica para que servem filtros, formatação condicional, tabelas dinâmicas e gráficos dinâmicos numa folha de cálculo.",
+    "difficulty": 4,
+    "estimate": 260,
+    "weight": 1.5,
+    "correctAnswer": "Filtros mostram apenas dados que cumprem critérios; formatação condicional destaca células segundo condições; tabelas dinâmicas resumem muitos dados; gráficos dinâmicos representam esses resumos visualmente.",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "keywords": [
+      "filtros",
+      "critérios",
+      "formatação condicional",
+      "condições",
+      "tabelas dinâmicas",
+      "resumem",
+      "gráficos dinâmicos",
+      "visual"
+    ],
+    "rubric": [
+      {
+        "label": "filtros",
+        "terms": [
+          "filtros"
+        ]
+      },
+      {
+        "label": "critérios",
+        "terms": [
+          "critérios"
+        ]
+      },
+      {
+        "label": "formatação condicional",
+        "terms": [
+          "formatação condicional"
+        ]
+      },
+      {
+        "label": "condições",
+        "terms": [
+          "condições"
+        ]
+      },
+      {
+        "label": "tabelas dinâmicas",
+        "terms": [
+          "tabelas dinâmicas"
+        ]
+      },
+      {
+        "label": "resumem",
+        "terms": [
+          "resumem"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "INFOSHEET_MULTI_01",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Fórmulas",
+    "type": "multi",
+    "prompt": "Assinala fórmulas/funções válidas de folha de cálculo.",
+    "difficulty": 3,
+    "estimate": 140,
+    "weight": 1.2,
+    "correctAnswer": "=SOMA(A1:A10); =MÉDIA(B1:B5); =SE(A1>=10;\"Aprovado\";\"Reprovado\")",
+    "explanation": "Conteúdo de Folha de cálculo.",
+    "options": [
+      {
+        "text": "=SOMA(A1:A10)",
+        "correct": true
+      },
+      {
+        "text": "=MÉDIA(B1:B5)",
+        "correct": true
+      },
+      {
+        "text": "=SE(A1>=10;\"Aprovado\";\"Reprovado\")",
+        "correct": true
+      },
+      {
+        "text": "<h1>Título</h1>",
+        "correct": false
+      },
+      {
+        "text": "scanf(\"%d\", &idade);",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "=SOMA(A1:A10)",
+      "=MÉDIA(B1:B5)",
+      "=SE(A1>=10;\"Aprovado\";\"Reprovado\")"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Fórmulas, no módulo Folha de cálculo."
+  },
+  {
+    "id": "INFONET_01",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Rede de computadores?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "conjunto de computadores e dispositivos ligados para partilhar dados e recursos",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados e recursos",
+        "correct": true
+      },
+      {
+        "text": "programa para editar texto",
+        "correct": false
+      },
+      {
+        "text": "linguagem de programação orientada por objetos",
+        "correct": false
+      },
+      {
+        "text": "ficheiro de folha de cálculo",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto de computadores e dispositivos ligados para partilhar dados e recursos"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_02",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa LAN?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "rede local, como casa, escola ou empresa",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "rede local, como casa, escola ou empresa",
+        "correct": true
+      },
+      {
+        "text": "rede mundial obrigatoriamente sem fios",
+        "correct": false
+      },
+      {
+        "text": "servidor de nomes",
+        "correct": false
+      },
+      {
+        "text": "cabo de fibra ótica",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede local, como casa, escola ou empresa"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_03",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa WAN?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "rede de grande área, como a Internet",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": true
+      },
+      {
+        "text": "rede de uma sala apenas",
+        "correct": false
+      },
+      {
+        "text": "rede Bluetooth pessoal",
+        "correct": false
+      },
+      {
+        "text": "programa de folha de cálculo",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede de grande área, como a Internet"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_04",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa WLAN?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "rede local sem fios, normalmente Wi-Fi",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "rede local sem fios, normalmente Wi-Fi",
+        "correct": true
+      },
+      {
+        "text": "rede local apenas por cabo",
+        "correct": false
+      },
+      {
+        "text": "servidor de impressão",
+        "correct": false
+      },
+      {
+        "text": "programa HTML",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede local sem fios, normalmente Wi-Fi"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_05",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Topologia em estrela?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "dispositivos ligados a um equipamento central, como switch",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "dispositivos ligados a um equipamento central, como switch",
+        "correct": true
+      },
+      {
+        "text": "todos os dispositivos num único cabo principal",
+        "correct": false
+      },
+      {
+        "text": "dispositivos ligados em círculo",
+        "correct": false
+      },
+      {
+        "text": "todos ligados a todos sem centro",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dispositivos ligados a um equipamento central, como switch"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_06",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Topologia em barramento?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "dispositivos ligados a um cabo principal",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "dispositivos ligados a um cabo principal",
+        "correct": true
+      },
+      {
+        "text": "dispositivos ligados a um switch central",
+        "correct": false
+      },
+      {
+        "text": "rede apenas sem fios",
+        "correct": false
+      },
+      {
+        "text": "servidor de base de dados",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dispositivos ligados a um cabo principal"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_07",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Topologia em anel?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "dispositivos ligados formando um círculo",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "dispositivos ligados formando um círculo",
+        "correct": true
+      },
+      {
+        "text": "equipamento central obrigatório",
+        "correct": false
+      },
+      {
+        "text": "folha de cálculo com filtros",
+        "correct": false
+      },
+      {
+        "text": "ligação fibra até casa",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dispositivos ligados formando um círculo"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_08",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Switch?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "liga vários dispositivos dentro de uma LAN",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "liga vários dispositivos dentro de uma LAN",
+        "correct": true
+      },
+      {
+        "text": "liga redes diferentes à Internet",
+        "correct": false
+      },
+      {
+        "text": "atribui IP automaticamente",
+        "correct": false
+      },
+      {
+        "text": "traduz nomes em IP",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "liga vários dispositivos dentro de uma LAN"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_09",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Router?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "liga redes diferentes e encaminha tráfego",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "liga redes diferentes e encaminha tráfego",
+        "correct": true
+      },
+      {
+        "text": "liga apenas computadores numa LAN sem encaminhar redes",
+        "correct": false
+      },
+      {
+        "text": "guarda ficheiros",
+        "correct": false
+      },
+      {
+        "text": "edita documentos",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "liga redes diferentes e encaminha tráfego"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_10",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Access Point?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "fornece acesso Wi-Fi a uma rede",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "fornece acesso Wi-Fi a uma rede",
+        "correct": true
+      },
+      {
+        "text": "calcula fórmulas",
+        "correct": false
+      },
+      {
+        "text": "guarda instruções permanentes",
+        "correct": false
+      },
+      {
+        "text": "é uma linguagem de programação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "fornece acesso Wi-Fi a uma rede"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_11",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Firewall?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "filtra tráfego e ajuda a proteger a rede",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "filtra tráfego e ajuda a proteger a rede",
+        "correct": true
+      },
+      {
+        "text": "atribui endereços IP automaticamente",
+        "correct": false
+      },
+      {
+        "text": "traduz domínios",
+        "correct": false
+      },
+      {
+        "text": "substitui o monitor",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "filtra tráfego e ajuda a proteger a rede"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_12",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa DHCP?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "atribui endereços IP automaticamente",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "atribui endereços IP automaticamente",
+        "correct": true
+      },
+      {
+        "text": "traduz nomes de domínio",
+        "correct": false
+      },
+      {
+        "text": "liga redes diferentes",
+        "correct": false
+      },
+      {
+        "text": "formatar documentos",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "atribui endereços IP automaticamente"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_13",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa DNS?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "traduz nomes de domínio em endereços IP",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "traduz nomes de domínio em endereços IP",
+        "correct": true
+      },
+      {
+        "text": "atribui IPs automaticamente",
+        "correct": false
+      },
+      {
+        "text": "liga monitores",
+        "correct": false
+      },
+      {
+        "text": "cria tabelas dinâmicas",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "traduz nomes de domínio em endereços IP"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_14",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Servidor de ficheiros?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "permite armazenar e partilhar ficheiros na rede",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "permite armazenar e partilhar ficheiros na rede",
+        "correct": true
+      },
+      {
+        "text": "fornece apenas Wi-Fi",
+        "correct": false
+      },
+      {
+        "text": "edita texto em colunas",
+        "correct": false
+      },
+      {
+        "text": "compila C",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "permite armazenar e partilhar ficheiros na rede"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_15",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Servidor de impressão?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "gere impressoras partilhadas na rede",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "gere impressoras partilhadas na rede",
+        "correct": true
+      },
+      {
+        "text": "traduz nomes em IP",
+        "correct": false
+      },
+      {
+        "text": "guarda páginas HTML",
+        "correct": false
+      },
+      {
+        "text": "cria gráficos",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "gere impressoras partilhadas na rede"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_16",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Servidor web?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "aloja páginas e aplicações web",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "aloja páginas e aplicações web",
+        "correct": true
+      },
+      {
+        "text": "atribui IP automaticamente",
+        "correct": false
+      },
+      {
+        "text": "é uma placa de rede",
+        "correct": false
+      },
+      {
+        "text": "aplica filtros em Excel",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "aloja páginas e aplicações web"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_17",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Servidor de base de dados?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "guarda e gere dados estruturados",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "guarda e gere dados estruturados",
+        "correct": true
+      },
+      {
+        "text": "é um cabo de rede",
+        "correct": false
+      },
+      {
+        "text": "é uma topologia",
+        "correct": false
+      },
+      {
+        "text": "é um periférico de saída",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guarda e gere dados estruturados"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_18",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Rede ponto-a-ponto?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "computadores partilham recursos diretamente sem servidor central",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "computadores partilham recursos diretamente sem servidor central",
+        "correct": true
+      },
+      {
+        "text": "todos os pedidos passam por servidor central",
+        "correct": false
+      },
+      {
+        "text": "usa obrigatoriamente fibra ótica",
+        "correct": false
+      },
+      {
+        "text": "serve apenas para emails",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computadores partilham recursos diretamente sem servidor central"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_19",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Rede cliente/servidor?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "clientes pedem serviços a servidores",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "clientes pedem serviços a servidores",
+        "correct": true
+      },
+      {
+        "text": "todos os computadores têm exatamente o mesmo papel",
+        "correct": false
+      },
+      {
+        "text": "é sempre uma rede sem fios",
+        "correct": false
+      },
+      {
+        "text": "é uma tabela dinâmica",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "clientes pedem serviços a servidores"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_20",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Cabo de par entrançado?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "meio físico comum em Ethernet",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "meio físico comum em Ethernet",
+        "correct": true
+      },
+      {
+        "text": "memória volátil",
+        "correct": false
+      },
+      {
+        "text": "linguagem web",
+        "correct": false
+      },
+      {
+        "text": "servidor de nomes",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "meio físico comum em Ethernet"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_21",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Fibra ótica?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "meio de transmissão que usa luz e permite alta velocidade",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "meio de transmissão que usa luz e permite alta velocidade",
+        "correct": true
+      },
+      {
+        "text": "cabo elétrico comum para alimentação",
+        "correct": false
+      },
+      {
+        "text": "periférico de entrada",
+        "correct": false
+      },
+      {
+        "text": "função do Excel",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "meio de transmissão que usa luz e permite alta velocidade"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_22",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Cabo coaxial?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "meio físico usado em algumas ligações de TV/internet",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "meio físico usado em algumas ligações de TV/internet",
+        "correct": true
+      },
+      {
+        "text": "memória do processador",
+        "correct": false
+      },
+      {
+        "text": "tag HTML",
+        "correct": false
+      },
+      {
+        "text": "comando SQL",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "meio físico usado em algumas ligações de TV/internet"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_23",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Redes e equipamentos",
+    "type": "mc",
+    "prompt": "Em redes, o que representa Placa de rede?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "permite ao computador ligar-se à rede",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "permite ao computador ligar-se à rede",
+        "correct": true
+      },
+      {
+        "text": "imprime documentos",
+        "correct": false
+      },
+      {
+        "text": "faz cálculos lógicos",
+        "correct": false
+      },
+      {
+        "text": "cria uma classe Java",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "permite ao computador ligar-se à rede"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Redes e equipamentos, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFONET_LONG_01",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Rede local",
+    "type": "long",
+    "prompt": "Distingue rede ponto-a-ponto de rede cliente/servidor.",
+    "difficulty": 4,
+    "estimate": 260,
+    "weight": 1.5,
+    "correctAnswer": "Numa rede ponto-a-ponto os computadores partilham recursos diretamente entre si. Numa rede cliente/servidor, os clientes pedem serviços a um servidor central.",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "keywords": [
+      "ponto-a-ponto",
+      "partilham recursos",
+      "diretamente",
+      "cliente/servidor",
+      "clientes",
+      "servidor central"
+    ],
+    "rubric": [
+      {
+        "label": "ponto-a-ponto",
+        "terms": [
+          "ponto-a-ponto"
+        ]
+      },
+      {
+        "label": "partilham recursos",
+        "terms": [
+          "partilham recursos"
+        ]
+      },
+      {
+        "label": "diretamente",
+        "terms": [
+          "diretamente"
+        ]
+      },
+      {
+        "label": "cliente/servidor",
+        "terms": [
+          "cliente/servidor"
+        ]
+      },
+      {
+        "label": "clientes",
+        "terms": [
+          "clientes"
+        ]
+      },
+      {
+        "label": "servidor central",
+        "terms": [
+          "servidor central"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "INFONET_LONG_02",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidores",
+    "type": "long",
+    "prompt": "Indica quatro tipos de servidores e a função de cada um.",
+    "difficulty": 4,
+    "estimate": 260,
+    "weight": 1.5,
+    "correctAnswer": "Exemplos: servidor de ficheiros partilha ficheiros; servidor de impressão gere impressoras; servidor web aloja sites; servidor DHCP atribui IPs; servidor DNS traduz nomes em IP; servidor de base de dados gere dados.",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "keywords": [
+      "servidor de ficheiros",
+      "impressão",
+      "web",
+      "DHCP",
+      "DNS",
+      "base de dados",
+      "IPs",
+      "sites"
+    ],
+    "rubric": [
+      {
+        "label": "servidor de ficheiros",
+        "terms": [
+          "servidor de ficheiros"
+        ]
+      },
+      {
+        "label": "impressão",
+        "terms": [
+          "impressão"
+        ]
+      },
+      {
+        "label": "web",
+        "terms": [
+          "web"
+        ]
+      },
+      {
+        "label": "DHCP",
+        "terms": [
+          "DHCP"
+        ]
+      },
+      {
+        "label": "DNS",
+        "terms": [
+          "DNS"
+        ]
+      },
+      {
+        "label": "base de dados",
+        "terms": [
+          "base de dados"
+        ]
+      }
+    ],
+    "humanGrading": true
+  },
+  {
+    "id": "INFONET_MULTI_01",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Equipamentos de rede",
+    "type": "multi",
+    "prompt": "Assinala equipamentos ou serviços de rede.",
+    "difficulty": 3,
+    "estimate": 140,
+    "weight": 1.2,
+    "correctAnswer": "switch; router; access point; firewall; DNS; DHCP",
+    "explanation": "Conteúdo de Conexões de rede / Rede local.",
+    "options": [
+      {
+        "text": "switch",
+        "correct": true
+      },
+      {
+        "text": "router",
+        "correct": true
+      },
+      {
+        "text": "access point",
+        "correct": true
+      },
+      {
+        "text": "firewall",
+        "correct": true
+      },
+      {
+        "text": "DNS",
+        "correct": true
+      },
+      {
+        "text": "DHCP",
+        "correct": true
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "tabela dinâmica",
+        "correct": false
+      },
+      {
+        "text": "JTextField",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "switch",
+      "router",
+      "access point",
+      "firewall",
+      "DNS",
+      "DHCP"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Equipamentos de rede, no módulo Conexões de rede / Rede local."
+  },
+  {
+    "id": "INFOC_EXTRA_01",
+    "area": "info",
+    "module": "Programação em C/C++",
+    "topic": "Conceitos C",
+    "type": "mc",
+    "prompt": "Em C, o que significa “&” no scanf?",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "passar o endereço da variável para guardar o valor lido",
+    "explanation": "Conteúdo de Programação em C/C++.",
+    "options": [
+      {
+        "text": "passar o endereço da variável para guardar o valor lido",
+        "correct": true
+      },
+      {
+        "text": "comparar dois valores",
+        "correct": false
+      },
+      {
+        "text": "criar uma string",
+        "correct": false
+      },
+      {
+        "text": "fechar uma função",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "passar o endereço da variável para guardar o valor lido"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de Conceitos C, no módulo Programação em C/C++."
+  },
+  {
+    "id": "INFOJAVA_EXTRA_01",
+    "area": "info",
+    "module": "Programação em JAVA",
+    "topic": "POO",
+    "type": "mc",
+    "prompt": "Em Java/POO, encapsulamento significa...",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "proteger atributos e aceder através de métodos",
+    "explanation": "Conteúdo de Programação em JAVA.",
+    "options": [
+      {
+        "text": "proteger atributos e aceder através de métodos",
+        "correct": true
+      },
+      {
+        "text": "criar uma rede local",
+        "correct": false
+      },
+      {
+        "text": "formatar células",
+        "correct": false
+      },
+      {
+        "text": "apagar uma tabela SQL",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "proteger atributos e aceder através de métodos"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de POO, no módulo Programação em JAVA."
+  },
+  {
+    "id": "INFOHTML_EXTRA_01",
+    "area": "info",
+    "module": "Criação de páginas Web em hipertexto",
+    "topic": "HTML avaliação",
+    "type": "mc",
+    "prompt": "Na avaliação de criação de páginas web, o site deve ter pelo menos...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "três páginas, vídeo, áudio, tabela, galeria e navegação",
+    "explanation": "Conteúdo de Criação de páginas Web em hipertexto.",
+    "options": [
+      {
+        "text": "três páginas, vídeo, áudio, tabela, galeria e navegação",
+        "correct": true
+      },
+      {
+        "text": "uma única página sem multimédia",
+        "correct": false
+      },
+      {
+        "text": "apenas uma tabela SQL",
+        "correct": false
+      },
+      {
+        "text": "apenas código Java",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "três páginas, vídeo, áudio, tabela, galeria e navegação"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de HTML avaliação, no módulo Criação de páginas Web em hipertexto."
+  },
+  {
+    "id": "INFOSQL_EXTRA_01",
+    "area": "info",
+    "module": "Scripts CGI e folhas de estilo",
+    "topic": "MySQL",
+    "type": "mc",
+    "prompt": "Num formulário web com MySQL, o método POST é mais indicado para...",
+    "difficulty": 3,
+    "estimate": 115,
+    "weight": 1,
+    "correctAnswer": "enviar dados de formulário no corpo do pedido",
+    "explanation": "Conteúdo de Scripts CGI e folhas de estilo.",
+    "options": [
+      {
+        "text": "enviar dados de formulário no corpo do pedido",
+        "correct": true
+      },
+      {
+        "text": "mostrar dados na URL como pesquisa simples",
+        "correct": false
+      },
+      {
+        "text": "criar uma classe Java",
+        "correct": false
+      },
+      {
+        "text": "formatar texto em colunas",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "enviar dados de formulário no corpo do pedido"
+    ],
+    "trap": false,
+    "writtenPrompt": "Explica por extenso o conceito de MySQL, no módulo Scripts CGI e folhas de estilo."
+  },
+  {
+    "id": "MFCACC_EXTRA_01",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração por gráfico v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 0 m/s no instante 0s para 10 m/s no instante 2s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 150,
+    "weight": 1.4,
+    "numericAnswer": 5,
+    "unit": "m/s²",
+    "tolerance": 0.06,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "a = (10 - 0) / (2 - 0) = 5,0 m/s²",
+    "explanation": "A aceleração é o declive do gráfico v=f(t): a = Δv/Δt.",
+    "keywords": [
+      "aceleração",
+      "declive",
+      "velocidade",
+      "tempo"
+    ]
+  },
+  {
+    "id": "MFCACC_EXTRA_02",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração por gráfico v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 10 m/s no instante 0s para 4 m/s no instante 3s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 150,
+    "weight": 1.4,
+    "numericAnswer": -2,
+    "unit": "m/s²",
+    "tolerance": 0.06,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "a = (4 - 10) / (3 - 0) = -2,0 m/s²",
+    "explanation": "A aceleração é o declive do gráfico v=f(t): a = Δv/Δt.",
+    "keywords": [
+      "aceleração",
+      "declive",
+      "velocidade",
+      "tempo"
+    ]
+  },
+  {
+    "id": "MFCACC_EXTRA_03",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração por gráfico v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de -5 m/s no instante 1s para 5 m/s no instante 3s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 150,
+    "weight": 1.4,
+    "numericAnswer": 5,
+    "unit": "m/s²",
+    "tolerance": 0.06,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "a = (5 - -5) / (3 - 1) = 5,0 m/s²",
+    "explanation": "A aceleração é o declive do gráfico v=f(t): a = Δv/Δt.",
+    "keywords": [
+      "aceleração",
+      "declive",
+      "velocidade",
+      "tempo"
+    ]
+  },
+  {
+    "id": "MFCACC_EXTRA_04",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração por gráfico v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 8 m/s no instante 2s para 8 m/s no instante 6s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 150,
+    "weight": 1.4,
+    "numericAnswer": 0,
+    "unit": "m/s²",
+    "tolerance": 0.06,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "a = (8 - 8) / (6 - 2) = 0,0 m/s²",
+    "explanation": "A aceleração é o declive do gráfico v=f(t): a = Δv/Δt.",
+    "keywords": [
+      "aceleração",
+      "declive",
+      "velocidade",
+      "tempo"
+    ]
+  },
+  {
+    "id": "MFCACC_EXTRA_05",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração por gráfico v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 3 m/s no instante 1s para -9 m/s no instante 5s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 150,
+    "weight": 1.4,
+    "numericAnswer": -3,
+    "unit": "m/s²",
+    "tolerance": 0.06,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "a = (-9 - 3) / (5 - 1) = -3,0 m/s²",
+    "explanation": "A aceleração é o declive do gráfico v=f(t): a = Δv/Δt.",
+    "keywords": [
+      "aceleração",
+      "declive",
+      "velocidade",
+      "tempo"
+    ]
+  },
+  {
+    "id": "MFCACC_EXTRA_06",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração por gráfico v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 20 m/s no instante 0s para 0 m/s no instante 4s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 150,
+    "weight": 1.4,
+    "numericAnswer": -5,
+    "unit": "m/s²",
+    "tolerance": 0.06,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "a = (0 - 20) / (4 - 0) = -5,0 m/s²",
+    "explanation": "A aceleração é o declive do gráfico v=f(t): a = Δv/Δt.",
+    "keywords": [
+      "aceleração",
+      "declive",
+      "velocidade",
+      "tempo"
+    ]
+  },
+  {
+    "id": "MFCMOV_EXTRA_01",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Tipo de movimento",
+    "type": "mc",
+    "prompt": "Num gráfico v=f(t), uma reta horizontal indica...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "movimento uniforme, com aceleração nula",
+    "explanation": "Conteúdo de Movimentos e Forças.",
+    "options": [
+      {
+        "text": "movimento uniforme, com aceleração nula",
+        "correct": true
+      },
+      {
+        "text": "movimento sempre acelerado",
+        "correct": false
+      },
+      {
+        "text": "movimento sempre retardado",
+        "correct": false
+      },
+      {
+        "text": "impossibilidade de calcular velocidade",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "movimento uniforme, com aceleração nula"
+    ],
+    "trap": false,
+    "writtenPrompt": "Num gráfico v=f(t), uma reta horizontal indica...\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCMOV_EXTRA_02",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Tipo de movimento",
+    "type": "mc",
+    "prompt": "Num gráfico v=f(t), uma reta com declive negativo indica...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "aceleração negativa",
+    "explanation": "Conteúdo de Movimentos e Forças.",
+    "options": [
+      {
+        "text": "aceleração negativa",
+        "correct": true
+      },
+      {
+        "text": "aceleração positiva",
+        "correct": false
+      },
+      {
+        "text": "velocidade sempre zero",
+        "correct": false
+      },
+      {
+        "text": "tempo parado",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "aceleração negativa"
+    ],
+    "trap": false,
+    "writtenPrompt": "Num gráfico v=f(t), uma reta com declive negativo indica...\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCWAVE_EXTRA_01",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Grandezas das ondas",
+    "type": "mc",
+    "prompt": "Numa onda, o que é Amplitude?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "altura máxima da onda em relação à posição de equilíbrio",
+    "explanation": "Conteúdo de Movimentos Ondulatórios.",
+    "options": [
+      {
+        "text": "altura máxima da onda em relação à posição de equilíbrio",
+        "correct": true
+      },
+      {
+        "text": "distância entre dois pontos equivalentes consecutivos da onda",
+        "correct": false
+      },
+      {
+        "text": "tempo de uma oscilação completa",
+        "correct": false
+      },
+      {
+        "text": "número de oscilações por segundo",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "altura máxima da onda em relação à posição de equilíbrio"
+    ],
+    "trap": false,
+    "writtenPrompt": "Numa onda, o que é Amplitude?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCWAVE_EXTRA_02",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Grandezas das ondas",
+    "type": "mc",
+    "prompt": "Numa onda, o que é Comprimento de onda?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "distância entre dois pontos equivalentes consecutivos da onda",
+    "explanation": "Conteúdo de Movimentos Ondulatórios.",
+    "options": [
+      {
+        "text": "distância entre dois pontos equivalentes consecutivos da onda",
+        "correct": true
+      },
+      {
+        "text": "altura máxima da onda em relação à posição de equilíbrio",
+        "correct": false
+      },
+      {
+        "text": "tempo de uma oscilação completa",
+        "correct": false
+      },
+      {
+        "text": "número de oscilações por segundo",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "distância entre dois pontos equivalentes consecutivos da onda"
+    ],
+    "trap": false,
+    "writtenPrompt": "Numa onda, o que é Comprimento de onda?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCWAVE_EXTRA_03",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Grandezas das ondas",
+    "type": "mc",
+    "prompt": "Numa onda, o que é Período?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "tempo de uma oscilação completa",
+    "explanation": "Conteúdo de Movimentos Ondulatórios.",
+    "options": [
+      {
+        "text": "tempo de uma oscilação completa",
+        "correct": true
+      },
+      {
+        "text": "altura máxima da onda em relação à posição de equilíbrio",
+        "correct": false
+      },
+      {
+        "text": "distância entre dois pontos equivalentes consecutivos da onda",
+        "correct": false
+      },
+      {
+        "text": "número de oscilações por segundo",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "tempo de uma oscilação completa"
+    ],
+    "trap": false,
+    "writtenPrompt": "Numa onda, o que é Período?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCWAVE_EXTRA_04",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Grandezas das ondas",
+    "type": "mc",
+    "prompt": "Numa onda, o que é Frequência?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "número de oscilações por segundo",
+    "explanation": "Conteúdo de Movimentos Ondulatórios.",
+    "options": [
+      {
+        "text": "número de oscilações por segundo",
+        "correct": true
+      },
+      {
+        "text": "altura máxima da onda em relação à posição de equilíbrio",
+        "correct": false
+      },
+      {
+        "text": "distância entre dois pontos equivalentes consecutivos da onda",
+        "correct": false
+      },
+      {
+        "text": "tempo de uma oscilação completa",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "número de oscilações por segundo"
+    ],
+    "trap": false,
+    "writtenPrompt": "Numa onda, o que é Frequência?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCWAVE_EXTRA_05",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Grandezas das ondas",
+    "type": "mc",
+    "prompt": "Numa onda, o que é Velocidade de propagação?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "rapidez com que a onda se propaga",
+    "explanation": "Conteúdo de Movimentos Ondulatórios.",
+    "options": [
+      {
+        "text": "rapidez com que a onda se propaga",
+        "correct": true
+      },
+      {
+        "text": "altura máxima da onda em relação à posição de equilíbrio",
+        "correct": false
+      },
+      {
+        "text": "distância entre dois pontos equivalentes consecutivos da onda",
+        "correct": false
+      },
+      {
+        "text": "tempo de uma oscilação completa",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rapidez com que a onda se propaga"
+    ],
+    "trap": false,
+    "writtenPrompt": "Numa onda, o que é Velocidade de propagação?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCWAVE_CALC_01",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "v = λ × f",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=2 m e frequência f=3 Hz. Calcula a velocidade de propagação.",
+    "difficulty": 3,
+    "estimate": 140,
+    "weight": 1.4,
+    "numericAnswer": 6,
+    "unit": "m/s",
+    "tolerance": 0.01,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "v = λ × f = 2 × 3 = 6 m/s",
+    "explanation": "Usa a fórmula v = λ × f.",
+    "keywords": [
+      "velocidade",
+      "comprimento de onda",
+      "frequência"
+    ]
+  },
+  {
+    "id": "MFCWAVE_CALC_02",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "v = λ × f",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=0,5 m e frequência f=20 Hz. Calcula a velocidade de propagação.",
+    "difficulty": 3,
+    "estimate": 140,
+    "weight": 1.4,
+    "numericAnswer": 10,
+    "unit": "m/s",
+    "tolerance": 0.01,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "v = λ × f = 0,5 × 20 = 10,0 m/s",
+    "explanation": "Usa a fórmula v = λ × f.",
+    "keywords": [
+      "velocidade",
+      "comprimento de onda",
+      "frequência"
+    ]
+  },
+  {
+    "id": "MFCWAVE_CALC_03",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "v = λ × f",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=4 m e frequência f=2 Hz. Calcula a velocidade de propagação.",
+    "difficulty": 3,
+    "estimate": 140,
+    "weight": 1.4,
+    "numericAnswer": 8,
+    "unit": "m/s",
+    "tolerance": 0.01,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "v = λ × f = 4 × 2 = 8 m/s",
+    "explanation": "Usa a fórmula v = λ × f.",
+    "keywords": [
+      "velocidade",
+      "comprimento de onda",
+      "frequência"
+    ]
+  },
+  {
+    "id": "MFCWAVE_CALC_04",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "v = λ × f",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=1,5 m e frequência f=6 Hz. Calcula a velocidade de propagação.",
+    "difficulty": 3,
+    "estimate": 140,
+    "weight": 1.4,
+    "numericAnswer": 9,
+    "unit": "m/s",
+    "tolerance": 0.01,
+    "rounding": "Resultado exato.",
+    "correctAnswer": "v = λ × f = 1,5 × 6 = 9,0 m/s",
+    "explanation": "Usa a fórmula v = λ × f.",
+    "keywords": [
+      "velocidade",
+      "comprimento de onda",
+      "frequência"
+    ]
+  },
+  {
+    "id": "MFCHID_EXTRA_01",
+    "area": "mfc",
+    "module": "Hidrocarbonetos",
+    "topic": "Definição",
+    "type": "mc",
+    "prompt": "Um hidrocarboneto é formado apenas por...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "carbono e hidrogénio",
+    "explanation": "Conteúdo de Hidrocarbonetos.",
+    "options": [
+      {
+        "text": "carbono e hidrogénio",
+        "correct": true
+      },
+      {
+        "text": "carbono e oxigénio",
+        "correct": false
+      },
+      {
+        "text": "hidrogénio e azoto",
+        "correct": false
+      },
+      {
+        "text": "metal e carbono",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "carbono e hidrogénio"
+    ],
+    "trap": false,
+    "writtenPrompt": "Um hidrocarboneto é formado apenas por...\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCHID_NAME_CH4",
+    "area": "mfc",
+    "module": "Hidrocarbonetos",
+    "topic": "Nomenclatura",
+    "type": "mc",
+    "prompt": "Qual é o nome do hidrocarboneto CH4?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "metano",
+    "explanation": "Conteúdo de Hidrocarbonetos.",
+    "options": [
+      {
+        "text": "metano",
+        "correct": true
+      },
+      {
+        "text": "etano",
+        "correct": false
+      },
+      {
+        "text": "propano",
+        "correct": false
+      },
+      {
+        "text": "butano",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "metano"
+    ],
+    "trap": false,
+    "writtenPrompt": "Qual é o nome do hidrocarboneto CH4?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCHID_NAME_C2H6",
+    "area": "mfc",
+    "module": "Hidrocarbonetos",
+    "topic": "Nomenclatura",
+    "type": "mc",
+    "prompt": "Qual é o nome do hidrocarboneto C2H6?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "etano",
+    "explanation": "Conteúdo de Hidrocarbonetos.",
+    "options": [
+      {
+        "text": "etano",
+        "correct": true
+      },
+      {
+        "text": "metano",
+        "correct": false
+      },
+      {
+        "text": "propano",
+        "correct": false
+      },
+      {
+        "text": "butano",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "etano"
+    ],
+    "trap": false,
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C2H6?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCHID_NAME_C3H8",
+    "area": "mfc",
+    "module": "Hidrocarbonetos",
+    "topic": "Nomenclatura",
+    "type": "mc",
+    "prompt": "Qual é o nome do hidrocarboneto C3H8?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "propano",
+    "explanation": "Conteúdo de Hidrocarbonetos.",
+    "options": [
+      {
+        "text": "propano",
+        "correct": true
+      },
+      {
+        "text": "metano",
+        "correct": false
+      },
+      {
+        "text": "etano",
+        "correct": false
+      },
+      {
+        "text": "butano",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "propano"
+    ],
+    "trap": false,
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C3H8?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCHID_NAME_C4H10",
+    "area": "mfc",
+    "module": "Hidrocarbonetos",
+    "topic": "Nomenclatura",
+    "type": "mc",
+    "prompt": "Qual é o nome do hidrocarboneto C4H10?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "butano",
+    "explanation": "Conteúdo de Hidrocarbonetos.",
+    "options": [
+      {
+        "text": "butano",
+        "correct": true
+      },
+      {
+        "text": "metano",
+        "correct": false
+      },
+      {
+        "text": "etano",
+        "correct": false
+      },
+      {
+        "text": "propano",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "butano"
+    ],
+    "trap": false,
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C4H10?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCHID_NAME_C2H4",
+    "area": "mfc",
+    "module": "Hidrocarbonetos",
+    "topic": "Nomenclatura",
+    "type": "mc",
+    "prompt": "Qual é o nome do hidrocarboneto C2H4?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "eteno",
+    "explanation": "Conteúdo de Hidrocarbonetos.",
+    "options": [
+      {
+        "text": "eteno",
+        "correct": true
+      },
+      {
+        "text": "metano",
+        "correct": false
+      },
+      {
+        "text": "etano",
+        "correct": false
+      },
+      {
+        "text": "propano",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "eteno"
+    ],
+    "trap": false,
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C2H4?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCHID_NAME_C2H2",
+    "area": "mfc",
+    "module": "Hidrocarbonetos",
+    "topic": "Nomenclatura",
+    "type": "mc",
+    "prompt": "Qual é o nome do hidrocarboneto C2H2?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "etino",
+    "explanation": "Conteúdo de Hidrocarbonetos.",
+    "options": [
+      {
+        "text": "etino",
+        "correct": true
+      },
+      {
+        "text": "metano",
+        "correct": false
+      },
+      {
+        "text": "etano",
+        "correct": false
+      },
+      {
+        "text": "propano",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "etino"
+    ],
+    "trap": false,
+    "writtenPrompt": "Qual é o nome do hidrocarboneto C2H2?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCDATA_MEAN_01",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Média",
+    "type": "number",
+    "prompt": "Calcula a média dos dados: 4, 8, 7, 6, 3, 2, 4.",
+    "difficulty": 2,
+    "estimate": 120,
+    "weight": 1.1,
+    "numericAnswer": 4.86,
+    "unit": "",
+    "tolerance": 0.01,
+    "rounding": "Arredonda às centésimas.",
+    "correctAnswer": "Média = 34/7 = 4,86",
+    "explanation": "Soma todos os valores e divide pelo número de valores.",
+    "keywords": [
+      "média",
+      "soma",
+      "dividir"
+    ]
+  },
+  {
+    "id": "MFCDATA_MEAN_02",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Média",
+    "type": "number",
+    "prompt": "Calcula a média dos dados: 12, 9, 12, 15, 6, 9, 12.",
+    "difficulty": 2,
+    "estimate": 120,
+    "weight": 1.1,
+    "numericAnswer": 10.71,
+    "unit": "",
+    "tolerance": 0.01,
+    "rounding": "Arredonda às centésimas.",
+    "correctAnswer": "Média = 75/7 = 10,71",
+    "explanation": "Soma todos os valores e divide pelo número de valores.",
+    "keywords": [
+      "média",
+      "soma",
+      "dividir"
+    ]
+  },
+  {
+    "id": "MFCDATA_MEAN_03",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Média",
+    "type": "number",
+    "prompt": "Calcula a média dos dados: 1, 2, 3, 4, 5, 6, 7, 8.",
+    "difficulty": 2,
+    "estimate": 120,
+    "weight": 1.1,
+    "numericAnswer": 4.5,
+    "unit": "",
+    "tolerance": 0.01,
+    "rounding": "Arredonda às centésimas.",
+    "correctAnswer": "Média = 36/8 = 4,50",
+    "explanation": "Soma todos os valores e divide pelo número de valores.",
+    "keywords": [
+      "média",
+      "soma",
+      "dividir"
+    ]
+  },
+  {
+    "id": "MFCPROB_EXTRA_01",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Lei de Laplace",
+    "type": "mc",
+    "prompt": "Num dado equilibrado, qual é a probabilidade de sair número maior que 4?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "2/6 = 1/3",
+    "explanation": "Conteúdo de Organização, Análise da Informação e Probabilidades.",
+    "options": [
+      {
+        "text": "2/6 = 1/3",
+        "correct": true
+      },
+      {
+        "text": "4/6 = 2/3",
+        "correct": false
+      },
+      {
+        "text": "1/6",
+        "correct": false
+      },
+      {
+        "text": "3/6 = 1/2",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "2/6 = 1/3"
+    ],
+    "trap": false,
+    "writtenPrompt": "Num dado equilibrado, qual é a probabilidade de sair número maior que 4?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCNOT_EXTRA_01",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Notação científica",
+    "type": "mc",
+    "prompt": "Qual é maior?",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "7,9 × 10^8",
+    "explanation": "Conteúdo de Operações Numéricas e Estimação.",
+    "options": [
+      {
+        "text": "7,9 × 10^8",
+        "correct": true
+      },
+      {
+        "text": "3,8 × 10^7",
+        "correct": false
+      },
+      {
+        "text": "5 × 10^6",
+        "correct": false
+      },
+      {
+        "text": "9 × 10^5",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "7,9 × 10^8"
+    ],
+    "trap": false,
+    "writtenPrompt": "Qual é maior?\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCFUNC_EXTRA_01",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Funções",
+    "type": "mc",
+    "prompt": "O zero de f(x)=2x-10 é...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "x=5",
+    "explanation": "Conteúdo de Funções, Limites e Cálculo Diferencial.",
+    "options": [
+      {
+        "text": "x=5",
+        "correct": true
+      },
+      {
+        "text": "x=-5",
+        "correct": false
+      },
+      {
+        "text": "x=10",
+        "correct": false
+      },
+      {
+        "text": "x=2",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "x=5"
+    ],
+    "trap": false,
+    "writtenPrompt": "O zero de f(x)=2x-10 é...\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "MFCFUNC_EXTRA_02",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Parábola",
+    "type": "mc",
+    "prompt": "Na função f(x)=ax²+bx+c, se a>0, a parábola tem concavidade...",
+    "difficulty": 2,
+    "estimate": 100,
+    "weight": 1,
+    "correctAnswer": "voltada para cima",
+    "explanation": "Conteúdo de Funções, Limites e Cálculo Diferencial.",
+    "options": [
+      {
+        "text": "voltada para cima",
+        "correct": true
+      },
+      {
+        "text": "voltada para baixo",
+        "correct": false
+      },
+      {
+        "text": "sempre nula",
+        "correct": false
+      },
+      {
+        "text": "sem eixo de simetria",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "voltada para cima"
+    ],
+    "trap": false,
+    "writtenPrompt": "Na função f(x)=ax²+bx+c, se a>0, a parábola tem concavidade...\nExplica por extenso o raciocínio e a resposta final."
+  },
+  {
+    "id": "ADD_0001",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: I ____ at seven o'clock.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "wake up",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "wake up",
+        "correct": true
+      },
+      {
+        "text": "wakes up",
+        "correct": false
+      },
+      {
+        "text": "waking up",
+        "correct": false
+      },
+      {
+        "text": "woke up",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "wake"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: I ____ at seven o'clock.",
+    "writtenCorrectAnswer": "I wake up at seven o'clock."
+  },
+  {
+    "id": "ADD_0002",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"wake up\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "acordar",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "acordar"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"wake up\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "acordar",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0003",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: She ____ breakfast at eight.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "has",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "has",
+        "correct": true
+      },
+      {
+        "text": "have",
+        "correct": false
+      },
+      {
+        "text": "having",
+        "correct": false
+      },
+      {
+        "text": "haves",
+        "correct": false
+      }
+    ],
+    "keywords": [],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: She ____ breakfast at eight.",
+    "writtenCorrectAnswer": "She has breakfast at eight."
+  },
+  {
+    "id": "ADD_0004",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"have breakfast\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "tomar o pequeno-almoço",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "tomar o pequeno-almoço"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"have breakfast\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0005",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: He ____ to school by bus.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "goes",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "goes",
+        "correct": true
+      },
+      {
+        "text": "go",
+        "correct": false
+      },
+      {
+        "text": "going",
+        "correct": false
+      },
+      {
+        "text": "goed",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "goes"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: He ____ to school by bus.",
+    "writtenCorrectAnswer": "He goes to school by bus."
+  },
+  {
+    "id": "ADD_0006",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"go to school\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "ir para a escola",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "ir para a escola"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"go to school\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "ir para a escola",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0007",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: They ____ every afternoon.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "study",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "study",
+        "correct": true
+      },
+      {
+        "text": "studies",
+        "correct": false
+      },
+      {
+        "text": "studying",
+        "correct": false
+      },
+      {
+        "text": "studied",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "study"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: They ____ every afternoon.",
+    "writtenCorrectAnswer": "They study every afternoon."
+  },
+  {
+    "id": "ADD_0008",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"study\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "estudar",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "estudar"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"study\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "estudar",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0009",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: My brother ____ TV after dinner.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "watches",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "watches",
+        "correct": true
+      },
+      {
+        "text": "watch",
+        "correct": false
+      },
+      {
+        "text": "watching",
+        "correct": false
+      },
+      {
+        "text": "watched",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "watches"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: My brother ____ TV after dinner.",
+    "writtenCorrectAnswer": "My brother watches TV after dinner."
+  },
+  {
+    "id": "ADD_0010",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"watch TV\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "ver televisão",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "ver televisão"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"watch TV\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "ver televisão",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0011",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: We ____ homework in the evening.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "do",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "do",
+        "correct": true
+      },
+      {
+        "text": "does",
+        "correct": false
+      },
+      {
+        "text": "doing",
+        "correct": false
+      },
+      {
+        "text": "did",
+        "correct": false
+      }
+    ],
+    "keywords": [],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: We ____ homework in the evening.",
+    "writtenCorrectAnswer": "We do homework in the evening."
+  },
+  {
+    "id": "ADD_0012",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"do homework\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "fazer os trabalhos de casa",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "fazer os trabalhos de casa"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"do homework\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "fazer os trabalhos de casa",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0013",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: Ana ____ her teeth after breakfast.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "brushes",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "brushes",
+        "correct": true
+      },
+      {
+        "text": "brush",
+        "correct": false
+      },
+      {
+        "text": "brushing",
+        "correct": false
+      },
+      {
+        "text": "brushed",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "brushes"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: Ana ____ her teeth after breakfast.",
+    "writtenCorrectAnswer": "Ana brushes her teeth after breakfast."
+  },
+  {
+    "id": "ADD_0014",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"brush her teeth\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "escovar os dentes",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "escovar os dentes"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"brush her teeth\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "escovar os dentes",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0015",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: The students ____ school at five.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "finish",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "finish",
+        "correct": true
+      },
+      {
+        "text": "finishes",
+        "correct": false
+      },
+      {
+        "text": "finishing",
+        "correct": false
+      },
+      {
+        "text": "finished",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "finish"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: The students ____ school at five.",
+    "writtenCorrectAnswer": "The students finish school at five."
+  },
+  {
+    "id": "ADD_0016",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"finish school\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "terminar a escola",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "terminar a escola"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"finish school\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "terminar a escola",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0017",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: Rui ____ football on Saturday.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "plays",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "plays",
+        "correct": true
+      },
+      {
+        "text": "play",
+        "correct": false
+      },
+      {
+        "text": "playing",
+        "correct": false
+      },
+      {
+        "text": "played",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "plays"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: Rui ____ football on Saturday.",
+    "writtenCorrectAnswer": "Rui plays football on Saturday."
+  },
+  {
+    "id": "ADD_0018",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"play football\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "jogar futebol",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "jogar futebol"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"play football\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "jogar futebol",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0019",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: My parents ____ every day.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "work",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "work",
+        "correct": true
+      },
+      {
+        "text": "works",
+        "correct": false
+      },
+      {
+        "text": "working",
+        "correct": false
+      },
+      {
+        "text": "worked",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "work"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: My parents ____ every day.",
+    "writtenCorrectAnswer": "My parents work every day."
+  },
+  {
+    "id": "ADD_0020",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"work\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "trabalhar",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "trabalhar"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"work\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "trabalhar",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0021",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: The computer ____ quickly.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "starts",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "starts",
+        "correct": true
+      },
+      {
+        "text": "start",
+        "correct": false
+      },
+      {
+        "text": "starting",
+        "correct": false
+      },
+      {
+        "text": "started",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "starts"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: The computer ____ quickly.",
+    "writtenCorrectAnswer": "The computer starts quickly."
+  },
+  {
+    "id": "ADD_0022",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"start\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "começar",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "começar"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"start\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "começar",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0023",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Complete a frase no Simple Present: Maria ____ English twice a week.",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "studies",
+    "explanation": "Simple Present usa -s/-es na 3.ª pessoa do singular.",
+    "options": [
+      {
+        "text": "studies",
+        "correct": true
+      },
+      {
+        "text": "study",
+        "correct": false
+      },
+      {
+        "text": "studying",
+        "correct": false
+      },
+      {
+        "text": "studied",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "studies"
+    ],
+    "writtenPrompt": "Completa a frase no Simple Present e escreve a frase completa: Maria ____ English twice a week.",
+    "writtenCorrectAnswer": "Maria studies English twice a week."
+  },
+  {
+    "id": "ADD_0024",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "O que significa \"study English\" em português?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "estudar inglês",
+    "explanation": "Pergunta de vocabulário de daily routine, sem pedir criação de frases.",
+    "keywords": [
+      "estudar inglês"
+    ],
+    "writtenPrompt": "Escreve uma frase de rotina diária usando \"study English\" no Simple Present.\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "estudar inglês",
+        "correct": true
+      },
+      {
+        "text": "ir dormir",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "trabalhar num escritório",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0025",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "short",
+    "prompt": "Passa para a negativa: She works in an office.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "She does not work in an office. / She doesn't work in an office.",
+    "explanation": "Na negativa usa do not/don't ou does not/doesn't.",
+    "keywords": [
+      "does",
+      "work",
+      "office",
+      "doesn"
+    ],
+    "writtenPrompt": "Passa para a negativa: She works in an office.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0026",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "mc",
+    "prompt": "Qual é a negativa correta de: She works in an office.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "She does not work in an office.",
+    "explanation": "Na 3.ª pessoa usa does not + verbo base.",
+    "options": [
+      {
+        "text": "She does not work in an office.",
+        "correct": true
+      },
+      {
+        "text": "She works in an office.",
+        "correct": false
+      },
+      {
+        "text": "She do not work in an office.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "does",
+      "work",
+      "office"
+    ],
+    "writtenPrompt": "Escreve a negativa correta da frase: She works in an office.",
+    "writtenCorrectAnswer": "She does not work in an office. / She doesn't work in an office."
+  },
+  {
+    "id": "ADD_0027",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "short",
+    "prompt": "Passa para a negativa: He goes to school by bus.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "He does not go to school by bus. / He doesn't go to school by bus.",
+    "explanation": "Na negativa usa do not/don't ou does not/doesn't.",
+    "keywords": [
+      "does",
+      "school",
+      "doesn"
+    ],
+    "writtenPrompt": "Passa para a negativa: He goes to school by bus.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0028",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "mc",
+    "prompt": "Qual é a negativa correta de: He goes to school by bus.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "He does not go to school by bus.",
+    "explanation": "Na 3.ª pessoa usa does not + verbo base.",
+    "options": [
+      {
+        "text": "He does not go to school by bus.",
+        "correct": true
+      },
+      {
+        "text": "He goes to school by bus.",
+        "correct": false
+      },
+      {
+        "text": "He do not go to school by bus.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "does",
+      "school"
+    ],
+    "writtenPrompt": "Escreve a negativa correta da frase: He goes to school by bus.",
+    "writtenCorrectAnswer": "He does not go to school by bus. / He doesn't go to school by bus."
+  },
+  {
+    "id": "ADD_0029",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "short",
+    "prompt": "Passa para a negativa: They study every day.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "They do not study every day. / They don't study every day.",
+    "explanation": "Na negativa usa do not/don't ou does not/doesn't.",
+    "keywords": [
+      "they",
+      "study",
+      "every"
+    ],
+    "writtenPrompt": "Passa para a negativa: They study every day.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0030",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "mc",
+    "prompt": "Qual é a negativa correta de: They study every day.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "They do not study every day.",
+    "explanation": "Na 3.ª pessoa usa does not + verbo base.",
+    "options": [
+      {
+        "text": "They do not study every day.",
+        "correct": true
+      },
+      {
+        "text": "They study every day.",
+        "correct": false
+      },
+      {
+        "text": "They does not study every day.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "they",
+      "study",
+      "every"
+    ],
+    "writtenPrompt": "Escreve a negativa correta da frase: They study every day.",
+    "writtenCorrectAnswer": "They do not study every day. / They don't study every day."
+  },
+  {
+    "id": "ADD_0031",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "short",
+    "prompt": "Passa para a negativa: I play football on Sundays.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "I do not play football on Sundays. / I don't play football on Sundays.",
+    "explanation": "Na negativa usa do not/don't ou does not/doesn't.",
+    "keywords": [
+      "play",
+      "football",
+      "sundays"
+    ],
+    "writtenPrompt": "Passa para a negativa: I play football on Sundays.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0032",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "mc",
+    "prompt": "Qual é a negativa correta de: I play football on Sundays.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "I do not play football on Sundays.",
+    "explanation": "Na 3.ª pessoa usa does not + verbo base.",
+    "options": [
+      {
+        "text": "I do not play football on Sundays.",
+        "correct": true
+      },
+      {
+        "text": "I play football on Sundays.",
+        "correct": false
+      },
+      {
+        "text": "I does not play football on Sundays.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "play",
+      "football",
+      "sundays"
+    ],
+    "writtenPrompt": "Escreve a negativa correta da frase: I play football on Sundays.",
+    "writtenCorrectAnswer": "I do not play football on Sundays. / I don't play football on Sundays."
+  },
+  {
+    "id": "ADD_0033",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "short",
+    "prompt": "Passa para a negativa: Maria has breakfast at eight.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Maria does not have breakfast at eight. / Maria doesn't have breakfast at eight.",
+    "explanation": "Na negativa usa do not/don't ou does not/doesn't.",
+    "keywords": [
+      "maria",
+      "does",
+      "have",
+      "breakfast",
+      "eight",
+      "doesn"
+    ],
+    "writtenPrompt": "Passa para a negativa: Maria has breakfast at eight.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0034",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "mc",
+    "prompt": "Qual é a negativa correta de: Maria has breakfast at eight.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Maria does not have breakfast at eight.",
+    "explanation": "Na 3.ª pessoa usa does not + verbo base.",
+    "options": [
+      {
+        "text": "Maria does not have breakfast at eight.",
+        "correct": true
+      },
+      {
+        "text": "Maria has breakfast at eight.",
+        "correct": false
+      },
+      {
+        "text": "Maria do not have breakfast at eight.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "maria",
+      "does",
+      "have",
+      "breakfast",
+      "eight"
+    ],
+    "writtenPrompt": "Escreve a negativa correta da frase: Maria has breakfast at eight.",
+    "writtenCorrectAnswer": "Maria does not have breakfast at eight. / Maria doesn't have breakfast at eight."
+  },
+  {
+    "id": "ADD_0035",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "short",
+    "prompt": "Passa para a negativa: We watch TV at night.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "We do not watch TV at night. / We don't watch TV at night.",
+    "explanation": "Na negativa usa do not/don't ou does not/doesn't.",
+    "keywords": [
+      "watch",
+      "night"
+    ],
+    "writtenPrompt": "Passa para a negativa: We watch TV at night.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0036",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present negative",
+    "type": "mc",
+    "prompt": "Qual é a negativa correta de: We watch TV at night.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "We do not watch TV at night.",
+    "explanation": "Na 3.ª pessoa usa does not + verbo base.",
+    "options": [
+      {
+        "text": "We do not watch TV at night.",
+        "correct": true
+      },
+      {
+        "text": "We watch TV at night.",
+        "correct": false
+      },
+      {
+        "text": "We does not watch TV at night.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "watch",
+      "night"
+    ],
+    "writtenPrompt": "Escreve a negativa correta da frase: We watch TV at night.",
+    "writtenCorrectAnswer": "We do not watch TV at night. / We don't watch TV at night."
+  },
+  {
+    "id": "ADD_0037",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present interrogative",
+    "type": "short",
+    "prompt": "Passa para a interrogativa: She works in an office.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Does she work in an office?",
+    "explanation": "Na interrogativa usa Do/Does + sujeito + verbo base.",
+    "keywords": [
+      "does",
+      "work",
+      "office"
+    ],
+    "writtenPrompt": "Passa para a interrogativa: She works in an office.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0038",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present interrogative",
+    "type": "short",
+    "prompt": "Passa para a interrogativa: He plays football.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Does he play football?",
+    "explanation": "Na interrogativa usa Do/Does + sujeito + verbo base.",
+    "keywords": [
+      "does",
+      "play",
+      "football"
+    ],
+    "writtenPrompt": "Passa para a interrogativa: He plays football.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0039",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present interrogative",
+    "type": "short",
+    "prompt": "Passa para a interrogativa: They study English.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Do they study English?",
+    "explanation": "Na interrogativa usa Do/Does + sujeito + verbo base.",
+    "keywords": [
+      "they",
+      "study",
+      "english"
+    ],
+    "writtenPrompt": "Passa para a interrogativa: They study English.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0040",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present interrogative",
+    "type": "short",
+    "prompt": "Passa para a interrogativa: You go to school.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Do you go to school?",
+    "explanation": "Na interrogativa usa Do/Does + sujeito + verbo base.",
+    "keywords": [
+      "school"
+    ],
+    "writtenPrompt": "Passa para a interrogativa: You go to school.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0041",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present interrogative",
+    "type": "short",
+    "prompt": "Passa para a interrogativa: Maria has lunch at school.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Does Maria have lunch at school?",
+    "explanation": "Na interrogativa usa Do/Does + sujeito + verbo base.",
+    "keywords": [
+      "does",
+      "maria",
+      "have",
+      "lunch",
+      "school"
+    ],
+    "writtenPrompt": "Passa para a interrogativa: Maria has lunch at school.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0042",
+    "area": "socio",
+    "module": "Inglês - Daily routine",
+    "topic": "Simple Present interrogative",
+    "type": "short",
+    "prompt": "Passa para a interrogativa: We live in Santarém.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Do we live in Santarém?",
+    "explanation": "Na interrogativa usa Do/Does + sujeito + verbo base.",
+    "keywords": [
+      "live",
+      "santarem"
+    ],
+    "writtenPrompt": "Passa para a interrogativa: We live in Santarém.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0043",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Zero conditional",
+    "type": "mc",
+    "prompt": "Identifica o tipo de conditional: \"If you heat water, it boils.\"",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Zero conditional",
+    "explanation": "Zero = verdades gerais; First = futuro provável; Second = hipótese.",
+    "options": [
+      {
+        "text": "Zero conditional",
+        "correct": true
+      },
+      {
+        "text": "First conditional",
+        "correct": false
+      },
+      {
+        "text": "Second conditional",
+        "correct": false
+      },
+      {
+        "text": "Passive voice",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zero",
+      "conditional"
+    ],
+    "writtenPrompt": "Identifica por extenso o tipo de conditional da frase e justifica: \"If you heat water, it boils.\"",
+    "writtenCorrectAnswer": "Zero conditional, porque indica verdade geral."
+  },
+  {
+    "id": "ADD_0044",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "First conditional",
+    "type": "mc",
+    "prompt": "Identifica o tipo de conditional: \"If it rains, I will stay at home.\"",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "First conditional",
+    "explanation": "Zero = verdades gerais; First = futuro provável; Second = hipótese.",
+    "options": [
+      {
+        "text": "First conditional",
+        "correct": true
+      },
+      {
+        "text": "Zero conditional",
+        "correct": false
+      },
+      {
+        "text": "Second conditional",
+        "correct": false
+      },
+      {
+        "text": "Passive voice",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "first",
+      "conditional"
+    ],
+    "writtenPrompt": "Identifica por extenso o tipo de conditional da frase e justifica: \"If it rains, I will stay at home.\"",
+    "writtenCorrectAnswer": "First conditional, porque indica situação provável no futuro."
+  },
+  {
+    "id": "ADD_0045",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Second conditional",
+    "type": "mc",
+    "prompt": "Identifica o tipo de conditional: \"If I had money, I would travel.\"",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Second conditional",
+    "explanation": "Zero = verdades gerais; First = futuro provável; Second = hipótese.",
+    "options": [
+      {
+        "text": "Second conditional",
+        "correct": true
+      },
+      {
+        "text": "Zero conditional",
+        "correct": false
+      },
+      {
+        "text": "First conditional",
+        "correct": false
+      },
+      {
+        "text": "Passive voice",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "second",
+      "conditional"
+    ],
+    "writtenPrompt": "Identifica por extenso o tipo de conditional da frase e justifica: \"If I had money, I would travel.\"",
+    "writtenCorrectAnswer": "Second conditional, porque indica situação hipotética ou pouco provável."
+  },
+  {
+    "id": "ADD_0046",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "First conditional",
+    "type": "mc",
+    "prompt": "Identifica o tipo de conditional: \"If you study, you will pass the exam.\"",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "First conditional",
+    "explanation": "Zero = verdades gerais; First = futuro provável; Second = hipótese.",
+    "options": [
+      {
+        "text": "First conditional",
+        "correct": true
+      },
+      {
+        "text": "Zero conditional",
+        "correct": false
+      },
+      {
+        "text": "Second conditional",
+        "correct": false
+      },
+      {
+        "text": "Passive voice",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "first",
+      "conditional"
+    ],
+    "writtenPrompt": "Identifica por extenso o tipo de conditional da frase e justifica: \"If you study, you will pass the exam.\"",
+    "writtenCorrectAnswer": "First conditional, porque indica situação provável no futuro."
+  },
+  {
+    "id": "ADD_0047",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Second conditional",
+    "type": "mc",
+    "prompt": "Identifica o tipo de conditional: \"If I were rich, I would buy a house.\"",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Second conditional",
+    "explanation": "Zero = verdades gerais; First = futuro provável; Second = hipótese.",
+    "options": [
+      {
+        "text": "Second conditional",
+        "correct": true
+      },
+      {
+        "text": "Zero conditional",
+        "correct": false
+      },
+      {
+        "text": "First conditional",
+        "correct": false
+      },
+      {
+        "text": "Passive voice",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "second",
+      "conditional"
+    ],
+    "writtenPrompt": "Identifica por extenso o tipo de conditional da frase e justifica: \"If I were rich, I would buy a house.\"",
+    "writtenCorrectAnswer": "Second conditional, porque indica hipótese imaginária."
+  },
+  {
+    "id": "ADD_0048",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Zero conditional",
+    "type": "mc",
+    "prompt": "Identifica o tipo de conditional: \"If people eat too much sugar, they gain weight.\"",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Zero conditional",
+    "explanation": "Zero = verdades gerais; First = futuro provável; Second = hipótese.",
+    "options": [
+      {
+        "text": "Zero conditional",
+        "correct": true
+      },
+      {
+        "text": "First conditional",
+        "correct": false
+      },
+      {
+        "text": "Second conditional",
+        "correct": false
+      },
+      {
+        "text": "Passive voice",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zero",
+      "conditional"
+    ],
+    "writtenPrompt": "Identifica por extenso o tipo de conditional da frase e justifica: \"If people eat too much sugar, they gain weight.\"",
+    "writtenCorrectAnswer": "Zero conditional, porque indica verdade geral."
+  },
+  {
+    "id": "ADD_0049",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "First conditional",
+    "type": "mc",
+    "prompt": "Completa a if-clause: If it rains, I ____ stay home.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "will",
+    "explanation": "A forma verbal depende do tipo de conditional.",
+    "options": [
+      {
+        "text": "will",
+        "correct": true
+      },
+      {
+        "text": "would",
+        "correct": false
+      },
+      {
+        "text": "boils",
+        "correct": false
+      },
+      {
+        "text": "get",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "will"
+    ],
+    "writtenPrompt": "Completa a if-clause e identifica o tipo: If it rains, I ____ stay home.",
+    "writtenCorrectAnswer": "will. É First conditional."
+  },
+  {
+    "id": "ADD_0050",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Second conditional",
+    "type": "mc",
+    "prompt": "Completa a if-clause: If I had more time, I ____ study more.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "would",
+    "explanation": "A forma verbal depende do tipo de conditional.",
+    "options": [
+      {
+        "text": "would",
+        "correct": true
+      },
+      {
+        "text": "will",
+        "correct": false
+      },
+      {
+        "text": "boils",
+        "correct": false
+      },
+      {
+        "text": "get",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "would"
+    ],
+    "writtenPrompt": "Completa a if-clause e identifica o tipo: If I had more time, I ____ study more.",
+    "writtenCorrectAnswer": "would. É Second conditional."
+  },
+  {
+    "id": "ADD_0051",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Zero conditional",
+    "type": "mc",
+    "prompt": "Completa a if-clause: If you mix red and blue, you ____ purple.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "get",
+    "explanation": "A forma verbal depende do tipo de conditional.",
+    "options": [
+      {
+        "text": "get",
+        "correct": true
+      },
+      {
+        "text": "would",
+        "correct": false
+      },
+      {
+        "text": "will",
+        "correct": false
+      },
+      {
+        "text": "boils",
+        "correct": false
+      }
+    ],
+    "keywords": [],
+    "writtenPrompt": "Completa a if-clause e identifica o tipo: If you mix red and blue, you ____ purple.",
+    "writtenCorrectAnswer": "get. É Zero conditional."
+  },
+  {
+    "id": "ADD_0052",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "First conditional",
+    "type": "mc",
+    "prompt": "Completa a if-clause: If she studies, she ____ pass.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "will",
+    "explanation": "A forma verbal depende do tipo de conditional.",
+    "options": [
+      {
+        "text": "will",
+        "correct": true
+      },
+      {
+        "text": "would",
+        "correct": false
+      },
+      {
+        "text": "boils",
+        "correct": false
+      },
+      {
+        "text": "get",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "will"
+    ],
+    "writtenPrompt": "Completa a if-clause e identifica o tipo: If she studies, she ____ pass.",
+    "writtenCorrectAnswer": "will. É First conditional."
+  },
+  {
+    "id": "ADD_0053",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Second conditional",
+    "type": "mc",
+    "prompt": "Completa a if-clause: If he were taller, he ____ play basketball better.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "would",
+    "explanation": "A forma verbal depende do tipo de conditional.",
+    "options": [
+      {
+        "text": "would",
+        "correct": true
+      },
+      {
+        "text": "will",
+        "correct": false
+      },
+      {
+        "text": "boils",
+        "correct": false
+      },
+      {
+        "text": "get",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "would"
+    ],
+    "writtenPrompt": "Completa a if-clause e identifica o tipo: If he were taller, he ____ play basketball better.",
+    "writtenCorrectAnswer": "would. É Second conditional."
+  },
+  {
+    "id": "ADD_0054",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "Zero conditional",
+    "type": "mc",
+    "prompt": "Completa a if-clause: If water reaches 100°C, it ____.",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "boils",
+    "explanation": "A forma verbal depende do tipo de conditional.",
+    "options": [
+      {
+        "text": "boils",
+        "correct": true
+      },
+      {
+        "text": "would",
+        "correct": false
+      },
+      {
+        "text": "will",
+        "correct": false
+      },
+      {
+        "text": "get",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "boils"
+    ],
+    "writtenPrompt": "Completa a if-clause e identifica o tipo: If water reaches 100°C, it ____.",
+    "writtenCorrectAnswer": "boils. É Zero conditional."
+  },
+  {
+    "id": "ADD_0055",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"big\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "bigger",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "bigger",
+        "correct": true
+      },
+      {
+        "text": "the biggest",
+        "correct": false
+      },
+      {
+        "text": "biger",
+        "correct": false
+      },
+      {
+        "text": "more big",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "bigger"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"big\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "bigger. Exemplo: This is bigger than that."
+  },
+  {
+    "id": "ADD_0056",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"big\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the biggest",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the biggest",
+        "correct": true
+      },
+      {
+        "text": "bigger",
+        "correct": false
+      },
+      {
+        "text": "biger",
+        "correct": false
+      },
+      {
+        "text": "more big",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "biggest"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"big\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the biggest. Exemplo: This is the biggest."
+  },
+  {
+    "id": "ADD_0057",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"small\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "smaller",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "smaller",
+        "correct": true
+      },
+      {
+        "text": "the smallest",
+        "correct": false
+      },
+      {
+        "text": "more small",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "smaller"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"small\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "smaller. Exemplo: This is smaller than that."
+  },
+  {
+    "id": "ADD_0058",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"small\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the smallest",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the smallest",
+        "correct": true
+      },
+      {
+        "text": "smaller",
+        "correct": false
+      },
+      {
+        "text": "more small",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "smallest"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"small\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the smallest. Exemplo: This is the smallest."
+  },
+  {
+    "id": "ADD_0059",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"easy\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "easier",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "easier",
+        "correct": true
+      },
+      {
+        "text": "the easiest",
+        "correct": false
+      },
+      {
+        "text": "easyer",
+        "correct": false
+      },
+      {
+        "text": "more easy",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "easier"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"easy\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "easier. Exemplo: This is easier than that."
+  },
+  {
+    "id": "ADD_0060",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"easy\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the easiest",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the easiest",
+        "correct": true
+      },
+      {
+        "text": "easier",
+        "correct": false
+      },
+      {
+        "text": "easyer",
+        "correct": false
+      },
+      {
+        "text": "more easy",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "easiest"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"easy\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the easiest. Exemplo: This is the easiest."
+  },
+  {
+    "id": "ADD_0061",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"beautiful\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "more beautiful",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "more beautiful",
+        "correct": true
+      },
+      {
+        "text": "the most beautiful",
+        "correct": false
+      },
+      {
+        "text": "beautifuler",
+        "correct": false
+      },
+      {
+        "text": "the beautifulest",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "more",
+      "beautiful"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"beautiful\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "more beautiful. Exemplo: This is more beautiful than that."
+  },
+  {
+    "id": "ADD_0062",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"beautiful\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the most beautiful",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the most beautiful",
+        "correct": true
+      },
+      {
+        "text": "more beautiful",
+        "correct": false
+      },
+      {
+        "text": "beautifuler",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "most",
+      "beautiful"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"beautiful\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the most beautiful. Exemplo: This is the most beautiful."
+  },
+  {
+    "id": "ADD_0063",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"expensive\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "more expensive",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "more expensive",
+        "correct": true
+      },
+      {
+        "text": "the most expensive",
+        "correct": false
+      },
+      {
+        "text": "expensiveer",
+        "correct": false
+      },
+      {
+        "text": "the expensiveest",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "more",
+      "expensive"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"expensive\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "more expensive. Exemplo: This is more expensive than that."
+  },
+  {
+    "id": "ADD_0064",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"expensive\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the most expensive",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the most expensive",
+        "correct": true
+      },
+      {
+        "text": "more expensive",
+        "correct": false
+      },
+      {
+        "text": "expensiveer",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "most",
+      "expensive"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"expensive\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the most expensive. Exemplo: This is the most expensive."
+  },
+  {
+    "id": "ADD_0065",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"good\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "better",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "better",
+        "correct": true
+      },
+      {
+        "text": "the best",
+        "correct": false
+      },
+      {
+        "text": "gooder",
+        "correct": false
+      },
+      {
+        "text": "more good",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "better"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"good\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "better. Exemplo: This is better than that."
+  },
+  {
+    "id": "ADD_0066",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"good\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the best",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the best",
+        "correct": true
+      },
+      {
+        "text": "better",
+        "correct": false
+      },
+      {
+        "text": "gooder",
+        "correct": false
+      },
+      {
+        "text": "more good",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "best"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"good\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the best. Exemplo: This is the best."
+  },
+  {
+    "id": "ADD_0067",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"bad\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "worse",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "worse",
+        "correct": true
+      },
+      {
+        "text": "the worst",
+        "correct": false
+      },
+      {
+        "text": "bader",
+        "correct": false
+      },
+      {
+        "text": "more bad",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "worse"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"bad\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "worse. Exemplo: This is worse than that."
+  },
+  {
+    "id": "ADD_0068",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"bad\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the worst",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the worst",
+        "correct": true
+      },
+      {
+        "text": "worse",
+        "correct": false
+      },
+      {
+        "text": "bader",
+        "correct": false
+      },
+      {
+        "text": "more bad",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "worst"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"bad\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the worst. Exemplo: This is the worst."
+  },
+  {
+    "id": "ADD_0069",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"far\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "farther/further",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "farther/further",
+        "correct": true
+      },
+      {
+        "text": "the farthest/furthest",
+        "correct": false
+      },
+      {
+        "text": "farer",
+        "correct": false
+      },
+      {
+        "text": "more far",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "farther",
+      "further"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"far\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "farther/further. Exemplo: This is farther/further than that."
+  },
+  {
+    "id": "ADD_0070",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"far\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the farthest/furthest",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the farthest/furthest",
+        "correct": true
+      },
+      {
+        "text": "farther/further",
+        "correct": false
+      },
+      {
+        "text": "farer",
+        "correct": false
+      },
+      {
+        "text": "more far",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "farthest",
+      "furthest"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"far\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the farthest/furthest. Exemplo: This is the farthest/furthest."
+  },
+  {
+    "id": "ADD_0071",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"interesting\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "more interesting",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "more interesting",
+        "correct": true
+      },
+      {
+        "text": "the most interesting",
+        "correct": false
+      },
+      {
+        "text": "interestinger",
+        "correct": false
+      },
+      {
+        "text": "the interestingest",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "more",
+      "interesting"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"interesting\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "more interesting. Exemplo: This is more interesting than that."
+  },
+  {
+    "id": "ADD_0072",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"interesting\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the most interesting",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the most interesting",
+        "correct": true
+      },
+      {
+        "text": "more interesting",
+        "correct": false
+      },
+      {
+        "text": "interestinger",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "most",
+      "interesting"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"interesting\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the most interesting. Exemplo: This is the most interesting."
+  },
+  {
+    "id": "ADD_0073",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Qual é o comparativo de \"fast\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "faster",
+    "explanation": "O comparativo compara duas coisas.",
+    "options": [
+      {
+        "text": "faster",
+        "correct": true
+      },
+      {
+        "text": "the fastest",
+        "correct": false
+      },
+      {
+        "text": "more fast",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "faster"
+    ],
+    "writtenPrompt": "Escreve o comparativo de \"fast\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "faster. Exemplo: This is faster than that."
+  },
+  {
+    "id": "ADD_0074",
+    "area": "socio",
+    "module": "Inglês - Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "Qual é o superlativo de \"fast\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the fastest",
+    "explanation": "O superlativo indica o grau máximo.",
+    "options": [
+      {
+        "text": "the fastest",
+        "correct": true
+      },
+      {
+        "text": "faster",
+        "correct": false
+      },
+      {
+        "text": "more fast",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "fastest"
+    ],
+    "writtenPrompt": "Escreve o superlativo de \"fast\" e usa numa frase curta.",
+    "writtenCorrectAnswer": "the fastest. Exemplo: This is the fastest."
+  },
+  {
+    "id": "ADD_0075",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"employer\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "empregador",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "empregador",
+        "correct": true
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      },
+      {
+        "text": "entrevista",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "empregador"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"employer\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "employer significa empregador: pessoa/entidade que emprega trabalhadores."
+  },
+  {
+    "id": "ADD_0076",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"employer\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "empregador",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "empregador"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"employer\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "empregador",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0077",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"employee\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "empregado/trabalhador",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "empregado/trabalhador",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      },
+      {
+        "text": "entrevista",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "empregado",
+      "trabalhador"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"employee\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "employee significa empregado/trabalhador: pessoa que trabalha para um empregador."
+  },
+  {
+    "id": "ADD_0078",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"employee\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "empregado/trabalhador",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "empregado/trabalhador"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"employee\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "empregado/trabalhador",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0079",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"salary\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "salário",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "salário",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "entrevista",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "salario"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"salary\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "salary significa salário: dinheiro recebido pelo trabalho."
+  },
+  {
+    "id": "ADD_0080",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"salary\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "salário",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "salário"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"salary\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "salário",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0081",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"interview\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "entrevista",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "entrevista",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "entrevista"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"interview\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "interview significa entrevista: conversa de seleção para um emprego."
+  },
+  {
+    "id": "ADD_0082",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"interview\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "entrevista",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "entrevista"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"interview\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "entrevista",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0083",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"application\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "candidatura",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "candidatura",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "candidatura"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"application\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "application significa candidatura: pedido formal para um emprego."
+  },
+  {
+    "id": "ADD_0084",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"application\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "candidatura",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "candidatura"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"application\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "candidatura",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0085",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"skills\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "competências",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "competências",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "competencias"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"skills\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "skills significa competências: capacidades úteis para realizar um trabalho."
+  },
+  {
+    "id": "ADD_0086",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"skills\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "competências",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "competências"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"skills\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "competências",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0087",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"experience\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "experiência",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "experiência",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "experiencia"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"experience\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "experience significa experiência: conhecimento prático adquirido pelo trabalho."
+  },
+  {
+    "id": "ADD_0088",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"experience\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "experiência",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "experiência"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"experience\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "experiência",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0089",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"CV/resume\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "currículo",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "currículo",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "curriculo"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"CV/resume\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "CV/resume significa currículo: documento com dados, formação e experiência profissional."
+  },
+  {
+    "id": "ADD_0090",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"CV/resume\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "significado de CV/resume",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "significado de CV/resume"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"CV/resume\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "significado de CV/resume",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0091",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"career\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "carreira",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "carreira",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "carreira"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"career\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "career significa carreira: percurso profissional ao longo do tempo."
+  },
+  {
+    "id": "ADD_0092",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"career\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "carreira",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "carreira"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"career\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "carreira",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0093",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "Em inglês, o que significa \"job vacancy\"?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "vaga de emprego",
+    "explanation": "Vocabulário de profissões e emprego.",
+    "options": [
+      {
+        "text": "vaga de emprego",
+        "correct": true
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "salário",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "vaga",
+      "emprego"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de \"job vacancy\" em contexto de trabalho.",
+    "writtenCorrectAnswer": "job vacancy significa vaga de emprego: posto de trabalho disponível."
+  },
+  {
+    "id": "ADD_0094",
+    "area": "socio",
+    "module": "Inglês - Profissões",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "No vocabulário de trabalho, o que significa \"job vacancy\"?",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "significado de job vacancy",
+    "explanation": "Pergunta de vocabulário profissional, sem pedir criação de frases.",
+    "keywords": [
+      "significado de job vacancy"
+    ],
+    "writtenPrompt": "Escreve uma frase simples em inglês usando \"job vacancy\".\nResponde por extenso, com uma frase completa.",
+    "options": [
+      {
+        "text": "significado de job vacancy",
+        "correct": true
+      },
+      {
+        "text": "viagem",
+        "correct": false
+      },
+      {
+        "text": "rodapé",
+        "correct": false
+      },
+      {
+        "text": "rede local",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "id": "ADD_0095",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: They repair computers.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Computers are repaired.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "Computers are repaired.",
+        "correct": true
+      },
+      {
+        "text": "They repair computers.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      },
+      {
+        "text": "Troca o tempo verbal/conceito pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computers",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: They repair computers.",
+    "writtenCorrectAnswer": "Computers are repaired. Tempo verbal: simple present."
+  },
+  {
+    "id": "ADD_0096",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: They repair computers.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Computers are repaired.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "computers",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: They repair computers.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0097",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: They repaired the computer.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "The computer was repaired.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "The computer was repaired.",
+        "correct": true
+      },
+      {
+        "text": "They repaired the computer.",
+        "correct": false
+      },
+      {
+        "text": "The computer were repaired.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computer",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: They repaired the computer.",
+    "writtenCorrectAnswer": "The computer was repaired. Tempo verbal: simple past."
+  },
+  {
+    "id": "ADD_0098",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: They repaired the computer.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "The computer was repaired.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "computer",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: They repaired the computer.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0099",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: They have repaired the computer.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "The computer has been repaired.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "The computer has been repaired.",
+        "correct": true
+      },
+      {
+        "text": "They have repaired the computer.",
+        "correct": false
+      },
+      {
+        "text": "The computer have been repaired.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computer",
+      "been",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: They have repaired the computer.",
+    "writtenCorrectAnswer": "The computer has been repaired. Tempo verbal: present perfect."
+  },
+  {
+    "id": "ADD_0100",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: They have repaired the computer.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "The computer has been repaired.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "computer",
+      "been",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: They have repaired the computer.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0101",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: They will repair the computer.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "The computer will be repaired.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "The computer will be repaired.",
+        "correct": true
+      },
+      {
+        "text": "They will repair the computer.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      },
+      {
+        "text": "Troca o tempo verbal/conceito pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computer",
+      "will",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: They will repair the computer.",
+    "writtenCorrectAnswer": "The computer will be repaired. Tempo verbal: future."
+  },
+  {
+    "id": "ADD_0102",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: They will repair the computer.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "The computer will be repaired.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "computer",
+      "will",
+      "repaired"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: They will repair the computer.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0103",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: People use smartphones every day.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Smartphones are used every day.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "Smartphones are used every day.",
+        "correct": true
+      },
+      {
+        "text": "People use smartphones every day.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      },
+      {
+        "text": "Troca o tempo verbal/conceito pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "smartphones",
+      "used",
+      "every"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: People use smartphones every day.",
+    "writtenCorrectAnswer": "Smartphones are used every day. Tempo verbal: simple present."
+  },
+  {
+    "id": "ADD_0104",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: People use smartphones every day.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Smartphones are used every day.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "smartphones",
+      "used",
+      "every"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: People use smartphones every day.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0105",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: The technician installed the software.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "The software was installed by the technician.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "The software was installed by the technician.",
+        "correct": true
+      },
+      {
+        "text": "The technician installed the software.",
+        "correct": false
+      },
+      {
+        "text": "The software were installed by the technician.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "software",
+      "installed",
+      "technician"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: The technician installed the software.",
+    "writtenCorrectAnswer": "The software was installed by the technician. Tempo verbal: simple past."
+  },
+  {
+    "id": "ADD_0106",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: The technician installed the software.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "The software was installed by the technician.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "software",
+      "installed",
+      "technician"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: The technician installed the software.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0107",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: They have created a website.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "A website has been created.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "A website has been created.",
+        "correct": true
+      },
+      {
+        "text": "They have created a website.",
+        "correct": false
+      },
+      {
+        "text": "A website have been created.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "website",
+      "been",
+      "created"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: They have created a website.",
+    "writtenCorrectAnswer": "A website has been created. Tempo verbal: present perfect."
+  },
+  {
+    "id": "ADD_0108",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: They have created a website.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "A website has been created.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "website",
+      "been",
+      "created"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: They have created a website.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0109",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "mc",
+    "prompt": "Escolhe a voz passiva correta de: The company will send the email.",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "The email will be sent by the company.",
+    "explanation": "Voz passiva: verbo to be + particípio passado.",
+    "options": [
+      {
+        "text": "The email will be sent by the company.",
+        "correct": true
+      },
+      {
+        "text": "The company will send the email.",
+        "correct": false
+      },
+      {
+        "text": "Resposta incompleta ao tema pedido",
+        "correct": false
+      },
+      {
+        "text": "Troca o tempo verbal/conceito pedido",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "email",
+      "will",
+      "sent",
+      "company"
+    ],
+    "writtenPrompt": "Passa para a voz passiva e indica o tempo verbal: The company will send the email.",
+    "writtenCorrectAnswer": "The email will be sent by the company. Tempo verbal: future."
+  },
+  {
+    "id": "ADD_0110",
+    "area": "socio",
+    "module": "Inglês - Passive voice",
+    "topic": "Passive voice",
+    "type": "short",
+    "prompt": "Passa para a voz passiva: The company will send the email.",
+    "difficulty": 4,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "The email will be sent by the company.",
+    "explanation": "Voz passiva: to be + particípio passado.",
+    "keywords": [
+      "email",
+      "will",
+      "sent",
+      "company"
+    ],
+    "writtenPrompt": "Passa para a voz passiva: The company will send the email.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0111",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: every day / I / English / study",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "I study English every day.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "I study English every day.",
+        "correct": true
+      },
+      {
+        "text": "day every English study I.",
+        "correct": false
+      },
+      {
+        "text": "study English every day I.",
+        "correct": false
+      },
+      {
+        "text": "study I English every day.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "study",
+      "english",
+      "every"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: every day / I / English / study",
+    "writtenCorrectAnswer": "I study English every day."
+  },
+  {
+    "id": "ADD_0112",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: at school / she / works / every morning",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "She works at school every morning.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "She works at school every morning.",
+        "correct": true
+      },
+      {
+        "text": "morning every school at works She.",
+        "correct": false
+      },
+      {
+        "text": "works at school every morning She.",
+        "correct": false
+      },
+      {
+        "text": "works She at school every morning.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "works",
+      "school",
+      "every",
+      "morning"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: at school / she / works / every morning",
+    "writtenCorrectAnswer": "She works at school every morning."
+  },
+  {
+    "id": "ADD_0113",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: football / on Saturday / they / play",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "They play football on Saturday.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "They play football on Saturday.",
+        "correct": true
+      },
+      {
+        "text": "Saturday on football play They.",
+        "correct": false
+      },
+      {
+        "text": "play football on Saturday They.",
+        "correct": false
+      },
+      {
+        "text": "play They football on Saturday.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "they",
+      "play",
+      "football",
+      "saturday"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: football / on Saturday / they / play",
+    "writtenCorrectAnswer": "They play football on Saturday."
+  },
+  {
+    "id": "ADD_0114",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: in Santarém / we / live",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "We live in Santarém.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "We live in Santarém.",
+        "correct": true
+      },
+      {
+        "text": "Santarém in live We.",
+        "correct": false
+      },
+      {
+        "text": "live in Santarém We.",
+        "correct": false
+      },
+      {
+        "text": "live We in Santarém.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "live",
+      "santarem"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: in Santarém / we / live",
+    "writtenCorrectAnswer": "We live in Santarém."
+  },
+  {
+    "id": "ADD_0115",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: dinner / has / at eight / he",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "He has dinner at eight.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "He has dinner at eight.",
+        "correct": true
+      },
+      {
+        "text": "eight at dinner has He.",
+        "correct": false
+      },
+      {
+        "text": "has dinner at eight He.",
+        "correct": false
+      },
+      {
+        "text": "has He dinner at eight.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dinner",
+      "eight"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: dinner / has / at eight / he",
+    "writtenCorrectAnswer": "He has dinner at eight."
+  },
+  {
+    "id": "ADD_0116",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: to work / goes / by car / Ana",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Ana goes to work by car.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "Ana goes to work by car.",
+        "correct": true
+      },
+      {
+        "text": "car by work to goes Ana.",
+        "correct": false
+      },
+      {
+        "text": "goes to work by car Ana.",
+        "correct": false
+      },
+      {
+        "text": "goes Ana to work by car.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "goes",
+      "work"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: to work / goes / by car / Ana",
+    "writtenCorrectAnswer": "Ana goes to work by car."
+  },
+  {
+    "id": "ADD_0117",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: a job / wants / Rui",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Rui wants a job.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "Rui wants a job.",
+        "correct": true
+      },
+      {
+        "text": "job a wants Rui.",
+        "correct": false
+      },
+      {
+        "text": "wants a job Rui.",
+        "correct": false
+      },
+      {
+        "text": "wants Rui a job.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "wants"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: a job / wants / Rui",
+    "writtenCorrectAnswer": "Rui wants a job."
+  },
+  {
+    "id": "ADD_0118",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Ordena a frase: the exam / will / pass / I",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "I will pass the exam.",
+    "explanation": "Ordem normal: sujeito + verbo + complemento + lugar + tempo.",
+    "options": [
+      {
+        "text": "I will pass the exam.",
+        "correct": true
+      },
+      {
+        "text": "exam the pass will I.",
+        "correct": false
+      },
+      {
+        "text": "will pass the exam I.",
+        "correct": false
+      },
+      {
+        "text": "will I pass the exam.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "will",
+      "pass",
+      "exam"
+    ],
+    "writtenPrompt": "Ordena por extenso a frase: the exam / will / pass / I",
+    "writtenCorrectAnswer": "I will pass the exam."
+  },
+  {
+    "id": "ADD_0119",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Hardware",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Hardware é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "parte física do computador, como monitor, teclado, motherboard, processador, memória e disco",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "parte física do computador, como monitor, teclado, motherboard, processador, memória e disco",
+        "correct": true
+      },
+      {
+        "text": "programas instalados no computador",
+        "correct": false
+      },
+      {
+        "text": "linguagem usada em páginas web",
+        "correct": false
+      },
+      {
+        "text": "servidor que traduz nomes",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "parte",
+      "fisica",
+      "computador",
+      "como",
+      "monitor",
+      "teclado",
+      "motherboard",
+      "processador",
+      "memoria",
+      "disco"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Hardware num computador.",
+    "writtenCorrectAnswer": "Hardware é parte física do computador, como monitor, teclado, motherboard, processador, memória e disco."
+  },
+  {
+    "id": "ADD_0120",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Hardware",
+    "type": "short",
+    "prompt": "Define Hardware no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Hardware é parte física do computador, como monitor, teclado, motherboard, processador, memória e disco.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "hardware",
+      "parte",
+      "fisica",
+      "computador",
+      "como",
+      "monitor",
+      "teclado",
+      "motherboard",
+      "processador",
+      "memoria"
+    ],
+    "writtenPrompt": "Define Hardware no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0121",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Software",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Software é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "conjunto de programas e sistemas que permitem utilizar o computador",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "conjunto de programas e sistemas que permitem utilizar o computador",
+        "correct": true
+      },
+      {
+        "text": "parte física do computador",
+        "correct": false
+      },
+      {
+        "text": "tipo de cabo de rede",
+        "correct": false
+      },
+      {
+        "text": "unidade aritmética do CPU",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "programas",
+      "sistemas",
+      "permitem",
+      "utilizar",
+      "computador"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Software num computador.",
+    "writtenCorrectAnswer": "Software é conjunto de programas e sistemas que permitem utilizar o computador."
+  },
+  {
+    "id": "ADD_0122",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Software",
+    "type": "short",
+    "prompt": "Define Software no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Software é conjunto de programas e sistemas que permitem utilizar o computador.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "software",
+      "conjunto",
+      "programas",
+      "sistemas",
+      "permitem",
+      "utilizar",
+      "computador"
+    ],
+    "writtenPrompt": "Define Software no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0123",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "CPU/processador",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, CPU/processador é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "componente que executa instruções e processa dados",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "componente que executa instruções e processa dados",
+        "correct": true
+      },
+      {
+        "text": "memória permanente de armazenamento",
+        "correct": false
+      },
+      {
+        "text": "programa de folha de cálculo",
+        "correct": false
+      },
+      {
+        "text": "equipamento que fornece Wi-Fi",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "componente",
+      "executa",
+      "instrucoes",
+      "processa",
+      "dados"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve CPU/processador num computador.",
+    "writtenCorrectAnswer": "CPU/processador é componente que executa instruções e processa dados."
+  },
+  {
+    "id": "ADD_0124",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "CPU/processador",
+    "type": "short",
+    "prompt": "Define CPU/processador no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "CPU/processador é componente que executa instruções e processa dados.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "processador",
+      "componente",
+      "executa",
+      "instrucoes",
+      "processa",
+      "dados"
+    ],
+    "writtenPrompt": "Define CPU/processador no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0125",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Memória RAM",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Memória RAM é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "memória temporária e volátil usada enquanto os programas estão em execução",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "memória temporária e volátil usada enquanto os programas estão em execução",
+        "correct": true
+      },
+      {
+        "text": "memória permanente que não perde dados",
+        "correct": false
+      },
+      {
+        "text": "comando SQL para consultar dados",
+        "correct": false
+      },
+      {
+        "text": "cabo de rede local",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "memoria",
+      "temporaria",
+      "volatil",
+      "usada",
+      "enquanto",
+      "programas",
+      "estao",
+      "execucao"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Memória RAM num computador.",
+    "writtenCorrectAnswer": "Memória RAM é memória temporária e volátil usada enquanto os programas estão em execução."
+  },
+  {
+    "id": "ADD_0126",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Memória RAM",
+    "type": "short",
+    "prompt": "Define Memória RAM no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Memória RAM é memória temporária e volátil usada enquanto os programas estão em execução.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "memoria",
+      "temporaria",
+      "volatil",
+      "usada",
+      "enquanto",
+      "programas",
+      "estao",
+      "execucao"
+    ],
+    "writtenPrompt": "Define Memória RAM no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0127",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Memória ROM",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Memória ROM é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "memória permanente com instruções básicas do sistema",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "memória permanente com instruções básicas do sistema",
+        "correct": true
+      },
+      {
+        "text": "memória temporária e volátil",
+        "correct": false
+      },
+      {
+        "text": "tabela dinâmica do Excel",
+        "correct": false
+      },
+      {
+        "text": "protocolo de correio eletrónico",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "memoria",
+      "permanente",
+      "instrucoes",
+      "basicas",
+      "sistema"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Memória ROM num computador.",
+    "writtenCorrectAnswer": "Memória ROM é memória permanente com instruções básicas do sistema."
+  },
+  {
+    "id": "ADD_0128",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Memória ROM",
+    "type": "short",
+    "prompt": "Define Memória ROM no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Memória ROM é memória permanente com instruções básicas do sistema.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "memoria",
+      "permanente",
+      "instrucoes",
+      "basicas",
+      "sistema"
+    ],
+    "writtenPrompt": "Define Memória ROM no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0129",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Disco SSD/HDD",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Disco SSD/HDD é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "armazenamento permanente de ficheiros, programas e sistema operativo",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "armazenamento permanente de ficheiros, programas e sistema operativo",
+        "correct": true
+      },
+      {
+        "text": "memória apenas temporária",
+        "correct": false
+      },
+      {
+        "text": "unidade de controlo do CPU",
+        "correct": false
+      },
+      {
+        "text": "serviço que atribui IPs",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "armazenamento",
+      "permanente",
+      "ficheiros",
+      "programas",
+      "sistema",
+      "operativo"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Disco SSD/HDD num computador.",
+    "writtenCorrectAnswer": "Disco SSD/HDD é armazenamento permanente de ficheiros, programas e sistema operativo."
+  },
+  {
+    "id": "ADD_0130",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Disco SSD/HDD",
+    "type": "short",
+    "prompt": "Define Disco SSD/HDD no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Disco SSD/HDD é armazenamento permanente de ficheiros, programas e sistema operativo.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "disco",
+      "armazenamento",
+      "permanente",
+      "ficheiros",
+      "programas",
+      "sistema",
+      "operativo"
+    ],
+    "writtenPrompt": "Define Disco SSD/HDD no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0131",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Motherboard",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Motherboard é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "placa principal onde os componentes do computador se ligam",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "placa principal onde os componentes do computador se ligam",
+        "correct": true
+      },
+      {
+        "text": "programa de edição de texto",
+        "correct": false
+      },
+      {
+        "text": "tipo de rede sem fios",
+        "correct": false
+      },
+      {
+        "text": "função de soma no Excel",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "placa",
+      "principal",
+      "onde",
+      "componentes",
+      "computador",
+      "ligam"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Motherboard num computador.",
+    "writtenCorrectAnswer": "Motherboard é placa principal onde os componentes do computador se ligam."
+  },
+  {
+    "id": "ADD_0132",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Motherboard",
+    "type": "short",
+    "prompt": "Define Motherboard no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Motherboard é placa principal onde os componentes do computador se ligam.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "motherboard",
+      "placa",
+      "principal",
+      "onde",
+      "componentes",
+      "computador",
+      "ligam"
+    ],
+    "writtenPrompt": "Define Motherboard no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0133",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Fonte de alimentação",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Fonte de alimentação é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "componente que fornece energia elétrica aos componentes do computador",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "componente que fornece energia elétrica aos componentes do computador",
+        "correct": true
+      },
+      {
+        "text": "unidade que executa cálculos lógicos",
+        "correct": false
+      },
+      {
+        "text": "servidor que imprime documentos",
+        "correct": false
+      },
+      {
+        "text": "formatação condicional",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "componente",
+      "fornece",
+      "energia",
+      "eletrica",
+      "componentes",
+      "computador"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Fonte de alimentação num computador.",
+    "writtenCorrectAnswer": "Fonte de alimentação é componente que fornece energia elétrica aos componentes do computador."
+  },
+  {
+    "id": "ADD_0134",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Fonte de alimentação",
+    "type": "short",
+    "prompt": "Define Fonte de alimentação no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Fonte de alimentação é componente que fornece energia elétrica aos componentes do computador.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "fonte",
+      "alimentacao",
+      "componente",
+      "fornece",
+      "energia",
+      "eletrica",
+      "componentes",
+      "computador"
+    ],
+    "writtenPrompt": "Define Fonte de alimentação no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0135",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ULA/ALU",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, ULA/ALU é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "unidade lógica e aritmética que realiza cálculos e operações lógicas",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "unidade lógica e aritmética que realiza cálculos e operações lógicas",
+        "correct": true
+      },
+      {
+        "text": "memória principal volátil",
+        "correct": false
+      },
+      {
+        "text": "dispositivo de saída de som",
+        "correct": false
+      },
+      {
+        "text": "programa antivírus",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "unidade",
+      "logica",
+      "aritmetica",
+      "realiza",
+      "calculos",
+      "operacoes",
+      "logicas"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve ULA/ALU num computador.",
+    "writtenCorrectAnswer": "ULA/ALU é unidade lógica e aritmética que realiza cálculos e operações lógicas."
+  },
+  {
+    "id": "ADD_0136",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ULA/ALU",
+    "type": "short",
+    "prompt": "Define ULA/ALU no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "ULA/ALU é unidade lógica e aritmética que realiza cálculos e operações lógicas.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "unidade",
+      "logica",
+      "aritmetica",
+      "realiza",
+      "calculos",
+      "operacoes",
+      "logicas"
+    ],
+    "writtenPrompt": "Define ULA/ALU no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0137",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Unidade de controlo",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Unidade de controlo é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "parte do processador que coordena a execução das instruções",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "parte do processador que coordena a execução das instruções",
+        "correct": true
+      },
+      {
+        "text": "cabo de fibra ótica",
+        "correct": false
+      },
+      {
+        "text": "tabela com filtros",
+        "correct": false
+      },
+      {
+        "text": "página HTML principal",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "parte",
+      "processador",
+      "coordena",
+      "execucao",
+      "instrucoes"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Unidade de controlo num computador.",
+    "writtenCorrectAnswer": "Unidade de controlo é parte do processador que coordena a execução das instruções."
+  },
+  {
+    "id": "ADD_0138",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Unidade de controlo",
+    "type": "short",
+    "prompt": "Define Unidade de controlo no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Unidade de controlo é parte do processador que coordena a execução das instruções.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "unidade",
+      "controlo",
+      "parte",
+      "processador",
+      "coordena",
+      "execucao",
+      "instrucoes"
+    ],
+    "writtenPrompt": "Define Unidade de controlo no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0139",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Cache",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Cache é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "memória muito rápida que acelera o acesso a dados usados frequentemente",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "memória muito rápida que acelera o acesso a dados usados frequentemente",
+        "correct": true
+      },
+      {
+        "text": "disco externo para cópias",
+        "correct": false
+      },
+      {
+        "text": "tipo de topologia de rede",
+        "correct": false
+      },
+      {
+        "text": "formulário de base de dados",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "memoria",
+      "muito",
+      "rapida",
+      "acelera",
+      "acesso",
+      "dados",
+      "usados",
+      "frequentemente"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Cache num computador.",
+    "writtenCorrectAnswer": "Cache é memória muito rápida que acelera o acesso a dados usados frequentemente."
+  },
+  {
+    "id": "ADD_0140",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Cache",
+    "type": "short",
+    "prompt": "Define Cache no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Cache é memória muito rápida que acelera o acesso a dados usados frequentemente.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "cache",
+      "memoria",
+      "muito",
+      "rapida",
+      "acelera",
+      "acesso",
+      "dados",
+      "usados",
+      "frequentemente"
+    ],
+    "writtenPrompt": "Define Cache no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0141",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Registos",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Registos é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "pequenas memórias internas do processador usadas para guardar dados temporários",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "pequenas memórias internas do processador usadas para guardar dados temporários",
+        "correct": true
+      },
+      {
+        "text": "células de uma folha de cálculo",
+        "correct": false
+      },
+      {
+        "text": "páginas de um site",
+        "correct": false
+      },
+      {
+        "text": "servidores de impressão",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "pequenas",
+      "memorias",
+      "internas",
+      "processador",
+      "usadas",
+      "para",
+      "guardar",
+      "dados",
+      "temporarios"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Registos num computador.",
+    "writtenCorrectAnswer": "Registos é pequenas memórias internas do processador usadas para guardar dados temporários."
+  },
+  {
+    "id": "ADD_0142",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Registos",
+    "type": "short",
+    "prompt": "Define Registos no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Registos é pequenas memórias internas do processador usadas para guardar dados temporários.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "registos",
+      "pequenas",
+      "memorias",
+      "internas",
+      "processador",
+      "usadas",
+      "para",
+      "guardar",
+      "dados",
+      "temporarios"
+    ],
+    "writtenPrompt": "Define Registos no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0143",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de entrada",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Periféricos de entrada é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "dispositivos que permitem inserir dados, como teclado, rato, scanner e microfone",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "dispositivos que permitem inserir dados, como teclado, rato, scanner e microfone",
+        "correct": true
+      },
+      {
+        "text": "monitor e colunas",
+        "correct": false
+      },
+      {
+        "text": "disco rígido e SSD",
+        "correct": false
+      },
+      {
+        "text": "router e switch",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dispositivos",
+      "permitem",
+      "inserir",
+      "dados",
+      "como",
+      "teclado",
+      "rato",
+      "scanner",
+      "microfone"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Periféricos de entrada num computador.",
+    "writtenCorrectAnswer": "Periféricos de entrada é dispositivos que permitem inserir dados, como teclado, rato, scanner e microfone."
+  },
+  {
+    "id": "ADD_0144",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de entrada",
+    "type": "short",
+    "prompt": "Define Periféricos de entrada no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Periféricos de entrada é dispositivos que permitem inserir dados, como teclado, rato, scanner e microfone.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "perifericos",
+      "entrada",
+      "dispositivos",
+      "permitem",
+      "inserir",
+      "dados",
+      "como",
+      "teclado",
+      "rato",
+      "scanner"
+    ],
+    "writtenPrompt": "Define Periféricos de entrada no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0145",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de saída",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Periféricos de saída é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "dispositivos que mostram resultados, como monitor, impressora e colunas",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "dispositivos que mostram resultados, como monitor, impressora e colunas",
+        "correct": true
+      },
+      {
+        "text": "teclado e rato",
+        "correct": false
+      },
+      {
+        "text": "RAM e ROM",
+        "correct": false
+      },
+      {
+        "text": "DHCP e DNS",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dispositivos",
+      "mostram",
+      "resultados",
+      "como",
+      "monitor",
+      "impressora",
+      "colunas"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Periféricos de saída num computador.",
+    "writtenCorrectAnswer": "Periféricos de saída é dispositivos que mostram resultados, como monitor, impressora e colunas."
+  },
+  {
+    "id": "ADD_0146",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de saída",
+    "type": "short",
+    "prompt": "Define Periféricos de saída no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Periféricos de saída é dispositivos que mostram resultados, como monitor, impressora e colunas.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "perifericos",
+      "saida",
+      "dispositivos",
+      "mostram",
+      "resultados",
+      "como",
+      "monitor",
+      "impressora",
+      "colunas"
+    ],
+    "writtenPrompt": "Define Periféricos de saída no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0147",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de entrada e saída",
+    "type": "mc",
+    "prompt": "Em arquitetura interna do computador, Periféricos de entrada e saída é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "dispositivos que permitem entrada e saída de dados, como ecrã tátil, pen USB e placa de rede",
+    "explanation": "Arquitetura interna: elementos base, memória e funções do processador.",
+    "options": [
+      {
+        "text": "dispositivos que permitem entrada e saída de dados, como ecrã tátil, pen USB e placa de rede",
+        "correct": true
+      },
+      {
+        "text": "apenas dispositivos de escrita",
+        "correct": false
+      },
+      {
+        "text": "apenas dispositivos de leitura",
+        "correct": false
+      },
+      {
+        "text": "funções matemáticas do Excel",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dispositivos",
+      "permitem",
+      "entrada",
+      "saida",
+      "dados",
+      "como",
+      "ecra",
+      "tatil",
+      "placa",
+      "rede"
+    ],
+    "writtenPrompt": "Explica por extenso o que é ou para que serve Periféricos de entrada e saída num computador.",
+    "writtenCorrectAnswer": "Periféricos de entrada e saída é dispositivos que permitem entrada e saída de dados, como ecrã tátil, pen USB e placa de rede."
+  },
+  {
+    "id": "ADD_0148",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de entrada e saída",
+    "type": "short",
+    "prompt": "Define Periféricos de entrada e saída no contexto da arquitetura de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "Periféricos de entrada e saída é dispositivos que permitem entrada e saída de dados, como ecrã tátil, pen USB e placa de rede.",
+    "explanation": "Pergunta de definição teórica de informática.",
+    "keywords": [
+      "perifericos",
+      "entrada",
+      "saida",
+      "dispositivos",
+      "permitem",
+      "dados",
+      "como",
+      "ecra",
+      "tatil",
+      "placa"
+    ],
+    "writtenPrompt": "Define Periféricos de entrada e saída no contexto da arquitetura de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0149",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "formatação de texto",
+    "type": "mc",
+    "prompt": "Num processador de texto, formatação de texto serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": true
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      },
+      {
+        "text": "estrutura com linhas e colunas usada para organizar informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "alterar",
+      "aspeto",
+      "texto",
+      "como",
+      "tipo",
+      "letra",
+      "tamanho",
+      "negrito",
+      "italico",
+      "alinhamento"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é formatação de texto e para que serve.",
+    "writtenCorrectAnswer": "formatação de texto serve para alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento."
+  },
+  {
+    "id": "ADD_0150",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "formatação de texto",
+    "type": "short",
+    "prompt": "Para que serve formatação de texto num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "formatação de texto serve para alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "formatacao",
+      "texto",
+      "serve",
+      "para",
+      "alterar",
+      "aspeto",
+      "como",
+      "tipo",
+      "letra",
+      "tamanho"
+    ],
+    "writtenPrompt": "Para que serve formatação de texto num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0151",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "texto em colunas",
+    "type": "mc",
+    "prompt": "Num processador de texto, texto em colunas serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "dividir o texto da página em duas ou mais colunas",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      },
+      {
+        "text": "estrutura com linhas e colunas usada para organizar informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dividir",
+      "texto",
+      "pagina",
+      "duas",
+      "mais",
+      "colunas"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é texto em colunas e para que serve.",
+    "writtenCorrectAnswer": "texto em colunas serve para dividir o texto da página em duas ou mais colunas."
+  },
+  {
+    "id": "ADD_0152",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "texto em colunas",
+    "type": "short",
+    "prompt": "Para que serve texto em colunas num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "texto em colunas serve para dividir o texto da página em duas ou mais colunas.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "texto",
+      "colunas",
+      "serve",
+      "para",
+      "dividir",
+      "pagina",
+      "duas",
+      "mais"
+    ],
+    "writtenPrompt": "Para que serve texto em colunas num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0153",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "nota de rodapé",
+    "type": "mc",
+    "prompt": "Num processador de texto, nota de rodapé serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "estrutura com linhas e colunas usada para organizar informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "nota",
+      "colocada",
+      "fundo",
+      "pagina",
+      "para",
+      "explicar",
+      "comentar",
+      "referenciar",
+      "informacao"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é nota de rodapé e para que serve.",
+    "writtenCorrectAnswer": "nota de rodapé serve para nota colocada no fundo da página para explicar, comentar ou referenciar uma informação."
+  },
+  {
+    "id": "ADD_0154",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "nota de rodapé",
+    "type": "short",
+    "prompt": "Para que serve nota de rodapé num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "nota de rodapé serve para nota colocada no fundo da página para explicar, comentar ou referenciar uma informação.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "nota",
+      "rodape",
+      "serve",
+      "para",
+      "colocada",
+      "fundo",
+      "pagina",
+      "explicar",
+      "comentar",
+      "referenciar"
+    ],
+    "writtenPrompt": "Para que serve nota de rodapé num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0155",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "tabela",
+    "type": "mc",
+    "prompt": "Num processador de texto, tabela serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "estrutura com linhas e colunas usada para organizar informação",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "estrutura com linhas e colunas usada para organizar informação",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "estrutura",
+      "linhas",
+      "colunas",
+      "usada",
+      "para",
+      "organizar",
+      "informacao"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é tabela e para que serve.",
+    "writtenCorrectAnswer": "tabela serve para estrutura com linhas e colunas usada para organizar informação."
+  },
+  {
+    "id": "ADD_0156",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "tabela",
+    "type": "short",
+    "prompt": "Para que serve tabela num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "tabela serve para estrutura com linhas e colunas usada para organizar informação.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "tabela",
+      "serve",
+      "para",
+      "estrutura",
+      "linhas",
+      "colunas",
+      "usada",
+      "organizar",
+      "informacao"
+    ],
+    "writtenPrompt": "Para que serve tabela num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0157",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "cabeçalho",
+    "type": "mc",
+    "prompt": "Num processador de texto, cabeçalho serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "área superior da página que pode repetir informação em várias páginas",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "área superior da página que pode repetir informação em várias páginas",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "area",
+      "superior",
+      "pagina",
+      "pode",
+      "repetir",
+      "informacao",
+      "varias",
+      "paginas"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é cabeçalho e para que serve.",
+    "writtenCorrectAnswer": "cabeçalho serve para área superior da página que pode repetir informação em várias páginas."
+  },
+  {
+    "id": "ADD_0158",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "cabeçalho",
+    "type": "short",
+    "prompt": "Para que serve cabeçalho num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "cabeçalho serve para área superior da página que pode repetir informação em várias páginas.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "cabecalho",
+      "serve",
+      "para",
+      "area",
+      "superior",
+      "pagina",
+      "pode",
+      "repetir",
+      "informacao",
+      "varias"
+    ],
+    "writtenPrompt": "Para que serve cabeçalho num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0159",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "rodapé",
+    "type": "mc",
+    "prompt": "Num processador de texto, rodapé serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "área inferior da página que pode incluir número de página, data ou outra informação",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "área inferior da página que pode incluir número de página, data ou outra informação",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "area",
+      "inferior",
+      "pagina",
+      "pode",
+      "incluir",
+      "numero",
+      "data",
+      "outra",
+      "informacao"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é rodapé e para que serve.",
+    "writtenCorrectAnswer": "rodapé serve para área inferior da página que pode incluir número de página, data ou outra informação."
+  },
+  {
+    "id": "ADD_0160",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "rodapé",
+    "type": "short",
+    "prompt": "Para que serve rodapé num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "rodapé serve para área inferior da página que pode incluir número de página, data ou outra informação.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "rodape",
+      "serve",
+      "para",
+      "area",
+      "inferior",
+      "pagina",
+      "pode",
+      "incluir",
+      "numero",
+      "data"
+    ],
+    "writtenPrompt": "Para que serve rodapé num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0161",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "margens",
+    "type": "mc",
+    "prompt": "Num processador de texto, margens serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "espaços vazios entre o texto e as extremidades da página",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "espaços vazios entre o texto e as extremidades da página",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "espacos",
+      "vazios",
+      "entre",
+      "texto",
+      "extremidades",
+      "pagina"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é margens e para que serve.",
+    "writtenCorrectAnswer": "margens serve para espaços vazios entre o texto e as extremidades da página."
+  },
+  {
+    "id": "ADD_0162",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "margens",
+    "type": "short",
+    "prompt": "Para que serve margens num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "margens serve para espaços vazios entre o texto e as extremidades da página.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "margens",
+      "serve",
+      "para",
+      "espacos",
+      "vazios",
+      "entre",
+      "texto",
+      "extremidades",
+      "pagina"
+    ],
+    "writtenPrompt": "Para que serve margens num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0163",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "orientação da página",
+    "type": "mc",
+    "prompt": "Num processador de texto, orientação da página serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "forma como a página está disposta, normalmente retrato ou paisagem",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "forma como a página está disposta, normalmente retrato ou paisagem",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "forma",
+      "como",
+      "pagina",
+      "esta",
+      "disposta",
+      "normalmente",
+      "retrato",
+      "paisagem"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é orientação da página e para que serve.",
+    "writtenCorrectAnswer": "orientação da página serve para forma como a página está disposta, normalmente retrato ou paisagem."
+  },
+  {
+    "id": "ADD_0164",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "orientação da página",
+    "type": "short",
+    "prompt": "Para que serve orientação da página num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "orientação da página serve para forma como a página está disposta, normalmente retrato ou paisagem.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "orientacao",
+      "pagina",
+      "serve",
+      "para",
+      "forma",
+      "como",
+      "esta",
+      "disposta",
+      "normalmente",
+      "retrato"
+    ],
+    "writtenPrompt": "Para que serve orientação da página num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0165",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "alinhamento",
+    "type": "mc",
+    "prompt": "Num processador de texto, alinhamento serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "posição do texto em relação às margens, como esquerda, centro, direita ou justificado",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "posição do texto em relação às margens, como esquerda, centro, direita ou justificado",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "posicao",
+      "texto",
+      "relacao",
+      "margens",
+      "como",
+      "esquerda",
+      "centro",
+      "direita",
+      "justificado"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é alinhamento e para que serve.",
+    "writtenCorrectAnswer": "alinhamento serve para posição do texto em relação às margens, como esquerda, centro, direita ou justificado."
+  },
+  {
+    "id": "ADD_0166",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "alinhamento",
+    "type": "short",
+    "prompt": "Para que serve alinhamento num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "alinhamento serve para posição do texto em relação às margens, como esquerda, centro, direita ou justificado.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "alinhamento",
+      "serve",
+      "para",
+      "posicao",
+      "texto",
+      "relacao",
+      "margens",
+      "como",
+      "esquerda",
+      "centro"
+    ],
+    "writtenPrompt": "Para que serve alinhamento num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0167",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "espaçamento",
+    "type": "mc",
+    "prompt": "Num processador de texto, espaçamento serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "distância entre linhas, parágrafos ou elementos do texto",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "distância entre linhas, parágrafos ou elementos do texto",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "distancia",
+      "entre",
+      "linhas",
+      "paragrafos",
+      "elementos",
+      "texto"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é espaçamento e para que serve.",
+    "writtenCorrectAnswer": "espaçamento serve para distância entre linhas, parágrafos ou elementos do texto."
+  },
+  {
+    "id": "ADD_0168",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "espaçamento",
+    "type": "short",
+    "prompt": "Para que serve espaçamento num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "espaçamento serve para distância entre linhas, parágrafos ou elementos do texto.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "espacamento",
+      "serve",
+      "para",
+      "distancia",
+      "entre",
+      "linhas",
+      "paragrafos",
+      "elementos",
+      "texto"
+    ],
+    "writtenPrompt": "Para que serve espaçamento num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0169",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "numeração de páginas",
+    "type": "mc",
+    "prompt": "Num processador de texto, numeração de páginas serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "inserção automática do número de página no documento",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "inserção automática do número de página no documento",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "insercao",
+      "automatica",
+      "numero",
+      "pagina",
+      "documento"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é numeração de páginas e para que serve.",
+    "writtenCorrectAnswer": "numeração de páginas serve para inserção automática do número de página no documento."
+  },
+  {
+    "id": "ADD_0170",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "numeração de páginas",
+    "type": "short",
+    "prompt": "Para que serve numeração de páginas num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "numeração de páginas serve para inserção automática do número de página no documento.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "numeracao",
+      "paginas",
+      "serve",
+      "para",
+      "insercao",
+      "automatica",
+      "numero",
+      "pagina",
+      "documento"
+    ],
+    "writtenPrompt": "Para que serve numeração de páginas num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0171",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "estilos",
+    "type": "mc",
+    "prompt": "Num processador de texto, estilos serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "conjuntos de formatações aplicados a títulos, subtítulos ou texto normal",
+    "explanation": "Processador de texto: formatação, colunas, rodapés, cabeçalhos e tabelas.",
+    "options": [
+      {
+        "text": "conjuntos de formatações aplicados a títulos, subtítulos ou texto normal",
+        "correct": true
+      },
+      {
+        "text": "alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, alinhamento e espaçamento",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto da página em duas ou mais colunas",
+        "correct": false
+      },
+      {
+        "text": "nota colocada no fundo da página para explicar, comentar ou referenciar uma informação",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjuntos",
+      "formatacoes",
+      "aplicados",
+      "titulos",
+      "subtitulos",
+      "texto",
+      "normal"
+    ],
+    "writtenPrompt": "Explica por extenso, num processador de texto, o que é estilos e para que serve.",
+    "writtenCorrectAnswer": "estilos serve para conjuntos de formatações aplicados a títulos, subtítulos ou texto normal."
+  },
+  {
+    "id": "ADD_0172",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "estilos",
+    "type": "short",
+    "prompt": "Para que serve estilos num processador de texto?",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "estilos serve para conjuntos de formatações aplicados a títulos, subtítulos ou texto normal.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "estilos",
+      "serve",
+      "para",
+      "conjuntos",
+      "formatacoes",
+      "aplicados",
+      "titulos",
+      "subtitulos",
+      "texto",
+      "normal"
+    ],
+    "writtenPrompt": "Para que serve estilos num processador de texto?\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0173",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "célula",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, célula é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": true
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      },
+      {
+        "text": "conjunto de células, por exemplo A1:A10",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "intersecao",
+      "entre",
+      "linha",
+      "coluna",
+      "onde",
+      "introduzem",
+      "dados",
+      "formulas"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é célula e para que serve.",
+    "writtenCorrectAnswer": "célula é/serve para interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas."
+  },
+  {
+    "id": "ADD_0174",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "linha",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, linha é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "conjunto horizontal de células identificado por números",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      },
+      {
+        "text": "conjunto de células, por exemplo A1:A10",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "horizontal",
+      "celulas",
+      "identificado",
+      "numeros"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é linha e para que serve.",
+    "writtenCorrectAnswer": "linha é/serve para conjunto horizontal de células identificado por números."
+  },
+  {
+    "id": "ADD_0175",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "coluna",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, coluna é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "conjunto vertical de células identificado por letras",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto de células, por exemplo A1:A10",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "vertical",
+      "celulas",
+      "identificado",
+      "letras"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é coluna e para que serve.",
+    "writtenCorrectAnswer": "coluna é/serve para conjunto vertical de células identificado por letras."
+  },
+  {
+    "id": "ADD_0176",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "intervalo",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, intervalo é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "conjunto de células, por exemplo A1:A10",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "conjunto de células, por exemplo A1:A10",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "celulas",
+      "exemplo"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é intervalo e para que serve.",
+    "writtenCorrectAnswer": "intervalo é/serve para conjunto de células, por exemplo A1:A10."
+  },
+  {
+    "id": "ADD_0177",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "fórmula",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, fórmula é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "expressão que começa por = e permite fazer cálculos",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "expressão que começa por = e permite fazer cálculos",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "expressao",
+      "comeca",
+      "permite",
+      "fazer",
+      "calculos"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é fórmula e para que serve.",
+    "writtenCorrectAnswer": "fórmula é/serve para expressão que começa por = e permite fazer cálculos."
+  },
+  {
+    "id": "ADD_0178",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "função SOMA",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, função SOMA é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "função que soma os valores de um intervalo",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "função que soma os valores de um intervalo",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "funcao",
+      "soma",
+      "valores",
+      "intervalo"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é função SOMA e para que serve.",
+    "writtenCorrectAnswer": "função SOMA é/serve para função que soma os valores de um intervalo."
+  },
+  {
+    "id": "ADD_0179",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "função MÉDIA",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, função MÉDIA é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "função que calcula a média dos valores de um intervalo",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "função que calcula a média dos valores de um intervalo",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "funcao",
+      "calcula",
+      "media",
+      "valores",
+      "intervalo"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é função MÉDIA e para que serve.",
+    "writtenCorrectAnswer": "função MÉDIA é/serve para função que calcula a média dos valores de um intervalo."
+  },
+  {
+    "id": "ADD_0180",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "função MÁXIMO",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, função MÁXIMO é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "função que devolve o maior valor de um intervalo",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "função que devolve o maior valor de um intervalo",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "funcao",
+      "devolve",
+      "maior",
+      "valor",
+      "intervalo"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é função MÁXIMO e para que serve.",
+    "writtenCorrectAnswer": "função MÁXIMO é/serve para função que devolve o maior valor de um intervalo."
+  },
+  {
+    "id": "ADD_0181",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "função MÍNIMO",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, função MÍNIMO é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "função que devolve o menor valor de um intervalo",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "função que devolve o menor valor de um intervalo",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "funcao",
+      "devolve",
+      "menor",
+      "valor",
+      "intervalo"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é função MÍNIMO e para que serve.",
+    "writtenCorrectAnswer": "função MÍNIMO é/serve para função que devolve o menor valor de um intervalo."
+  },
+  {
+    "id": "ADD_0182",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "função SE",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, função SE é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "função condicional que devolve um resultado se a condição for verdadeira e outro se for falsa",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "função condicional que devolve um resultado se a condição for verdadeira e outro se for falsa",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "funcao",
+      "condicional",
+      "devolve",
+      "resultado",
+      "condicao",
+      "verdadeira",
+      "outro",
+      "falsa"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é função SE e para que serve.",
+    "writtenCorrectAnswer": "função SE é/serve para função condicional que devolve um resultado se a condição for verdadeira e outro se for falsa."
+  },
+  {
+    "id": "ADD_0183",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "função SE",
+    "type": "long",
+    "prompt": "Define a função SE numa folha de cálculo.",
+    "difficulty": 4,
+    "estimate": 150,
+    "weight": 1.5,
+    "correctAnswer": "A função SE permite testar uma condição e devolver um resultado se a condição for verdadeira e outro se for falsa. Exemplo: =SE(A1>=10;\"Aprovado\";\"Reprovado\").",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "função",
+      "permite",
+      "testar",
+      "condição",
+      "devolver",
+      "resultado",
+      "condição",
+      "verdadeira"
+    ],
+    "writtenPrompt": "Define a função SE numa folha de cálculo.\nResponde com a definição e a finalidade principal."
+  },
+  {
+    "id": "ADD_0184",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "CONTAR",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, CONTAR é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "função que conta células com números",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "função que conta células com números",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "funcao",
+      "conta",
+      "celulas",
+      "numeros"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é CONTAR e para que serve.",
+    "writtenCorrectAnswer": "CONTAR é/serve para função que conta células com números."
+  },
+  {
+    "id": "ADD_0185",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "CONTAR.SE",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, CONTAR.SE é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "função que conta células que cumprem uma condição",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "função que conta células que cumprem uma condição",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "funcao",
+      "conta",
+      "celulas",
+      "cumprem",
+      "condicao"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é CONTAR.SE e para que serve.",
+    "writtenCorrectAnswer": "CONTAR.SE é/serve para função que conta células que cumprem uma condição."
+  },
+  {
+    "id": "ADD_0186",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "filtro",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, filtro é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "ferramenta que mostra apenas dados que cumprem certos critérios sem apagar os restantes",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "ferramenta que mostra apenas dados que cumprem certos critérios sem apagar os restantes",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ferramenta",
+      "mostra",
+      "apenas",
+      "dados",
+      "cumprem",
+      "certos",
+      "criterios",
+      "apagar",
+      "restantes"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é filtro e para que serve.",
+    "writtenCorrectAnswer": "filtro é/serve para ferramenta que mostra apenas dados que cumprem certos critérios sem apagar os restantes."
+  },
+  {
+    "id": "ADD_0187",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "filtro",
+    "type": "long",
+    "prompt": "Define filtro numa folha de cálculo e indica a sua finalidade.",
+    "difficulty": 4,
+    "estimate": 150,
+    "weight": 1.5,
+    "correctAnswer": "Um filtro permite mostrar apenas os dados que cumprem uma determinada condição, sem apagar os restantes dados da tabela.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "filtro",
+      "permite",
+      "mostrar",
+      "apenas",
+      "dados",
+      "cumprem",
+      "determinada",
+      "condição"
+    ],
+    "writtenPrompt": "Define filtro numa folha de cálculo e indica a sua finalidade.\nResponde com a definição e a finalidade principal."
+  },
+  {
+    "id": "ADD_0188",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "formatação condicional",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, formatação condicional é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "formatação automática aplicada quando uma condição é cumprida",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "formatação automática aplicada quando uma condição é cumprida",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "formatacao",
+      "automatica",
+      "aplicada",
+      "quando",
+      "condicao",
+      "cumprida"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é formatação condicional e para que serve.",
+    "writtenCorrectAnswer": "formatação condicional é/serve para formatação automática aplicada quando uma condição é cumprida."
+  },
+  {
+    "id": "ADD_0189",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "formatação condicional",
+    "type": "long",
+    "prompt": "Define formatação condicional numa folha de cálculo.",
+    "difficulty": 4,
+    "estimate": 150,
+    "weight": 1.5,
+    "correctAnswer": "A formatação condicional aplica automaticamente uma formatação às células quando uma regra/condição é cumprida, por exemplo destacar notas negativas.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "formatação",
+      "condicional",
+      "aplica",
+      "automaticamente",
+      "formatação",
+      "células",
+      "quando",
+      "regra"
+    ],
+    "writtenPrompt": "Define formatação condicional numa folha de cálculo.\nResponde com a definição e a finalidade principal."
+  },
+  {
+    "id": "ADD_0190",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "tabela dinâmica",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, tabela dinâmica é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "ferramenta que resume grandes quantidades de dados por categorias",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "ferramenta que resume grandes quantidades de dados por categorias",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ferramenta",
+      "resume",
+      "grandes",
+      "quantidades",
+      "dados",
+      "categorias"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é tabela dinâmica e para que serve.",
+    "writtenCorrectAnswer": "tabela dinâmica é/serve para ferramenta que resume grandes quantidades de dados por categorias."
+  },
+  {
+    "id": "ADD_0191",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "tabela dinâmica",
+    "type": "long",
+    "prompt": "Define tabela dinâmica numa folha de cálculo.",
+    "difficulty": 4,
+    "estimate": 150,
+    "weight": 1.5,
+    "correctAnswer": "Uma tabela dinâmica permite resumir, agrupar e analisar muitos dados rapidamente, por exemplo por categoria, mês, produto ou aluno.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "tabela",
+      "dinâmica",
+      "permite",
+      "resumir",
+      "agrupar",
+      "analisar",
+      "muitos",
+      "dados"
+    ],
+    "writtenPrompt": "Define tabela dinâmica numa folha de cálculo.\nResponde com a definição e a finalidade principal."
+  },
+  {
+    "id": "ADD_0192",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "gráfico dinâmico",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, gráfico dinâmico é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "gráfico associado a uma tabela dinâmica para visualizar dados resumidos",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "gráfico associado a uma tabela dinâmica para visualizar dados resumidos",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "grafico",
+      "associado",
+      "tabela",
+      "dinamica",
+      "para",
+      "visualizar",
+      "dados",
+      "resumidos"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é gráfico dinâmico e para que serve.",
+    "writtenCorrectAnswer": "gráfico dinâmico é/serve para gráfico associado a uma tabela dinâmica para visualizar dados resumidos."
+  },
+  {
+    "id": "ADD_0193",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "gráfico dinâmico",
+    "type": "long",
+    "prompt": "Define gráfico dinâmico numa folha de cálculo.",
+    "difficulty": 4,
+    "estimate": 150,
+    "weight": 1.5,
+    "correctAnswer": "Um gráfico dinâmico representa visualmente os dados resumidos de uma tabela dinâmica e facilita a análise dos resultados.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "gráfico",
+      "dinâmico",
+      "representa",
+      "visualmente",
+      "dados",
+      "resumidos",
+      "tabela",
+      "dinâmica"
+    ],
+    "writtenPrompt": "Define gráfico dinâmico numa folha de cálculo.\nResponde com a definição e a finalidade principal."
+  },
+  {
+    "id": "ADD_0194",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "referência relativa",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, referência relativa é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "referência que se ajusta quando a fórmula é copiada para outras células",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "referência que se ajusta quando a fórmula é copiada para outras células",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "referencia",
+      "ajusta",
+      "quando",
+      "formula",
+      "copiada",
+      "para",
+      "outras",
+      "celulas"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é referência relativa e para que serve.",
+    "writtenCorrectAnswer": "referência relativa é/serve para referência que se ajusta quando a fórmula é copiada para outras células."
+  },
+  {
+    "id": "ADD_0195",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "referência absoluta",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, referência absoluta é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "referência fixa com $, que não muda ao copiar a fórmula",
+    "explanation": "Folha de cálculo: células, fórmulas, funções, filtros, formatação condicional e dinâmicas.",
+    "options": [
+      {
+        "text": "referência fixa com $, que não muda ao copiar a fórmula",
+        "correct": true
+      },
+      {
+        "text": "interseção entre uma linha e uma coluna onde se introduzem dados ou fórmulas",
+        "correct": false
+      },
+      {
+        "text": "conjunto horizontal de células identificado por números",
+        "correct": false
+      },
+      {
+        "text": "conjunto vertical de células identificado por letras",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "referencia",
+      "fixa",
+      "muda",
+      "copiar",
+      "formula"
+    ],
+    "writtenPrompt": "Explica por extenso, numa folha de cálculo, o que é referência absoluta e para que serve.",
+    "writtenCorrectAnswer": "referência absoluta é/serve para referência fixa com $, que não muda ao copiar a fórmula."
+  },
+  {
+    "id": "ADD_0196",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "rede de computadores",
+    "type": "mc",
+    "prompt": "Em redes, rede de computadores é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": true
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      },
+      {
+        "text": "rede metropolitana, que cobre uma cidade ou zona urbana",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "computadores",
+      "dispositivos",
+      "ligados",
+      "para",
+      "partilhar",
+      "dados",
+      "recursos",
+      "servicos"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é rede de computadores e para que serve.",
+    "writtenCorrectAnswer": "rede de computadores é/serve para conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços."
+  },
+  {
+    "id": "ADD_0197",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "LAN",
+    "type": "mc",
+    "prompt": "Em redes, LAN é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede local, usada numa casa, escola ou empresa",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      },
+      {
+        "text": "rede metropolitana, que cobre uma cidade ou zona urbana",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local",
+      "usada",
+      "numa",
+      "casa",
+      "escola",
+      "empresa"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é LAN e para que serve.",
+    "writtenCorrectAnswer": "LAN é/serve para rede local, usada numa casa, escola ou empresa."
+  },
+  {
+    "id": "ADD_0198",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WAN",
+    "type": "mc",
+    "prompt": "Em redes, WAN é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede de grande área, como a Internet",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede metropolitana, que cobre uma cidade ou zona urbana",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "grande",
+      "area",
+      "como",
+      "internet"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é WAN e para que serve.",
+    "writtenCorrectAnswer": "WAN é/serve para rede de grande área, como a Internet."
+  },
+  {
+    "id": "ADD_0199",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "MAN",
+    "type": "mc",
+    "prompt": "Em redes, MAN é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede metropolitana, que cobre uma cidade ou zona urbana",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "rede metropolitana, que cobre uma cidade ou zona urbana",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "metropolitana",
+      "cobre",
+      "cidade",
+      "zona",
+      "urbana"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é MAN e para que serve.",
+    "writtenCorrectAnswer": "MAN é/serve para rede metropolitana, que cobre uma cidade ou zona urbana."
+  },
+  {
+    "id": "ADD_0200",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WLAN",
+    "type": "mc",
+    "prompt": "Em redes, WLAN é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede local sem fios, normalmente Wi-Fi",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "rede local sem fios, normalmente Wi-Fi",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local",
+      "fios",
+      "normalmente"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é WLAN e para que serve.",
+    "writtenCorrectAnswer": "WLAN é/serve para rede local sem fios, normalmente Wi-Fi."
+  },
+  {
+    "id": "ADD_0201",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "ligação cablada",
+    "type": "mc",
+    "prompt": "Em redes, ligação cablada é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "ligação feita por cabo, como Ethernet ou fibra ótica",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "ligação feita por cabo, como Ethernet ou fibra ótica",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligacao",
+      "feita",
+      "cabo",
+      "como",
+      "ethernet",
+      "fibra",
+      "otica"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é ligação cablada e para que serve.",
+    "writtenCorrectAnswer": "ligação cablada é/serve para ligação feita por cabo, como Ethernet ou fibra ótica."
+  },
+  {
+    "id": "ADD_0202",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "ligação sem fios",
+    "type": "mc",
+    "prompt": "Em redes, ligação sem fios é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "ligação feita sem cabo, como Wi-Fi ou Bluetooth",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "ligação feita sem cabo, como Wi-Fi ou Bluetooth",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligacao",
+      "feita",
+      "cabo",
+      "como",
+      "bluetooth"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é ligação sem fios e para que serve.",
+    "writtenCorrectAnswer": "ligação sem fios é/serve para ligação feita sem cabo, como Wi-Fi ou Bluetooth."
+  },
+  {
+    "id": "ADD_0203",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "topologia estrela",
+    "type": "mc",
+    "prompt": "Em redes, topologia estrela é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "topologia em que os dispositivos ligam a um equipamento central, como um switch",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "topologia em que os dispositivos ligam a um equipamento central, como um switch",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "topologia",
+      "dispositivos",
+      "ligam",
+      "equipamento",
+      "central",
+      "como",
+      "switch"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é topologia estrela e para que serve.",
+    "writtenCorrectAnswer": "topologia estrela é/serve para topologia em que os dispositivos ligam a um equipamento central, como um switch."
+  },
+  {
+    "id": "ADD_0204",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "topologia estrela",
+    "type": "short",
+    "prompt": "Define topologia estrela em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "topologia estrela é/serve para topologia em que os dispositivos ligam a um equipamento central, como um switch.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "topologia",
+      "estrela",
+      "serve",
+      "para",
+      "dispositivos",
+      "ligam",
+      "equipamento",
+      "central",
+      "como",
+      "switch"
+    ],
+    "writtenPrompt": "Define topologia estrela em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0205",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "topologia barramento",
+    "type": "mc",
+    "prompt": "Em redes, topologia barramento é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "topologia em que os dispositivos partilham um cabo principal",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "topologia em que os dispositivos partilham um cabo principal",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "topologia",
+      "dispositivos",
+      "partilham",
+      "cabo",
+      "principal"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é topologia barramento e para que serve.",
+    "writtenCorrectAnswer": "topologia barramento é/serve para topologia em que os dispositivos partilham um cabo principal."
+  },
+  {
+    "id": "ADD_0206",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "topologia anel",
+    "type": "mc",
+    "prompt": "Em redes, topologia anel é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "topologia em que cada dispositivo se liga a dois vizinhos, formando um círculo",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "topologia em que cada dispositivo se liga a dois vizinhos, formando um círculo",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "topologia",
+      "cada",
+      "dispositivo",
+      "liga",
+      "dois",
+      "vizinhos",
+      "formando",
+      "circulo"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é topologia anel e para que serve.",
+    "writtenCorrectAnswer": "topologia anel é/serve para topologia em que cada dispositivo se liga a dois vizinhos, formando um círculo."
+  },
+  {
+    "id": "ADD_0207",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "topologia malha",
+    "type": "mc",
+    "prompt": "Em redes, topologia malha é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "topologia com vários caminhos entre dispositivos",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "topologia com vários caminhos entre dispositivos",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "topologia",
+      "varios",
+      "caminhos",
+      "entre",
+      "dispositivos"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é topologia malha e para que serve.",
+    "writtenCorrectAnswer": "topologia malha é/serve para topologia com vários caminhos entre dispositivos."
+  },
+  {
+    "id": "ADD_0208",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "switch",
+    "type": "mc",
+    "prompt": "Em redes, switch é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "equipamento que liga vários dispositivos numa rede local",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "equipamento que liga vários dispositivos numa rede local",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "equipamento",
+      "liga",
+      "varios",
+      "dispositivos",
+      "numa",
+      "rede",
+      "local"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é switch e para que serve.",
+    "writtenCorrectAnswer": "switch é/serve para equipamento que liga vários dispositivos numa rede local."
+  },
+  {
+    "id": "ADD_0209",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "switch",
+    "type": "short",
+    "prompt": "Define switch em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "switch é/serve para equipamento que liga vários dispositivos numa rede local.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "switch",
+      "serve",
+      "para",
+      "equipamento",
+      "liga",
+      "varios",
+      "dispositivos",
+      "numa",
+      "rede",
+      "local"
+    ],
+    "writtenPrompt": "Define switch em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0210",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "router",
+    "type": "mc",
+    "prompt": "Em redes, router é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "equipamento que liga redes diferentes e permite acesso à Internet",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "equipamento que liga redes diferentes e permite acesso à Internet",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "equipamento",
+      "liga",
+      "redes",
+      "diferentes",
+      "permite",
+      "acesso",
+      "internet"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é router e para que serve.",
+    "writtenCorrectAnswer": "router é/serve para equipamento que liga redes diferentes e permite acesso à Internet."
+  },
+  {
+    "id": "ADD_0211",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "router",
+    "type": "short",
+    "prompt": "Define router em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "router é/serve para equipamento que liga redes diferentes e permite acesso à Internet.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "router",
+      "serve",
+      "para",
+      "equipamento",
+      "liga",
+      "redes",
+      "diferentes",
+      "permite",
+      "acesso",
+      "internet"
+    ],
+    "writtenPrompt": "Define router em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0212",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "access point",
+    "type": "mc",
+    "prompt": "Em redes, access point é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "equipamento que disponibiliza rede Wi-Fi",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "equipamento que disponibiliza rede Wi-Fi",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "equipamento",
+      "disponibiliza",
+      "rede"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é access point e para que serve.",
+    "writtenCorrectAnswer": "access point é/serve para equipamento que disponibiliza rede Wi-Fi."
+  },
+  {
+    "id": "ADD_0213",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "modem",
+    "type": "mc",
+    "prompt": "Em redes, modem é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "equipamento que faz a ligação à rede do operador",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "equipamento que faz a ligação à rede do operador",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "equipamento",
+      "ligacao",
+      "rede",
+      "operador"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é modem e para que serve.",
+    "writtenCorrectAnswer": "modem é/serve para equipamento que faz a ligação à rede do operador."
+  },
+  {
+    "id": "ADD_0214",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "firewall",
+    "type": "mc",
+    "prompt": "Em redes, firewall é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "sistema que filtra tráfego e ajuda a proteger a rede",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "sistema que filtra tráfego e ajuda a proteger a rede",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "sistema",
+      "filtra",
+      "trafego",
+      "ajuda",
+      "proteger",
+      "rede"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é firewall e para que serve.",
+    "writtenCorrectAnswer": "firewall é/serve para sistema que filtra tráfego e ajuda a proteger a rede."
+  },
+  {
+    "id": "ADD_0215",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "firewall",
+    "type": "short",
+    "prompt": "Define firewall em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "firewall é/serve para sistema que filtra tráfego e ajuda a proteger a rede.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "firewall",
+      "serve",
+      "para",
+      "sistema",
+      "filtra",
+      "trafego",
+      "ajuda",
+      "proteger",
+      "rede"
+    ],
+    "writtenPrompt": "Define firewall em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0216",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "placa de rede",
+    "type": "mc",
+    "prompt": "Em redes, placa de rede é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "componente que permite ao computador ligar-se a uma rede",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "componente que permite ao computador ligar-se a uma rede",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "componente",
+      "permite",
+      "computador",
+      "ligar",
+      "rede"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é placa de rede e para que serve.",
+    "writtenCorrectAnswer": "placa de rede é/serve para componente que permite ao computador ligar-se a uma rede."
+  },
+  {
+    "id": "ADD_0217",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor",
+    "type": "mc",
+    "prompt": "Em redes, servidor é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "computador ou sistema que fornece serviços a outros computadores",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "computador ou sistema que fornece serviços a outros computadores",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computador",
+      "sistema",
+      "fornece",
+      "servicos",
+      "outros",
+      "computadores"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor e para que serve.",
+    "writtenCorrectAnswer": "servidor é/serve para computador ou sistema que fornece serviços a outros computadores."
+  },
+  {
+    "id": "ADD_0218",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "cliente",
+    "type": "mc",
+    "prompt": "Em redes, cliente é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "computador ou programa que pede serviços a um servidor",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "computador ou programa que pede serviços a um servidor",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computador",
+      "programa",
+      "pede",
+      "servicos",
+      "servidor"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é cliente e para que serve.",
+    "writtenCorrectAnswer": "cliente é/serve para computador ou programa que pede serviços a um servidor."
+  },
+  {
+    "id": "ADD_0219",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "rede ponto-a-ponto",
+    "type": "mc",
+    "prompt": "Em redes, rede ponto-a-ponto é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede em que os computadores partilham recursos diretamente entre si",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "rede em que os computadores partilham recursos diretamente entre si",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "computadores",
+      "partilham",
+      "recursos",
+      "diretamente",
+      "entre"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é rede ponto-a-ponto e para que serve.",
+    "writtenCorrectAnswer": "rede ponto-a-ponto é/serve para rede em que os computadores partilham recursos diretamente entre si."
+  },
+  {
+    "id": "ADD_0220",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "rede ponto-a-ponto",
+    "type": "short",
+    "prompt": "Define rede ponto-a-ponto em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "rede ponto-a-ponto é/serve para rede em que os computadores partilham recursos diretamente entre si.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "rede",
+      "ponto",
+      "serve",
+      "para",
+      "computadores",
+      "partilham",
+      "recursos",
+      "diretamente",
+      "entre"
+    ],
+    "writtenPrompt": "Define rede ponto-a-ponto em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0221",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "rede cliente/servidor",
+    "type": "mc",
+    "prompt": "Em redes, rede cliente/servidor é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede em que clientes pedem serviços a servidores",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "rede em que clientes pedem serviços a servidores",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "clientes",
+      "pedem",
+      "servicos",
+      "servidores"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é rede cliente/servidor e para que serve.",
+    "writtenCorrectAnswer": "rede cliente/servidor é/serve para rede em que clientes pedem serviços a servidores."
+  },
+  {
+    "id": "ADD_0222",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "rede cliente/servidor",
+    "type": "short",
+    "prompt": "Define rede cliente/servidor em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "rede cliente/servidor é/serve para rede em que clientes pedem serviços a servidores.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "rede",
+      "cliente",
+      "servidor",
+      "serve",
+      "para",
+      "clientes",
+      "pedem",
+      "servicos",
+      "servidores"
+    ],
+    "writtenPrompt": "Define rede cliente/servidor em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0223",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "cabo de par entrançado",
+    "type": "mc",
+    "prompt": "Em redes, cabo de par entrançado é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "cabo Ethernet comum usado em redes locais",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "cabo Ethernet comum usado em redes locais",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "cabo",
+      "ethernet",
+      "comum",
+      "usado",
+      "redes",
+      "locais"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é cabo de par entrançado e para que serve.",
+    "writtenCorrectAnswer": "cabo de par entrançado é/serve para cabo Ethernet comum usado em redes locais."
+  },
+  {
+    "id": "ADD_0224",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "fibra ótica",
+    "type": "mc",
+    "prompt": "Em redes, fibra ótica é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "meio físico de transmissão rápido que usa luz dentro do cabo",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "meio físico de transmissão rápido que usa luz dentro do cabo",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "meio",
+      "fisico",
+      "transmissao",
+      "rapido",
+      "dentro",
+      "cabo"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é fibra ótica e para que serve.",
+    "writtenCorrectAnswer": "fibra ótica é/serve para meio físico de transmissão rápido que usa luz dentro do cabo."
+  },
+  {
+    "id": "ADD_0225",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "fibra ótica",
+    "type": "short",
+    "prompt": "Define fibra ótica em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "fibra ótica é/serve para meio físico de transmissão rápido que usa luz dentro do cabo.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "fibra",
+      "otica",
+      "serve",
+      "para",
+      "meio",
+      "fisico",
+      "transmissao",
+      "rapido",
+      "dentro",
+      "cabo"
+    ],
+    "writtenPrompt": "Define fibra ótica em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0226",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "cabo coaxial",
+    "type": "mc",
+    "prompt": "Em redes, cabo coaxial é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "cabo usado em algumas ligações de comunicação, televisão ou Internet",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "cabo usado em algumas ligações de comunicação, televisão ou Internet",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "cabo",
+      "usado",
+      "algumas",
+      "ligacoes",
+      "comunicacao",
+      "televisao",
+      "internet"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é cabo coaxial e para que serve.",
+    "writtenCorrectAnswer": "cabo coaxial é/serve para cabo usado em algumas ligações de comunicação, televisão ou Internet."
+  },
+  {
+    "id": "ADD_0227",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor DHCP",
+    "type": "mc",
+    "prompt": "Em redes, servidor DHCP é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "servidor que atribui endereços IP automaticamente",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "servidor que atribui endereços IP automaticamente",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "servidor",
+      "atribui",
+      "enderecos",
+      "automaticamente"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor DHCP e para que serve.",
+    "writtenCorrectAnswer": "servidor DHCP é/serve para servidor que atribui endereços IP automaticamente."
+  },
+  {
+    "id": "ADD_0228",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor DHCP",
+    "type": "short",
+    "prompt": "Define servidor DHCP em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "servidor DHCP é/serve para servidor que atribui endereços IP automaticamente.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "servidor",
+      "dhcp",
+      "serve",
+      "para",
+      "atribui",
+      "enderecos",
+      "automaticamente"
+    ],
+    "writtenPrompt": "Define servidor DHCP em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0229",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor DNS",
+    "type": "mc",
+    "prompt": "Em redes, servidor DNS é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "servidor que traduz nomes de domínio em endereços IP",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "servidor que traduz nomes de domínio em endereços IP",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "servidor",
+      "traduz",
+      "nomes",
+      "dominio",
+      "enderecos"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor DNS e para que serve.",
+    "writtenCorrectAnswer": "servidor DNS é/serve para servidor que traduz nomes de domínio em endereços IP."
+  },
+  {
+    "id": "ADD_0230",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor DNS",
+    "type": "short",
+    "prompt": "Define servidor DNS em redes de computadores.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "servidor DNS é/serve para servidor que traduz nomes de domínio em endereços IP.",
+    "explanation": "Pergunta teórica alinhada com a matriz da PAF.",
+    "keywords": [
+      "servidor",
+      "serve",
+      "para",
+      "traduz",
+      "nomes",
+      "dominio",
+      "enderecos"
+    ],
+    "writtenPrompt": "Define servidor DNS em redes de computadores.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0231",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor de ficheiros",
+    "type": "mc",
+    "prompt": "Em redes, servidor de ficheiros é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "servidor que armazena e partilha ficheiros",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "servidor que armazena e partilha ficheiros",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "servidor",
+      "armazena",
+      "partilha",
+      "ficheiros"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor de ficheiros e para que serve.",
+    "writtenCorrectAnswer": "servidor de ficheiros é/serve para servidor que armazena e partilha ficheiros."
+  },
+  {
+    "id": "ADD_0232",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor de impressão",
+    "type": "mc",
+    "prompt": "Em redes, servidor de impressão é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "servidor que gere impressoras partilhadas",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "servidor que gere impressoras partilhadas",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "servidor",
+      "gere",
+      "impressoras",
+      "partilhadas"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor de impressão e para que serve.",
+    "writtenCorrectAnswer": "servidor de impressão é/serve para servidor que gere impressoras partilhadas."
+  },
+  {
+    "id": "ADD_0233",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor web",
+    "type": "mc",
+    "prompt": "Em redes, servidor web é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "servidor que aloja páginas e aplicações web",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "servidor que aloja páginas e aplicações web",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "servidor",
+      "aloja",
+      "paginas",
+      "aplicacoes"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor web e para que serve.",
+    "writtenCorrectAnswer": "servidor web é/serve para servidor que aloja páginas e aplicações web."
+  },
+  {
+    "id": "ADD_0234",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor de base de dados",
+    "type": "mc",
+    "prompt": "Em redes, servidor de base de dados é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "servidor que guarda e gere dados estruturados",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "servidor que guarda e gere dados estruturados",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "servidor",
+      "guarda",
+      "gere",
+      "dados",
+      "estruturados"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor de base de dados e para que serve.",
+    "writtenCorrectAnswer": "servidor de base de dados é/serve para servidor que guarda e gere dados estruturados."
+  },
+  {
+    "id": "ADD_0235",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "servidor de autenticação",
+    "type": "mc",
+    "prompt": "Em redes, servidor de autenticação é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "servidor que valida utilizadores e permissões",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "servidor que valida utilizadores e permissões",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "servidor",
+      "valida",
+      "utilizadores",
+      "permissoes"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é servidor de autenticação e para que serve.",
+    "writtenCorrectAnswer": "servidor de autenticação é/serve para servidor que valida utilizadores e permissões."
+  },
+  {
+    "id": "ADD_0236",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "endereço IP",
+    "type": "mc",
+    "prompt": "Em redes, endereço IP é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "identificação numérica de um dispositivo numa rede",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "identificação numérica de um dispositivo numa rede",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "identificacao",
+      "numerica",
+      "dispositivo",
+      "numa",
+      "rede"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é endereço IP e para que serve.",
+    "writtenCorrectAnswer": "endereço IP é/serve para identificação numérica de um dispositivo numa rede."
+  },
+  {
+    "id": "ADD_0237",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "largura de banda",
+    "type": "mc",
+    "prompt": "Em redes, largura de banda é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "capacidade de transmissão de dados numa ligação",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "capacidade de transmissão de dados numa ligação",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "capacidade",
+      "transmissao",
+      "dados",
+      "numa",
+      "ligacao"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é largura de banda e para que serve.",
+    "writtenCorrectAnswer": "largura de banda é/serve para capacidade de transmissão de dados numa ligação."
+  },
+  {
+    "id": "ADD_0238",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "latência",
+    "type": "mc",
+    "prompt": "Em redes, latência é/serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "tempo de resposta ou atraso numa comunicação de rede",
+    "explanation": "Redes: tipos de rede, topologias, meios físicos, equipamentos e servidores.",
+    "options": [
+      {
+        "text": "tempo de resposta ou atraso numa comunicação de rede",
+        "correct": true
+      },
+      {
+        "text": "conjunto de computadores e dispositivos ligados para partilhar dados, recursos e serviços",
+        "correct": false
+      },
+      {
+        "text": "rede local, usada numa casa, escola ou empresa",
+        "correct": false
+      },
+      {
+        "text": "rede de grande área, como a Internet",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "tempo",
+      "resposta",
+      "atraso",
+      "numa",
+      "comunicacao",
+      "rede"
+    ],
+    "writtenPrompt": "Explica por extenso, em redes, o que é latência e para que serve.",
+    "writtenCorrectAnswer": "latência é/serve para tempo de resposta ou atraso numa comunicação de rede."
+  },
+  {
+    "id": "ADD_0239",
+    "area": "info",
+    "module": "Programação em C/C++",
+    "topic": "algoritmo",
+    "type": "mc",
+    "prompt": "Em programação, algoritmo é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "sequência de passos lógicos para resolver um problema",
+    "explanation": "C/C++ na matriz: conceitos fundamentais de algoritmia.",
+    "options": [
+      {
+        "text": "sequência de passos lógicos para resolver um problema",
+        "correct": true
+      },
+      {
+        "text": "tipo de cabo de rede",
+        "correct": false
+      },
+      {
+        "text": "função que traduz domínios",
+        "correct": false
+      },
+      {
+        "text": "formatação automática de texto",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "sequencia",
+      "passos",
+      "logicos",
+      "para",
+      "resolver",
+      "problema"
+    ],
+    "writtenPrompt": "Explica por extenso o que é um algoritmo.",
+    "writtenCorrectAnswer": "Um algoritmo é uma sequência de passos lógicos para resolver um problema."
+  },
+  {
+    "id": "ADD_0240",
+    "area": "info",
+    "module": "Programação em JAVA",
+    "topic": "classe",
+    "type": "mc",
+    "prompt": "Em Java/POO, classe é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "molde/modelo que define atributos e métodos para criar objetos",
+    "explanation": "Java na matriz: conceitos fundamentais de POO.",
+    "options": [
+      {
+        "text": "molde/modelo que define atributos e métodos para criar objetos",
+        "correct": true
+      },
+      {
+        "text": "valor guardado numa célula",
+        "correct": false
+      },
+      {
+        "text": "equipamento que liga redes",
+        "correct": false
+      },
+      {
+        "text": "comando SQL para consultar dados",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "molde",
+      "modelo",
+      "define",
+      "atributos",
+      "metodos",
+      "para",
+      "criar",
+      "objetos"
+    ],
+    "writtenPrompt": "Explica por extenso o que é uma classe em Java.",
+    "writtenCorrectAnswer": "Uma classe é um molde/modelo que define atributos e métodos para criar objetos."
+  },
+  {
+    "id": "ADD_0241",
+    "area": "info",
+    "module": "Criação de páginas Web em hipertexto",
+    "topic": "estrutura HTML",
+    "type": "mc",
+    "prompt": "A estrutura base de uma página HTML inclui...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "<!DOCTYPE html>, html, head, title e body",
+    "explanation": "HTML na matriz: estrutura de páginas web.",
+    "options": [
+      {
+        "text": "<!DOCTYPE html>, html, head, title e body",
+        "correct": true
+      },
+      {
+        "text": "SELECT, FROM e WHERE",
+        "correct": false
+      },
+      {
+        "text": "CPU, RAM e ROM",
+        "correct": false
+      },
+      {
+        "text": "LAN, WAN e WLAN",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "doctype",
+      "html",
+      "head",
+      "title",
+      "body"
+    ],
+    "writtenPrompt": "Explica por extenso a estrutura base de uma página HTML.",
+    "writtenCorrectAnswer": "A estrutura base de uma página HTML inclui <!DOCTYPE html>, html, head, title e body."
+  },
+  {
+    "id": "ADD_0242",
+    "area": "info",
+    "module": "Scripts CGI e folhas de estilo",
+    "topic": "formulário com MySQL",
+    "type": "mc",
+    "prompt": "Um formulário ligado a MySQL serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "enviar dados de uma página web para serem tratados e guardados/consultados numa base de dados",
+    "explanation": "Scripts CGI/MySQL na matriz: formulários com acesso a base de dados.",
+    "options": [
+      {
+        "text": "enviar dados de uma página web para serem tratados e guardados/consultados numa base de dados",
+        "correct": true
+      },
+      {
+        "text": "formatar o rodapé do documento",
+        "correct": false
+      },
+      {
+        "text": "acelerar o processador",
+        "correct": false
+      },
+      {
+        "text": "ligar computadores por cabo coaxial",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "enviar",
+      "dados",
+      "pagina",
+      "para",
+      "serem",
+      "tratados",
+      "guardados",
+      "consultados",
+      "numa",
+      "base"
+    ],
+    "writtenPrompt": "Explica por extenso para que serve um formulário web com acesso a MySQL.",
+    "writtenCorrectAnswer": "Serve para enviar dados de uma página web para serem tratados e guardados ou consultados numa base de dados MySQL."
+  },
+  {
+    "id": "ADD_0243",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "moda",
+    "type": "number",
+    "prompt": "Dados: 4, 8, 7, 6, 3, 2, 4. Calcula a moda. Dá o resultado final.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 4,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "4",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0244",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "média",
+    "type": "number",
+    "prompt": "Dados: 12, 9, 15, 13, 11. Calcula a média. Arredonda às décimas se necessário.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 12,
+    "unit": "",
+    "rounding": "Arredonda às décimas se necessário.",
+    "correctAnswer": "12",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0245",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "mediana",
+    "type": "number",
+    "prompt": "Dados: 3, 7, 9, 4, 6. Calcula a mediana. Dá o resultado final.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 6,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "6",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0246",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "moda",
+    "type": "number",
+    "prompt": "Dados: 10, 10, 12, 14, 14, 14, 16. Calcula a moda. Dá o resultado final.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 14,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "14",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0247",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "mediana",
+    "type": "number",
+    "prompt": "Dados: 5, 8, 12, 15. Calcula a mediana. Dá o resultado final.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 10,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "10",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0248",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "média",
+    "type": "number",
+    "prompt": "Dados: 2, 4, 6, 8, 10. Calcula a média. Arredonda às décimas se necessário.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 6,
+    "unit": "",
+    "rounding": "Arredonda às décimas se necessário.",
+    "correctAnswer": "6",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0249",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "mediana",
+    "type": "number",
+    "prompt": "Dados: 1, 3, 3, 5, 7, 9. Calcula a mediana. Dá o resultado final.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 4,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "4",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0250",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "média",
+    "type": "number",
+    "prompt": "Dados: 18, 12, 9, 13, 14. Calcula a média. Arredonda às décimas se necessário.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 13.2,
+    "unit": "",
+    "rounding": "Arredonda às décimas se necessário.",
+    "correctAnswer": "13,2",
+    "explanation": "Medidas de tendência central: média, mediana e moda.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0251",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Lei de Laplace",
+    "type": "number",
+    "prompt": "Num saco há 3 bolas vermelhas, 5 azuis e 2 verdes. Qual é a probabilidade de sair uma bola azul? Usa a Lei de Laplace. Dá a resposta em percentagem.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 50,
+    "unit": "%",
+    "rounding": "Arredonda às centésimas se necessário.",
+    "correctAnswer": "50 %",
+    "explanation": "Probabilidade = casos favoráveis / casos possíveis.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0252",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Lei de Laplace",
+    "type": "number",
+    "prompt": "Num dado equilibrado, qual é a probabilidade de sair um número maior que 4? Usa a Lei de Laplace. Dá a resposta em percentagem.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 33.33,
+    "unit": "%",
+    "rounding": "Arredonda às centésimas se necessário.",
+    "correctAnswer": "33,33 %",
+    "explanation": "Probabilidade = casos favoráveis / casos possíveis.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0253",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Lei de Laplace",
+    "type": "number",
+    "prompt": "Num conjunto de 20 alunos, 8 usam óculos. Qual é a probabilidade de escolher um aluno que usa óculos? Usa a Lei de Laplace. Dá a resposta em percentagem.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 40,
+    "unit": "%",
+    "rounding": "Arredonda às centésimas se necessário.",
+    "correctAnswer": "40 %",
+    "explanation": "Probabilidade = casos favoráveis / casos possíveis.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0254",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Lei de Laplace",
+    "type": "number",
+    "prompt": "Numa turma há 12 raparigas e 18 rapazes. Qual é a probabilidade de escolher uma rapariga? Usa a Lei de Laplace. Dá a resposta em percentagem.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 40,
+    "unit": "%",
+    "rounding": "Arredonda às centésimas se necessário.",
+    "correctAnswer": "40 %",
+    "explanation": "Probabilidade = casos favoráveis / casos possíveis.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0255",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Lei de Laplace",
+    "type": "number",
+    "prompt": "Uma caixa tem 4 peças boas e 1 defeituosa. Qual é a probabilidade de sair uma peça defeituosa? Usa a Lei de Laplace. Dá a resposta em percentagem.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 20,
+    "unit": "%",
+    "rounding": "Arredonda às centésimas se necessário.",
+    "correctAnswer": "20 %",
+    "explanation": "Probabilidade = casos favoráveis / casos possíveis.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0256",
+    "area": "mfc",
+    "module": "Organização, Análise da Informação e Probabilidades",
+    "topic": "Lei de Laplace",
+    "type": "number",
+    "prompt": "De 48 letras, 12 são vogais. Qual é a probabilidade de escolher uma vogal? Usa a Lei de Laplace. Dá a resposta em percentagem.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 25,
+    "unit": "%",
+    "rounding": "Arredonda às centésimas se necessário.",
+    "correctAnswer": "25 %",
+    "explanation": "Probabilidade = casos favoráveis / casos possíveis.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0257",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 0 m/s para 10 m/s entre t=0s e t=2s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 5,
+    "unit": "m/s²",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "5 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0258",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 10 m/s para 0 m/s entre t=2s e t=4s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": -5,
+    "unit": "m/s²",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "-5 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0259",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 5 m/s para 5 m/s entre t=0s e t=3s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 0,
+    "unit": "m/s²",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "0 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0260",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de -5 m/s para 0 m/s entre t=0s e t=1s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 5,
+    "unit": "m/s²",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "5 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0261",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 0 m/s para 8 m/s entre t=4s e t=8s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 2,
+    "unit": "m/s²",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "2 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0262",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 3 m/s para 9 m/s entre t=1s e t=3s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 3,
+    "unit": "m/s²",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "3 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0263",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de 8 m/s para 3 m/s entre t=7s e t=9s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": -2.5,
+    "unit": "m/s²",
+    "rounding": "Arredonda às décimas.",
+    "correctAnswer": "-2,5 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0264",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração em v=f(t)",
+    "type": "number",
+    "prompt": "Num gráfico v=f(t), a velocidade passa de -10 m/s para -3 m/s entre t=4s e t=5s. Calcula a aceleração.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 7,
+    "unit": "m/s²",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "7 m/s²",
+    "explanation": "Aceleração é o declive: a = (vf - vi)/(tf - ti).",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0265",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Velocidade de onda",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=2 m e frequência f=5 Hz. Calcula a velocidade de propagação usando v = λ × f.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 10,
+    "unit": "m/s",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "10 m/s",
+    "explanation": "A velocidade da onda calcula-se por v = λ × f.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0266",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Velocidade de onda",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=3 m e frequência f=4 Hz. Calcula a velocidade de propagação usando v = λ × f.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 12,
+    "unit": "m/s",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "12 m/s",
+    "explanation": "A velocidade da onda calcula-se por v = λ × f.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0267",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Velocidade de onda",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=0.5 m e frequência f=20 Hz. Calcula a velocidade de propagação usando v = λ × f.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 10,
+    "unit": "m/s",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "10 m/s",
+    "explanation": "A velocidade da onda calcula-se por v = λ × f.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0268",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Velocidade de onda",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=4 m e frequência f=2 Hz. Calcula a velocidade de propagação usando v = λ × f.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 8,
+    "unit": "m/s",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "8 m/s",
+    "explanation": "A velocidade da onda calcula-se por v = λ × f.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0269",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Velocidade de onda",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=1.5 m e frequência f=6 Hz. Calcula a velocidade de propagação usando v = λ × f.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 9,
+    "unit": "m/s",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "9 m/s",
+    "explanation": "A velocidade da onda calcula-se por v = λ × f.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0270",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Velocidade de onda",
+    "type": "number",
+    "prompt": "Uma onda tem comprimento de onda λ=0.25 m e frequência f=40 Hz. Calcula a velocidade de propagação usando v = λ × f.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 10,
+    "unit": "m/s",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "10 m/s",
+    "explanation": "A velocidade da onda calcula-se por v = λ × f.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0271",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Notação científica",
+    "type": "short",
+    "prompt": "Escreve 45000 em notação científica.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "4,5 × 10^4",
+    "explanation": "Em notação científica, o número fica no formato a × 10^n, com 1 ≤ a < 10.",
+    "keywords": [],
+    "writtenPrompt": "Escreve 45000 em notação científica.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0272",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Notação científica",
+    "type": "short",
+    "prompt": "Escreve 0,00072 em notação científica.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "7,2 × 10^-4",
+    "explanation": "Em notação científica, o número fica no formato a × 10^n, com 1 ≤ a < 10.",
+    "keywords": [],
+    "writtenPrompt": "Escreve 0,00072 em notação científica.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0273",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Notação científica",
+    "type": "short",
+    "prompt": "Escreve 9800000 em notação científica.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "9,8 × 10^6",
+    "explanation": "Em notação científica, o número fica no formato a × 10^n, com 1 ≤ a < 10.",
+    "keywords": [],
+    "writtenPrompt": "Escreve 9800000 em notação científica.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0274",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Notação científica",
+    "type": "short",
+    "prompt": "Escreve 0,0035 em notação científica.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "3,5 × 10^-3",
+    "explanation": "Em notação científica, o número fica no formato a × 10^n, com 1 ≤ a < 10.",
+    "keywords": [],
+    "writtenPrompt": "Escreve 0,0035 em notação científica.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0275",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Notação científica",
+    "type": "short",
+    "prompt": "Escreve 620 em notação científica.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "6,2 × 10^2",
+    "explanation": "Em notação científica, o número fica no formato a × 10^n, com 1 ≤ a < 10.",
+    "keywords": [],
+    "writtenPrompt": "Escreve 620 em notação científica.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0276",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Notação científica",
+    "type": "short",
+    "prompt": "Escreve 0,0000012 em notação científica.",
+    "difficulty": 3,
+    "estimate": 90,
+    "weight": 1.1,
+    "correctAnswer": "1,2 × 10^-6",
+    "explanation": "Em notação científica, o número fica no formato a × 10^n, com 1 ≤ a < 10.",
+    "keywords": [],
+    "writtenPrompt": "Escreve 0,0000012 em notação científica.\nResponde por extenso, com uma frase completa."
+  },
+  {
+    "id": "ADD_0277",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Discriminante",
+    "type": "number",
+    "prompt": "Para a equação 1x² -5x +6=0, calcula o discriminante Δ=b²-4ac.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 1,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "1",
+    "explanation": "O discriminante permite saber o número de soluções reais.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0278",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Equações do 2.º grau",
+    "type": "mc",
+    "prompt": "Para a equação 1x² -5x +6=0, sabendo que Δ=1, conclui-se que...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "duas soluções reais",
+    "explanation": "Se Δ>0 há duas soluções; Δ=0 uma solução dupla; Δ<0 não há soluções reais.",
+    "options": [
+      {
+        "text": "duas soluções reais",
+        "correct": true
+      },
+      {
+        "text": "uma solução real dupla",
+        "correct": false
+      },
+      {
+        "text": "não tem soluções reais",
+        "correct": false
+      },
+      {
+        "text": "Usa a fórmula errada",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "duas",
+      "solucoes",
+      "reais"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de Δ=1 nesta equação do 2.º grau.",
+    "writtenCorrectAnswer": "Como Δ=1, a equação tem duas soluções reais."
+  },
+  {
+    "id": "ADD_0279",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Discriminante",
+    "type": "number",
+    "prompt": "Para a equação 1x² +2x +1=0, calcula o discriminante Δ=b²-4ac.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 0,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "0",
+    "explanation": "O discriminante permite saber o número de soluções reais.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0280",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Equações do 2.º grau",
+    "type": "mc",
+    "prompt": "Para a equação 1x² +2x +1=0, sabendo que Δ=0, conclui-se que...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "uma solução real dupla",
+    "explanation": "Se Δ>0 há duas soluções; Δ=0 uma solução dupla; Δ<0 não há soluções reais.",
+    "options": [
+      {
+        "text": "uma solução real dupla",
+        "correct": true
+      },
+      {
+        "text": "duas soluções reais",
+        "correct": false
+      },
+      {
+        "text": "não tem soluções reais",
+        "correct": false
+      },
+      {
+        "text": "Usa a fórmula errada",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "solucao",
+      "real",
+      "dupla"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de Δ=0 nesta equação do 2.º grau.",
+    "writtenCorrectAnswer": "Como Δ=0, a equação tem uma solução real dupla."
+  },
+  {
+    "id": "ADD_0281",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Discriminante",
+    "type": "number",
+    "prompt": "Para a equação 1x² +0x +4=0, calcula o discriminante Δ=b²-4ac.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": -16,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "-16",
+    "explanation": "O discriminante permite saber o número de soluções reais.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0282",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Equações do 2.º grau",
+    "type": "mc",
+    "prompt": "Para a equação 1x² +0x +4=0, sabendo que Δ=-16, conclui-se que...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "não tem soluções reais",
+    "explanation": "Se Δ>0 há duas soluções; Δ=0 uma solução dupla; Δ<0 não há soluções reais.",
+    "options": [
+      {
+        "text": "não tem soluções reais",
+        "correct": true
+      },
+      {
+        "text": "uma solução real dupla",
+        "correct": false
+      },
+      {
+        "text": "duas soluções reais",
+        "correct": false
+      },
+      {
+        "text": "Usa a fórmula errada",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "solucoes",
+      "reais"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de Δ=-16 nesta equação do 2.º grau.",
+    "writtenCorrectAnswer": "Como Δ=-16, a equação tem não tem soluções reais."
+  },
+  {
+    "id": "ADD_0283",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Discriminante",
+    "type": "number",
+    "prompt": "Para a equação 2x² -4x +0=0, calcula o discriminante Δ=b²-4ac.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 16,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "16",
+    "explanation": "O discriminante permite saber o número de soluções reais.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0284",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Equações do 2.º grau",
+    "type": "mc",
+    "prompt": "Para a equação 2x² -4x +0=0, sabendo que Δ=16, conclui-se que...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "duas soluções reais",
+    "explanation": "Se Δ>0 há duas soluções; Δ=0 uma solução dupla; Δ<0 não há soluções reais.",
+    "options": [
+      {
+        "text": "duas soluções reais",
+        "correct": true
+      },
+      {
+        "text": "uma solução real dupla",
+        "correct": false
+      },
+      {
+        "text": "não tem soluções reais",
+        "correct": false
+      },
+      {
+        "text": "Usa a fórmula errada",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "duas",
+      "solucoes",
+      "reais"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de Δ=16 nesta equação do 2.º grau.",
+    "writtenCorrectAnswer": "Como Δ=16, a equação tem duas soluções reais."
+  },
+  {
+    "id": "ADD_0285",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Discriminante",
+    "type": "number",
+    "prompt": "Para a equação 1x² -3x -4=0, calcula o discriminante Δ=b²-4ac.",
+    "difficulty": 3,
+    "estimate": 160,
+    "weight": 1.5,
+    "numericAnswer": 25,
+    "unit": "",
+    "rounding": "Resultado exato.",
+    "correctAnswer": "25",
+    "explanation": "O discriminante permite saber o número de soluções reais.",
+    "keywords": []
+  },
+  {
+    "id": "ADD_0286",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Equações do 2.º grau",
+    "type": "mc",
+    "prompt": "Para a equação 1x² -3x -4=0, sabendo que Δ=25, conclui-se que...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "duas soluções reais",
+    "explanation": "Se Δ>0 há duas soluções; Δ=0 uma solução dupla; Δ<0 não há soluções reais.",
+    "options": [
+      {
+        "text": "duas soluções reais",
+        "correct": true
+      },
+      {
+        "text": "uma solução real dupla",
+        "correct": false
+      },
+      {
+        "text": "não tem soluções reais",
+        "correct": false
+      },
+      {
+        "text": "Usa a fórmula errada",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "duas",
+      "solucoes",
+      "reais"
+    ],
+    "writtenPrompt": "Explica por extenso o significado de Δ=25 nesta equação do 2.º grau.",
+    "writtenCorrectAnswer": "Como Δ=25, a equação tem duas soluções reais."
+  },
+  {
+    "id": "SOC_XEN_001",
+    "area": "socio",
+    "module": "Culturas, Etnias e Diversidades",
+    "topic": "Xenofobia",
+    "type": "long",
+    "prompt": "O que é xenofobia?",
+    "difficulty": 3,
+    "estimate": 130,
+    "weight": 1.5,
+    "correctAnswer": "Xenofobia é a rejeição, medo, preconceito ou hostilidade contra pessoas estrangeiras ou consideradas de fora.",
+    "explanation": "A matriz inclui Culturas, Etnia, Xenofobia e Racismo. Responde com a ideia de rejeição/preconceito contra estrangeiros.",
+    "keywords": [
+      "xenofobia",
+      "rejeição",
+      "medo",
+      "preconceito",
+      "hostilidade",
+      "estrangeiros"
+    ],
+    "rubric": [
+      {
+        "label": "conceito",
+        "terms": [
+          "xenofobia",
+          "rejeição",
+          "preconceito",
+          "hostilidade",
+          "medo"
+        ]
+      },
+      {
+        "label": "alvo",
+        "terms": [
+          "estrangeiros",
+          "pessoas de fora",
+          "imigrantes",
+          "consideradas de fora"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "core": true
+  },
+  {
+    "id": "SOC_XEN_002",
+    "area": "socio",
+    "module": "Culturas, Etnias e Diversidades",
+    "topic": "Xenofobia",
+    "type": "mc",
+    "prompt": "A xenofobia está principalmente relacionada com...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "preconceito ou rejeição contra estrangeiros/pessoas de fora.",
+    "explanation": "Xenofobia é rejeição/hostilidade contra estrangeiros ou pessoas consideradas de fora.",
+    "options": [
+      {
+        "text": "preconceito ou rejeição contra estrangeiros/pessoas de fora.",
+        "correct": true
+      },
+      {
+        "text": "diferenças de pronúncia dentro da mesma língua.",
+        "correct": false
+      },
+      {
+        "text": "uma técnica jornalística usada nas notícias.",
+        "correct": false
+      },
+      {
+        "text": "o cálculo da taxa de emprego.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "preconceito",
+      "rejeição",
+      "contra",
+      "estrangeiros/pessoas",
+      "fora."
+    ]
+  },
+  {
+    "id": "SOC_XEN_003",
+    "area": "socio",
+    "module": "Culturas, Etnias e Diversidades",
+    "topic": "Xenofobia",
+    "type": "mc",
+    "prompt": "Qual é a atitude mais contrária à xenofobia?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "respeitar pessoas de diferentes origens e culturas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "respeitar pessoas de diferentes origens e culturas.",
+        "correct": true
+      },
+      {
+        "text": "rejeitar pessoas estrangeiras.",
+        "correct": false
+      },
+      {
+        "text": "confundir língua materna com língua oficial.",
+        "correct": false
+      },
+      {
+        "text": "usar discurso indireto num texto narrativo.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "respeitar",
+      "pessoas",
+      "diferentes",
+      "origens",
+      "culturas."
+    ]
+  },
+  {
+    "id": "SOC_XEN_004",
+    "area": "socio",
+    "module": "Culturas, Etnias e Diversidades",
+    "topic": "Xenofobia",
+    "type": "short",
+    "prompt": "Indica uma palavra-chave associada à xenofobia.",
+    "difficulty": 2,
+    "estimate": 90,
+    "weight": 1,
+    "correctAnswer": "preconceito contra estrangeiros",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "preconceito",
+      "estrangeiros",
+      "rejeição",
+      "hostilidade"
+    ]
+  },
+  {
+    "id": "SOC_XEN_005",
+    "area": "socio",
+    "module": "Culturas, Etnias e Diversidades",
+    "topic": "Xenofobia",
+    "type": "mc",
+    "prompt": "Qual destas situações representa xenofobia?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "discriminar alguém por ser estrangeiro ou vir de outro país.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "discriminar alguém por ser estrangeiro ou vir de outro país.",
+        "correct": true
+      },
+      {
+        "text": "usar ferro, vidro e cimento numa construção.",
+        "correct": false
+      },
+      {
+        "text": "dividir um texto em colunas.",
+        "correct": false
+      },
+      {
+        "text": "calcular uma média aritmética.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "discriminar",
+      "alguém",
+      "estrangeiro",
+      "outro",
+      "país."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_001",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Hardware e software",
+    "type": "mc",
+    "prompt": "Qual é a diferença principal entre hardware e software?",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "Hardware é a parte física; software são os programas/sistemas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "Hardware é a parte física; software são os programas/sistemas.",
+        "correct": true
+      },
+      {
+        "text": "Hardware é apenas a internet; software é apenas o monitor.",
+        "correct": false
+      },
+      {
+        "text": "Hardware são os ficheiros; software é a fonte de alimentação.",
+        "correct": false
+      },
+      {
+        "text": "Hardware e software significam exatamente a mesma coisa.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Hardware",
+      "parte",
+      "física;",
+      "software",
+      "programas/sistemas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_002",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "CPU",
+    "type": "mc",
+    "prompt": "A CPU/processador serve principalmente para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "executar instruções e processar dados.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "executar instruções e processar dados.",
+        "correct": true
+      },
+      {
+        "text": "guardar dados permanentemente.",
+        "correct": false
+      },
+      {
+        "text": "fornecer energia elétrica ao computador.",
+        "correct": false
+      },
+      {
+        "text": "mostrar imagens no ecrã.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "executar",
+      "instruções",
+      "processar",
+      "dados."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_003",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "RAM",
+    "type": "mc",
+    "prompt": "A memória RAM caracteriza-se por ser...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "temporária, rápida e volátil.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "temporária, rápida e volátil.",
+        "correct": true
+      },
+      {
+        "text": "permanente e usada para guardar o sistema para sempre.",
+        "correct": false
+      },
+      {
+        "text": "um periférico de saída.",
+        "correct": false
+      },
+      {
+        "text": "um cabo de rede sem fios.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "temporária,",
+      "rápida",
+      "volátil."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_004",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ROM",
+    "type": "mc",
+    "prompt": "A memória ROM é normalmente associada a...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "memória permanente com instruções básicas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "memória permanente com instruções básicas.",
+        "correct": true
+      },
+      {
+        "text": "memória temporária que se apaga sempre que abre um programa.",
+        "correct": false
+      },
+      {
+        "text": "um dispositivo usado só para imprimir.",
+        "correct": false
+      },
+      {
+        "text": "um protocolo que traduz nomes em IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "memória",
+      "permanente",
+      "instruções",
+      "básicas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_005",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Cache",
+    "type": "mc",
+    "prompt": "A cache do processador serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "acelerar o acesso a dados usados com frequência.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "acelerar o acesso a dados usados com frequência.",
+        "correct": true
+      },
+      {
+        "text": "guardar ficheiros pessoais durante anos.",
+        "correct": false
+      },
+      {
+        "text": "substituir a motherboard.",
+        "correct": false
+      },
+      {
+        "text": "atribuir endereços IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "acelerar",
+      "acesso",
+      "dados",
+      "usados",
+      "frequência."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_006",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ULA/ALU",
+    "type": "mc",
+    "prompt": "A ULA/ALU é responsável por...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "operações aritméticas e lógicas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "operações aritméticas e lógicas.",
+        "correct": true
+      },
+      {
+        "text": "controlar a iluminação do monitor.",
+        "correct": false
+      },
+      {
+        "text": "guardar documentos Word.",
+        "correct": false
+      },
+      {
+        "text": "ligar redes diferentes.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "operações",
+      "aritméticas",
+      "lógicas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_007",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Unidade de controlo",
+    "type": "mc",
+    "prompt": "A unidade de controlo do processador serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "coordenar as operações e o fluxo de instruções.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "coordenar as operações e o fluxo de instruções.",
+        "correct": true
+      },
+      {
+        "text": "aumentar o espaço do disco.",
+        "correct": false
+      },
+      {
+        "text": "filtrar tráfego de rede.",
+        "correct": false
+      },
+      {
+        "text": "formatar tabelas no Word.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "coordenar",
+      "operações",
+      "fluxo",
+      "instruções."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_008",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Motherboard",
+    "type": "mc",
+    "prompt": "A motherboard é importante porque...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "é a placa principal onde se ligam os componentes.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "é a placa principal onde se ligam os componentes.",
+        "correct": true
+      },
+      {
+        "text": "é sempre um programa antivírus.",
+        "correct": false
+      },
+      {
+        "text": "é uma técnica de pirâmide invertida.",
+        "correct": false
+      },
+      {
+        "text": "é um tipo de servidor DHCP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "placa",
+      "principal",
+      "onde",
+      "ligam",
+      "componentes."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_009",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos",
+    "type": "mc",
+    "prompt": "Qual é um exemplo de periférico de entrada?",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "teclado.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "teclado.",
+        "correct": true
+      },
+      {
+        "text": "monitor.",
+        "correct": false
+      },
+      {
+        "text": "colunas.",
+        "correct": false
+      },
+      {
+        "text": "impressora.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "teclado."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_010",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos",
+    "type": "mc",
+    "prompt": "Qual é um exemplo de periférico de saída?",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "monitor.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "monitor.",
+        "correct": true
+      },
+      {
+        "text": "teclado.",
+        "correct": false
+      },
+      {
+        "text": "rato.",
+        "correct": false
+      },
+      {
+        "text": "scanner.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "monitor."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_011",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Disco SSD/HDD",
+    "type": "short",
+    "prompt": "Para que serve um disco HDD/SSD?",
+    "difficulty": 3,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "Armazenar dados de forma permanente.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "armazenar",
+      "dados",
+      "permanente",
+      "disco"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_012",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Processador",
+    "type": "long",
+    "prompt": "Explica a diferença entre RAM, disco e CPU.",
+    "difficulty": 4,
+    "estimate": 145,
+    "weight": 1.4,
+    "correctAnswer": "A CPU processa instruções; a RAM guarda dados temporários em uso; o disco guarda dados permanentemente.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "cpu",
+      "processa",
+      "ram",
+      "temporária",
+      "disco",
+      "permanente"
+    ],
+    "humanGrading": true,
+    "core": false
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_013",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Cabeçalho",
+    "type": "mc",
+    "prompt": "Num processador de texto, o cabeçalho é...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "informação repetida no topo das páginas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "informação repetida no topo das páginas.",
+        "correct": true
+      },
+      {
+        "text": "uma fórmula de folha de cálculo.",
+        "correct": false
+      },
+      {
+        "text": "a margem inferior do documento.",
+        "correct": false
+      },
+      {
+        "text": "uma tabela dinâmica.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "informação",
+      "repetida",
+      "topo",
+      "páginas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_014",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Rodapé",
+    "type": "mc",
+    "prompt": "Num processador de texto, o rodapé é...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "informação repetida no fundo das páginas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "informação repetida no fundo das páginas.",
+        "correct": true
+      },
+      {
+        "text": "o título principal do documento.",
+        "correct": false
+      },
+      {
+        "text": "uma rede local sem fios.",
+        "correct": false
+      },
+      {
+        "text": "um tipo de processador.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "informação",
+      "repetida",
+      "fundo",
+      "páginas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_015",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Notas de rodapé",
+    "type": "mc",
+    "prompt": "As notas de rodapé servem para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "acrescentar explicações ou referências no fim da página.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "acrescentar explicações ou referências no fim da página.",
+        "correct": true
+      },
+      {
+        "text": "calcular médias automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "ligar computadores a um switch.",
+        "correct": false
+      },
+      {
+        "text": "criar um endereço IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "acrescentar",
+      "explicações",
+      "referências",
+      "página."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_016",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Texto em colunas",
+    "type": "mc",
+    "prompt": "A opção texto em colunas permite...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "dividir o texto em duas ou mais colunas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "dividir o texto em duas ou mais colunas.",
+        "correct": true
+      },
+      {
+        "text": "ordenar células por valor.",
+        "correct": false
+      },
+      {
+        "text": "filtrar pacotes de rede.",
+        "correct": false
+      },
+      {
+        "text": "criar um servidor DNS.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dividir",
+      "texto",
+      "duas",
+      "mais",
+      "colunas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_017",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Tabelas",
+    "type": "mc",
+    "prompt": "Numa tabela de processador de texto, é possível...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "organizar informação em linhas e colunas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "organizar informação em linhas e colunas.",
+        "correct": true
+      },
+      {
+        "text": "executar instruções da CPU.",
+        "correct": false
+      },
+      {
+        "text": "substituir o router.",
+        "correct": false
+      },
+      {
+        "text": "atribuir IPs automaticamente.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "organizar",
+      "informação",
+      "linhas",
+      "colunas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_018",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Formatação",
+    "type": "mc",
+    "prompt": "Negrito, itálico e sublinhado são exemplos de...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "formatação de texto.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "formatação de texto.",
+        "correct": true
+      },
+      {
+        "text": "topologias de rede.",
+        "correct": false
+      },
+      {
+        "text": "memórias voláteis.",
+        "correct": false
+      },
+      {
+        "text": "funções de servidor.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "formatação",
+      "texto."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_019",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Alinhamento",
+    "type": "mc",
+    "prompt": "O alinhamento de texto serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "definir a posição do texto na linha, como esquerda, centro ou direita.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "definir a posição do texto na linha, como esquerda, centro ou direita.",
+        "correct": true
+      },
+      {
+        "text": "aumentar a RAM.",
+        "correct": false
+      },
+      {
+        "text": "criar uma rede WAN.",
+        "correct": false
+      },
+      {
+        "text": "fazer backup do disco.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "definir",
+      "posição",
+      "texto",
+      "linha,",
+      "como",
+      "esquerda,"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_020",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Numeração de páginas",
+    "type": "short",
+    "prompt": "Para que serve a numeração de páginas?",
+    "difficulty": 3,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "Para identificar e organizar as páginas de um documento.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "número",
+      "páginas",
+      "organizar",
+      "documento"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_021",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Margens",
+    "type": "short",
+    "prompt": "O que são margens num documento?",
+    "difficulty": 3,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "São os espaços entre o conteúdo e as extremidades da página.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "espaços",
+      "conteúdo",
+      "extremidades",
+      "página"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_022",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Documento formal",
+    "type": "long",
+    "prompt": "Explica três ferramentas de processador de texto úteis num trabalho formal.",
+    "difficulty": 4,
+    "estimate": 145,
+    "weight": 1.4,
+    "correctAnswer": "Cabeçalho/rodapé, notas de rodapé, tabelas, formatação, alinhamento, margens e numeração ajudam a organizar e apresentar um documento.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "cabeçalho",
+      "rodapé",
+      "notas",
+      "tabelas",
+      "formatação",
+      "margens"
+    ],
+    "humanGrading": true,
+    "core": false
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_023",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Célula",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, uma célula é...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "a interseção entre uma linha e uma coluna.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "a interseção entre uma linha e uma coluna.",
+        "correct": true
+      },
+      {
+        "text": "uma página web.",
+        "correct": false
+      },
+      {
+        "text": "um dispositivo de rede.",
+        "correct": false
+      },
+      {
+        "text": "um periférico de entrada.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "interseção",
+      "entre",
+      "linha",
+      "coluna."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_024",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Intervalo",
+    "type": "mc",
+    "prompt": "O intervalo A1:A10 representa...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "um conjunto de células da A1 até à A10.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "um conjunto de células da A1 até à A10.",
+        "correct": true
+      },
+      {
+        "text": "um endereço IP.",
+        "correct": false
+      },
+      {
+        "text": "uma topologia em estrela.",
+        "correct": false
+      },
+      {
+        "text": "uma nota de rodapé.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "células",
+      "A10."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_025",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Fórmulas",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, as fórmulas começam normalmente por...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "=",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "=",
+        "correct": true
+      },
+      {
+        "text": "#",
+        "correct": false
+      },
+      {
+        "text": "//",
+        "correct": false
+      },
+      {
+        "text": "<html>",
+        "correct": false
+      }
+    ],
+    "keywords": []
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_026",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "SOMA",
+    "type": "mc",
+    "prompt": "A função SOMA serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "somar valores de células.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "somar valores de células.",
+        "correct": true
+      },
+      {
+        "text": "mostrar apenas valores filtrados.",
+        "correct": false
+      },
+      {
+        "text": "criar uma tabela HTML.",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes em IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "somar",
+      "valores",
+      "células."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_027",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "MÉDIA",
+    "type": "mc",
+    "prompt": "A função MÉDIA serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "calcular a média dos valores selecionados.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "calcular a média dos valores selecionados.",
+        "correct": true
+      },
+      {
+        "text": "contar apenas texto.",
+        "correct": false
+      },
+      {
+        "text": "formatar o rodapé.",
+        "correct": false
+      },
+      {
+        "text": "criar uma ligação WAN.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "calcular",
+      "média",
+      "valores",
+      "selecionados."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_028",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "MÁXIMO",
+    "type": "mc",
+    "prompt": "A função MÁXIMO devolve...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "o maior valor de um intervalo.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "o maior valor de um intervalo.",
+        "correct": true
+      },
+      {
+        "text": "o menor valor de um intervalo.",
+        "correct": false
+      },
+      {
+        "text": "a soma dos valores.",
+        "correct": false
+      },
+      {
+        "text": "a quantidade de linhas com texto.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "maior",
+      "valor",
+      "intervalo."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_029",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "MÍNIMO",
+    "type": "mc",
+    "prompt": "A função MÍNIMO devolve...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "o menor valor de um intervalo.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "o menor valor de um intervalo.",
+        "correct": true
+      },
+      {
+        "text": "o maior valor de um intervalo.",
+        "correct": false
+      },
+      {
+        "text": "a média dos valores.",
+        "correct": false
+      },
+      {
+        "text": "o nome do ficheiro.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "menor",
+      "valor",
+      "intervalo."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_030",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "SE",
+    "type": "mc",
+    "prompt": "A função SE serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "devolver resultados diferentes conforme uma condição.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "devolver resultados diferentes conforme uma condição.",
+        "correct": true
+      },
+      {
+        "text": "guardar dados permanentemente.",
+        "correct": false
+      },
+      {
+        "text": "criar uma nota de rodapé.",
+        "correct": false
+      },
+      {
+        "text": "ligar redes diferentes.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "devolver",
+      "resultados",
+      "diferentes",
+      "conforme",
+      "condição."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_031",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Filtros",
+    "type": "mc",
+    "prompt": "Os filtros numa folha de cálculo servem para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "mostrar apenas os dados que cumprem certos critérios.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "mostrar apenas os dados que cumprem certos critérios.",
+        "correct": true
+      },
+      {
+        "text": "apagar automaticamente todos os dados.",
+        "correct": false
+      },
+      {
+        "text": "aumentar a velocidade da CPU.",
+        "correct": false
+      },
+      {
+        "text": "criar uma ligação Wi-Fi.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "mostrar",
+      "apenas",
+      "dados",
+      "cumprem",
+      "certos",
+      "critérios."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_032",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Formatação condicional",
+    "type": "mc",
+    "prompt": "A formatação condicional serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "aplicar formatação automática quando uma condição é cumprida.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "aplicar formatação automática quando uma condição é cumprida.",
+        "correct": true
+      },
+      {
+        "text": "escrever código Java.",
+        "correct": false
+      },
+      {
+        "text": "traduzir endereços DNS.",
+        "correct": false
+      },
+      {
+        "text": "criar um cabo coaxial.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "aplicar",
+      "formatação",
+      "automática",
+      "quando",
+      "condição",
+      "cumprida."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_033",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Tabelas dinâmicas",
+    "type": "mc",
+    "prompt": "Uma tabela dinâmica serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "resumir e analisar grandes conjuntos de dados.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "resumir e analisar grandes conjuntos de dados.",
+        "correct": true
+      },
+      {
+        "text": "enviar páginas para a impressora.",
+        "correct": false
+      },
+      {
+        "text": "criar uma palavra-passe.",
+        "correct": false
+      },
+      {
+        "text": "definir a altura do monitor.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "resumir",
+      "analisar",
+      "grandes",
+      "conjuntos",
+      "dados."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_034",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Gráficos dinâmicos",
+    "type": "mc",
+    "prompt": "Um gráfico dinâmico é útil para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "visualizar dados resumidos de forma gráfica.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "visualizar dados resumidos de forma gráfica.",
+        "correct": true
+      },
+      {
+        "text": "guardar energia da fonte de alimentação.",
+        "correct": false
+      },
+      {
+        "text": "filtrar tráfego numa firewall.",
+        "correct": false
+      },
+      {
+        "text": "abrir um ficheiro .java.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "visualizar",
+      "dados",
+      "resumidos",
+      "forma",
+      "gráfica."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_035",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "CONTAR.SE",
+    "type": "short",
+    "prompt": "Para que serve a função CONTAR.SE?",
+    "difficulty": 3,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "Conta valores que obedecem a uma condição.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "conta",
+      "valores",
+      "condição"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_036",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Filtros e formatação condicional",
+    "type": "long",
+    "prompt": "Explica a diferença entre filtros e formatação condicional.",
+    "difficulty": 4,
+    "estimate": 145,
+    "weight": 1.4,
+    "correctAnswer": "Filtros mostram apenas dados que cumprem critérios; formatação condicional destaca/formatta dados automaticamente quando uma condição é cumprida.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "filtros",
+      "mostrar",
+      "critérios",
+      "formatação condicional",
+      "destaca",
+      "condição"
+    ],
+    "humanGrading": true,
+    "core": false
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_037",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Rede de computadores",
+    "type": "mc",
+    "prompt": "Uma rede de computadores é...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "um conjunto de dispositivos ligados para partilhar dados, recursos e serviços.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "um conjunto de dispositivos ligados para partilhar dados, recursos e serviços.",
+        "correct": true
+      },
+      {
+        "text": "um único computador sem ligação.",
+        "correct": false
+      },
+      {
+        "text": "um programa de processamento de texto.",
+        "correct": false
+      },
+      {
+        "text": "uma função de média no Excel.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "dispositivos",
+      "ligados",
+      "para",
+      "partilhar",
+      "dados,"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_038",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "LAN",
+    "type": "mc",
+    "prompt": "LAN significa...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "rede local, como numa casa, escola ou empresa.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "rede local, como numa casa, escola ou empresa.",
+        "correct": true
+      },
+      {
+        "text": "rede mundial de grande área.",
+        "correct": false
+      },
+      {
+        "text": "rede só por satélite.",
+        "correct": false
+      },
+      {
+        "text": "um servidor de impressão.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local,",
+      "como",
+      "numa",
+      "casa,",
+      "escola"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_039",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WAN",
+    "type": "mc",
+    "prompt": "WAN é uma rede...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "de grande área, como a Internet.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "de grande área, como a Internet.",
+        "correct": true
+      },
+      {
+        "text": "limitada a uma sala.",
+        "correct": false
+      },
+      {
+        "text": "apenas com Bluetooth.",
+        "correct": false
+      },
+      {
+        "text": "que só liga impressoras.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "grande",
+      "área,",
+      "como",
+      "Internet."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_040",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WLAN",
+    "type": "mc",
+    "prompt": "WLAN está associada a...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "rede local sem fios/Wi-Fi.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "rede local sem fios/Wi-Fi.",
+        "correct": true
+      },
+      {
+        "text": "rede por cabo coaxial obrigatória.",
+        "correct": false
+      },
+      {
+        "text": "memória ROM.",
+        "correct": false
+      },
+      {
+        "text": "tabela dinâmica.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local",
+      "fios/Wi-Fi."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_041",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "MAN",
+    "type": "mc",
+    "prompt": "MAN é uma rede...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "metropolitana, normalmente ao nível de uma cidade.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "metropolitana, normalmente ao nível de uma cidade.",
+        "correct": true
+      },
+      {
+        "text": "local dentro de uma sala.",
+        "correct": false
+      },
+      {
+        "text": "de memória do processador.",
+        "correct": false
+      },
+      {
+        "text": "de notas de rodapé.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "metropolitana,",
+      "normalmente",
+      "nível",
+      "cidade."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_042",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia estrela",
+    "type": "mc",
+    "prompt": "Na topologia estrela, os dispositivos ligam-se geralmente a...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "um equipamento central, como um switch.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "um equipamento central, como um switch.",
+        "correct": true
+      },
+      {
+        "text": "um único cabo linear sem centro.",
+        "correct": false
+      },
+      {
+        "text": "dois vizinhos formando anel.",
+        "correct": false
+      },
+      {
+        "text": "um documento de texto.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "equipamento",
+      "central,",
+      "como",
+      "switch."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_043",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia barramento",
+    "type": "mc",
+    "prompt": "Na topologia barramento, os computadores ligam-se...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "a um cabo principal comum.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "a um cabo principal comum.",
+        "correct": true
+      },
+      {
+        "text": "a um ponto central obrigatório.",
+        "correct": false
+      },
+      {
+        "text": "a uma tabela dinâmica.",
+        "correct": false
+      },
+      {
+        "text": "a um servidor DNS apenas.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "cabo",
+      "principal",
+      "comum."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_044",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia anel",
+    "type": "mc",
+    "prompt": "Na topologia anel, os dispositivos...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "ligam-se a dois vizinhos formando um círculo.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "ligam-se a dois vizinhos formando um círculo.",
+        "correct": true
+      },
+      {
+        "text": "ligam-se sempre só por Wi-Fi.",
+        "correct": false
+      },
+      {
+        "text": "não comunicam entre si.",
+        "correct": false
+      },
+      {
+        "text": "substituem a memória RAM.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligam-se",
+      "dois",
+      "vizinhos",
+      "formando",
+      "círculo."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_045",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Switch",
+    "type": "mc",
+    "prompt": "Um switch serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "ligar vários dispositivos numa rede local.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "ligar vários dispositivos numa rede local.",
+        "correct": true
+      },
+      {
+        "text": "traduzir nomes em endereços IP.",
+        "correct": false
+      },
+      {
+        "text": "atribuir IPs automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "proteger contra vírus sozinho.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligar",
+      "vários",
+      "dispositivos",
+      "numa",
+      "rede",
+      "local."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_046",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Router",
+    "type": "mc",
+    "prompt": "Um router serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "ligar redes diferentes e encaminhar tráfego, incluindo acesso à Internet.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "ligar redes diferentes e encaminhar tráfego, incluindo acesso à Internet.",
+        "correct": true
+      },
+      {
+        "text": "armazenar texto em colunas.",
+        "correct": false
+      },
+      {
+        "text": "fazer cálculos de média.",
+        "correct": false
+      },
+      {
+        "text": "formatar células.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligar",
+      "redes",
+      "diferentes",
+      "encaminhar",
+      "tráfego,",
+      "incluindo"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_047",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Access Point",
+    "type": "mc",
+    "prompt": "Um access point serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "fornecer acesso Wi-Fi a uma rede.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "fornecer acesso Wi-Fi a uma rede.",
+        "correct": true
+      },
+      {
+        "text": "guardar dados permanentemente.",
+        "correct": false
+      },
+      {
+        "text": "criar cabeçalhos no Word.",
+        "correct": false
+      },
+      {
+        "text": "calcular a função SE.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "fornecer",
+      "acesso",
+      "Wi-Fi",
+      "rede."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_048",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Modem",
+    "type": "mc",
+    "prompt": "Um modem está associado a...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "ligar a rede do utilizador ao operador/fornecedor de Internet.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "ligar a rede do utilizador ao operador/fornecedor de Internet.",
+        "correct": true
+      },
+      {
+        "text": "dividir texto em colunas.",
+        "correct": false
+      },
+      {
+        "text": "criar notas de rodapé.",
+        "correct": false
+      },
+      {
+        "text": "guardar variáveis temporárias da CPU.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligar",
+      "rede",
+      "utilizador",
+      "operador/fornecedor",
+      "Internet."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_049",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Firewall",
+    "type": "mc",
+    "prompt": "Uma firewall serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "filtrar tráfego e ajudar a proteger a rede.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "filtrar tráfego e ajudar a proteger a rede.",
+        "correct": true
+      },
+      {
+        "text": "atribuir IPs automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes de domínio.",
+        "correct": false
+      },
+      {
+        "text": "formatar uma tabela no Word.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "filtrar",
+      "tráfego",
+      "ajudar",
+      "proteger",
+      "rede."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_050",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "DHCP",
+    "type": "mc",
+    "prompt": "O servidor DHCP serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "atribuir endereços IP automaticamente aos dispositivos.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "atribuir endereços IP automaticamente aos dispositivos.",
+        "correct": true
+      },
+      {
+        "text": "traduzir nomes em IP.",
+        "correct": false
+      },
+      {
+        "text": "guardar documentos Word.",
+        "correct": false
+      },
+      {
+        "text": "mostrar gráficos dinâmicos.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "atribuir",
+      "endereços",
+      "automaticamente",
+      "dispositivos."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_051",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "DNS",
+    "type": "mc",
+    "prompt": "O servidor DNS serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "traduzir nomes de domínio em endereços IP.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": true
+      },
+      {
+        "text": "atribuir IPs automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "ligar computadores por cabo.",
+        "correct": false
+      },
+      {
+        "text": "resumir dados numa tabela dinâmica.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "traduzir",
+      "nomes",
+      "domínio",
+      "endereços"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_052",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de ficheiros",
+    "type": "mc",
+    "prompt": "Um servidor de ficheiros serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "guardar e partilhar ficheiros na rede.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "guardar e partilhar ficheiros na rede.",
+        "correct": true
+      },
+      {
+        "text": "enviar imagens para o monitor.",
+        "correct": false
+      },
+      {
+        "text": "formatar texto em negrito.",
+        "correct": false
+      },
+      {
+        "text": "executar a ULA.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar",
+      "partilhar",
+      "ficheiros",
+      "rede."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_053",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de impressão",
+    "type": "mc",
+    "prompt": "Um servidor de impressão serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "gerir impressoras e pedidos de impressão na rede.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "gerir impressoras e pedidos de impressão na rede.",
+        "correct": true
+      },
+      {
+        "text": "traduzir nomes DNS.",
+        "correct": false
+      },
+      {
+        "text": "dividir texto em colunas.",
+        "correct": false
+      },
+      {
+        "text": "aumentar a RAM.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "gerir",
+      "impressoras",
+      "pedidos",
+      "impressão",
+      "rede."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_054",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor web",
+    "type": "mc",
+    "prompt": "Um servidor web serve para...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "alojar e disponibilizar páginas ou aplicações web.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "alojar e disponibilizar páginas ou aplicações web.",
+        "correct": true
+      },
+      {
+        "text": "criar um cabo de fibra.",
+        "correct": false
+      },
+      {
+        "text": "substituir um teclado.",
+        "correct": false
+      },
+      {
+        "text": "calcular a moda.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "alojar",
+      "disponibilizar",
+      "páginas",
+      "aplicações",
+      "web."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_055",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Cliente/servidor",
+    "type": "mc",
+    "prompt": "Numa rede cliente/servidor...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "os clientes pedem serviços a servidores.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "os clientes pedem serviços a servidores.",
+        "correct": true
+      },
+      {
+        "text": "todos os computadores têm sempre a mesma função sem servidor.",
+        "correct": false
+      },
+      {
+        "text": "não existem recursos partilhados.",
+        "correct": false
+      },
+      {
+        "text": "só há ligação por infravermelhos.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "clientes",
+      "pedem",
+      "serviços",
+      "servidores."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_056",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Ponto-a-ponto",
+    "type": "mc",
+    "prompt": "Numa rede ponto-a-ponto...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "os computadores podem partilhar recursos diretamente entre si.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "os computadores podem partilhar recursos diretamente entre si.",
+        "correct": true
+      },
+      {
+        "text": "há sempre um servidor central obrigatório.",
+        "correct": false
+      },
+      {
+        "text": "não existe comunicação entre computadores.",
+        "correct": false
+      },
+      {
+        "text": "só funciona com folhas de cálculo.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computadores",
+      "podem",
+      "partilhar",
+      "recursos",
+      "diretamente",
+      "entre"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_057",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Cabo de par entrançado",
+    "type": "mc",
+    "prompt": "O cabo de par entrançado é normalmente usado em...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "ligações Ethernet de rede local.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "ligações Ethernet de rede local.",
+        "correct": true
+      },
+      {
+        "text": "notas de rodapé.",
+        "correct": false
+      },
+      {
+        "text": "tabelas dinâmicas.",
+        "correct": false
+      },
+      {
+        "text": "memória ROM.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligações",
+      "Ethernet",
+      "rede",
+      "local."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_058",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Fibra ótica",
+    "type": "mc",
+    "prompt": "A fibra ótica transmite dados através de...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "luz e permite velocidades elevadas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "luz e permite velocidades elevadas.",
+        "correct": true
+      },
+      {
+        "text": "som mecânico.",
+        "correct": false
+      },
+      {
+        "text": "papel impresso.",
+        "correct": false
+      },
+      {
+        "text": "memória RAM.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "permite",
+      "velocidades",
+      "elevadas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_059",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Cabo coaxial",
+    "type": "mc",
+    "prompt": "O cabo coaxial é um meio físico usado em algumas ligações de...",
+    "difficulty": 3,
+    "estimate": 75,
+    "weight": 1,
+    "correctAnswer": "TV/internet ou redes mais antigas.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "options": [
+      {
+        "text": "TV/internet ou redes mais antigas.",
+        "correct": true
+      },
+      {
+        "text": "processamento de texto.",
+        "correct": false
+      },
+      {
+        "text": "fórmulas de Excel.",
+        "correct": false
+      },
+      {
+        "text": "programação orientada por objetos.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "TV/internet",
+      "redes",
+      "mais",
+      "antigas."
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_060",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Meios físicos",
+    "type": "short",
+    "prompt": "Indica dois meios físicos de transmissão em redes.",
+    "difficulty": 3,
+    "estimate": 85,
+    "weight": 1,
+    "correctAnswer": "Cabo de par entrançado e fibra ótica.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "cabo",
+      "fibra",
+      "coaxial",
+      "wireless"
+    ]
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_061",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Equipamentos de rede",
+    "type": "long",
+    "prompt": "Explica a diferença entre switch, router e access point.",
+    "difficulty": 4,
+    "estimate": 145,
+    "weight": 1.4,
+    "correctAnswer": "O switch liga dispositivos numa LAN; o router liga redes diferentes e encaminha tráfego; o access point fornece acesso Wi-Fi.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "switch",
+      "liga dispositivos",
+      "router",
+      "liga redes",
+      "access point",
+      "wi-fi"
+    ],
+    "humanGrading": true,
+    "core": false
+  },
+  {
+    "id": "INFO_THEORY_EXTRA_062",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "DHCP e DNS",
+    "type": "long",
+    "prompt": "Explica a diferença entre DHCP e DNS.",
+    "difficulty": 4,
+    "estimate": 145,
+    "weight": 1.4,
+    "correctAnswer": "DHCP atribui IPs automaticamente; DNS traduz nomes de domínio em endereços IP.",
+    "explanation": "Pergunta teórica baseada na matriz e nas revisões.",
+    "keywords": [
+      "dhcp",
+      "atribui ip",
+      "dns",
+      "traduz nomes",
+      "endereços ip"
+    ],
+    "humanGrading": true,
+    "core": false
+  },
+  {
+    "id": "MELHORIA0001",
+    "area": "socio",
+    "module": "Culturas Etnias e Diversidades",
+    "topic": "Xenofobia",
+    "type": "mc",
+    "prompt": "O que é xenofobia?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Rejeição, medo ou hostilidade contra pessoas estrangeiras ou consideradas de fora.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Rejeição, medo ou hostilidade contra pessoas estrangeiras ou consideradas de fora.",
+        "correct": true
+      },
+      {
+        "text": "Discriminação baseada na cor da pele ou origem étnica.",
+        "correct": false
+      },
+      {
+        "text": "Conjunto de valores, tradições e costumes de um grupo.",
+        "correct": false
+      },
+      {
+        "text": "Grupo humano definido por afinidades culturais e linguísticas.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rejei",
+      "medo",
+      "hostilidade",
+      "contra",
+      "pessoas",
+      "estrangeiras",
+      "consideradas",
+      "fora"
+    ]
+  },
+  {
+    "id": "MELHORIA0002",
+    "area": "socio",
+    "module": "Culturas Etnias e Diversidades",
+    "topic": "Racismo",
+    "type": "mc",
+    "prompt": "O que é racismo?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Discriminação ou preconceito baseado na cor da pele, origem étnica ou características físicas.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Discriminação ou preconceito baseado na cor da pele, origem étnica ou características físicas.",
+        "correct": true
+      },
+      {
+        "text": "Rejeição de pessoas estrangeiras por serem de fora.",
+        "correct": false
+      },
+      {
+        "text": "Conjunto de saberes e costumes de um grupo social.",
+        "correct": false
+      },
+      {
+        "text": "Comunidade com afinidades linguísticas e culturais.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "discrimina",
+      "preconceito",
+      "baseado",
+      "pele",
+      "origem",
+      "tnica",
+      "caracter",
+      "sticas"
+    ]
+  },
+  {
+    "id": "MELHORIA0003",
+    "area": "socio",
+    "module": "Culturas Etnias e Diversidades",
+    "topic": "Cultura",
+    "type": "mc",
+    "prompt": "Qual destas definições corresponde melhor a cultura?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Conjunto de saberes, valores, tradições, regras, usos e costumes de um grupo social.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Conjunto de saberes, valores, tradições, regras, usos e costumes de um grupo social.",
+        "correct": true
+      },
+      {
+        "text": "Grupo humano com afinidades culturais, sociais e territoriais.",
+        "correct": false
+      },
+      {
+        "text": "Rejeição ou hostilidade contra estrangeiros.",
+        "correct": false
+      },
+      {
+        "text": "Discriminação baseada na cor da pele ou origem étnica.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "saberes",
+      "valores",
+      "tradi",
+      "regras",
+      "usos",
+      "costumes",
+      "grupo"
+    ]
+  },
+  {
+    "id": "MELHORIA0004",
+    "area": "socio",
+    "module": "Ler a Imprensa Escrita",
+    "topic": "Pirâmide invertida",
+    "type": "mc",
+    "prompt": "A técnica da pirâmide invertida consiste em...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Apresentar a informação mais importante no início da notícia e os detalhes depois.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Apresentar a informação mais importante no início da notícia e os detalhes depois.",
+        "correct": true
+      },
+      {
+        "text": "Escrever primeiro a opinião do jornalista e só depois os factos.",
+        "correct": false
+      },
+      {
+        "text": "Organizar a notícia sempre em perguntas e respostas.",
+        "correct": false
+      },
+      {
+        "text": "Guardar a informação principal para o último parágrafo.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "apresentar",
+      "informa",
+      "mais",
+      "importante",
+      "detalhes",
+      "depois"
+    ]
+  },
+  {
+    "id": "MELHORIA0005",
+    "area": "socio",
+    "module": "Mudanças Profissionais e Mercado de Trabalho",
+    "topic": "Empregabilidade",
+    "type": "mc",
+    "prompt": "Empregabilidade é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Capacidade de conseguir, manter ou mudar de emprego graças a competências, formação e atitude.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Capacidade de conseguir, manter ou mudar de emprego graças a competências, formação e atitude.",
+        "correct": true
+      },
+      {
+        "text": "Percentagem de pessoas empregadas numa população.",
+        "correct": false
+      },
+      {
+        "text": "Documento usado para apresentar experiência profissional.",
+        "correct": false
+      },
+      {
+        "text": "Conjunto de pessoas sem emprego e à procura de trabalho.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "capacidade",
+      "conseguir",
+      "manter",
+      "mudar",
+      "emprego",
+      "compet",
+      "ncias",
+      "forma"
+    ]
+  },
+  {
+    "id": "MELHORIA0006",
+    "area": "socio",
+    "module": "Portugal e a sua História",
+    "topic": "Arquitetura século XIX",
+    "type": "mc",
+    "prompt": "No final do século XIX, os materiais associados à arquitetura moderna em Portugal foram...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "ferro, vidro e cimento.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "ferro, vidro e cimento.",
+        "correct": true
+      },
+      {
+        "text": "madeira, barro e palha.",
+        "correct": false
+      },
+      {
+        "text": "ouro, prata e cobre.",
+        "correct": false
+      },
+      {
+        "text": "plástico, borracha e nylon.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ferro",
+      "vidro",
+      "cimento"
+    ]
+  },
+  {
+    "id": "MELHORIA0007",
+    "area": "socio",
+    "module": "Uma nova ordem económica mundial",
+    "topic": "Globalização",
+    "type": "mc",
+    "prompt": "Globalização significa...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "aproximação e interdependência entre países, economias, culturas e pessoas.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "aproximação e interdependência entre países, economias, culturas e pessoas.",
+        "correct": true
+      },
+      {
+        "text": "divisão do mundo em dois blocos ideológicos rivais.",
+        "correct": false
+      },
+      {
+        "text": "lei fundamental que organiza um Estado.",
+        "correct": false
+      },
+      {
+        "text": "entrada de Portugal na Comunidade Económica Europeia.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "aproxima",
+      "interdepend",
+      "ncia",
+      "entre",
+      "economias",
+      "culturas",
+      "pessoas"
+    ]
+  },
+  {
+    "id": "MELHORIA0008",
+    "area": "socio",
+    "module": "Promoção da Saúde",
+    "topic": "Roda dos Alimentos",
+    "type": "mc",
+    "prompt": "A Roda dos Alimentos serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "orientar uma alimentação equilibrada, variada e em proporções adequadas.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "orientar uma alimentação equilibrada, variada e em proporções adequadas.",
+        "correct": true
+      },
+      {
+        "text": "indicar os órgãos de soberania de um país.",
+        "correct": false
+      },
+      {
+        "text": "calcular a taxa de emprego.",
+        "correct": false
+      },
+      {
+        "text": "explicar o funcionamento do mercado de trabalho.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "orientar",
+      "alimenta",
+      "equilibrada",
+      "variada",
+      "propor",
+      "adequadas"
+    ]
+  },
+  {
+    "id": "MELHORIA0009",
+    "area": "socio",
+    "module": "Higiene e prevenção no trabalho",
+    "topic": "Prevenção",
+    "type": "mc",
+    "prompt": "Em higiene e segurança no trabalho, prevenção é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "conjunto de medidas usadas para evitar acidentes e doenças profissionais.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "conjunto de medidas usadas para evitar acidentes e doenças profissionais.",
+        "correct": true
+      },
+      {
+        "text": "consequência negativa resultante de um acidente.",
+        "correct": false
+      },
+      {
+        "text": "probabilidade de um perigo causar dano.",
+        "correct": false
+      },
+      {
+        "text": "fonte ou situação com potencial para causar dano.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "medidas",
+      "usadas",
+      "para",
+      "evitar",
+      "acidentes",
+      "doen",
+      "profissionais"
+    ]
+  },
+  {
+    "id": "MELHORIA0010",
+    "area": "socio",
+    "module": "Inglês - Daily routine / Simple Present",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "What does “wake up” mean?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "acordar",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "acordar",
+        "correct": true
+      },
+      {
+        "text": "levantar-se",
+        "correct": false
+      },
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": false
+      },
+      {
+        "text": "ir para a escola",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "acordar"
+    ]
+  },
+  {
+    "id": "MELHORIA0011",
+    "area": "socio",
+    "module": "Inglês - Daily routine / Simple Present",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "What does “get up” mean?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "levantar-se",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "levantar-se",
+        "correct": true
+      },
+      {
+        "text": "acordar",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "ir para casa",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "levantar"
+    ]
+  },
+  {
+    "id": "MELHORIA0012",
+    "area": "socio",
+    "module": "Inglês - Daily routine / Simple Present",
+    "topic": "Daily routine",
+    "type": "mc",
+    "prompt": "What does “have breakfast” mean?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "tomar o pequeno-almoço",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "tomar o pequeno-almoço",
+        "correct": true
+      },
+      {
+        "text": "jantar",
+        "correct": false
+      },
+      {
+        "text": "almoçar",
+        "correct": false
+      },
+      {
+        "text": "estudar",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "tomar",
+      "pequeno",
+      "almo"
+    ]
+  },
+  {
+    "id": "MELHORIA0013",
+    "area": "socio",
+    "module": "Inglês - Daily routine / Simple Present",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Simple Present is mainly used for...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "habits, routines and general facts.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "habits, routines and general facts.",
+        "correct": true
+      },
+      {
+        "text": "actions happening only at this exact moment.",
+        "correct": false
+      },
+      {
+        "text": "imaginary situations in the past.",
+        "correct": false
+      },
+      {
+        "text": "completed actions with a fixed past time.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "habits",
+      "routines",
+      "general",
+      "facts"
+    ]
+  },
+  {
+    "id": "MELHORIA0014",
+    "area": "socio",
+    "module": "Inglês - Daily routine / Simple Present",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Which auxiliary is used in questions with “she/he/it”?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Does",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Does",
+        "correct": true
+      },
+      {
+        "text": "Do",
+        "correct": false
+      },
+      {
+        "text": "Did",
+        "correct": false
+      },
+      {
+        "text": "Will",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "does"
+    ]
+  },
+  {
+    "id": "MELHORIA0015",
+    "area": "socio",
+    "module": "Inglês - Daily routine / Simple Present",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "Which negative form is correct for “she”?",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "She does not / doesn’t work.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "She does not / doesn’t work.",
+        "correct": true
+      },
+      {
+        "text": "She do not work.",
+        "correct": false
+      },
+      {
+        "text": "She not works.",
+        "correct": false
+      },
+      {
+        "text": "She did not works.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "does",
+      "doesn",
+      "work"
+    ]
+  },
+  {
+    "id": "MELHORIA0016",
+    "area": "socio",
+    "module": "Inglês - Daily routine / Simple Present",
+    "topic": "Simple Present",
+    "type": "mc",
+    "prompt": "In the 3rd person singular, the verb usually...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "takes -s or -es.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "takes -s or -es.",
+        "correct": true
+      },
+      {
+        "text": "loses the final letter.",
+        "correct": false
+      },
+      {
+        "text": "takes will before it.",
+        "correct": false
+      },
+      {
+        "text": "goes to the past simple.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "takes"
+    ]
+  },
+  {
+    "id": "MELHORIA0017",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Zero conditional is used for...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "general truths or facts.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "general truths or facts.",
+        "correct": true
+      },
+      {
+        "text": "unlikely imaginary situations.",
+        "correct": false
+      },
+      {
+        "text": "future promises only.",
+        "correct": false
+      },
+      {
+        "text": "actions completed in the past.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "general",
+      "truths",
+      "facts"
+    ]
+  },
+  {
+    "id": "MELHORIA0018",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "First conditional structure is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "If + present simple, will + verb.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "If + present simple, will + verb.",
+        "correct": true
+      },
+      {
+        "text": "If + past simple, would + verb.",
+        "correct": false
+      },
+      {
+        "text": "If + present simple, present simple.",
+        "correct": false
+      },
+      {
+        "text": "If + past perfect, would have + past participle.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "present",
+      "simple",
+      "will",
+      "verb"
+    ]
+  },
+  {
+    "id": "MELHORIA0019",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "Second conditional is used for...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "imaginary or unlikely situations.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "imaginary or unlikely situations.",
+        "correct": true
+      },
+      {
+        "text": "daily routines.",
+        "correct": false
+      },
+      {
+        "text": "scientific facts only.",
+        "correct": false
+      },
+      {
+        "text": "certain future situations.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "imaginary",
+      "unlikely",
+      "situations"
+    ]
+  },
+  {
+    "id": "MELHORIA0020",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "In “If it rains, I will stay home”, the conditional is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "first conditional.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "first conditional.",
+        "correct": true
+      },
+      {
+        "text": "zero conditional.",
+        "correct": false
+      },
+      {
+        "text": "second conditional.",
+        "correct": false
+      },
+      {
+        "text": "passive voice.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "first",
+      "conditional"
+    ]
+  },
+  {
+    "id": "MELHORIA0021",
+    "area": "socio",
+    "module": "Inglês - If-clauses",
+    "topic": "If-clauses",
+    "type": "mc",
+    "prompt": "In “If you heat water, it boils”, the conditional is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "zero conditional.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "zero conditional.",
+        "correct": true
+      },
+      {
+        "text": "first conditional.",
+        "correct": false
+      },
+      {
+        "text": "second conditional.",
+        "correct": false
+      },
+      {
+        "text": "present perfect.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zero",
+      "conditional"
+    ]
+  },
+  {
+    "id": "MELHORIA0022",
+    "area": "socio",
+    "module": "Inglês - Viajar na Europa / Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "The comparative of “small” is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "smaller",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "smaller",
+        "correct": true
+      },
+      {
+        "text": "the smallest",
+        "correct": false
+      },
+      {
+        "text": "more small",
+        "correct": false
+      },
+      {
+        "text": "smallest",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "smaller"
+    ]
+  },
+  {
+    "id": "MELHORIA0023",
+    "area": "socio",
+    "module": "Inglês - Viajar na Europa / Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "For long adjectives, the comparative usually uses...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "more + adjective",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "more + adjective",
+        "correct": true
+      },
+      {
+        "text": "the + adjective + est",
+        "correct": false
+      },
+      {
+        "text": "will + adjective",
+        "correct": false
+      },
+      {
+        "text": "does + adjective",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "more",
+      "adjective"
+    ]
+  },
+  {
+    "id": "MELHORIA0024",
+    "area": "socio",
+    "module": "Inglês - Viajar na Europa / Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "The superlative of “good” is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the best",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "the best",
+        "correct": true
+      },
+      {
+        "text": "better",
+        "correct": false
+      },
+      {
+        "text": "the goodest",
+        "correct": false
+      },
+      {
+        "text": "more good",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "best"
+    ]
+  },
+  {
+    "id": "MELHORIA0025",
+    "area": "socio",
+    "module": "Inglês - Viajar na Europa / Graus dos adjetivos",
+    "topic": "Superlative",
+    "type": "mc",
+    "prompt": "A superlative is used to compare...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "one element with a whole group.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "one element with a whole group.",
+        "correct": true
+      },
+      {
+        "text": "only two elements.",
+        "correct": false
+      },
+      {
+        "text": "a verb with a noun.",
+        "correct": false
+      },
+      {
+        "text": "an action in the past.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "element",
+      "with",
+      "whole",
+      "group"
+    ]
+  },
+  {
+    "id": "MELHORIA0026",
+    "area": "socio",
+    "module": "Inglês - Viajar na Europa / Graus dos adjetivos",
+    "topic": "Comparative",
+    "type": "mc",
+    "prompt": "Which form is correct?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Portugal is smaller than Spain.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Portugal is smaller than Spain.",
+        "correct": true
+      },
+      {
+        "text": "Portugal is more small than Spain.",
+        "correct": false
+      },
+      {
+        "text": "Portugal is the smaller than Spain.",
+        "correct": false
+      },
+      {
+        "text": "Portugal smaller Spain.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "portugal",
+      "smaller",
+      "than",
+      "spain"
+    ]
+  },
+  {
+    "id": "MELHORIA0027",
+    "area": "socio",
+    "module": "Inglês - Profissão / Passive Voice",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "What does “salary” mean?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "salário",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "salário",
+        "correct": true
+      },
+      {
+        "text": "entrevista",
+        "correct": false
+      },
+      {
+        "text": "empregador",
+        "correct": false
+      },
+      {
+        "text": "experiência",
+        "correct": false
+      }
+    ],
+    "keywords": []
+  },
+  {
+    "id": "MELHORIA0028",
+    "area": "socio",
+    "module": "Inglês - Profissão / Passive Voice",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "What does “interview” mean?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "entrevista",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "entrevista",
+        "correct": true
+      },
+      {
+        "text": "salário",
+        "correct": false
+      },
+      {
+        "text": "candidatura",
+        "correct": false
+      },
+      {
+        "text": "competências",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "entrevista"
+    ]
+  },
+  {
+    "id": "MELHORIA0029",
+    "area": "socio",
+    "module": "Inglês - Profissão / Passive Voice",
+    "topic": "Job vocabulary",
+    "type": "mc",
+    "prompt": "What does “employer” mean?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "empregador",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "empregador",
+        "correct": true
+      },
+      {
+        "text": "empregado/trabalhador",
+        "correct": false
+      },
+      {
+        "text": "currículo",
+        "correct": false
+      },
+      {
+        "text": "carreira",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "empregador"
+    ]
+  },
+  {
+    "id": "MELHORIA0030",
+    "area": "socio",
+    "module": "Inglês - Profissão / Passive Voice",
+    "topic": "Passive Voice",
+    "type": "mc",
+    "prompt": "Passive voice structure is usually...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "to be + past participle.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "to be + past participle.",
+        "correct": true
+      },
+      {
+        "text": "do/does + verb.",
+        "correct": false
+      },
+      {
+        "text": "if + present simple.",
+        "correct": false
+      },
+      {
+        "text": "subject + verb + object only.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "past",
+      "participle"
+    ]
+  },
+  {
+    "id": "MELHORIA0031",
+    "area": "socio",
+    "module": "Inglês - Profissão / Passive Voice",
+    "topic": "Passive Voice",
+    "type": "mc",
+    "prompt": "In passive voice, the focus is mainly on...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "the action or object affected by the action.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "the action or object affected by the action.",
+        "correct": true
+      },
+      {
+        "text": "the person who speaks.",
+        "correct": false
+      },
+      {
+        "text": "the time expression at the end.",
+        "correct": false
+      },
+      {
+        "text": "the adjective being compared.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "action",
+      "object",
+      "affected",
+      "action"
+    ]
+  },
+  {
+    "id": "MELHORIA0032",
+    "area": "socio",
+    "module": "Inglês - Profissão / Passive Voice",
+    "topic": "Passive Voice",
+    "type": "mc",
+    "prompt": "“Computers are repaired” is in...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "simple present passive.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "simple present passive.",
+        "correct": true
+      },
+      {
+        "text": "simple past passive.",
+        "correct": false
+      },
+      {
+        "text": "present perfect passive.",
+        "correct": false
+      },
+      {
+        "text": "future passive.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "simple",
+      "present",
+      "passive"
+    ]
+  },
+  {
+    "id": "MELHORIA0033",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "Normal English word order is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Subject + Verb + Object + Place + Time.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "Subject + Verb + Object + Place + Time.",
+        "correct": true
+      },
+      {
+        "text": "Verb + Subject + Time + Object + Place.",
+        "correct": false
+      },
+      {
+        "text": "Object + Subject + Verb + Time + Place.",
+        "correct": false
+      },
+      {
+        "text": "Time + Place + Object + Verb + Subject.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "subject",
+      "verb",
+      "object",
+      "place",
+      "time"
+    ]
+  },
+  {
+    "id": "MELHORIA0034",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "In English, place usually comes...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "before time.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "before time.",
+        "correct": true
+      },
+      {
+        "text": "after time.",
+        "correct": false
+      },
+      {
+        "text": "before the subject.",
+        "correct": false
+      },
+      {
+        "text": "between auxiliary and verb.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "before",
+      "time"
+    ]
+  },
+  {
+    "id": "MELHORIA0035",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "In questions, English normally uses...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "an auxiliary before the subject.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "an auxiliary before the subject.",
+        "correct": true
+      },
+      {
+        "text": "the object before the verb.",
+        "correct": false
+      },
+      {
+        "text": "the time expression first always.",
+        "correct": false
+      },
+      {
+        "text": "no auxiliary in any case.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "auxiliary",
+      "before",
+      "subject"
+    ]
+  },
+  {
+    "id": "MELHORIA0036",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "In “I study English at school every day”, “at school” is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "place.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "place.",
+        "correct": true
+      },
+      {
+        "text": "subject",
+        "correct": false
+      },
+      {
+        "text": "object",
+        "correct": false
+      },
+      {
+        "text": "time",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "place"
+    ]
+  },
+  {
+    "id": "MELHORIA0037",
+    "area": "socio",
+    "module": "Inglês - Word order",
+    "topic": "Word order",
+    "type": "mc",
+    "prompt": "In “I study English at school every day”, “every day” is...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "time.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "time.",
+        "correct": true
+      },
+      {
+        "text": "object",
+        "correct": false
+      },
+      {
+        "text": "verb",
+        "correct": false
+      },
+      {
+        "text": "place",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "time"
+    ]
+  },
+  {
+    "id": "MELHORIA0038",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "CPU",
+    "type": "mc",
+    "prompt": "A CPU serve principalmente para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "executar instruções e processar dados.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "executar instruções e processar dados.",
+        "correct": true
+      },
+      {
+        "text": "guardar ficheiros de forma permanente.",
+        "correct": false
+      },
+      {
+        "text": "fornecer energia elétrica ao computador.",
+        "correct": false
+      },
+      {
+        "text": "apresentar imagem no ecrã.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "executar",
+      "instru",
+      "processar",
+      "dados"
+    ]
+  },
+  {
+    "id": "MELHORIA0039",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "RAM",
+    "type": "mc",
+    "prompt": "A memória RAM é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "temporária, rápida e volátil.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "temporária, rápida e volátil.",
+        "correct": true
+      },
+      {
+        "text": "permanente e usada para guardar a BIOS.",
+        "correct": false
+      },
+      {
+        "text": "um disco de armazenamento externo.",
+        "correct": false
+      },
+      {
+        "text": "um periférico de saída.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "tempor",
+      "pida"
+    ]
+  },
+  {
+    "id": "MELHORIA0040",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ROM",
+    "type": "mc",
+    "prompt": "A memória ROM é usada para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "guardar instruções permanentes/básicas do sistema.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "guardar instruções permanentes/básicas do sistema.",
+        "correct": true
+      },
+      {
+        "text": "guardar temporariamente programas abertos.",
+        "correct": false
+      },
+      {
+        "text": "filtrar tráfego de rede.",
+        "correct": false
+      },
+      {
+        "text": "formatar documentos de texto.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar",
+      "instru",
+      "permanentes",
+      "sicas",
+      "sistema"
+    ]
+  },
+  {
+    "id": "MELHORIA0041",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Unidade de controlo",
+    "type": "mc",
+    "prompt": "A unidade de controlo do processador...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "coordena a execução das instruções.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "coordena a execução das instruções.",
+        "correct": true
+      },
+      {
+        "text": "guarda documentos do utilizador.",
+        "correct": false
+      },
+      {
+        "text": "fornece rede sem fios.",
+        "correct": false
+      },
+      {
+        "text": "é uma folha de cálculo.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "coordena",
+      "execu",
+      "instru"
+    ]
+  },
+  {
+    "id": "MELHORIA0042",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Motherboard",
+    "type": "mc",
+    "prompt": "A motherboard é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "a placa principal onde os componentes se ligam.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "a placa principal onde os componentes se ligam.",
+        "correct": true
+      },
+      {
+        "text": "uma memória temporária.",
+        "correct": false
+      },
+      {
+        "text": "um programa de edição de texto.",
+        "correct": false
+      },
+      {
+        "text": "um equipamento que traduz domínios em IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "placa",
+      "principal",
+      "onde",
+      "componentes",
+      "ligam"
+    ]
+  },
+  {
+    "id": "MELHORIA0043",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos",
+    "type": "mc",
+    "prompt": "O teclado é um periférico de...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "entrada.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "entrada.",
+        "correct": true
+      },
+      {
+        "text": "saída.",
+        "correct": false
+      },
+      {
+        "text": "armazenamento ótico.",
+        "correct": false
+      },
+      {
+        "text": "processamento central.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "entrada"
+    ]
+  },
+  {
+    "id": "MELHORIA0044",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Cabeçalho",
+    "type": "mc",
+    "prompt": "Num processador de texto, cabeçalho é...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "zona superior repetida nas páginas.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "zona superior repetida nas páginas.",
+        "correct": true
+      },
+      {
+        "text": "zona inferior repetida nas páginas.",
+        "correct": false
+      },
+      {
+        "text": "explicação colocada no fundo da página.",
+        "correct": false
+      },
+      {
+        "text": "divisão do texto em duas colunas.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zona",
+      "superior",
+      "repetida",
+      "ginas"
+    ]
+  },
+  {
+    "id": "MELHORIA0045",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Rodapé",
+    "type": "mc",
+    "prompt": "Num processador de texto, rodapé é...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "zona inferior repetida nas páginas.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "zona inferior repetida nas páginas.",
+        "correct": true
+      },
+      {
+        "text": "zona superior repetida nas páginas.",
+        "correct": false
+      },
+      {
+        "text": "primeira linha de uma tabela dinâmica.",
+        "correct": false
+      },
+      {
+        "text": "fórmula iniciada por igual.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zona",
+      "inferior",
+      "repetida",
+      "ginas"
+    ]
+  },
+  {
+    "id": "MELHORIA0046",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Nota de rodapé",
+    "type": "mc",
+    "prompt": "Uma nota de rodapé serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "colocar explicações ou referências no fundo da página.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "colocar explicações ou referências no fundo da página.",
+        "correct": true
+      },
+      {
+        "text": "filtrar dados de uma tabela.",
+        "correct": false
+      },
+      {
+        "text": "criar uma rede sem fios.",
+        "correct": false
+      },
+      {
+        "text": "executar instruções do processador.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "colocar",
+      "explica",
+      "refer",
+      "ncias",
+      "fundo",
+      "gina"
+    ]
+  },
+  {
+    "id": "MELHORIA0047",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Texto em colunas",
+    "type": "mc",
+    "prompt": "Texto em colunas serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "organizar o texto em duas ou mais colunas.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "organizar o texto em duas ou mais colunas.",
+        "correct": true
+      },
+      {
+        "text": "aplicar uma fórmula automática.",
+        "correct": false
+      },
+      {
+        "text": "traduzir domínios em IP.",
+        "correct": false
+      },
+      {
+        "text": "atribuir endereços IP automaticamente.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "organizar",
+      "texto",
+      "duas",
+      "mais",
+      "colunas"
+    ]
+  },
+  {
+    "id": "MELHORIA0048",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Formatação de texto",
+    "type": "mc",
+    "prompt": "Formatação de texto permite alterar...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "tipo de letra, tamanho, alinhamento, negrito ou espaçamento.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "tipo de letra, tamanho, alinhamento, negrito ou espaçamento.",
+        "correct": true
+      },
+      {
+        "text": "endereços IP e portas de rede.",
+        "correct": false
+      },
+      {
+        "text": "o número de núcleos do processador.",
+        "correct": false
+      },
+      {
+        "text": "a ligação entre clientes e servidores.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "tipo",
+      "letra",
+      "tamanho",
+      "alinhamento",
+      "negrito",
+      "espa",
+      "amento"
+    ]
+  },
+  {
+    "id": "MELHORIA0049",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Tabelas",
+    "type": "mc",
+    "prompt": "Numa aplicação de texto, uma tabela serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "organizar informação em linhas e colunas.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "organizar informação em linhas e colunas.",
+        "correct": true
+      },
+      {
+        "text": "guardar dados na memória RAM.",
+        "correct": false
+      },
+      {
+        "text": "encaminhar pacotes na rede.",
+        "correct": false
+      },
+      {
+        "text": "comparar potências de base igual.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "organizar",
+      "informa",
+      "linhas",
+      "colunas"
+    ]
+  },
+  {
+    "id": "MELHORIA0050",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Formatação condicional",
+    "type": "mc",
+    "prompt": "A formatação condicional permite...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "alterar automaticamente o aspeto das células conforme regras.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "alterar automaticamente o aspeto das células conforme regras.",
+        "correct": true
+      },
+      {
+        "text": "somar todos os valores sem fórmula.",
+        "correct": false
+      },
+      {
+        "text": "proteger uma rede contra ataques.",
+        "correct": false
+      },
+      {
+        "text": "criar uma página HTML.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "alterar",
+      "automaticamente",
+      "aspeto",
+      "lulas",
+      "conforme",
+      "regras"
+    ]
+  },
+  {
+    "id": "MELHORIA0051",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Gráfico dinâmico",
+    "type": "mc",
+    "prompt": "Um gráfico dinâmico serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "representar visualmente dados resumidos de uma tabela dinâmica.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "representar visualmente dados resumidos de uma tabela dinâmica.",
+        "correct": true
+      },
+      {
+        "text": "introduzir texto no rodapé.",
+        "correct": false
+      },
+      {
+        "text": "executar instruções em C.",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes de domínio.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "representar",
+      "visualmente",
+      "dados",
+      "resumidos",
+      "tabela",
+      "mica"
+    ]
+  },
+  {
+    "id": "MELHORIA0052",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "LAN",
+    "type": "mc",
+    "prompt": "LAN é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede local, como uma rede de casa, escola ou empresa.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "rede local, como uma rede de casa, escola ou empresa.",
+        "correct": true
+      },
+      {
+        "text": "rede de grande área, como a Internet.",
+        "correct": false
+      },
+      {
+        "text": "rede sem fios de curto alcance apenas Bluetooth.",
+        "correct": false
+      },
+      {
+        "text": "servidor que traduz domínios em IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local",
+      "como",
+      "rede",
+      "casa",
+      "escola",
+      "empresa"
+    ]
+  },
+  {
+    "id": "MELHORIA0053",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WAN",
+    "type": "mc",
+    "prompt": "WAN é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede de grande área, como a Internet.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "rede de grande área, como a Internet.",
+        "correct": true
+      },
+      {
+        "text": "rede local de uma sala.",
+        "correct": false
+      },
+      {
+        "text": "memória permanente do computador.",
+        "correct": false
+      },
+      {
+        "text": "programa para editar texto.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "grande",
+      "como",
+      "internet"
+    ]
+  },
+  {
+    "id": "MELHORIA0054",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WLAN",
+    "type": "mc",
+    "prompt": "WLAN é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "rede local sem fios baseada em Wi-Fi.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "rede local sem fios baseada em Wi-Fi.",
+        "correct": true
+      },
+      {
+        "text": "rede local sempre por cabo coaxial.",
+        "correct": false
+      },
+      {
+        "text": "servidor de ficheiros.",
+        "correct": false
+      },
+      {
+        "text": "comando SQL para consultar dados.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local",
+      "fios",
+      "baseada"
+    ]
+  },
+  {
+    "id": "MELHORIA0055",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "DHCP",
+    "type": "mc",
+    "prompt": "DHCP serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "atribuir endereços IP automaticamente.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "atribuir endereços IP automaticamente.",
+        "correct": true
+      },
+      {
+        "text": "traduzir nomes de domínio em IP.",
+        "correct": false
+      },
+      {
+        "text": "ligar redes diferentes.",
+        "correct": false
+      },
+      {
+        "text": "criar tabelas dinâmicas.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "atribuir",
+      "endere",
+      "automaticamente"
+    ]
+  },
+  {
+    "id": "MELHORIA0056",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "DNS",
+    "type": "mc",
+    "prompt": "DNS serve para...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "traduzir nomes de domínio em endereços IP.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": true
+      },
+      {
+        "text": "atribuir IPs automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "filtrar tráfego de rede.",
+        "correct": false
+      },
+      {
+        "text": "ligar computadores por cabo.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "traduzir",
+      "nomes",
+      "endere"
+    ]
+  },
+  {
+    "id": "MELHORIA0057",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia estrela",
+    "type": "mc",
+    "prompt": "Numa topologia em estrela, os dispositivos ligam-se a...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "um equipamento central, como switch.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "um equipamento central, como switch.",
+        "correct": true
+      },
+      {
+        "text": "um único cabo comum sem equipamento central.",
+        "correct": false
+      },
+      {
+        "text": "um círculo fechado entre todos os dispositivos.",
+        "correct": false
+      },
+      {
+        "text": "uma ligação apenas ponto-a-ponto entre dois computadores.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "equipamento",
+      "central",
+      "como",
+      "switch"
+    ]
+  },
+  {
+    "id": "MELHORIA0058",
+    "area": "info",
+    "module": "Programação em C/C++",
+    "topic": "Algoritmo",
+    "type": "mc",
+    "prompt": "Em C/C++, um algoritmo é...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "sequência de passos lógicos para resolver um problema.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "sequência de passos lógicos para resolver um problema.",
+        "correct": true
+      },
+      {
+        "text": "memória permanente do computador.",
+        "correct": false
+      },
+      {
+        "text": "equipamento que liga redes diferentes.",
+        "correct": false
+      },
+      {
+        "text": "zona inferior de um documento.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "sequ",
+      "ncia",
+      "passos",
+      "gicos",
+      "para",
+      "resolver",
+      "problema"
+    ]
+  },
+  {
+    "id": "MELHORIA0059",
+    "area": "info",
+    "module": "Programação em JAVA",
+    "topic": "Classe",
+    "type": "mc",
+    "prompt": "Em Java/POO, uma classe é...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "molde ou modelo usado para criar objetos.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "molde ou modelo usado para criar objetos.",
+        "correct": true
+      },
+      {
+        "text": "objeto concreto criado em memória.",
+        "correct": false
+      },
+      {
+        "text": "botão de uma janela Swing.",
+        "correct": false
+      },
+      {
+        "text": "função que calcula média no Excel.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "molde",
+      "modelo",
+      "usado",
+      "para",
+      "criar",
+      "objetos"
+    ]
+  },
+  {
+    "id": "MELHORIA0060",
+    "area": "info",
+    "module": "Criação de páginas Web em hipertexto",
+    "topic": "HTML",
+    "type": "mc",
+    "prompt": "HTML serve principalmente para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "estruturar o conteúdo de uma página web.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "estruturar o conteúdo de uma página web.",
+        "correct": true
+      },
+      {
+        "text": "formatar tabelas dinâmicas no Excel.",
+        "correct": false
+      },
+      {
+        "text": "atribuir IPs automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "executar operações aritméticas na CPU.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "estruturar",
+      "conte",
+      "gina"
+    ]
+  },
+  {
+    "id": "MELHORIA0061",
+    "area": "info",
+    "module": "Scripts CGI e folhas de estilo",
+    "topic": "Formulário Web",
+    "type": "mc",
+    "prompt": "Um formulário web serve para...",
+    "difficulty": 2,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "recolher dados introduzidos pelo utilizador.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "recolher dados introduzidos pelo utilizador.",
+        "correct": true
+      },
+      {
+        "text": "traduzir domínios em IP.",
+        "correct": false
+      },
+      {
+        "text": "ligar periféricos à motherboard.",
+        "correct": false
+      },
+      {
+        "text": "calcular a mediana de uma amostra.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "recolher",
+      "dados",
+      "introduzidos",
+      "pelo",
+      "utilizador"
+    ]
+  },
+  {
+    "id": "MELHORIA0062",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Aceleração",
+    "type": "mc",
+    "prompt": "Num gráfico v=f(t), a aceleração corresponde a...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "declive da reta.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "declive da reta.",
+        "correct": true
+      },
+      {
+        "text": "área total por baixo do gráfico.",
+        "correct": false
+      },
+      {
+        "text": "valor máximo do eixo do tempo.",
+        "correct": false
+      },
+      {
+        "text": "período de uma oscilação.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "declive",
+      "reta"
+    ]
+  },
+  {
+    "id": "MELHORIA0063",
+    "area": "mfc",
+    "module": "Movimentos e Forças",
+    "topic": "Movimento uniforme",
+    "type": "mc",
+    "prompt": "Se a velocidade é constante, a aceleração é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "0 m/s².",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "0 m/s².",
+        "correct": true
+      },
+      {
+        "text": "positiva obrigatoriamente.",
+        "correct": false
+      },
+      {
+        "text": "igual ao tempo.",
+        "correct": false
+      },
+      {
+        "text": "igual à frequência.",
+        "correct": false
+      }
+    ],
+    "keywords": []
+  },
+  {
+    "id": "MELHORIA0064",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Frequência",
+    "type": "mc",
+    "prompt": "Frequência é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "número de oscilações por segundo.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "número de oscilações por segundo.",
+        "correct": true
+      },
+      {
+        "text": "tempo de uma oscilação completa.",
+        "correct": false
+      },
+      {
+        "text": "distância entre duas cristas consecutivas.",
+        "correct": false
+      },
+      {
+        "text": "altura máxima da onda.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "mero",
+      "oscila",
+      "segundo"
+    ]
+  },
+  {
+    "id": "MELHORIA0065",
+    "area": "mfc",
+    "module": "Movimentos Ondulatórios",
+    "topic": "Período",
+    "type": "mc",
+    "prompt": "Período é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "tempo de uma oscilação completa.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "tempo de uma oscilação completa.",
+        "correct": true
+      },
+      {
+        "text": "número de oscilações por segundo.",
+        "correct": false
+      },
+      {
+        "text": "velocidade de propagação da onda.",
+        "correct": false
+      },
+      {
+        "text": "massa da fonte sonora.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "tempo",
+      "oscila",
+      "completa"
+    ]
+  },
+  {
+    "id": "MELHORIA0066",
+    "area": "mfc",
+    "module": "Compostos Orgânicos / Hidrocarbonetos",
+    "topic": "Hidrocarboneto",
+    "type": "mc",
+    "prompt": "Um hidrocarboneto é formado apenas por...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "carbono e hidrogénio.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "carbono e hidrogénio.",
+        "correct": true
+      },
+      {
+        "text": "carbono e oxigénio.",
+        "correct": false
+      },
+      {
+        "text": "hidrogénio e azoto.",
+        "correct": false
+      },
+      {
+        "text": "enxofre e oxigénio.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "carbono",
+      "hidrog"
+    ]
+  },
+  {
+    "id": "MELHORIA0067",
+    "area": "mfc",
+    "module": "Organização, análise da informação e probabilidades",
+    "topic": "Mediana",
+    "type": "mc",
+    "prompt": "A mediana é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "valor central depois de ordenar os dados.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "valor central depois de ordenar os dados.",
+        "correct": true
+      },
+      {
+        "text": "valor que aparece mais vezes.",
+        "correct": false
+      },
+      {
+        "text": "soma dos valores a dividir pelo número de valores.",
+        "correct": false
+      },
+      {
+        "text": "número de casos favoráveis.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "valor",
+      "central",
+      "depois",
+      "ordenar",
+      "dados"
+    ]
+  },
+  {
+    "id": "MELHORIA0068",
+    "area": "mfc",
+    "module": "Operações Numéricas e Estimação",
+    "topic": "Potências",
+    "type": "mc",
+    "prompt": "Na multiplicação de potências com a mesma base...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "somam-se os expoentes.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "somam-se os expoentes.",
+        "correct": true
+      },
+      {
+        "text": "subtraem-se os expoentes.",
+        "correct": false
+      },
+      {
+        "text": "multiplicam-se as bases e mantêm-se os expoentes.",
+        "correct": false
+      },
+      {
+        "text": "os expoentes ficam sempre iguais a zero.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "somam",
+      "expoentes"
+    ]
+  },
+  {
+    "id": "MELHORIA0069",
+    "area": "mfc",
+    "module": "Funções, Limites e Cálculo Diferencial",
+    "topic": "Zero da função",
+    "type": "mc",
+    "prompt": "Um zero da função é...",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "valor de x para o qual f(x)=0.",
+    "explanation": "Pergunta criada para treinar a matriz da PAF com respostas próximas do mesmo tema.",
+    "options": [
+      {
+        "text": "valor de x para o qual f(x)=0.",
+        "correct": true
+      },
+      {
+        "text": "valor máximo da função.",
+        "correct": false
+      },
+      {
+        "text": "valor mínimo da função.",
+        "correct": false
+      },
+      {
+        "text": "valor que não pertence ao domínio.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "valor",
+      "para",
+      "qual"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_001",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "RAM",
+    "type": "mc",
+    "prompt": "A memória RAM distingue-se principalmente por ser...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "temporária, rápida e volátil.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "temporária, rápida e volátil.",
+        "correct": true
+      },
+      {
+        "text": "permanente e não volátil, usada para instruções básicas do sistema.",
+        "correct": false
+      },
+      {
+        "text": "armazenamento permanente de ficheiros e programas mesmo sem energia.",
+        "correct": false
+      },
+      {
+        "text": "memória muito rápida e pequena dentro/perto do processador para dados frequentes.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "temporária",
+      "rápida",
+      "volátil"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_002",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ROM",
+    "type": "mc",
+    "prompt": "A memória ROM distingue-se principalmente por ser...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "permanente e não volátil, com instruções básicas do sistema.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "permanente e não volátil, com instruções básicas do sistema.",
+        "correct": true
+      },
+      {
+        "text": "temporária, rápida e perdida quando o computador desliga.",
+        "correct": false
+      },
+      {
+        "text": "armazenamento principal de documentos, programas e ficheiros do utilizador.",
+        "correct": false
+      },
+      {
+        "text": "memória de apoio ao processador usada para acelerar acessos frequentes.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "permanente",
+      "volátil",
+      "instruções",
+      "básicas",
+      "sistema"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_003",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Cache",
+    "type": "mc",
+    "prompt": "A cache do processador serve principalmente para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "guardar temporariamente dados usados com frequência para acelerar o processador.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "guardar temporariamente dados usados com frequência para acelerar o processador.",
+        "correct": true
+      },
+      {
+        "text": "guardar ficheiros do utilizador de forma permanente.",
+        "correct": false
+      },
+      {
+        "text": "conter instruções básicas de arranque que não se perdem.",
+        "correct": false
+      },
+      {
+        "text": "ligar fisicamente todos os componentes como placa principal.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar",
+      "temporariamente",
+      "dados",
+      "usados",
+      "frequência",
+      "para",
+      "acelerar",
+      "processador"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_004",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ULA/ALU",
+    "type": "mc",
+    "prompt": "A ULA/ALU é a unidade responsável por...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "realizar operações aritméticas e lógicas.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "realizar operações aritméticas e lógicas.",
+        "correct": true
+      },
+      {
+        "text": "coordenar e controlar a execução das instruções.",
+        "correct": false
+      },
+      {
+        "text": "guardar dados temporários extremamente rápidos dentro da CPU.",
+        "correct": false
+      },
+      {
+        "text": "armazenar permanentemente o sistema operativo e ficheiros.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "realizar",
+      "operações",
+      "aritméticas",
+      "lógicas"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_005",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Unidade de controlo",
+    "type": "mc",
+    "prompt": "A unidade de controlo do processador tem como função principal...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "coordenar a execução das instruções e controlar o funcionamento interno da CPU.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "coordenar a execução das instruções e controlar o funcionamento interno da CPU.",
+        "correct": true
+      },
+      {
+        "text": "realizar diretamente contas aritméticas e comparações lógicas.",
+        "correct": false
+      },
+      {
+        "text": "guardar ficheiros e programas de forma permanente.",
+        "correct": false
+      },
+      {
+        "text": "fornecer energia elétrica aos componentes do computador.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "coordenar",
+      "execução",
+      "instruções",
+      "controlar",
+      "funcionamento",
+      "interno"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_006",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Motherboard",
+    "type": "mc",
+    "prompt": "A motherboard é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "a placa principal onde se ligam e comunicam os componentes do computador.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "a placa principal onde se ligam e comunicam os componentes do computador.",
+        "correct": true
+      },
+      {
+        "text": "a memória temporária onde os programas em execução são carregados.",
+        "correct": false
+      },
+      {
+        "text": "a unidade que realiza operações aritméticas e lógicas.",
+        "correct": false
+      },
+      {
+        "text": "o componente que guarda ficheiros de forma permanente.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "placa",
+      "principal",
+      "onde",
+      "ligam",
+      "comunicam",
+      "componentes",
+      "computador"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_007",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Disco SSD/HDD",
+    "type": "mc",
+    "prompt": "O disco SSD/HDD serve sobretudo para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "armazenar dados, programas e ficheiros de forma permanente.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "armazenar dados, programas e ficheiros de forma permanente.",
+        "correct": true
+      },
+      {
+        "text": "guardar dados apenas enquanto o computador está ligado.",
+        "correct": false
+      },
+      {
+        "text": "executar instruções e processar cálculos.",
+        "correct": false
+      },
+      {
+        "text": "coordenar o funcionamento interno da CPU.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "armazenar",
+      "dados",
+      "programas",
+      "ficheiros",
+      "forma",
+      "permanente"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_008",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periférico de entrada",
+    "type": "mc",
+    "prompt": "Qual é o exemplo mais correto de periférico de entrada?",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "Teclado, porque permite introduzir dados no computador.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "Teclado, porque permite introduzir dados no computador.",
+        "correct": true
+      },
+      {
+        "text": "Monitor, porque apresenta informação ao utilizador.",
+        "correct": false
+      },
+      {
+        "text": "Impressora, porque coloca informação em papel.",
+        "correct": false
+      },
+      {
+        "text": "Colunas, porque reproduzem som para o utilizador.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "teclado",
+      "porque",
+      "permite",
+      "introduzir",
+      "dados",
+      "computador"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_009",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periférico de saída",
+    "type": "mc",
+    "prompt": "Qual é o exemplo mais correto de periférico de saída?",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "Monitor, porque apresenta informação ao utilizador.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "Monitor, porque apresenta informação ao utilizador.",
+        "correct": true
+      },
+      {
+        "text": "Teclado, porque permite escrever dados.",
+        "correct": false
+      },
+      {
+        "text": "Rato, porque permite controlar o ponteiro.",
+        "correct": false
+      },
+      {
+        "text": "Scanner, porque digitaliza documentos para o computador.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "monitor",
+      "porque",
+      "apresenta",
+      "informação",
+      "utilizador"
+    ]
+  },
+  {
+    "id": "INFO_HARD_ARCH_010",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Entrada e saída",
+    "type": "mc",
+    "prompt": "Qual é um exemplo de periférico de entrada e saída?",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "Ecrã tátil, porque mostra informação e também recebe toque do utilizador.",
+    "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "Ecrã tátil, porque mostra informação e também recebe toque do utilizador.",
+        "correct": true
+      },
+      {
+        "text": "Teclado, porque apenas introduz texto.",
+        "correct": false
+      },
+      {
+        "text": "Monitor comum, porque apenas apresenta imagem.",
+        "correct": false
+      },
+      {
+        "text": "Colunas, porque apenas emitem som.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ecrã",
+      "tátil",
+      "porque",
+      "mostra",
+      "informação",
+      "também",
+      "recebe",
+      "toque"
+    ]
+  },
+  {
+    "id": "INFO_HARD_WORD_001",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Cabeçalho",
+    "type": "mc",
+    "prompt": "Num processador de texto, o cabeçalho é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "a zona superior da página que pode repetir informação em várias páginas.",
+    "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "a zona superior da página que pode repetir informação em várias páginas.",
+        "correct": true
+      },
+      {
+        "text": "a zona inferior onde se colocam números de página ou notas repetidas.",
+        "correct": false
+      },
+      {
+        "text": "uma explicação colocada no fundo da página ligada a uma palavra do texto.",
+        "correct": false
+      },
+      {
+        "text": "a divisão do texto em duas ou mais zonas verticais.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zona",
+      "superior",
+      "página",
+      "pode",
+      "repetir",
+      "informação",
+      "várias",
+      "páginas"
+    ]
+  },
+  {
+    "id": "INFO_HARD_WORD_002",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Rodapé",
+    "type": "mc",
+    "prompt": "Num processador de texto, o rodapé é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "a zona inferior da página que pode repetir informação em várias páginas.",
+    "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "a zona inferior da página que pode repetir informação em várias páginas.",
+        "correct": true
+      },
+      {
+        "text": "a zona superior onde se coloca título, logótipo ou data repetida.",
+        "correct": false
+      },
+      {
+        "text": "uma explicação colocada no fundo da página relacionada com uma referência.",
+        "correct": false
+      },
+      {
+        "text": "uma tabela invisível usada para organizar texto em linhas e colunas.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "zona",
+      "inferior",
+      "página",
+      "pode",
+      "repetir",
+      "informação",
+      "várias",
+      "páginas"
+    ]
+  },
+  {
+    "id": "INFO_HARD_WORD_003",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Nota de rodapé",
+    "type": "mc",
+    "prompt": "Uma nota de rodapé serve para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "colocar uma explicação ou referência no fundo da página.",
+    "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "colocar uma explicação ou referência no fundo da página.",
+        "correct": true
+      },
+      {
+        "text": "repetir automaticamente o título no topo de todas as páginas.",
+        "correct": false
+      },
+      {
+        "text": "dividir o texto principal em duas ou mais colunas.",
+        "correct": false
+      },
+      {
+        "text": "alterar o tipo de letra, tamanho e alinhamento do texto.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "colocar",
+      "explicação",
+      "referência",
+      "fundo",
+      "página"
+    ]
+  },
+  {
+    "id": "INFO_HARD_WORD_004",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Texto em colunas",
+    "type": "mc",
+    "prompt": "A opção de texto em colunas serve para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "organizar o texto em duas ou mais colunas verticais.",
+    "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "organizar o texto em duas ou mais colunas verticais.",
+        "correct": true
+      },
+      {
+        "text": "repetir informação no topo da página.",
+        "correct": false
+      },
+      {
+        "text": "colocar uma explicação no fundo da página.",
+        "correct": false
+      },
+      {
+        "text": "criar linhas e colunas com células editáveis.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "organizar",
+      "texto",
+      "duas",
+      "mais",
+      "colunas",
+      "verticais"
+    ]
+  },
+  {
+    "id": "INFO_HARD_WORD_005",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Tabela",
+    "type": "mc",
+    "prompt": "Num processador de texto, uma tabela serve para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "organizar informação em linhas, colunas e células.",
+    "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "organizar informação em linhas, colunas e células.",
+        "correct": true
+      },
+      {
+        "text": "formatar automaticamente notas negativas.",
+        "correct": false
+      },
+      {
+        "text": "filtrar registos de uma base de dados.",
+        "correct": false
+      },
+      {
+        "text": "repetir informação no cabeçalho e rodapé.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "organizar",
+      "informação",
+      "linhas",
+      "colunas",
+      "células"
+    ]
+  },
+  {
+    "id": "INFO_HARD_WORD_006",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Formatação de texto",
+    "type": "mc",
+    "prompt": "A formatação de texto permite...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "alterar aspeto do texto, como letra, tamanho, estilo, cor, alinhamento e espaçamento.",
+    "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "alterar aspeto do texto, como letra, tamanho, estilo, cor, alinhamento e espaçamento.",
+        "correct": true
+      },
+      {
+        "text": "mostrar apenas os registos que cumprem uma condição.",
+        "correct": false
+      },
+      {
+        "text": "resumir dados por categorias numa tabela dinâmica.",
+        "correct": false
+      },
+      {
+        "text": "atribuir IPs automaticamente numa rede local.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "alterar",
+      "aspeto",
+      "texto",
+      "como",
+      "letra",
+      "tamanho",
+      "estilo",
+      "alinhamento"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_001",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Célula",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, uma célula é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "a interseção entre uma linha e uma coluna.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "a interseção entre uma linha e uma coluna.",
+        "correct": true
+      },
+      {
+        "text": "um conjunto de células selecionadas, como A1:A10.",
+        "correct": false
+      },
+      {
+        "text": "uma coluna inteira identificada por letras.",
+        "correct": false
+      },
+      {
+        "text": "uma linha inteira identificada por números.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "interseção",
+      "entre",
+      "linha",
+      "coluna"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_002",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Fórmula",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, uma fórmula é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "uma expressão que começa normalmente por = e calcula um resultado.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "uma expressão que começa normalmente por = e calcula um resultado.",
+        "correct": true
+      },
+      {
+        "text": "uma regra visual que altera cores automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "um filtro que esconde dados que não cumprem uma condição.",
+        "correct": false
+      },
+      {
+        "text": "um resumo automático de dados por categoria.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "expressão",
+      "começa",
+      "normalmente",
+      "calcula",
+      "resultado"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_003",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função SOMA",
+    "type": "mc",
+    "prompt": "A função SOMA serve para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "somar os valores de um intervalo de células.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "somar os valores de um intervalo de células.",
+        "correct": true
+      },
+      {
+        "text": "calcular o valor médio de um intervalo.",
+        "correct": false
+      },
+      {
+        "text": "devolver o maior valor de um intervalo.",
+        "correct": false
+      },
+      {
+        "text": "contar apenas as células que cumprem uma condição.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "somar",
+      "valores",
+      "intervalo",
+      "células"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_004",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função MÉDIA",
+    "type": "mc",
+    "prompt": "A função MÉDIA serve para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "calcular a média aritmética dos valores selecionados.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "calcular a média aritmética dos valores selecionados.",
+        "correct": true
+      },
+      {
+        "text": "somar todos os valores sem dividir pela quantidade.",
+        "correct": false
+      },
+      {
+        "text": "devolver o valor mais alto do intervalo.",
+        "correct": false
+      },
+      {
+        "text": "devolver um resultado diferente conforme uma condição.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "calcular",
+      "média",
+      "aritmética",
+      "valores",
+      "selecionados"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_005",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função SE",
+    "type": "mc",
+    "prompt": "A função SE serve para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "testar uma condição e devolver um resultado se for verdadeira e outro se for falsa.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "testar uma condição e devolver um resultado se for verdadeira e outro se for falsa.",
+        "correct": true
+      },
+      {
+        "text": "mostrar apenas as linhas que cumprem uma condição, sem apagar dados.",
+        "correct": false
+      },
+      {
+        "text": "alterar automaticamente o aspeto das células conforme regras.",
+        "correct": false
+      },
+      {
+        "text": "resumir dados por categorias numa tabela dinâmica.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "testar",
+      "condição",
+      "devolver",
+      "resultado",
+      "verdadeira",
+      "outro",
+      "falsa"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_006",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Filtro",
+    "type": "mc",
+    "prompt": "Numa folha de cálculo, um filtro serve para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "mostrar apenas os dados que cumprem uma condição, sem apagar os restantes.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "mostrar apenas os dados que cumprem uma condição, sem apagar os restantes.",
+        "correct": true
+      },
+      {
+        "text": "alterar automaticamente a cor das células quando uma regra é cumprida.",
+        "correct": false
+      },
+      {
+        "text": "resumir grandes quantidades de dados por categorias.",
+        "correct": false
+      },
+      {
+        "text": "calcular uma média usando valores de um intervalo.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "mostrar",
+      "apenas",
+      "dados",
+      "cumprem",
+      "condição",
+      "apagar",
+      "restantes"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_007",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Formatação condicional",
+    "type": "mc",
+    "prompt": "A formatação condicional serve para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "aplicar automaticamente formatação às células quando uma condição é cumprida.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "aplicar automaticamente formatação às células quando uma condição é cumprida.",
+        "correct": true
+      },
+      {
+        "text": "mostrar apenas alguns registos e ocultar temporariamente os restantes.",
+        "correct": false
+      },
+      {
+        "text": "resumir dados de uma tabela por campos e categorias.",
+        "correct": false
+      },
+      {
+        "text": "criar um gráfico ligado a uma tabela dinâmica.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "aplicar",
+      "automaticamente",
+      "formatação",
+      "células",
+      "quando",
+      "condição",
+      "cumprida"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_008",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Tabela dinâmica",
+    "type": "mc",
+    "prompt": "Uma tabela dinâmica serve para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "resumir, agrupar e analisar muitos dados rapidamente por categorias.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "resumir, agrupar e analisar muitos dados rapidamente por categorias.",
+        "correct": true
+      },
+      {
+        "text": "aplicar cores automáticas conforme uma regra.",
+        "correct": false
+      },
+      {
+        "text": "mostrar apenas linhas que cumprem uma condição.",
+        "correct": false
+      },
+      {
+        "text": "escrever uma expressão que começa por = para calcular um resultado.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "resumir",
+      "agrupar",
+      "analisar",
+      "muitos",
+      "dados",
+      "rapidamente",
+      "categorias"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_009",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Gráfico dinâmico",
+    "type": "mc",
+    "prompt": "Um gráfico dinâmico serve para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "representar visualmente dados resumidos, normalmente ligados a uma tabela dinâmica.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "representar visualmente dados resumidos, normalmente ligados a uma tabela dinâmica.",
+        "correct": true
+      },
+      {
+        "text": "resumir dados em linhas e colunas sem representação visual.",
+        "correct": false
+      },
+      {
+        "text": "filtrar dados para mostrar apenas certas linhas.",
+        "correct": false
+      },
+      {
+        "text": "testar uma condição e devolver dois resultados possíveis.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "representar",
+      "visualmente",
+      "dados",
+      "resumidos",
+      "normalmente",
+      "ligados",
+      "tabela",
+      "dinâmica"
+    ]
+  },
+  {
+    "id": "INFO_HARD_SHEET_010",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Intervalo",
+    "type": "mc",
+    "prompt": "O intervalo A1:A10 representa...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "um conjunto de células da coluna A, da linha 1 até à linha 10.",
+    "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "um conjunto de células da coluna A, da linha 1 até à linha 10.",
+        "correct": true
+      },
+      {
+        "text": "uma única célula na coluna A e linha 10.",
+        "correct": false
+      },
+      {
+        "text": "todas as colunas entre A e J na linha 1.",
+        "correct": false
+      },
+      {
+        "text": "uma fórmula que soma automaticamente valores.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "conjunto",
+      "células",
+      "coluna",
+      "linha",
+      "linha"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_001",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "LAN",
+    "type": "mc",
+    "prompt": "Uma LAN é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "uma rede local, normalmente de casa, escola ou empresa.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "uma rede local, normalmente de casa, escola ou empresa.",
+        "correct": true
+      },
+      {
+        "text": "uma rede de grande área, como a Internet.",
+        "correct": false
+      },
+      {
+        "text": "uma rede metropolitana que liga zonas de uma cidade.",
+        "correct": false
+      },
+      {
+        "text": "uma rede local sem fios baseada em Wi-Fi.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local",
+      "normalmente",
+      "casa",
+      "escola",
+      "empresa"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_002",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WAN",
+    "type": "mc",
+    "prompt": "Uma WAN é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "uma rede de grande área, como a Internet.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "uma rede de grande área, como a Internet.",
+        "correct": true
+      },
+      {
+        "text": "uma rede local dentro de uma casa, escola ou empresa.",
+        "correct": false
+      },
+      {
+        "text": "uma rede local sem fios baseada em Wi-Fi.",
+        "correct": false
+      },
+      {
+        "text": "uma rede pessoal de curto alcance entre dispositivos próximos.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "grande",
+      "área",
+      "como",
+      "internet"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_003",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WLAN",
+    "type": "mc",
+    "prompt": "Uma WLAN é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "uma rede local sem fios, normalmente baseada em Wi-Fi.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "uma rede local sem fios, normalmente baseada em Wi-Fi.",
+        "correct": true
+      },
+      {
+        "text": "uma rede local apenas por cabo Ethernet.",
+        "correct": false
+      },
+      {
+        "text": "uma rede de grande área como a Internet.",
+        "correct": false
+      },
+      {
+        "text": "uma rede metropolitana que liga vários pontos de uma cidade.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "local",
+      "fios",
+      "normalmente",
+      "baseada"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_004",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "MAN",
+    "type": "mc",
+    "prompt": "Uma MAN é...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "uma rede metropolitana que cobre uma cidade ou zona urbana.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "uma rede metropolitana que cobre uma cidade ou zona urbana.",
+        "correct": true
+      },
+      {
+        "text": "uma rede local dentro de uma sala ou edifício.",
+        "correct": false
+      },
+      {
+        "text": "uma rede mundial como a Internet.",
+        "correct": false
+      },
+      {
+        "text": "uma rede pessoal de curtíssimo alcance.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "rede",
+      "metropolitana",
+      "cobre",
+      "cidade",
+      "zona",
+      "urbana"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_005",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Switch",
+    "type": "mc",
+    "prompt": "Um switch serve principalmente para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "ligar vários dispositivos dentro de uma rede local.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "ligar vários dispositivos dentro de uma rede local.",
+        "correct": true
+      },
+      {
+        "text": "ligar redes diferentes e encaminhar tráfego para fora da LAN.",
+        "correct": false
+      },
+      {
+        "text": "atribuir endereços IP automaticamente aos equipamentos.",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligar",
+      "vários",
+      "dispositivos",
+      "dentro",
+      "rede",
+      "local"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_006",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Router",
+    "type": "mc",
+    "prompt": "Um router serve principalmente para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "ligar redes diferentes e encaminhar tráfego, por exemplo para a Internet.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "ligar redes diferentes e encaminhar tráfego, por exemplo para a Internet.",
+        "correct": true
+      },
+      {
+        "text": "ligar vários computadores apenas dentro da mesma LAN.",
+        "correct": false
+      },
+      {
+        "text": "fornecer apenas sinal Wi-Fi sem encaminhar redes.",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligar",
+      "redes",
+      "diferentes",
+      "encaminhar",
+      "tráfego",
+      "exemplo",
+      "para",
+      "internet"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_007",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Access Point",
+    "type": "mc",
+    "prompt": "Um access point serve principalmente para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "permitir o acesso sem fios de dispositivos a uma rede.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "permitir o acesso sem fios de dispositivos a uma rede.",
+        "correct": true
+      },
+      {
+        "text": "filtrar tráfego para proteger a rede.",
+        "correct": false
+      },
+      {
+        "text": "atribuir IPs automaticamente aos computadores.",
+        "correct": false
+      },
+      {
+        "text": "guardar ficheiros para vários utilizadores.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "permitir",
+      "acesso",
+      "fios",
+      "dispositivos",
+      "rede"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_008",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Firewall",
+    "type": "mc",
+    "prompt": "Uma firewall serve principalmente para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "filtrar tráfego e ajudar a proteger a rede.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "filtrar tráfego e ajudar a proteger a rede.",
+        "correct": true
+      },
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": false
+      },
+      {
+        "text": "atribuir endereços IP automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "ligar fisicamente vários computadores numa LAN.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "filtrar",
+      "tráfego",
+      "ajudar",
+      "proteger",
+      "rede"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_009",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "DHCP",
+    "type": "mc",
+    "prompt": "O serviço DHCP serve para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "atribuir endereços IP automaticamente aos dispositivos.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "atribuir endereços IP automaticamente aos dispositivos.",
+        "correct": true
+      },
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": false
+      },
+      {
+        "text": "filtrar tráfego e bloquear acessos perigosos.",
+        "correct": false
+      },
+      {
+        "text": "partilhar ficheiros entre utilizadores da rede.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "atribuir",
+      "endereços",
+      "automaticamente",
+      "dispositivos"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_010",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "DNS",
+    "type": "mc",
+    "prompt": "O serviço DNS serve para...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "traduzir nomes de domínio em endereços IP.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": true
+      },
+      {
+        "text": "atribuir endereços IP automaticamente aos dispositivos.",
+        "correct": false
+      },
+      {
+        "text": "filtrar tráfego de rede para aumentar a segurança.",
+        "correct": false
+      },
+      {
+        "text": "ligar dispositivos fisicamente dentro de uma LAN.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "traduzir",
+      "nomes",
+      "domínio",
+      "endereços"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_011",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia estrela",
+    "type": "mc",
+    "prompt": "Numa topologia em estrela, os dispositivos ligam-se...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "a um equipamento central, como um switch.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "a um equipamento central, como um switch.",
+        "correct": true
+      },
+      {
+        "text": "a um único cabo principal comum.",
+        "correct": false
+      },
+      {
+        "text": "a dois vizinhos, formando um círculo.",
+        "correct": false
+      },
+      {
+        "text": "a vários caminhos entre todos os dispositivos.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "equipamento",
+      "central",
+      "como",
+      "switch"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_012",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia barramento",
+    "type": "mc",
+    "prompt": "Numa topologia em barramento, os dispositivos ligam-se...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "a um cabo principal comum.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "a um cabo principal comum.",
+        "correct": true
+      },
+      {
+        "text": "a um equipamento central como um switch.",
+        "correct": false
+      },
+      {
+        "text": "a dois equipamentos vizinhos formando um anel.",
+        "correct": false
+      },
+      {
+        "text": "a vários caminhos redundantes entre nós.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "cabo",
+      "principal",
+      "comum"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_013",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia anel",
+    "type": "mc",
+    "prompt": "Numa topologia em anel, os dispositivos ligam-se...",
+    "difficulty": 4,
+    "estimate": 125,
+    "weight": 1.2,
+    "correctAnswer": "a dois vizinhos, formando um circuito fechado.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "a dois vizinhos, formando um circuito fechado.",
+        "correct": true
+      },
+      {
+        "text": "a um equipamento central que concentra as ligações.",
+        "correct": false
+      },
+      {
+        "text": "a um cabo principal partilhado por todos.",
+        "correct": false
+      },
+      {
+        "text": "a redes diferentes através de um router.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "dois",
+      "vizinhos",
+      "formando",
+      "circuito",
+      "fechado"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_014",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Cliente/servidor",
+    "type": "mc",
+    "prompt": "Numa rede cliente/servidor...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "os clientes pedem serviços a servidores.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "os clientes pedem serviços a servidores.",
+        "correct": true
+      },
+      {
+        "text": "todos os computadores partilham recursos diretamente sem servidor central.",
+        "correct": false
+      },
+      {
+        "text": "todos os equipamentos estão ligados apenas por Wi-Fi.",
+        "correct": false
+      },
+      {
+        "text": "os dispositivos ligam-se obrigatoriamente em topologia anel.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "clientes",
+      "pedem",
+      "serviços",
+      "servidores"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_015",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Ponto-a-ponto",
+    "type": "mc",
+    "prompt": "Numa rede ponto-a-ponto...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "os computadores podem partilhar recursos diretamente, sem servidor central.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "os computadores podem partilhar recursos diretamente, sem servidor central.",
+        "correct": true
+      },
+      {
+        "text": "os clientes dependem sempre de um servidor dedicado.",
+        "correct": false
+      },
+      {
+        "text": "os nomes de domínio são traduzidos para endereços IP.",
+        "correct": false
+      },
+      {
+        "text": "os IPs são atribuídos automaticamente por um serviço.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "computadores",
+      "podem",
+      "partilhar",
+      "recursos",
+      "diretamente",
+      "servidor",
+      "central"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_016",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de ficheiros",
+    "type": "mc",
+    "prompt": "Um servidor de ficheiros serve para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "guardar e partilhar ficheiros na rede.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "guardar e partilhar ficheiros na rede.",
+        "correct": true
+      },
+      {
+        "text": "atribuir endereços IP automaticamente.",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes de domínio em IP.",
+        "correct": false
+      },
+      {
+        "text": "filtrar tráfego para proteger a rede.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "guardar",
+      "partilhar",
+      "ficheiros",
+      "rede"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_017",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de impressão",
+    "type": "mc",
+    "prompt": "Um servidor de impressão serve para...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "gerir e partilhar impressoras na rede.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "gerir e partilhar impressoras na rede.",
+        "correct": true
+      },
+      {
+        "text": "partilhar páginas web através de HTTP/HTTPS.",
+        "correct": false
+      },
+      {
+        "text": "guardar bases de dados para aplicações.",
+        "correct": false
+      },
+      {
+        "text": "traduzir nomes de domínio em endereços IP.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "gerir",
+      "partilhar",
+      "impressoras",
+      "rede"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_018",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Fibra ótica",
+    "type": "mc",
+    "prompt": "A fibra ótica transmite dados principalmente através de...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "pulsos de luz.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "pulsos de luz.",
+        "correct": true
+      },
+      {
+        "text": "sinais elétricos em fios de cobre entrançados.",
+        "correct": false
+      },
+      {
+        "text": "ondas de rádio Wi-Fi no ar.",
+        "correct": false
+      },
+      {
+        "text": "um cabo coaxial com condutor central metálico.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "pulsos"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_019",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Par entrançado",
+    "type": "mc",
+    "prompt": "O cabo de par entrançado é normalmente associado a...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "ligações Ethernet por cabo de cobre.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "ligações Ethernet por cabo de cobre.",
+        "correct": true
+      },
+      {
+        "text": "transmissão por luz em fibra ótica.",
+        "correct": false
+      },
+      {
+        "text": "ligações sem fios por ondas de rádio.",
+        "correct": false
+      },
+      {
+        "text": "armazenamento local de ficheiros.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ligações",
+      "ethernet",
+      "cabo",
+      "cobre"
+    ]
+  },
+  {
+    "id": "INFO_HARD_NET_020",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Ligação sem fios",
+    "type": "mc",
+    "prompt": "Uma ligação sem fios transmite dados através de...",
+    "difficulty": 3,
+    "estimate": 110,
+    "weight": 1.0,
+    "correctAnswer": "ondas de rádio, como no Wi-Fi.",
+    "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
+    "options": [
+      {
+        "text": "ondas de rádio, como no Wi-Fi.",
+        "correct": true
+      },
+      {
+        "text": "pulsos de luz dentro de fibra ótica.",
+        "correct": false
+      },
+      {
+        "text": "fios de cobre entrançados do cabo Ethernet.",
+        "correct": false
+      },
+      {
+        "text": "condutor central e malha metálica do cabo coaxial.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "ondas",
+      "rádio",
+      "como"
+    ]
   }
 ];

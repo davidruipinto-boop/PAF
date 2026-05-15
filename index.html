@@ -11,6 +11,7 @@
     <div class="topbar-text">
       <p class="eyebrow">Máquina de Estudos PAF</p>
       <h1>Salão de Exames PAF</h1>
+      <p class="subtitle">Modo escuro, perguntas focadas na matriz, correção mais humana, treino por clique, treino por respostas por extenso e opção sem tempo.</p>
     </div>
     <div class="timer-card" id="timerCard" aria-live="polite">
       <span>Tempo restante</span>
@@ -60,6 +61,15 @@
               <option value="vinte">20/20 - difícil</option>
             </select>
           </div>
+
+          <div class="form-row">
+            <label for="answerMode">Tipo de respostas</label>
+            <select id="answerMode">
+              <option value="mixed" selected>Misturado: clicar + escrever</option>
+              <option value="click">Só clicar: escolhas múltiplas/checkboxes</option>
+              <option value="written">Só por extenso: escrever tudo</option>
+            </select>
+          </div>
           <div class="form-row">
             <label for="questionCountMode">N.º de perguntas</label>
             <select id="questionCountMode">
@@ -74,6 +84,7 @@
             </select>
           </div>
           <label class="checkline"><input type="checkbox" id="includeTraps" checked> Incluir rasteiras e checkboxes com só uma resposta correta</label>
+          <label class="checkline"><input type="checkbox" id="noTimeMode"> Fazer o exame sem tempo</label>
           <label class="checkline"><input type="checkbox" id="showAnswersAllowed" checked> Mostrar botão “Ver resposta” durante o exame</label>
         </div>
       </div>
@@ -83,7 +94,7 @@
         <button id="historyBtn" class="secondary">Ver histórico</button>
         <a class="secondary link-button" href="pratica.html">Ir para prática</a>
       </div>
-      
+      <div class="notice"><strong>Treino PAF:</strong> podes fazer exame misturado, só com respostas de clicar para telemóvel, ou só com respostas por extenso para treinar memória escrita. Mantém as perguntas-base de Sociocultural, Matemática/FQ da matriz/apontamentos e Informática focada nos módulos técnicos.</div>
     </section>
 
     <section id="exam" class="panel hidden">
