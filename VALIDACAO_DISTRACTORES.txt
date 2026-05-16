@@ -1,0 +1,15 @@
+Validação final dos distratores de escolha múltipla
+
+Correções aplicadas:
+- Distratores gerados por módulo/tema, não por mistura geral.
+- Hidrocarbonetos usam opções parecidas: metano/etano/eteno/etino/propano/propeno/butano/buteno/butino/etc.
+- Inglês usa alternativas gramaticais parecidas, como She studies / She study / She studying, e não definições fora de contexto.
+- Informática usa opções do mesmo grupo: RAM/ROM/cache/disco/registos; switch/router/access point/firewall/DHCP/DNS; filtro/formatação condicional/tabela dinâmica/gráfico dinâmico.
+- Sociocultural evita misturas com Inglês ou Informática.
+- Fallbacks genéricos removidos das escolhas múltiplas.
+
+Verificações automáticas:
+- app.js: OK
+- question-bank.js: OK
+- Opções inglesas em módulos não-inglês: 0
+- Distratores genéricos do tipo "conceito próximo/definição próxima": 0

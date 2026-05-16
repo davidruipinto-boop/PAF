@@ -37410,7 +37410,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A memória RAM distingue-se principalmente por ser...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "temporária, rápida e volátil.",
     "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
     "options": [
@@ -37446,7 +37446,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A memória ROM distingue-se principalmente por ser...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "permanente e não volátil, com instruções básicas do sistema.",
     "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
     "options": [
@@ -37525,7 +37525,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A ULA/ALU é a unidade responsável por...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "realizar operações aritméticas e lógicas.",
     "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
     "options": [
@@ -37601,7 +37601,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A motherboard é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "a placa principal onde se ligam e comunicam os componentes do computador.",
     "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
     "options": [
@@ -37641,7 +37641,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "O disco SSD/HDD serve sobretudo para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "armazenar dados, programas e ficheiros de forma permanente.",
     "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
     "options": [
@@ -37680,7 +37680,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Qual é o exemplo mais correto de periférico de entrada?",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "Teclado, porque permite introduzir dados no computador.",
     "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
     "options": [
@@ -37719,7 +37719,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Qual é o exemplo mais correto de periférico de saída?",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "Monitor, porque apresenta informação ao utilizador.",
     "explanation": "Pergunta teórica de Arquitetura interna do computador, alinhada com a matriz.",
     "options": [
@@ -37798,7 +37798,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Num processador de texto, o cabeçalho é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "a zona superior da página que pode repetir informação em várias páginas.",
     "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
     "options": [
@@ -37839,7 +37839,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Num processador de texto, o rodapé é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "a zona inferior da página que pode repetir informação em várias páginas.",
     "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
     "options": [
@@ -37880,7 +37880,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Uma nota de rodapé serve para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "colocar uma explicação ou referência no fundo da página.",
     "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
     "options": [
@@ -37918,7 +37918,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A opção de texto em colunas serve para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "organizar o texto em duas ou mais colunas verticais.",
     "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
     "options": [
@@ -37957,7 +37957,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Num processador de texto, uma tabela serve para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "organizar informação em linhas, colunas e células.",
     "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
     "options": [
@@ -37995,7 +37995,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A formatação de texto permite...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "alterar aspeto do texto, como letra, tamanho, estilo, cor, alinhamento e espaçamento.",
     "explanation": "Pergunta teórica de Processador de texto, alinhada com a matriz.",
     "options": [
@@ -38036,7 +38036,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Numa folha de cálculo, uma célula é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "a interseção entre uma linha e uma coluna.",
     "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
     "options": [
@@ -38073,7 +38073,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Numa folha de cálculo, uma fórmula é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "uma expressão que começa normalmente por = e calcula um resultado.",
     "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
     "options": [
@@ -38111,7 +38111,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A função SOMA serve para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "somar os valores de um intervalo de células.",
     "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
     "options": [
@@ -38148,7 +38148,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A função MÉDIA serve para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "calcular a média aritmética dos valores selecionados.",
     "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
     "options": [
@@ -38387,7 +38387,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "O intervalo A1:A10 representa...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "um conjunto de células da coluna A, da linha 1 até à linha 10.",
     "explanation": "Pergunta teórica de Folha de cálculo, alinhada com a matriz.",
     "options": [
@@ -38425,7 +38425,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Uma LAN é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "uma rede local, normalmente de casa, escola ou empresa.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -38464,7 +38464,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Uma WAN é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "uma rede de grande área, como a Internet.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -38502,7 +38502,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Uma WLAN é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "uma rede local sem fios, normalmente baseada em Wi-Fi.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -38540,7 +38540,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Uma MAN é...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "uma rede metropolitana que cobre uma cidade ou zona urbana.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -38659,7 +38659,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Um access point serve principalmente para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "permitir o acesso sem fios de dispositivos a uma rede.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -38920,7 +38920,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Numa rede cliente/servidor...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "os clientes pedem serviços a servidores.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -38957,7 +38957,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Numa rede ponto-a-ponto...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "os computadores podem partilhar recursos diretamente, sem servidor central.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -38997,7 +38997,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Um servidor de ficheiros serve para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "guardar e partilhar ficheiros na rede.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -39034,7 +39034,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Um servidor de impressão serve para...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "gerir e partilhar impressoras na rede.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -39071,7 +39071,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "A fibra ótica transmite dados principalmente através de...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "pulsos de luz.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -39105,7 +39105,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "O cabo de par entrançado é normalmente associado a...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "ligações Ethernet por cabo de cobre.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -39142,7 +39142,7 @@ window.PAF_QUESTION_BANK = [
     "prompt": "Uma ligação sem fios transmite dados através de...",
     "difficulty": 3,
     "estimate": 110,
-    "weight": 1.0,
+    "weight": 1,
     "correctAnswer": "ondas de rádio, como no Wi-Fi.",
     "explanation": "Pergunta teórica de Conexões de rede / Rede local, alinhada com a matriz.",
     "options": [
@@ -39168,5 +39168,3437 @@ window.PAF_QUESTION_BANK = [
       "rádio",
       "como"
     ]
+  },
+  {
+    "id": "INFODEF001",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Hardware",
+    "type": "long",
+    "prompt": "Define hardware.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Hardware é a parte física do computador, ou seja, todos os componentes que se podem tocar, como processador, memória, disco, teclado e monitor.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "hardware",
+      "parte física",
+      "componentes"
+    ],
+    "rubric": [
+      {
+        "label": "hardware",
+        "terms": [
+          "hardware"
+        ]
+      },
+      {
+        "label": "parte física",
+        "terms": [
+          "parte física"
+        ]
+      },
+      {
+        "label": "componentes",
+        "terms": [
+          "componentes"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF002",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Software",
+    "type": "long",
+    "prompt": "Define software.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Software é o conjunto de programas e sistemas que permitem usar o computador, como o sistema operativo, aplicações, antivírus e browsers.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "software",
+      "programas",
+      "sistema operativo"
+    ],
+    "rubric": [
+      {
+        "label": "software",
+        "terms": [
+          "software"
+        ]
+      },
+      {
+        "label": "programas",
+        "terms": [
+          "programas"
+        ]
+      },
+      {
+        "label": "sistema operativo",
+        "terms": [
+          "sistema operativo"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF003",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "CPU",
+    "type": "long",
+    "prompt": "Define CPU/processador.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A CPU ou processador executa instruções, processa dados e coordena o funcionamento do computador.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "cpu",
+      "processador",
+      "executa instruções",
+      "processa dados"
+    ],
+    "rubric": [
+      {
+        "label": "cpu",
+        "terms": [
+          "cpu"
+        ]
+      },
+      {
+        "label": "processador",
+        "terms": [
+          "processador"
+        ]
+      },
+      {
+        "label": "executa instruções",
+        "terms": [
+          "executa instruções"
+        ]
+      },
+      {
+        "label": "processa dados",
+        "terms": [
+          "processa dados"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF004",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "RAM",
+    "type": "long",
+    "prompt": "Define memória RAM.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A memória RAM é temporária, rápida e volátil; guarda dados e programas em utilização e perde a informação quando o computador é desligado.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "ram",
+      "temporária",
+      "rápida",
+      "volátil"
+    ],
+    "rubric": [
+      {
+        "label": "ram",
+        "terms": [
+          "ram"
+        ]
+      },
+      {
+        "label": "temporária",
+        "terms": [
+          "temporária"
+        ]
+      },
+      {
+        "label": "rápida",
+        "terms": [
+          "rápida"
+        ]
+      },
+      {
+        "label": "volátil",
+        "terms": [
+          "volátil"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF005",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ROM",
+    "type": "long",
+    "prompt": "Define memória ROM.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A memória ROM é permanente e guarda instruções básicas necessárias ao arranque e funcionamento inicial do computador.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "rom",
+      "permanente",
+      "instruções básicas",
+      "arranque"
+    ],
+    "rubric": [
+      {
+        "label": "rom",
+        "terms": [
+          "rom"
+        ]
+      },
+      {
+        "label": "permanente",
+        "terms": [
+          "permanente"
+        ]
+      },
+      {
+        "label": "instruções básicas",
+        "terms": [
+          "instruções básicas"
+        ]
+      },
+      {
+        "label": "arranque",
+        "terms": [
+          "arranque"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF006",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Disco HDD/SSD",
+    "type": "long",
+    "prompt": "Define disco HDD/SSD.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O disco HDD ou SSD armazena dados de forma permanente, como sistema operativo, programas, documentos e ficheiros.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "disco",
+      "hdd",
+      "ssd",
+      "armazenamento permanente"
+    ],
+    "rubric": [
+      {
+        "label": "disco",
+        "terms": [
+          "disco"
+        ]
+      },
+      {
+        "label": "hdd",
+        "terms": [
+          "hdd"
+        ]
+      },
+      {
+        "label": "ssd",
+        "terms": [
+          "ssd"
+        ]
+      },
+      {
+        "label": "armazenamento permanente",
+        "terms": [
+          "armazenamento permanente"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF007",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Motherboard",
+    "type": "long",
+    "prompt": "Define motherboard.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A motherboard é a placa principal do computador, onde se ligam e comunicam os componentes como CPU, RAM, disco e placas de expansão.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "motherboard",
+      "placa principal",
+      "componentes",
+      "ligam"
+    ],
+    "rubric": [
+      {
+        "label": "motherboard",
+        "terms": [
+          "motherboard"
+        ]
+      },
+      {
+        "label": "placa principal",
+        "terms": [
+          "placa principal"
+        ]
+      },
+      {
+        "label": "componentes",
+        "terms": [
+          "componentes"
+        ]
+      },
+      {
+        "label": "ligam",
+        "terms": [
+          "ligam"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF008",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Fonte de alimentação",
+    "type": "long",
+    "prompt": "Define fonte de alimentação.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A fonte de alimentação fornece energia elétrica aos componentes do computador, convertendo a corrente para valores adequados.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "fonte de alimentação",
+      "energia",
+      "componentes"
+    ],
+    "rubric": [
+      {
+        "label": "fonte de alimentação",
+        "terms": [
+          "fonte de alimentação"
+        ]
+      },
+      {
+        "label": "energia",
+        "terms": [
+          "energia"
+        ]
+      },
+      {
+        "label": "componentes",
+        "terms": [
+          "componentes"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF009",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de entrada",
+    "type": "long",
+    "prompt": "Define periféricos de entrada.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Periféricos de entrada são dispositivos que permitem introduzir dados no computador, como teclado, rato, scanner e microfone.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "periféricos entrada",
+      "introduzir dados",
+      "teclado",
+      "rato"
+    ],
+    "rubric": [
+      {
+        "label": "periféricos entrada",
+        "terms": [
+          "periféricos entrada"
+        ]
+      },
+      {
+        "label": "introduzir dados",
+        "terms": [
+          "introduzir dados"
+        ]
+      },
+      {
+        "label": "teclado",
+        "terms": [
+          "teclado"
+        ]
+      },
+      {
+        "label": "rato",
+        "terms": [
+          "rato"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF010",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de saída",
+    "type": "long",
+    "prompt": "Define periféricos de saída.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Periféricos de saída são dispositivos que mostram ou reproduzem informação do computador, como monitor, impressora e colunas.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "periféricos saída",
+      "mostrar informação",
+      "monitor",
+      "impressora"
+    ],
+    "rubric": [
+      {
+        "label": "periféricos saída",
+        "terms": [
+          "periféricos saída"
+        ]
+      },
+      {
+        "label": "mostrar informação",
+        "terms": [
+          "mostrar informação"
+        ]
+      },
+      {
+        "label": "monitor",
+        "terms": [
+          "monitor"
+        ]
+      },
+      {
+        "label": "impressora",
+        "terms": [
+          "impressora"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF011",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Periféricos de entrada e saída",
+    "type": "long",
+    "prompt": "Define periféricos de entrada e saída.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Periféricos de entrada e saída permitem introduzir e receber dados, como pen USB, ecrã tátil e placa de rede.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "entrada e saída",
+      "introduzir",
+      "receber dados",
+      "pen usb"
+    ],
+    "rubric": [
+      {
+        "label": "entrada e saída",
+        "terms": [
+          "entrada e saída"
+        ]
+      },
+      {
+        "label": "introduzir",
+        "terms": [
+          "introduzir"
+        ]
+      },
+      {
+        "label": "receber dados",
+        "terms": [
+          "receber dados"
+        ]
+      },
+      {
+        "label": "pen usb",
+        "terms": [
+          "pen usb"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF012",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Unidade de controlo",
+    "type": "long",
+    "prompt": "Define unidade de controlo.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A unidade de controlo coordena as operações do processador e controla a execução das instruções.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "unidade de controlo",
+      "coordena",
+      "instruções"
+    ],
+    "rubric": [
+      {
+        "label": "unidade de controlo",
+        "terms": [
+          "unidade de controlo"
+        ]
+      },
+      {
+        "label": "coordena",
+        "terms": [
+          "coordena"
+        ]
+      },
+      {
+        "label": "instruções",
+        "terms": [
+          "instruções"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF013",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "ULA/ALU",
+    "type": "long",
+    "prompt": "Define ULA/ALU.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A ULA/ALU é a unidade lógica e aritmética do processador; realiza cálculos e operações lógicas.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "ula",
+      "alu",
+      "cálculos",
+      "operações lógicas"
+    ],
+    "rubric": [
+      {
+        "label": "ula",
+        "terms": [
+          "ula"
+        ]
+      },
+      {
+        "label": "alu",
+        "terms": [
+          "alu"
+        ]
+      },
+      {
+        "label": "cálculos",
+        "terms": [
+          "cálculos"
+        ]
+      },
+      {
+        "label": "operações lógicas",
+        "terms": [
+          "operações lógicas"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF014",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Registos",
+    "type": "long",
+    "prompt": "Define registos do processador.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Os registos são pequenas memórias internas muito rápidas, usadas para guardar temporariamente dados durante o processamento.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "registos",
+      "memórias internas",
+      "rápidas",
+      "temporariamente"
+    ],
+    "rubric": [
+      {
+        "label": "registos",
+        "terms": [
+          "registos"
+        ]
+      },
+      {
+        "label": "memórias internas",
+        "terms": [
+          "memórias internas"
+        ]
+      },
+      {
+        "label": "rápidas",
+        "terms": [
+          "rápidas"
+        ]
+      },
+      {
+        "label": "temporariamente",
+        "terms": [
+          "temporariamente"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF015",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Cache",
+    "type": "long",
+    "prompt": "Define memória cache.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A cache é uma memória muito rápida que guarda dados usados frequentemente, acelerando o acesso do processador à informação.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "cache",
+      "memória rápida",
+      "dados frequentes",
+      "acelera"
+    ],
+    "rubric": [
+      {
+        "label": "cache",
+        "terms": [
+          "cache"
+        ]
+      },
+      {
+        "label": "memória rápida",
+        "terms": [
+          "memória rápida"
+        ]
+      },
+      {
+        "label": "dados frequentes",
+        "terms": [
+          "dados frequentes"
+        ]
+      },
+      {
+        "label": "acelera",
+        "terms": [
+          "acelera"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF016",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Formatação de texto",
+    "type": "long",
+    "prompt": "Define formatação de texto.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A formatação de texto permite alterar o aspeto do texto, como tipo de letra, tamanho, negrito, itálico, sublinhado, alinhamento e espaçamento.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "formatação",
+      "tipo de letra",
+      "tamanho",
+      "negrito"
+    ],
+    "rubric": [
+      {
+        "label": "formatação",
+        "terms": [
+          "formatação"
+        ]
+      },
+      {
+        "label": "tipo de letra",
+        "terms": [
+          "tipo de letra"
+        ]
+      },
+      {
+        "label": "tamanho",
+        "terms": [
+          "tamanho"
+        ]
+      },
+      {
+        "label": "negrito",
+        "terms": [
+          "negrito"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF017",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Texto em colunas",
+    "type": "long",
+    "prompt": "Define texto em colunas.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Texto em colunas é a divisão do conteúdo em duas ou mais colunas verticais, como acontece em jornais ou revistas.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "colunas",
+      "divisão",
+      "texto",
+      "verticais"
+    ],
+    "rubric": [
+      {
+        "label": "colunas",
+        "terms": [
+          "colunas"
+        ]
+      },
+      {
+        "label": "divisão",
+        "terms": [
+          "divisão"
+        ]
+      },
+      {
+        "label": "texto",
+        "terms": [
+          "texto"
+        ]
+      },
+      {
+        "label": "verticais",
+        "terms": [
+          "verticais"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF018",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Notas de rodapé",
+    "type": "long",
+    "prompt": "Define nota de rodapé.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Nota de rodapé é uma observação colocada no fundo da página para explicar, comentar ou referenciar uma parte do texto.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "nota de rodapé",
+      "fundo da página",
+      "explicar",
+      "referenciar"
+    ],
+    "rubric": [
+      {
+        "label": "nota de rodapé",
+        "terms": [
+          "nota de rodapé"
+        ]
+      },
+      {
+        "label": "fundo da página",
+        "terms": [
+          "fundo da página"
+        ]
+      },
+      {
+        "label": "explicar",
+        "terms": [
+          "explicar"
+        ]
+      },
+      {
+        "label": "referenciar",
+        "terms": [
+          "referenciar"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF019",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Tabelas",
+    "type": "long",
+    "prompt": "Define tabela num processador de texto.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma tabela organiza informação em linhas e colunas, permitindo apresentar dados de forma estruturada.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "tabela",
+      "linhas",
+      "colunas",
+      "organizar informação"
+    ],
+    "rubric": [
+      {
+        "label": "tabela",
+        "terms": [
+          "tabela"
+        ]
+      },
+      {
+        "label": "linhas",
+        "terms": [
+          "linhas"
+        ]
+      },
+      {
+        "label": "colunas",
+        "terms": [
+          "colunas"
+        ]
+      },
+      {
+        "label": "organizar informação",
+        "terms": [
+          "organizar informação"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF020",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Cabeçalho",
+    "type": "long",
+    "prompt": "Define cabeçalho.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O cabeçalho é uma área no topo da página onde se coloca informação repetida, como título, nome, data ou logótipo.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "cabeçalho",
+      "topo da página",
+      "informação repetida"
+    ],
+    "rubric": [
+      {
+        "label": "cabeçalho",
+        "terms": [
+          "cabeçalho"
+        ]
+      },
+      {
+        "label": "topo da página",
+        "terms": [
+          "topo da página"
+        ]
+      },
+      {
+        "label": "informação repetida",
+        "terms": [
+          "informação repetida"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF021",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Rodapé",
+    "type": "long",
+    "prompt": "Define rodapé.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O rodapé é uma área no fundo da página onde se coloca informação repetida, como número de página, data ou autor.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "rodapé",
+      "fundo da página",
+      "número de página"
+    ],
+    "rubric": [
+      {
+        "label": "rodapé",
+        "terms": [
+          "rodapé"
+        ]
+      },
+      {
+        "label": "fundo da página",
+        "terms": [
+          "fundo da página"
+        ]
+      },
+      {
+        "label": "número de página",
+        "terms": [
+          "número de página"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF022",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Numeração de páginas",
+    "type": "long",
+    "prompt": "Define numeração de páginas.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A numeração de páginas insere automaticamente números nas páginas de um documento, normalmente no cabeçalho ou rodapé.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "numeração",
+      "páginas",
+      "automaticamente"
+    ],
+    "rubric": [
+      {
+        "label": "numeração",
+        "terms": [
+          "numeração"
+        ]
+      },
+      {
+        "label": "páginas",
+        "terms": [
+          "páginas"
+        ]
+      },
+      {
+        "label": "automaticamente",
+        "terms": [
+          "automaticamente"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF023",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Margens e orientação",
+    "type": "long",
+    "prompt": "Define margens e orientação de página.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "As margens definem o espaço livre à volta do texto e a orientação define se a página fica em retrato ou paisagem.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "margens",
+      "orientação",
+      "retrato",
+      "paisagem"
+    ],
+    "rubric": [
+      {
+        "label": "margens",
+        "terms": [
+          "margens"
+        ]
+      },
+      {
+        "label": "orientação",
+        "terms": [
+          "orientação"
+        ]
+      },
+      {
+        "label": "retrato",
+        "terms": [
+          "retrato"
+        ]
+      },
+      {
+        "label": "paisagem",
+        "terms": [
+          "paisagem"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF024",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Célula",
+    "type": "long",
+    "prompt": "Define célula numa folha de cálculo.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma célula é a interseção entre uma linha e uma coluna, onde se inserem dados, fórmulas ou funções.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "célula",
+      "linha",
+      "coluna",
+      "dados"
+    ],
+    "rubric": [
+      {
+        "label": "célula",
+        "terms": [
+          "célula"
+        ]
+      },
+      {
+        "label": "linha",
+        "terms": [
+          "linha"
+        ]
+      },
+      {
+        "label": "coluna",
+        "terms": [
+          "coluna"
+        ]
+      },
+      {
+        "label": "dados",
+        "terms": [
+          "dados"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF025",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Linha",
+    "type": "long",
+    "prompt": "Define linha numa folha de cálculo.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma linha é uma sequência horizontal de células, normalmente identificada por números.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "linha",
+      "horizontal",
+      "números",
+      "células"
+    ],
+    "rubric": [
+      {
+        "label": "linha",
+        "terms": [
+          "linha"
+        ]
+      },
+      {
+        "label": "horizontal",
+        "terms": [
+          "horizontal"
+        ]
+      },
+      {
+        "label": "números",
+        "terms": [
+          "números"
+        ]
+      },
+      {
+        "label": "células",
+        "terms": [
+          "células"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF026",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Coluna",
+    "type": "long",
+    "prompt": "Define coluna numa folha de cálculo.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma coluna é uma sequência vertical de células, normalmente identificada por letras.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "coluna",
+      "vertical",
+      "letras",
+      "células"
+    ],
+    "rubric": [
+      {
+        "label": "coluna",
+        "terms": [
+          "coluna"
+        ]
+      },
+      {
+        "label": "vertical",
+        "terms": [
+          "vertical"
+        ]
+      },
+      {
+        "label": "letras",
+        "terms": [
+          "letras"
+        ]
+      },
+      {
+        "label": "células",
+        "terms": [
+          "células"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF027",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Intervalo",
+    "type": "long",
+    "prompt": "Define intervalo de células.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Um intervalo é um conjunto de células selecionadas, como A1:A10, usado em fórmulas e funções.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "intervalo",
+      "conjunto de células",
+      "A1:A10"
+    ],
+    "rubric": [
+      {
+        "label": "intervalo",
+        "terms": [
+          "intervalo"
+        ]
+      },
+      {
+        "label": "conjunto de células",
+        "terms": [
+          "conjunto de células"
+        ]
+      },
+      {
+        "label": "A1:A10",
+        "terms": [
+          "A1:A10"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF028",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Fórmula",
+    "type": "long",
+    "prompt": "Define fórmula numa folha de cálculo.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma fórmula é uma expressão que começa por = e realiza cálculos usando valores, células e operadores.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "fórmula",
+      "começa por =",
+      "cálculos",
+      "células"
+    ],
+    "rubric": [
+      {
+        "label": "fórmula",
+        "terms": [
+          "fórmula"
+        ]
+      },
+      {
+        "label": "começa por =",
+        "terms": [
+          "começa por ="
+        ]
+      },
+      {
+        "label": "cálculos",
+        "terms": [
+          "cálculos"
+        ]
+      },
+      {
+        "label": "células",
+        "terms": [
+          "células"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF029",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função SOMA",
+    "type": "long",
+    "prompt": "Define a função SOMA.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A função SOMA adiciona todos os valores de um intervalo de células.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "soma",
+      "adiciona",
+      "valores",
+      "intervalo"
+    ],
+    "rubric": [
+      {
+        "label": "soma",
+        "terms": [
+          "soma"
+        ]
+      },
+      {
+        "label": "adiciona",
+        "terms": [
+          "adiciona"
+        ]
+      },
+      {
+        "label": "valores",
+        "terms": [
+          "valores"
+        ]
+      },
+      {
+        "label": "intervalo",
+        "terms": [
+          "intervalo"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF030",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função MÉDIA",
+    "type": "long",
+    "prompt": "Define a função MÉDIA.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A função MÉDIA calcula a média aritmética dos valores de um intervalo.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "média",
+      "aritmética",
+      "valores",
+      "intervalo"
+    ],
+    "rubric": [
+      {
+        "label": "média",
+        "terms": [
+          "média"
+        ]
+      },
+      {
+        "label": "aritmética",
+        "terms": [
+          "aritmética"
+        ]
+      },
+      {
+        "label": "valores",
+        "terms": [
+          "valores"
+        ]
+      },
+      {
+        "label": "intervalo",
+        "terms": [
+          "intervalo"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF031",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função MÁXIMO",
+    "type": "long",
+    "prompt": "Define a função MÁXIMO.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A função MÁXIMO devolve o maior valor existente num intervalo de células.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "máximo",
+      "maior valor",
+      "intervalo"
+    ],
+    "rubric": [
+      {
+        "label": "máximo",
+        "terms": [
+          "máximo"
+        ]
+      },
+      {
+        "label": "maior valor",
+        "terms": [
+          "maior valor"
+        ]
+      },
+      {
+        "label": "intervalo",
+        "terms": [
+          "intervalo"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF032",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função MÍNIMO",
+    "type": "long",
+    "prompt": "Define a função MÍNIMO.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A função MÍNIMO devolve o menor valor existente num intervalo de células.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "mínimo",
+      "menor valor",
+      "intervalo"
+    ],
+    "rubric": [
+      {
+        "label": "mínimo",
+        "terms": [
+          "mínimo"
+        ]
+      },
+      {
+        "label": "menor valor",
+        "terms": [
+          "menor valor"
+        ]
+      },
+      {
+        "label": "intervalo",
+        "terms": [
+          "intervalo"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF033",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função SE",
+    "type": "long",
+    "prompt": "Define a função SE.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A função SE testa uma condição e devolve um resultado se for verdadeira e outro se for falsa.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "se",
+      "condição",
+      "verdadeira",
+      "falsa"
+    ],
+    "rubric": [
+      {
+        "label": "se",
+        "terms": [
+          "se"
+        ]
+      },
+      {
+        "label": "condição",
+        "terms": [
+          "condição"
+        ]
+      },
+      {
+        "label": "verdadeira",
+        "terms": [
+          "verdadeira"
+        ]
+      },
+      {
+        "label": "falsa",
+        "terms": [
+          "falsa"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF034",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função CONTAR",
+    "type": "long",
+    "prompt": "Define a função CONTAR.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A função CONTAR conta quantas células têm valores numéricos num intervalo.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "contar",
+      "células",
+      "valores numéricos"
+    ],
+    "rubric": [
+      {
+        "label": "contar",
+        "terms": [
+          "contar"
+        ]
+      },
+      {
+        "label": "células",
+        "terms": [
+          "células"
+        ]
+      },
+      {
+        "label": "valores numéricos",
+        "terms": [
+          "valores numéricos"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF035",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Função CONTAR.SE",
+    "type": "long",
+    "prompt": "Define a função CONTAR.SE.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A função CONTAR.SE conta as células de um intervalo que cumprem uma condição definida.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "contar.se",
+      "conta",
+      "condição",
+      "intervalo"
+    ],
+    "rubric": [
+      {
+        "label": "contar.se",
+        "terms": [
+          "contar.se"
+        ]
+      },
+      {
+        "label": "conta",
+        "terms": [
+          "conta"
+        ]
+      },
+      {
+        "label": "condição",
+        "terms": [
+          "condição"
+        ]
+      },
+      {
+        "label": "intervalo",
+        "terms": [
+          "intervalo"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF036",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Filtros",
+    "type": "long",
+    "prompt": "Define filtros numa folha de cálculo.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Os filtros mostram apenas os dados que cumprem determinados critérios, sem apagar os restantes dados da tabela.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "filtros",
+      "mostrar dados",
+      "critérios",
+      "não apagar"
+    ],
+    "rubric": [
+      {
+        "label": "filtros",
+        "terms": [
+          "filtros"
+        ]
+      },
+      {
+        "label": "mostrar dados",
+        "terms": [
+          "mostrar dados"
+        ]
+      },
+      {
+        "label": "critérios",
+        "terms": [
+          "critérios"
+        ]
+      },
+      {
+        "label": "não apagar",
+        "terms": [
+          "não apagar"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF037",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Formatação condicional",
+    "type": "long",
+    "prompt": "Define formatação condicional.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A formatação condicional aplica automaticamente formatos às células quando uma condição ou regra é cumprida.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "formatação condicional",
+      "formatos automáticos",
+      "condição",
+      "regra"
+    ],
+    "rubric": [
+      {
+        "label": "formatação condicional",
+        "terms": [
+          "formatação condicional"
+        ]
+      },
+      {
+        "label": "formatos automáticos",
+        "terms": [
+          "formatos automáticos"
+        ]
+      },
+      {
+        "label": "condição",
+        "terms": [
+          "condição"
+        ]
+      },
+      {
+        "label": "regra",
+        "terms": [
+          "regra"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF038",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Tabelas dinâmicas",
+    "type": "long",
+    "prompt": "Define tabela dinâmica.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma tabela dinâmica resume e organiza muitos dados rapidamente por categorias, permitindo analisar informação de forma simples.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "tabela dinâmica",
+      "resume",
+      "organiza",
+      "categorias"
+    ],
+    "rubric": [
+      {
+        "label": "tabela dinâmica",
+        "terms": [
+          "tabela dinâmica"
+        ]
+      },
+      {
+        "label": "resume",
+        "terms": [
+          "resume"
+        ]
+      },
+      {
+        "label": "organiza",
+        "terms": [
+          "organiza"
+        ]
+      },
+      {
+        "label": "categorias",
+        "terms": [
+          "categorias"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF039",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Gráficos dinâmicos",
+    "type": "long",
+    "prompt": "Define gráfico dinâmico.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Um gráfico dinâmico representa visualmente os dados resumidos de uma tabela dinâmica.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "gráfico dinâmico",
+      "representa visualmente",
+      "tabela dinâmica"
+    ],
+    "rubric": [
+      {
+        "label": "gráfico dinâmico",
+        "terms": [
+          "gráfico dinâmico"
+        ]
+      },
+      {
+        "label": "representa visualmente",
+        "terms": [
+          "representa visualmente"
+        ]
+      },
+      {
+        "label": "tabela dinâmica",
+        "terms": [
+          "tabela dinâmica"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF040",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Rede de computadores",
+    "type": "long",
+    "prompt": "Define rede de computadores.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma rede de computadores é um conjunto de computadores e dispositivos ligados entre si para partilhar dados, recursos e serviços.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "rede de computadores",
+      "dispositivos ligados",
+      "partilhar dados",
+      "recursos"
+    ],
+    "rubric": [
+      {
+        "label": "rede de computadores",
+        "terms": [
+          "rede de computadores"
+        ]
+      },
+      {
+        "label": "dispositivos ligados",
+        "terms": [
+          "dispositivos ligados"
+        ]
+      },
+      {
+        "label": "partilhar dados",
+        "terms": [
+          "partilhar dados"
+        ]
+      },
+      {
+        "label": "recursos",
+        "terms": [
+          "recursos"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF041",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "LAN",
+    "type": "long",
+    "prompt": "Define LAN.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "LAN é uma rede local, usada numa área pequena como casa, escola ou empresa.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "lan",
+      "rede local",
+      "casa",
+      "escola",
+      "empresa"
+    ],
+    "rubric": [
+      {
+        "label": "lan",
+        "terms": [
+          "lan"
+        ]
+      },
+      {
+        "label": "rede local",
+        "terms": [
+          "rede local"
+        ]
+      },
+      {
+        "label": "casa",
+        "terms": [
+          "casa"
+        ]
+      },
+      {
+        "label": "escola",
+        "terms": [
+          "escola"
+        ]
+      },
+      {
+        "label": "empresa",
+        "terms": [
+          "empresa"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF042",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "MAN",
+    "type": "long",
+    "prompt": "Define MAN.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "MAN é uma rede metropolitana que cobre uma área maior que uma LAN, normalmente uma cidade ou zona urbana.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "man",
+      "rede metropolitana",
+      "cidade"
+    ],
+    "rubric": [
+      {
+        "label": "man",
+        "terms": [
+          "man"
+        ]
+      },
+      {
+        "label": "rede metropolitana",
+        "terms": [
+          "rede metropolitana"
+        ]
+      },
+      {
+        "label": "cidade",
+        "terms": [
+          "cidade"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF043",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WAN",
+    "type": "long",
+    "prompt": "Define WAN.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "WAN é uma rede de grande área que liga redes distantes, como acontece com a Internet.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "wan",
+      "grande área",
+      "internet",
+      "redes distantes"
+    ],
+    "rubric": [
+      {
+        "label": "wan",
+        "terms": [
+          "wan"
+        ]
+      },
+      {
+        "label": "grande área",
+        "terms": [
+          "grande área"
+        ]
+      },
+      {
+        "label": "internet",
+        "terms": [
+          "internet"
+        ]
+      },
+      {
+        "label": "redes distantes",
+        "terms": [
+          "redes distantes"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF044",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "WLAN",
+    "type": "long",
+    "prompt": "Define WLAN.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "WLAN é uma rede local sem fios, normalmente baseada em tecnologia Wi-Fi.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "wlan",
+      "rede local sem fios",
+      "wi-fi"
+    ],
+    "rubric": [
+      {
+        "label": "wlan",
+        "terms": [
+          "wlan"
+        ]
+      },
+      {
+        "label": "rede local sem fios",
+        "terms": [
+          "rede local sem fios"
+        ]
+      },
+      {
+        "label": "wi-fi",
+        "terms": [
+          "wi-fi"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF045",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Ligação cablada",
+    "type": "long",
+    "prompt": "Define ligação cablada.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma ligação cablada usa meios físicos, como cabo Ethernet ou fibra ótica, para transmitir dados.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "cablada",
+      "cabo",
+      "ethernet",
+      "fibra"
+    ],
+    "rubric": [
+      {
+        "label": "cablada",
+        "terms": [
+          "cablada"
+        ]
+      },
+      {
+        "label": "cabo",
+        "terms": [
+          "cabo"
+        ]
+      },
+      {
+        "label": "ethernet",
+        "terms": [
+          "ethernet"
+        ]
+      },
+      {
+        "label": "fibra",
+        "terms": [
+          "fibra"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF046",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Ligação sem fios",
+    "type": "long",
+    "prompt": "Define ligação sem fios.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Uma ligação sem fios transmite dados sem cabos, usando tecnologias como Wi-Fi, Bluetooth ou rádio.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "sem fios",
+      "wi-fi",
+      "bluetooth",
+      "rádio"
+    ],
+    "rubric": [
+      {
+        "label": "sem fios",
+        "terms": [
+          "sem fios"
+        ]
+      },
+      {
+        "label": "wi-fi",
+        "terms": [
+          "wi-fi"
+        ]
+      },
+      {
+        "label": "bluetooth",
+        "terms": [
+          "bluetooth"
+        ]
+      },
+      {
+        "label": "rádio",
+        "terms": [
+          "rádio"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF047",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia estrela",
+    "type": "long",
+    "prompt": "Define topologia em estrela.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Na topologia em estrela, todos os dispositivos ligam-se a um equipamento central, como um switch ou router.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "estrela",
+      "equipamento central",
+      "switch",
+      "router"
+    ],
+    "rubric": [
+      {
+        "label": "estrela",
+        "terms": [
+          "estrela"
+        ]
+      },
+      {
+        "label": "equipamento central",
+        "terms": [
+          "equipamento central"
+        ]
+      },
+      {
+        "label": "switch",
+        "terms": [
+          "switch"
+        ]
+      },
+      {
+        "label": "router",
+        "terms": [
+          "router"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF048",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia barramento",
+    "type": "long",
+    "prompt": "Define topologia em barramento.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Na topologia em barramento, todos os dispositivos partilham um cabo principal comum.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "barramento",
+      "cabo principal",
+      "partilham"
+    ],
+    "rubric": [
+      {
+        "label": "barramento",
+        "terms": [
+          "barramento"
+        ]
+      },
+      {
+        "label": "cabo principal",
+        "terms": [
+          "cabo principal"
+        ]
+      },
+      {
+        "label": "partilham",
+        "terms": [
+          "partilham"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF049",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia anel",
+    "type": "long",
+    "prompt": "Define topologia em anel.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Na topologia em anel, cada dispositivo liga-se a dois vizinhos, formando um circuito fechado.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "anel",
+      "dois vizinhos",
+      "circuito fechado"
+    ],
+    "rubric": [
+      {
+        "label": "anel",
+        "terms": [
+          "anel"
+        ]
+      },
+      {
+        "label": "dois vizinhos",
+        "terms": [
+          "dois vizinhos"
+        ]
+      },
+      {
+        "label": "circuito fechado",
+        "terms": [
+          "circuito fechado"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF050",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologia malha",
+    "type": "long",
+    "prompt": "Define topologia em malha.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Na topologia em malha, os dispositivos têm várias ligações entre si, criando caminhos alternativos para a comunicação.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "malha",
+      "várias ligações",
+      "caminhos alternativos"
+    ],
+    "rubric": [
+      {
+        "label": "malha",
+        "terms": [
+          "malha"
+        ]
+      },
+      {
+        "label": "várias ligações",
+        "terms": [
+          "várias ligações"
+        ]
+      },
+      {
+        "label": "caminhos alternativos",
+        "terms": [
+          "caminhos alternativos"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF051",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Placa de rede",
+    "type": "long",
+    "prompt": "Define placa de rede.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A placa de rede permite ao computador ligar-se a uma rede, por cabo ou sem fios.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "placa de rede",
+      "ligar",
+      "rede",
+      "cabo",
+      "sem fios"
+    ],
+    "rubric": [
+      {
+        "label": "placa de rede",
+        "terms": [
+          "placa de rede"
+        ]
+      },
+      {
+        "label": "ligar",
+        "terms": [
+          "ligar"
+        ]
+      },
+      {
+        "label": "rede",
+        "terms": [
+          "rede"
+        ]
+      },
+      {
+        "label": "cabo",
+        "terms": [
+          "cabo"
+        ]
+      },
+      {
+        "label": "sem fios",
+        "terms": [
+          "sem fios"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF052",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Switch",
+    "type": "long",
+    "prompt": "Define switch.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O switch liga vários dispositivos dentro da mesma rede local e encaminha dados para o dispositivo correto.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "switch",
+      "liga dispositivos",
+      "rede local",
+      "encaminha dados"
+    ],
+    "rubric": [
+      {
+        "label": "switch",
+        "terms": [
+          "switch"
+        ]
+      },
+      {
+        "label": "liga dispositivos",
+        "terms": [
+          "liga dispositivos"
+        ]
+      },
+      {
+        "label": "rede local",
+        "terms": [
+          "rede local"
+        ]
+      },
+      {
+        "label": "encaminha dados",
+        "terms": [
+          "encaminha dados"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF053",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Router",
+    "type": "long",
+    "prompt": "Define router.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O router liga redes diferentes e encaminha tráfego entre elas, permitindo normalmente o acesso à Internet.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "router",
+      "liga redes diferentes",
+      "encaminha tráfego",
+      "internet"
+    ],
+    "rubric": [
+      {
+        "label": "router",
+        "terms": [
+          "router"
+        ]
+      },
+      {
+        "label": "liga redes diferentes",
+        "terms": [
+          "liga redes diferentes"
+        ]
+      },
+      {
+        "label": "encaminha tráfego",
+        "terms": [
+          "encaminha tráfego"
+        ]
+      },
+      {
+        "label": "internet",
+        "terms": [
+          "internet"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF054",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Access Point",
+    "type": "long",
+    "prompt": "Define access point.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O access point fornece acesso Wi-Fi, permitindo que dispositivos sem fios se liguem à rede.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "access point",
+      "wi-fi",
+      "sem fios",
+      "rede"
+    ],
+    "rubric": [
+      {
+        "label": "access point",
+        "terms": [
+          "access point"
+        ]
+      },
+      {
+        "label": "wi-fi",
+        "terms": [
+          "wi-fi"
+        ]
+      },
+      {
+        "label": "sem fios",
+        "terms": [
+          "sem fios"
+        ]
+      },
+      {
+        "label": "rede",
+        "terms": [
+          "rede"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF055",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Modem",
+    "type": "long",
+    "prompt": "Define modem.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O modem estabelece a ligação à rede do operador, permitindo o acesso ao serviço de Internet.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "modem",
+      "operador",
+      "internet",
+      "ligação"
+    ],
+    "rubric": [
+      {
+        "label": "modem",
+        "terms": [
+          "modem"
+        ]
+      },
+      {
+        "label": "operador",
+        "terms": [
+          "operador"
+        ]
+      },
+      {
+        "label": "internet",
+        "terms": [
+          "internet"
+        ]
+      },
+      {
+        "label": "ligação",
+        "terms": [
+          "ligação"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF056",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Firewall",
+    "type": "long",
+    "prompt": "Define firewall.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A firewall filtra o tráfego da rede e ajuda a proteger os sistemas contra acessos ou comunicações perigosas.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "firewall",
+      "filtra tráfego",
+      "proteger",
+      "rede"
+    ],
+    "rubric": [
+      {
+        "label": "firewall",
+        "terms": [
+          "firewall"
+        ]
+      },
+      {
+        "label": "filtra tráfego",
+        "terms": [
+          "filtra tráfego"
+        ]
+      },
+      {
+        "label": "proteger",
+        "terms": [
+          "proteger"
+        ]
+      },
+      {
+        "label": "rede",
+        "terms": [
+          "rede"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF057",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor",
+    "type": "long",
+    "prompt": "Define servidor.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Um servidor é um computador ou sistema que fornece serviços a outros dispositivos, como ficheiros, sites, autenticação ou bases de dados.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "servidor",
+      "fornece serviços",
+      "ficheiros",
+      "sites"
+    ],
+    "rubric": [
+      {
+        "label": "servidor",
+        "terms": [
+          "servidor"
+        ]
+      },
+      {
+        "label": "fornece serviços",
+        "terms": [
+          "fornece serviços"
+        ]
+      },
+      {
+        "label": "ficheiros",
+        "terms": [
+          "ficheiros"
+        ]
+      },
+      {
+        "label": "sites",
+        "terms": [
+          "sites"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF058",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Cabo de par entrançado",
+    "type": "long",
+    "prompt": "Define cabo de par entrançado.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O cabo de par entrançado é um cabo Ethernet comum, usado para ligar equipamentos em redes locais.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "par entrançado",
+      "ethernet",
+      "redes locais"
+    ],
+    "rubric": [
+      {
+        "label": "par entrançado",
+        "terms": [
+          "par entrançado"
+        ]
+      },
+      {
+        "label": "ethernet",
+        "terms": [
+          "ethernet"
+        ]
+      },
+      {
+        "label": "redes locais",
+        "terms": [
+          "redes locais"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF059",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Fibra ótica",
+    "type": "long",
+    "prompt": "Define fibra ótica.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "A fibra ótica é um meio físico de transmissão muito rápido que envia dados através de luz.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "fibra ótica",
+      "luz",
+      "muito rápido",
+      "transmissão"
+    ],
+    "rubric": [
+      {
+        "label": "fibra ótica",
+        "terms": [
+          "fibra ótica"
+        ]
+      },
+      {
+        "label": "luz",
+        "terms": [
+          "luz"
+        ]
+      },
+      {
+        "label": "muito rápido",
+        "terms": [
+          "muito rápido"
+        ]
+      },
+      {
+        "label": "transmissão",
+        "terms": [
+          "transmissão"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF060",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Cabo coaxial",
+    "type": "long",
+    "prompt": "Define cabo coaxial.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O cabo coaxial é um meio físico com condutor central e blindagem, usado em algumas ligações de TV e Internet.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "coaxial",
+      "condutor central",
+      "blindagem"
+    ],
+    "rubric": [
+      {
+        "label": "coaxial",
+        "terms": [
+          "coaxial"
+        ]
+      },
+      {
+        "label": "condutor central",
+        "terms": [
+          "condutor central"
+        ]
+      },
+      {
+        "label": "blindagem",
+        "terms": [
+          "blindagem"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF061",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Rede ponto-a-ponto",
+    "type": "long",
+    "prompt": "Define rede ponto-a-ponto.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Numa rede ponto-a-ponto, os computadores partilham recursos diretamente entre si, sem servidor central dedicado.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "ponto-a-ponto",
+      "partilham recursos",
+      "sem servidor central"
+    ],
+    "rubric": [
+      {
+        "label": "ponto-a-ponto",
+        "terms": [
+          "ponto-a-ponto"
+        ]
+      },
+      {
+        "label": "partilham recursos",
+        "terms": [
+          "partilham recursos"
+        ]
+      },
+      {
+        "label": "sem servidor central",
+        "terms": [
+          "sem servidor central"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF062",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Rede cliente/servidor",
+    "type": "long",
+    "prompt": "Define rede cliente/servidor.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "Numa rede cliente/servidor, os clientes pedem serviços a um servidor central que gere e fornece esses serviços.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "cliente/servidor",
+      "clientes",
+      "servidor central",
+      "serviços"
+    ],
+    "rubric": [
+      {
+        "label": "cliente/servidor",
+        "terms": [
+          "cliente/servidor"
+        ]
+      },
+      {
+        "label": "clientes",
+        "terms": [
+          "clientes"
+        ]
+      },
+      {
+        "label": "servidor central",
+        "terms": [
+          "servidor central"
+        ]
+      },
+      {
+        "label": "serviços",
+        "terms": [
+          "serviços"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF063",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de ficheiros",
+    "type": "long",
+    "prompt": "Define servidor de ficheiros.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O servidor de ficheiros guarda e partilha ficheiros com os utilizadores da rede.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "servidor de ficheiros",
+      "partilha ficheiros",
+      "rede"
+    ],
+    "rubric": [
+      {
+        "label": "servidor de ficheiros",
+        "terms": [
+          "servidor de ficheiros"
+        ]
+      },
+      {
+        "label": "partilha ficheiros",
+        "terms": [
+          "partilha ficheiros"
+        ]
+      },
+      {
+        "label": "rede",
+        "terms": [
+          "rede"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF064",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de impressão",
+    "type": "long",
+    "prompt": "Define servidor de impressão.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O servidor de impressão gere impressoras e pedidos de impressão numa rede.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "servidor de impressão",
+      "impressoras",
+      "pedidos"
+    ],
+    "rubric": [
+      {
+        "label": "servidor de impressão",
+        "terms": [
+          "servidor de impressão"
+        ]
+      },
+      {
+        "label": "impressoras",
+        "terms": [
+          "impressoras"
+        ]
+      },
+      {
+        "label": "pedidos",
+        "terms": [
+          "pedidos"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF065",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor web",
+    "type": "long",
+    "prompt": "Define servidor web.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O servidor web aloja páginas ou aplicações web e responde a pedidos feitos por navegadores.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "servidor web",
+      "aloja páginas",
+      "navegadores"
+    ],
+    "rubric": [
+      {
+        "label": "servidor web",
+        "terms": [
+          "servidor web"
+        ]
+      },
+      {
+        "label": "aloja páginas",
+        "terms": [
+          "aloja páginas"
+        ]
+      },
+      {
+        "label": "navegadores",
+        "terms": [
+          "navegadores"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF066",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de base de dados",
+    "type": "long",
+    "prompt": "Define servidor de base de dados.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O servidor de base de dados armazena, organiza e gere dados usados por aplicações.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "servidor de base de dados",
+      "armazena",
+      "gere dados"
+    ],
+    "rubric": [
+      {
+        "label": "servidor de base de dados",
+        "terms": [
+          "servidor de base de dados"
+        ]
+      },
+      {
+        "label": "armazena",
+        "terms": [
+          "armazena"
+        ]
+      },
+      {
+        "label": "gere dados",
+        "terms": [
+          "gere dados"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF067",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor DHCP",
+    "type": "long",
+    "prompt": "Define servidor DHCP.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O servidor DHCP atribui automaticamente endereços IP aos dispositivos da rede.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "dhcp",
+      "atribui automaticamente",
+      "endereços ip"
+    ],
+    "rubric": [
+      {
+        "label": "dhcp",
+        "terms": [
+          "dhcp"
+        ]
+      },
+      {
+        "label": "atribui automaticamente",
+        "terms": [
+          "atribui automaticamente"
+        ]
+      },
+      {
+        "label": "endereços ip",
+        "terms": [
+          "endereços ip"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF068",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor DNS",
+    "type": "long",
+    "prompt": "Define servidor DNS.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O servidor DNS traduz nomes de domínio em endereços IP.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "dns",
+      "traduz nomes",
+      "endereços ip"
+    ],
+    "rubric": [
+      {
+        "label": "dns",
+        "terms": [
+          "dns"
+        ]
+      },
+      {
+        "label": "traduz nomes",
+        "terms": [
+          "traduz nomes"
+        ]
+      },
+      {
+        "label": "endereços ip",
+        "terms": [
+          "endereços ip"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFODEF069",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidor de autenticação",
+    "type": "long",
+    "prompt": "Define servidor de autenticação.",
+    "difficulty": 3,
+    "estimate": 135,
+    "weight": 1.35,
+    "correctAnswer": "O servidor de autenticação valida utilizadores e controla o acesso a recursos da rede.",
+    "explanation": "Pergunta teórica de Informática criada a partir dos apontamentos e da matriz. Responde com uma definição curta, concreta e completa.",
+    "keywords": [
+      "autenticação",
+      "valida utilizadores",
+      "acesso",
+      "recursos"
+    ],
+    "rubric": [
+      {
+        "label": "autenticação",
+        "terms": [
+          "autenticação"
+        ]
+      },
+      {
+        "label": "valida utilizadores",
+        "terms": [
+          "valida utilizadores"
+        ]
+      },
+      {
+        "label": "acesso",
+        "terms": [
+          "acesso"
+        ]
+      },
+      {
+        "label": "recursos",
+        "terms": [
+          "recursos"
+        ]
+      }
+    ],
+    "humanGrading": true,
+    "infoDefinition": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC001",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Memórias",
+    "type": "mc",
+    "prompt": "Qual opção distingue melhor RAM, ROM, cache e disco?",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "RAM é volátil; ROM é permanente; cache é muito rápida; disco guarda dados permanentemente.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "RAM é volátil; ROM é permanente; cache é muito rápida; disco guarda dados permanentemente.",
+        "correct": true
+      },
+      {
+        "text": "RAM é permanente; ROM é volátil; cache guarda ficheiros; disco executa instruções.",
+        "correct": false
+      },
+      {
+        "text": "RAM traduz nomes; ROM atribui IPs; cache liga redes; disco filtra tráfego.",
+        "correct": false
+      },
+      {
+        "text": "RAM é periférico de saída; ROM é periférico de entrada; cache é monitor; disco é teclado.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "RAM é volátil; ROM é permanente; cache é muito rápida; disco guarda dados permanentemente."
+    ],
+    "infoChoice": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC002",
+    "area": "info",
+    "module": "Arquitetura interna do computador",
+    "topic": "Processador",
+    "type": "mc",
+    "prompt": "Qual opção identifica corretamente unidades do processador?",
+    "difficulty": 3,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Unidade de controlo, ULA/ALU, registos e cache.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "Unidade de controlo, ULA/ALU, registos e cache.",
+        "correct": true
+      },
+      {
+        "text": "Motherboard, fonte de alimentação, monitor e rato.",
+        "correct": false
+      },
+      {
+        "text": "LAN, WAN, WLAN e MAN.",
+        "correct": false
+      },
+      {
+        "text": "Cabeçalho, rodapé, notas de rodapé e margens.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Unidade de controlo, ULA/ALU, registos e cache."
+    ],
+    "infoChoice": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC003",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Funções",
+    "type": "mc",
+    "prompt": "Qual opção associa corretamente funções de folha de cálculo?",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "SOMA adiciona; MÉDIA calcula média; MÁXIMO devolve maior valor; MÍNIMO devolve menor valor.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "SOMA adiciona; MÉDIA calcula média; MÁXIMO devolve maior valor; MÍNIMO devolve menor valor.",
+        "correct": true
+      },
+      {
+        "text": "SOMA filtra; MÉDIA formata; MÁXIMO conta texto; MÍNIMO cria gráficos.",
+        "correct": false
+      },
+      {
+        "text": "SOMA devolve menor valor; MÉDIA devolve maior valor; MÁXIMO divide; MÍNIMO soma.",
+        "correct": false
+      },
+      {
+        "text": "SOMA cria tabela dinâmica; MÉDIA aplica cor; MÁXIMO traduz nomes; MÍNIMO atribui IPs.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "SOMA adiciona; MÉDIA calcula média; MÁXIMO devolve maior valor; MÍNIMO devolve menor valor."
+    ],
+    "infoChoice": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC004",
+    "area": "info",
+    "module": "Folha de cálculo",
+    "topic": "Ferramentas de análise",
+    "type": "mc",
+    "prompt": "Qual opção distingue filtro, formatação condicional, tabela dinâmica e gráfico dinâmico?",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Filtro mostra dados por critério; formatação condicional altera aspeto; tabela dinâmica resume; gráfico dinâmico visualiza o resumo.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "Filtro mostra dados por critério; formatação condicional altera aspeto; tabela dinâmica resume; gráfico dinâmico visualiza o resumo.",
+        "correct": true
+      },
+      {
+        "text": "Filtro apaga dados; formatação condicional cria fórmulas; tabela dinâmica escreve texto; gráfico dinâmico atribui IPs.",
+        "correct": false
+      },
+      {
+        "text": "Filtro calcula médias; formatação condicional liga redes; tabela dinâmica é cabo; gráfico dinâmico é servidor.",
+        "correct": false
+      },
+      {
+        "text": "Filtro é cabeçalho; formatação condicional é rodapé; tabela dinâmica é nota; gráfico dinâmico é margem.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Filtro mostra dados por critério; formatação condicional altera aspeto; tabela dinâmica resume; gráfico dinâmico visualiza o resumo."
+    ],
+    "infoChoice": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC005",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Equipamentos de rede",
+    "type": "mc",
+    "prompt": "Qual opção associa corretamente equipamentos de rede?",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Switch liga dispositivos numa LAN; router liga redes; access point fornece Wi-Fi; firewall filtra tráfego.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "Switch liga dispositivos numa LAN; router liga redes; access point fornece Wi-Fi; firewall filtra tráfego.",
+        "correct": true
+      },
+      {
+        "text": "Switch atribui IPs; router traduz nomes; access point guarda ficheiros; firewall soma valores.",
+        "correct": false
+      },
+      {
+        "text": "Switch mostra páginas; router formata texto; access point calcula médias; firewall cria tabelas.",
+        "correct": false
+      },
+      {
+        "text": "Switch é cabo; router é memória; access point é processador; firewall é disco.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Switch liga dispositivos numa LAN; router liga redes; access point fornece Wi-Fi; firewall filtra tráfego."
+    ],
+    "infoChoice": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC006",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Servidores",
+    "type": "mc",
+    "prompt": "Qual opção distingue DHCP, DNS, servidor web e servidor de ficheiros?",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "DHCP atribui IPs; DNS traduz nomes; servidor web aloja sites; servidor de ficheiros partilha ficheiros.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "DHCP atribui IPs; DNS traduz nomes; servidor web aloja sites; servidor de ficheiros partilha ficheiros.",
+        "correct": true
+      },
+      {
+        "text": "DHCP traduz nomes; DNS atribui IPs; servidor web imprime; servidor de ficheiros filtra tráfego.",
+        "correct": false
+      },
+      {
+        "text": "DHCP liga cabos; DNS guarda RAM; servidor web calcula; servidor de ficheiros formata texto.",
+        "correct": false
+      },
+      {
+        "text": "DHCP é topologia; DNS é periférico; servidor web é fórmula; servidor de ficheiros é coluna.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "DHCP atribui IPs; DNS traduz nomes; servidor web aloja sites; servidor de ficheiros partilha ficheiros."
+    ],
+    "infoChoice": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC007",
+    "area": "info",
+    "module": "Conexões de rede / Rede local",
+    "topic": "Topologias",
+    "type": "mc",
+    "prompt": "Qual opção associa corretamente topologias de rede?",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Estrela usa equipamento central; barramento usa cabo principal; anel liga vizinhos em circuito; malha tem vários caminhos.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "Estrela usa equipamento central; barramento usa cabo principal; anel liga vizinhos em circuito; malha tem vários caminhos.",
+        "correct": true
+      },
+      {
+        "text": "Estrela usa cabo principal; barramento usa servidor central; anel é Wi-Fi; malha é impressora.",
+        "correct": false
+      },
+      {
+        "text": "Estrela traduz nomes; barramento atribui IPs; anel filtra tráfego; malha guarda ficheiros.",
+        "correct": false
+      },
+      {
+        "text": "Estrela é WAN; barramento é RAM; anel é ROM; malha é CPU.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Estrela usa equipamento central; barramento usa cabo principal; anel liga vizinhos em circuito; malha tem vários caminhos."
+    ],
+    "infoChoice": true,
+    "core": true
+  },
+  {
+    "id": "INFOMC008",
+    "area": "info",
+    "module": "Processador de texto",
+    "topic": "Elementos do documento",
+    "type": "mc",
+    "prompt": "Qual opção distingue corretamente cabeçalho, rodapé, nota de rodapé e colunas?",
+    "difficulty": 4,
+    "estimate": 70,
+    "weight": 1,
+    "correctAnswer": "Cabeçalho fica no topo; rodapé no fundo; nota de rodapé explica/referencia; colunas dividem o texto verticalmente.",
+    "explanation": "Pergunta de escolha múltipla teórica de Informática. As opções são parecidas, por isso lê com atenção.",
+    "options": [
+      {
+        "text": "Cabeçalho fica no topo; rodapé no fundo; nota de rodapé explica/referencia; colunas dividem o texto verticalmente.",
+        "correct": true
+      },
+      {
+        "text": "Cabeçalho fica no fundo; rodapé fica no topo; nota de rodapé cria gráficos; colunas somam dados.",
+        "correct": false
+      },
+      {
+        "text": "Cabeçalho é tabela dinâmica; rodapé é filtro; nota de rodapé é fórmula; colunas são servidores.",
+        "correct": false
+      },
+      {
+        "text": "Cabeçalho liga redes; rodapé atribui IPs; nota de rodapé traduz nomes; colunas filtram tráfego.",
+        "correct": false
+      }
+    ],
+    "keywords": [
+      "Cabeçalho fica no topo; rodapé no fundo; nota de rodapé explica/referencia; colunas dividem o texto verticalmente."
+    ],
+    "infoChoice": true,
+    "core": true
   }
 ];

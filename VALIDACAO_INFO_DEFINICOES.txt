@@ -1,0 +1,47 @@
+PAF_Estudo atualizado com perguntas obrigatórias de definição em Informática, baseadas nos apontamentos e na matriz.
+Total de perguntas: 1345
+Informática: 567
+Definições obrigatórias de Informática: 69
+Escolhas múltiplas comparativas de Informática: 8
+{
+  "Arquitetura interna do computador": {
+    "total": 97,
+    "defs": 15,
+    "choices": 2
+  },
+  "Processador de texto": {
+    "total": 74,
+    "defs": 8,
+    "choices": 1
+  },
+  "Folha de cálculo": {
+    "total": 92,
+    "defs": 16,
+    "choices": 2
+  },
+  "Programação em C/C++": {
+    "total": 24,
+    "defs": 0,
+    "choices": 0
+  },
+  "Programação em JAVA": {
+    "total": 28,
+    "defs": 0,
+    "choices": 0
+  },
+  "Conexões de rede / Rede local": {
+    "total": 172,
+    "defs": 30,
+    "choices": 3
+  },
+  "Criação de páginas Web em hipertexto": {
+    "total": 53,
+    "defs": 0,
+    "choices": 0
+  },
+  "Scripts CGI e folhas de estilo": {
+    "total": 27,
+    "defs": 0,
+    "choices": 0
+  }
+}

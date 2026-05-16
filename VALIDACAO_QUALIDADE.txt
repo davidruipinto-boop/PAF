@@ -1,0 +1,8 @@
+Total de perguntas: 1268
+Distribuição por área: {'socio': 298, 'mfc': 480, 'info': 490}
+Distribuição informática: {'Arquitetura interna do computador': 80, 'Processador de texto': 65, 'Folha de cálculo': 74, 'Programação em C/C++': 24, 'Programação em JAVA': 28, 'Conexões de rede / Rede local': 139, 'Criação de páginas Web em hipertexto': 53, 'Scripts CGI e folhas de estilo': 27}
+Perguntas proibidas tipo 'como usarias/explica como': 0
+Perguntas de escolha sem opções no banco: 4
+Opções inglesas em módulos não-inglês no banco: 0
+app.js: OK
+question-bank.js: OK

@@ -1,0 +1,9 @@
+VALIDACAO DO SALAO DE EXAMES PAF
+Total de perguntas: 1153
+Por area: {"socio":261,"mfc":472,"info":420}
+Sociocultural core: 34
+Xenofobia: 5
+Ingles por modulo: {"Inglês - Daily routine":79,"Inglês - If-clauses":23,"Inglês - Graus dos adjetivos":41,"Inglês - Profissões":29,"Inglês - Passive voice":26,"Inglês - Word order":14}
+Informatica por modulo: {"Arquitetura interna do computador":64,"Processador de texto":53,"Folha de cálculo":62,"Programação em C/C++":23,"Programação em JAVA":27,"Conexões de rede / Rede local":113,"Criação de páginas Web em hipertexto":52,"Scripts CGI e folhas de estilo":26}
+Perguntas com escolha/opcao sem opcoes: 0
+Perguntas de Ingles a pedir criar frases livres: 0
